@@ -28,6 +28,7 @@ export default function StudySession({
   const [isTopicSelectorOpen, setIsTopicSelectorOpen] = useState(true);
   const [selectedTopics, setSelectedTopics] = useState<string[]>(['all']);
   const [sessionQuestions, setSessionQuestions] = useState<Question[]>([]);
+  const [initialUniqueCount, setInitialUniqueCount] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
@@ -43,6 +44,7 @@ export default function StudySession({
     }
     
     setSessionQuestions(filtered);
+    setInitialUniqueCount(filtered.length);
     setCurrentIndex(0);
     setShowAnswer(false);
     setIsFinished(false);
@@ -70,8 +72,9 @@ export default function StudySession({
   const currentQuestion = sessionQuestions[currentIndex] || null;
 
   const remainingCount = useMemo(() => {
-    const masteredInThisSession = sessionQuestions.filter(q => masteredThisSession.has(q.id)).length;
-    return Math.max(0, sessionQuestions.length - masteredInThisSession);
+    const uniqueIds = new Set(sessionQuestions.map(q => q.id));
+    const masteredInThisSession = Array.from(uniqueIds).filter(id => masteredThisSession.has(id)).length;
+    return Math.max(0, uniqueIds.size - masteredInThisSession);
   }, [sessionQuestions, masteredThisSession]);
 
   const handleDifficulty = (difficulty: DifficultyLevel) => {
@@ -194,7 +197,7 @@ export default function StudySession({
               {chapter.title}
             </h1>
             <p className="text-[10px] text-slate-400 font-bold mt-0.5">
-              {currentIndex + 1} / {sessionQuestions.length} Cards • {selectedTopics.length === 1 && selectedTopics[0] === 'all' ? 'All Subjects' : `${selectedTopics.length} Topics Selected`}
+              Card {currentIndex + 1} • {selectedTopics.length === 1 && selectedTopics[0] === 'all' ? 'All Subjects' : `${selectedTopics.length} Topics Selected`}
             </p>
           </div>
         </div>

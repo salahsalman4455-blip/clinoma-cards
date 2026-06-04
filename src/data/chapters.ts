@@ -51,20 +51,20 @@ export const CHAPTERS: Chapter[] = [
     title: 'V. Family medicine',
     topics: [
       'Principles of Family Medicine',
-      'The Family Physician (Five-Star Doctor)',
-      'RISE Approach in Prevention',
-      'Family Medicine Model vs. Specialist Care',
-      'Family Health Team Composition',
-      'Family Dynamics & CAPRS Framework',
-      'The Human Life Cycle Stages',
-      'Basic Benefit Package (BBP) & Levels of Care',
-      "Maternal & Women's Health in BBP",
-      'Patient Education Principles',
-      'Referral Letter Elements & Guidelines',
-      'Anticipatory Care: Child Growth & Immunization',
-      'Adolescent Psychosocial Health (HEEADSSS Framework)',
-      'IMCI General Danger Signs & Pneumonia Classification',
-      'IMCI Sick Young Infant (Up to 2 Months)'
+      'The Family Physician & RISE Framework',
+      'Comparative Medical Models',
+      'Family Health Team & PHC Services',
+      'Family Dynamics & The Human Life Cycle',
+      'Basic Benefit Package & Level of Care',
+      'Patient Education & Verbal Counseling',
+      'Referral & Consultation Processes',
+      'Anticipatory Care & Immunization Guidelines',
+      'Adolescent Psychosocial Health & HEADSSS Interview',
+      'IMCI Case Management Overview',
+      'IMCI Treatment: Antibiotics & Wheezing Management',
+      'IMCI Management of Diarrhoea and Dehydration',
+      'IMCI Young Infant Care (Up to 2 Months)',
+      'Breastfeeding Management & Composition'
     ]
   }
 ];

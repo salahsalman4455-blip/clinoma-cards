@@ -117,8 +117,8 @@ export default function App() {
           </button>
           
           <a href="https://clinoma.pages.dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
-            <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-500/20">
-              <GraduationCap className="w-5 h-5" />
+            <div className="w-9 h-9 flex items-center justify-center overflow-hidden rounded-xl shadow-md shadow-blue-500/20">
+              <img src="https://i.ibb.co/qMgGdD03/202605081225.jpg" alt="Logo" className="w-full h-full object-cover animate-fade-in" referrerPolicy="no-referrer" />
             </div>
             <div className="text-left">
               <span className="text-xl font-black text-slate-900 leading-none block">CLINOMA CARDS</span>
@@ -168,8 +168,8 @@ export default function App() {
             >
               <div className="flex items-center justify-between mb-8 pb-4 border-b border-slate-900">
                 <a href="https://clinoma.pages.dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                  <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center text-white">
-                    <GraduationCap className="w-5 h-5" />
+                  <div className="w-9 h-9 flex items-center justify-center overflow-hidden rounded-xl">
+                    <img src="https://i.ibb.co/qMgGdD03/202605081225.jpg" alt="Logo" className="w-full h-full object-cover animate-fade-in" referrerPolicy="no-referrer" />
                   </div>
                   <span className="text-xl font-bold tracking-tight text-white leading-none">CLINOMA CARDS</span>
                 </a>
@@ -493,6 +493,23 @@ function SidebarItem({ icon, label, active, onClick }: { icon: any, label: strin
   );
 }
 
+const getChapterImageUrl = (id: number): string => {
+  switch (id) {
+    case 1:
+      return "https://www.kenhub.com/thumbor/Fh_wZf1zLEFt0zQd8fBtNmK7hdA=/fit-in/413x413/filters:fill(FFFFFF,true):watermark(/images/watermark_only_413.png,0,0,0):watermark(/logos/logo_url_sm.png,-10,-10,0):format(jpeg)/images/learnable/pelvis-renalis-2/XD504yncEcrqG6tG1lGlw_Pelvis_renalis_01.png";
+    case 2:
+      return "https://anatomy.app/Media/slides/thorax-overview-3-9785_medium.jpg";
+    case 3:
+      return "https://www.frontiersin.org/_rtmag/_next/image?url=https%3A%2F%2Fwww.frontiersin.org%2Fimage%2Fresearchtopic%2F60207&w=3840&q=90";
+    case 4:
+      return "https://play-lh.googleusercontent.com/P672xJ5oytm7jhBP59o4hMQfqErBhXsLD7n_PJG3qcGAaPqxpTHzHYOhPNYMlOaUwAV-";
+    case 5:
+      return "https://mybethanymedical.com/wp-content/uploads/2021/04/familycare.png";
+    default:
+      return "https://i.ibb.co/qMgGdD03/202605081225.jpg";
+  }
+};
+
 function ChapterCard({ 
   chapter, 
   onClick, 
@@ -518,8 +535,8 @@ function ChapterCard({
     >
       <div className="w-full">
         <div className="flex items-center justify-between w-full mb-4">
-          <div className="w-11 h-11 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-sm shadow-blue-50">
-            <BookOpen className="w-5 h-5" />
+          <div className="w-11 h-11 rounded-2xl bg-blue-50 flex items-center justify-center overflow-hidden group-hover:ring-2 group-hover:ring-blue-600 transition-all duration-300 shadow-sm shadow-blue-50">
+            <img src={getChapterImageUrl(chapter.id)} alt={`${chapter.title} Icon`} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </div>
           <div className="flex items-center gap-1.5">
             {reviewCount > 0 && (

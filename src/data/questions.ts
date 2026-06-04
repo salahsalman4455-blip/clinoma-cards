@@ -1075,6 +1075,26 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Principles of Family Medicine"
   },
+  {
+    id: "q-fm-pfm-4",
+    chapterId: 5,
+    type: "define",
+    title: "Unique Clinical Discipline",
+    content: "Define family medicine as a unique clinical discipline.",
+    answer: "Family medicine is a unique clinical discipline distinguished by its process of care, not merely by its content. At the center of this process lies the patient-physician relationship, with the patient viewed within the context of the family and the community.",
+    isClinical: false,
+    topic: "Principles of Family Medicine"
+  },
+  {
+    id: "q-fm-pfm-6",
+    chapterId: 5,
+    type: "define",
+    title: "Olesen Definition",
+    content: "Provide the Olesen Definition (2006) of the family physician.",
+    answer: "The family physician is the specialist trained to work at the front line of the health care system and to take the initial steps in providing care for any health problem a patient may have.",
+    isClinical: false,
+    topic: "Principles of Family Medicine"
+  },
 
   {
     id: "q-fm-pfm-5",
@@ -1086,8 +1106,18 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Principles of Family Medicine"
   },
+  {
+    id: "q-fm-pfm-7",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Scope of Family Practice Care",
+    content: "Enumerate 4 scope items of family practice care as outlined in the text.",
+    answer: "1. Diagnosis of health problems.\n2. Management of acute and chronic conditions.\n3. Health promotion.\n4. Disease prevention.",
+    isClinical: false,
+    topic: "Principles of Family Medicine"
+  },
 
-  // topic: "The Family Physician (Five-Star Doctor)"
+  // topic: "The Family Physician & RISE Framework"
   {
     id: "q-fm-tfp-1",
     chapterId: 5,
@@ -1096,7 +1126,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define the role of a \"Family Physician\".",
     answer: "A family physician is a medical doctor working at the front line of health care, responsible for providing comprehensive, continuous, and person-centered care (physical, psychological, and social) to individuals within the context of their families, and to families within the context of their communities.",
     isClinical: false,
-    topic: "The Family Physician (Five-Star Doctor)"
+    topic: "The Family Physician & RISE Framework"
   },
   {
     id: "q-fm-tfp-2",
@@ -1106,7 +1136,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 5 roles that comprise the WHO definition of a \"Five-Star Doctor\".",
     answer: "1. Assesses and improves the quality of care (Care provider).\n2. Makes optimal use of new technologies in health care (Decision maker).\n3. Promotes healthy lifestyles (Health communicator).\n4. Recognizes individual and community health needs (Community leader).\n5. Works efficiently as a member of the health care team (Manager).",
     isClinical: false,
-    topic: "The Family Physician (Five-Star Doctor)"
+    topic: "The Family Physician & RISE Framework"
   },
   {
     id: "q-fm-tfp-3",
@@ -1116,7 +1146,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 primary characteristics or functions a Family Physician must demonstrate in practice.",
     answer: "1. A strong sense of responsibility for the total and continuous care of individuals and families.\n2. Compassion, empathy, and a genuine interest in patients and their families.\n3. The ability to manage multiple medical problems occurring simultaneously.\n4. Skills necessary for the long-term management of chronic diseases and educating families.",
     isClinical: false,
-    topic: "The Family Physician (Five-Star Doctor)"
+    topic: "The Family Physician & RISE Framework"
   },
   {
     id: "q-fm-tfp-4",
@@ -1126,7 +1156,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct responsibilities that define the \"Managerial Role\" of the family physician within a Family Health Center (FHC).",
     answer: "1. Responsibility for all technical and administrative activities within the center.\n2. Promoting intersectoral coordination between health, education, and social services.\n3. Ensuring the strict implementation of national health policies and health service programs.\n4. Investigating public complaints and ensuring appropriate responses to community needs.",
     isClinical: true,
-    topic: "The Family Physician (Five-Star Doctor)"
+    topic: "The Family Physician & RISE Framework"
   },
   {
     id: "q-fm-tfp-5",
@@ -1136,10 +1166,28 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A family physician is organizing her morning practice. She reviews family health records, performs accurate general medical examinations, and selects drugs rationally from the Essential Drug List while arranging home visits for elderly immobile patients.\n\nQuestions:\n1. What specific role category of the family physician do these actions represent?\n2. Enumerate 2 specific chronic diseases prevalent in the primary care area that require continuous follow-up by the family health team.",
     answer: "1. The Curative Role.\n2. Hypertension and Diabetes Mellitus.",
     isClinical: true,
-    topic: "The Family Physician (Five-Star Doctor)"
+    topic: "The Family Physician & RISE Framework"
   },
-
-  // topic: "RISE Approach in Prevention"
+  {
+    id: "q-fm-tfp-7",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Curative Role Responsibilities",
+    content: "Enumerate 4 clinical responsibilities included under the curative role of the family physician.",
+    answer: "1. Accurate general medical examination of all family members.\n2. Proper completion and maintenance of family health records.\n3. Treatment of common health problems prevalent in the catchment area.\n4. Rational use of drugs, particularly from the Essential Drug List.",
+    isClinical: false,
+    topic: "The Family Physician & RISE Framework"
+  },
+  {
+    id: "q-fm-tfp-8",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Intersectoral Coordination Areas",
+    content: "Mention the 4 areas of intersectoral coordination that a family physician promotes in their managerial role.",
+    answer: "1. Education.\n2. Agriculture.\n3. Social services.\n4. National health policies.",
+    isClinical: false,
+    topic: "The Family Physician & RISE Framework"
+  },  // topic: "The Family Physician & RISE Framework"
   {
     id: "q-fm-rise-1",
     chapterId: 5,
@@ -1148,7 +1196,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 4 components represented by the acronym \"RISE\" framework in family medicine prevention.",
     answer: "1. R - Risk assessment.\n2. I - Immunization.\n3. S - Screening.\n4. E - Education.",
     isClinical: false,
-    topic: "RISE Approach in Prevention"
+    topic: "The Family Physician & RISE Framework"
   },
   {
     id: "q-fm-rise-2",
@@ -1158,7 +1206,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 examples of the \"Risk Assessment (R)\" component at individual and family levels.",
     answer: "1. Identifying risk factors for chronic non-communicable diseases (like obesity or smoking).\n2. Evaluating genetic predispositions through detailed family history.\n3. Assessing emotional or psychosocial problems affecting family stability.\n4. Identifying environmental or occupational hazards in the household catchment area.",
     isClinical: false,
-    topic: "RISE Approach in Prevention"
+    topic: "The Family Physician & RISE Framework"
   },
   {
     id: "q-fm-rise-3",
@@ -1168,9 +1216,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 common diseases targeted under the \"Screening (S)\" or early detection component of primary care.",
     answer: "1. Hypertension.\n2. Diabetes Mellitus.\n3. Breast cancer (via annual clinical breast examination).\n4. Anemia.",
     isClinical: false,
-    topic: "RISE Approach in Prevention"
+    topic: "The Family Physician & RISE Framework"
   },
-
+ 
   {
     id: "q-fm-rise-5",
     chapterId: 5,
@@ -1179,10 +1227,10 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 45-year-old heavy smoker with a family history of premature ischemic heart disease visits the Family Health Center. The family physician checks his lipid profile, records his blood pressure, and schedules a counseling session regarding smoking cessation.\n\nQuestions:\n1. Mention the components of the RISE approach being utilized during this clinical encounter.\n2. What is the primary clinical goal of implementing the RISE framework for chronic conditions?",
     answer: "1. Risk assessment, Screening, and Education.\n2. To achieve early detection, promote healthy lifestyles, and delay or minimize the impact of chronic complications.",
     isClinical: true,
-    topic: "RISE Approach in Prevention"
+    topic: "The Family Physician & RISE Framework"
   },
 
-  // topic: "Family Medicine Model vs. Specialist Care"
+  // topic: "Comparative Medical Models"
   {
     id: "q-fm-fmm-1",
     chapterId: 5,
@@ -1191,7 +1239,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct features that differentiate the Family Medicine Model from the Specialist/Traditional Care Model regarding patient care and focus.",
     answer: "1. Family Medicine provides care within the context of the family, whereas Specialist care focuses regardless of family context.\n2. Family Medicine is patient-centered (recognizing values/needs), whereas Specialist care is problem-centered (focusing on a specific disease or complaint).\n3. Family Medicine places strong emphasis on a continuous, healing relationship, whereas Specialist care has limited appreciation of the physician-patient relationship.\n4. Family Medicine is individual, family, and community-oriented, whereas Specialist care is individual patient-oriented.",
     isClinical: false,
-    topic: "Family Medicine Model vs. Specialist Care"
+    topic: "Comparative Medical Models"
   },
   {
     id: "q-fm-fmm-2",
@@ -1201,7 +1249,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 organizational differences between the Traditional Model of Practice and the Family Medicine Model.",
     answer: "1. Traditional systems often disrupt relationships, whereas Family Medicine systems support continuous, healing relationships.\n2. Traditional care features a single physician model, whereas Family Medicine utilizes a multidisciplinary team approach.\n3. Traditional documentation uses paper-based records, whereas Family Medicine utilizes electronic health records.\n4. Traditional practice style is mostly reactive, whereas Family Medicine is both responsive and proactive.",
     isClinical: false,
-    topic: "Family Medicine Model vs. Specialist Care"
+    topic: "Comparative Medical Models"
   },
   {
     id: "q-fm-fmm-3",
@@ -1211,9 +1259,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 characteristics of chronic disease management under the Family Medicine Model.",
     answer: "1. Management is purposeful and structurally organized.\n2. Driven by integrated, practice-based, and evidence-based practice guidelines.\n3. Integrates preventive, curative, and rehabilitative primary care services.\n4. Utilizes continuous quality and safety measurements for service improvement.",
     isClinical: true,
-    topic: "Family Medicine Model vs. Specialist Care"
+    topic: "Comparative Medical Models"
   },
-
+ 
   {
     id: "q-fm-fmm-5",
     chapterId: 5,
@@ -1222,10 +1270,10 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A patient presents to a medical facility with multiple overlapping symptoms of poorly controlled type 2 diabetes, peripheral neuropathy, and signs of clinical depression. In this facility, a multidisciplinary healthcare team handles his care, utilizing integrated electronic health records to provide continuous tracking and proactive interventions.\n\nQuestions:\n1. Which healthcare model of practice does this system explicitly represent?\n2. What are the three dimensions integrated into the core process of family medicine?",
     answer: "1. The Family Medicine Model.\n2. Knowledge, Clinical skills, and a Unique care process.",
     isClinical: true,
-    topic: "Family Medicine Model vs. Specialist Care"
+    topic: "Comparative Medical Models"
   },
 
-  // topic: "Family Health Team Composition"
+  // topic: "Family Health Team & PHC Services"
   {
     id: "q-fm-fht-1",
     chapterId: 5,
@@ -1234,7 +1282,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct members that comprise the \"Clinical Staff\" of the multidisciplinary Family Health Team.",
     answer: "1. Family Physicians.\n2. Nurses.\n3. Pharmacists.\n4. Laboratory Technicians / Assistants.",
     isClinical: false,
-    topic: "Family Health Team Composition"
+    topic: "Family Health Team & PHC Services"
   },
   {
     id: "q-fm-fht-2",
@@ -1244,7 +1292,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct members that comprise the \"Administrative and Support Staff\" of a Family Health Team.",
     answer: "1. Medical Records Officer.\n2. Front Office Staff / Assistants.\n3. Births and Deaths Officer.\n4. Janitors and Guards (or Storage Room Officer).",
     isClinical: false,
-    topic: "Family Health Team Composition"
+    topic: "Family Health Team & PHC Services"
   },
   {
     id: "q-fm-fht-3",
@@ -1254,7 +1302,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 primary duties of the Family Physician acting as the leader of the Family Health Team.",
     answer: "1. Directing and coordinating all technical and clinical team activities.\n2. Supporting collaborative teamwork and multidisciplinary team building.\n3. Ensuring the integrated delivery of clinical, preventive, and administrative services.\n4. Supervising the field implementation of Primary Health Care (PHC) activities.",
     isClinical: false,
-    topic: "Family Health Team Composition"
+    topic: "Family Health Team & PHC Services"
   },
   {
     id: "q-fm-fht-4",
@@ -1264,7 +1312,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct responsibilities of the Family Health Team regarding family practice catchment area activities.",
     answer: "1. Managing a defined, registered roster of families within the community catchment area.\n2. Providing continuous and comprehensive primary care for all registered families.\n3. Creating, updating, and maintaining comprehensive family folders and health files.\n4. Implementing specific national priority healthcare programs (such as IMCI and Family Planning).",
     isClinical: true,
-    topic: "Family Health Team Composition"
+    topic: "Family Health Team & PHC Services"
   },
   {
     id: "q-fm-fht-5",
@@ -1274,10 +1322,42 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "The manager of a Family Health Center holds a staff meeting to upgrade clinical outcomes. He notes that improving team performance requires structured job clarity, ongoing skills capacity-building, and communication channels.\n\nQuestions:\n1. Who is the designated leader responsible for directing this multidisciplinary healthcare team?\n2. Enumerate 2 essential factors that help in upgrading and improving Family Health Team clinical performance.",
     answer: "1. The Family Physician.\n2. Clearly defined job descriptions for each team member and regular team meetings for monitoring and problem-solving.",
     isClinical: true,
-    topic: "Family Health Team Composition"
+    topic: "Family Health Team & PHC Services"
+  },
+  {
+    id: "q-fm-fht-6",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Upgrading Team Performance",
+    content: "List the factors that help in upgrading and improving Family Health Team performance.",
+    answer: "1. Clearly defined job descriptions.\n2. Regular training and capacity-building.\n3. Regular team meetings for planning/monitoring.\n4. Incentives (financial and non-financial).\n5. An effective system of communication.",
+    isClinical: false,
+    topic: "Family Health Team & PHC Services"
+  },
+  {
+    id: "q-fm-fht-7",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Chronic Conditions Management",
+    content: "Enumerate 4 chronic conditions followed up and managed by the Family Health Team.",
+    answer: "1. Hypertension.\n2. Diabetes Mellitus (DM).\n3. Tuberculosis (TB) cases receiving DOTS.\n4. Priority national programs such as IMCI and Family Planning.",
+    isClinical: true,
+    topic: "Family Health Team & PHC Services"
   },
 
-  // topic: "Family Dynamics & CAPRS Framework"
+  // topic: "PHC Services at FHU/FHC"
+  {
+    id: "q-fm-phc-1",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Core PHC Services",
+    content: "Enumerate 4 core services delivered by the Family Health Team at the FHU/FHC.",
+    answer: "1. Creating and maintaining family folders.\n2. Providing bio-psycho-social care throughout all stages of the human life cycle.\n3. Conducting initial examinations for all family members.\n4. Early detection of health problems through periodic examinations and screening tests.",
+    isClinical: false,
+    topic: "Family Health Team & PHC Services"
+  },
+
+  // topic: "Family Dynamics & The Human Life Cycle"
   {
     id: "q-fm-fdc-1",
     chapterId: 5,
@@ -1286,7 +1366,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define the clinical parameter of a \"Family\" in family practice.",
     answer: "The family is the basic structural and functional unit of the community, consisting of two or more related persons living together in the same household for more than 6 months.",
     isClinical: false,
-    topic: "Family Dynamics & CAPRS Framework"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-fdc-2",
@@ -1296,7 +1376,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 5 functions of the family represented by the \"CAPRS\" framework.",
     answer: "1. C - Care.\n2. A - Affection.\n3. P - Providing status.\n4. R - Reproduction.\n5. S - Socialization.",
     isClinical: false,
-    topic: "Family Dynamics & CAPRS Framework"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-fdc-3",
@@ -1304,9 +1384,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     type: "short-essay",
     title: "Biological Family Risk Factors",
     content: "Enumerate 4 distinct conditions or categories where family history explicitly contributes to patient risk (The Biologic Family risk factor).",
-    answer: "1. Cancers (especially breast, colon, prostate, and ovarian).\n2. Cardiovascular diseases (Hypertension, atherosclerosis, coronary artery disease).\n3. Metabolic disorders (Diabetes Mellitus and Hyperlipidemia).\n4. Autoimmune or endocrinal disorders.",
+    answer: "1. Cancers (especially breast, colon, prostate, and ovarian).\n2. Cardiovascular diseases (Hypertension, atherosclerosis, coronary artery disease).\n3. Metabolic disorders (Diabetes Mellitus and Hyperlipidemia).\n4. Autoimmune/endocrinal disorders, or infections (such as tuberculosis or hepatitis B).",
     isClinical: true,
-    topic: "Family Dynamics & CAPRS Framework"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-fdc-4",
@@ -1316,7 +1396,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 examples of \"Negative Roles\" the family can play as a source of stress or illness.",
     answer: "1. Vertical transmission of hereditary and genetic disorders.\n2. Horizontal spread of communicable / infectious diseases.\n3. Adoption or reinforcement of unhealthy lifestyle habits (such as smoking or poor diet).\n4. Exposure to family conflicts creating intense psychosocial and mental pressure.",
     isClinical: true,
-    topic: "Family Dynamics & CAPRS Framework"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-fdc-5",
@@ -1326,7 +1406,29 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A family physician is constructing a clinical file for a newly registered patient. To accurately evaluate hereditary and genetic risks for early disease screening, the physician uses a genogram to map out relatives related by blood.\n\nQuestions:\n1. Which specific family classification type is the physician evaluating to assess genetic risks?\n2. Mention the family function component from the CAPRS framework that deals with the provision of basic needs like food, shelter, and social support.",
     answer: "1. The Biologic Family.\n2. C - Care.",
     isClinical: true,
-    topic: "Family Dynamics & CAPRS Framework"
+    topic: "Family Dynamics & The Human Life Cycle"
+  },
+  {
+    id: "q-fm-fdc-6",
+    chapterId: 5,
+    type: "define",
+    title: "Define Household Family",
+    content: "Define \"Household Family\" and state its clinical importance.",
+    answer: "Definition: Individuals living together in the same home, regardless of biological relationship.\nClinical Importance: It highlights shared environmental factors (e.g., infections, allergens, stressors) and helps tailor management involving household routines.",
+    isClinical: false,
+    topic: "Family Dynamics & The Human Life Cycle"
+  },
+
+  // topic: "Stressful Life Events in Families"
+  {
+    id: "q-fm-sle-1",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Stressful Life Events Classification",
+    content: "Classify the stressful life events that affect family dynamics.",
+    answer: "1. Severe stress events: Death, divorce, marital separation, legal problems.\n2. Moderate stress events: Illness, job problems, outstanding achievements.\n3. Mild stress events: Change of residence, changes in sleep or eating habits, holidays.",
+    isClinical: false,
+    topic: "Family Dynamics & The Human Life Cycle"
   },
 
   // topic: "The Human Life Cycle Stages"
@@ -1338,7 +1440,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 initial stages of the Human Life Cycle along with their respective transitional events.",
     answer: "1. Preconception stage -> Transitional event: Conception.\n2. Fetal life stage -> Transitional event: Birth.\n3. Breast dependence stage -> Transitional event: Weaning.\n4. Preschool age stage -> Transitional event: School entry.",
     isClinical: false,
-    topic: "The Human Life Cycle Stages"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-hlc-2",
@@ -1348,7 +1450,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 primary health needs or clinical interventions focused during the \"Preconception\" stage.",
     answer: "1. Premarital clinical counseling.\n2. Comprehensive premarital medical examination.\n3. Inter-conception care and child spacing advice.\n4. Genetic counseling when structurally indicated.",
     isClinical: true,
-    topic: "The Human Life Cycle Stages"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-hlc-3",
@@ -1358,7 +1460,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 common pediatric health risks or nutritional deficiencies encountered during the \"Breast Dependence & Preschool Age\" stages.",
     answer: "1. Practical acute respiratory tract infections (ARI).\n2. Acute diarrheal diseases.\n3. Protein-energy malnutrition (such as Kwashiorkor or Marasmus).\n4. Micronutrient deficiencies (such as Rickets or Vitamin A deficiency).",
     isClinical: true,
-    topic: "The Human Life Cycle Stages"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-hlc-4",
@@ -1368,7 +1470,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 classic behavioral or psychological risk factors characteristic of the \"Adolescence\" life cycle stage.",
     answer: "1. Psychological and emotional instability linked to puberty.\n2. Initiation of tobacco smoking or substance use.\n3. Onset of eating disorders (such as anorexia nervosa or obesity).\n4. Risk-taking behaviors, delinquency, or vulnerability to peer pressure.",
     isClinical: false,
-    topic: "The Human Life Cycle Stages"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
   {
     id: "q-fm-hlc-5",
@@ -1378,10 +1480,10 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A family physician sets up a primary care schedule. He separates clinical programs into maternal care for fetal life, integrated childhood management (IMCI) for toddlers, and psychosocial counseling for individuals undergoing a gradual decline in functional abilities.\n\nQuestions:\n1. What is the clinical term used to describe the developmental stage of gradual physical decline and aging?\n2. Through which integrated public program are the needs of breast-dependent and preschool children managed in family practice?",
     answer: "1. Senescence.\n2. The IMCI (Integrated Management of Childhood Illness) program within maternal and child health (MCH) services.",
     isClinical: true,
-    topic: "The Human Life Cycle Stages"
+    topic: "Family Dynamics & The Human Life Cycle"
   },
 
-  // topic: "Basic Benefit Package (BBP) & Levels of Care"
+  // topic: "Basic Benefit Package & Level of Care"
   {
     id: "q-fm-bbp-1",
     chapterId: 5,
@@ -1390,7 +1492,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define the \"Basic Benefit Package (BBP)\" within the Universal Health Insurance System.",
     answer: "The BBP is a defined, integrated group of essential medical services delivered through primary health care to meet the priority health needs of the population, with particular emphasis on women, children, and vulnerable groups, financed to ensure equity, accessibility, and financial protection.",
     isClinical: false,
-    topic: "Basic Benefit Package (BBP) & Levels of Care"
+    topic: "Basic Benefit Package & Level of Care"
   },
   {
     id: "q-fm-bbp-2",
@@ -1400,7 +1502,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 core characteristics or regulatory design benefits of the BBP.",
     answer: "1. Provides a clearly defined set of integrated curative, preventive, and public health services.\n2. Tailored explicitly to baseline population health needs, focusing on poor and low-income groups.\n3. Ensures cost-effectiveness, maximization of efficiency, and financial protection.\n4. Limits the duplication of services, unnecessary investigations, and multi-provider drug dispensing costs.",
     isClinical: false,
-    topic: "Basic Benefit Package (BBP) & Levels of Care"
+    topic: "Basic Benefit Package & Level of Care"
   },
   {
     id: "q-fm-bbp-3",
@@ -1410,7 +1512,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 3 levels of service delivery of the BBP under the Family Health Delivery Model.",
     answer: "1. Family Health Unit (FHU) level.\n2. Family Health Centre (FHC) level.\n3. Hospital Level (Specialist care).",
     isClinical: false,
-    topic: "Basic Benefit Package (BBP) & Levels of Care"
+    topic: "Basic Benefit Package & Level of Care"
+  },
+  {
+    id: "q-fm-bbp-4",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Laboratory Investigations at FHU",
+    content: "Enumerate the laboratory investigations available specifically at the Family Health Unit (FHU) level.",
+    answer: "Blood glucose, Blood group and Rh factor, Erythrocyte sedimentation rate (ESR), Hemoglobin (Hb), Pregnancy test, Stool analysis, and Urine analysis.",
+    isClinical: true,
+    topic: "Basic Benefit Package & Level of Care"
   },
 
   {
@@ -1421,7 +1533,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A Universal Health Insurance administrator reviews center workloads. He notes that simple infections and vaccinations are sorted at the unit, deliveries and complex chemistries are routed to the health center, and emergency surgeries require direct secondary transfer.\n\nQuestions:\n1. What is the designated BBP service level responsible for specialist outpatient care, basic inpatient stays, and emergency surgery?\n2. Enumerate 2 basic laboratory investigations available at the Family Health Unit (FHU) level.",
     answer: "1. The Hospital Level.\n2. Hemoglobin (Hb) and Urine analysis (or blood glucose).",
     isClinical: true,
-    topic: "Basic Benefit Package (BBP) & Levels of Care"
+    topic: "Basic Benefit Package & Level of Care"
+  },
+  {
+    id: "q-fm-bbp-6",
+    chapterId: 5,
+    type: "short-essay",
+    title: "FHC vs FHU Investigations",
+    content: "Enumerate 4 specific laboratory investigations available at the Family Health Centre (FHC) level that are not available at the FHU level.",
+    answer: "1. Anti-streptolysin O titer (ASOT).\n2. Complete blood count (CBC).\n3. Culture and sensitivity testing.\n4. Blood chemistry including liver and kidney function tests.",
+    isClinical: true,
+    topic: "Basic Benefit Package & Level of Care"
   },
 
   // topic: "Maternal & Women's Health in BBP"
@@ -1433,7 +1555,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 core elements or screening interventions performed during routine primary \"Antenatal Care\" (ANC).",
     answer: "1. Clinical management and tracking of normal pregnancy progression.\n2. Administration of Tetanus Toxoid (TT) immunization.\n3. Routine screening for pre-eclampsia (hypertension) and gestational diabetes mellitus.\n4. Screening for maternal iron-deficiency anemia, urinary tract infections, and thyroid disorders.",
     isClinical: true,
-    topic: "Maternal & Women's Health in BBP"
+    topic: "Basic Benefit Package & Level of Care"
   },
   {
     id: "q-fm-mwh-2",
@@ -1443,7 +1565,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct components of \"Postnatal and Post-Abortive Care\" integrated into women's health services.",
     answer: "1. Clinical management and follow-up of the normal postpartum period.\n2. Timely identification and rapid hospital referral of complicated postpartum or post-abortive cases.\n3. Early detection of recurrent abortion risk and medical counseling of post-abortive women.\n4. Provision of intensive breastfeeding guidance and postpartum family planning counseling.",
     isClinical: true,
-    topic: "Maternal & Women's Health in BBP"
+    topic: "Basic Benefit Package & Level of Care"
   },
   {
     id: "q-fm-mwh-3",
@@ -1453,7 +1575,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical services or contraceptive interventions provided under primary \"Family Planning\" (FP) services.",
     answer: "1. Community health education and contraceptive information campaigns.\n2. Provision and clinical insertion of modern contraceptive methods.\n3. Early identification and management of contraceptive side effects.\n4. Initial clinical workup and structured referral of complicated infertility cases.",
     isClinical: true,
-    topic: "Maternal & Women's Health in BBP"
+    topic: "Basic Benefit Package & Level of Care"
   },
 
   {
@@ -1464,10 +1586,10 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 26-year-old pregnant woman in her second trimester attends the Family Health Unit. The family physician checks her blood pressure to screen for pre-eclampsia, measures her hemoglobin for anemia, and administers a dose of Tetanus Toxoid vaccine.\n\nQuestions:\n1. Which specific component category of Women's Health Services is being delivered here?\n2. Where should this patient be immediately referred if she displays high-risk pregnancy markers or severe pre-eclampsia?",
     answer: "1. Antenatal Care (ANC).\n2. Referred to a Family Health Centre (FHC) or a secondary care Hospital.",
     isClinical: true,
-    topic: "Maternal & Women's Health in BBP"
+    topic: "Basic Benefit Package & Level of Care"
   },
 
-  // topic: "Patient Education Principles"
+  // topic: "Patient Education & Verbal Counseling"
   {
     id: "q-fm-pep-1",
     chapterId: 5,
@@ -1476,7 +1598,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Patient Education\" in family medicine.",
     answer: "Patient education is a continuous process of teaching and learning between health care providers and patients that aims to influence patient behaviour and produce positive changes in knowledge, attitudes, and skills required to maintain or improve health.",
     isClinical: false,
-    topic: "Patient Education Principles"
+    topic: "Patient Education & Verbal Counseling"
   },
   {
     id: "q-fm-pep-2",
@@ -1486,7 +1608,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 primary clinical values or benefits of implementing effective Patient Education.",
     answer: "1. Significantly increases patient satisfaction with medical care and management plans.\n2. Promotes healthy behaviors and helps patients modify unhealthy habits.\n3. Reduces unnecessary health care utilization, avoidable office visits, and phone consultations.\n4. Decreases serious illness outcomes and complications, reducing hospitalization and emergency costs.",
     isClinical: false,
-    topic: "Patient Education Principles"
+    topic: "Patient Education & Verbal Counseling"
   },
   {
     id: "q-fm-pep-3",
@@ -1496,7 +1618,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct moments or times within a single clinical encounter where patient education should actively take place.",
     answer: "1. During history taking: to assess baseline knowledge, identify habits, and correct initial misconceptions.\n2. During physical examination: to explain the specific purpose of examination maneuvers and findings.\n3. During diagnosis discussion: to clarify the condition and explain medical terminology in simple language.\n4. During treatment planning: to assess patient understanding, identify barriers to adherence, and ensure feasibility.",
     isClinical: true,
-    topic: "Patient Education Principles"
+    topic: "Patient Education & Verbal Counseling"
   },
   {
     id: "q-fm-pep-4",
@@ -1506,7 +1628,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 4 core educational principles represented by Feedback, Reinforcement, Individualization, and Facilitation.",
     answer: "1. Feedback: Ensuring explicitly that the patient accurately understands the medical information provided.\n2. Reinforcement: Encouraging and rewarding clinical progress to support permanent behavior change.\n3. Individualization: Tailoring health messages according to the patient's unique characteristics and goals.\n4. Facilitation: Providing clear educational materials or skills training to help patients make informed decisions.",
     isClinical: false,
-    topic: "Patient Education Principles"
+    topic: "Patient Education & Verbal Counseling"
   },
   {
     id: "q-fm-pep-5",
@@ -1516,10 +1638,20 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A family physician plans a practice reorganization. She integrates educational posters in the waiting room, trains nursing staff to run weight-loss and smoking cessation groups, and ensures family members are included when instructing a diabetic patient on insulin use.\n\nQuestions:\n1. What principle of patient education is highlighted by using posters, videos, and involving the entire healthcare team?\n2. Why is involving the family unit considered essential when educating elderly or pediatric patients?",
     answer: "1. Use of multiple educational channels.\n2. To ensure effective home care safety, accurate lifestyle modification, and strict treatment adherence.",
     isClinical: true,
-    topic: "Patient Education Principles"
+    topic: "Patient Education & Verbal Counseling"
+  },
+  {
+    id: "q-fm-pep-6",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Verbal Instruction Guidelines",
+    content: "Mention 4 guidelines the physician must follow to deliver effective verbal instruction.",
+    answer: "1. Understand the patient's circumstances/fears.\n2. Avoid medical jargon.\n3. Be specific and concise.\n4. Continuously assess understanding by asking for feedback.",
+    isClinical: false,
+    topic: "Patient Education & Verbal Counseling"
   },
 
-  // topic: "Referral Letter Elements & Guidelines"
+  // topic: "Referral & Consultation Processes"
   {
     id: "q-fm-rle-1",
     chapterId: 5,
@@ -1528,7 +1660,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define a \"Referral\" and differentiate it from a \"Consultation\".",
     answer: "Referral is the transferring of the responsibility of a patient to another physician for the care of a specific problem. Consultation is the practice of one physician asking another for an opinion or assistance regarding diagnosis and management, while retaining primary responsibility.",
     isClinical: false,
-    topic: "Referral Letter Elements & Guidelines"
+    topic: "Referral & Consultation Processes"
   },
   {
     id: "q-fm-rle-2",
@@ -1538,7 +1670,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 valid reasons or purposes for making a formal referral to secondary care.",
     answer: "1. Inadequate diagnostic or therapeutic resources available within the family practice clinic setting.\n2. Need for expert confirmation of a complex provisional diagnosis or plan of management.\n3. Handling a clinical emergency that requires specialized inpatient or surgical intervention.\n4. Honoring a direct patient request for a second opinion to preserve the doctor-patient relationship.",
     isClinical: true,
-    topic: "Referral Letter Elements & Guidelines"
+    topic: "Referral & Consultation Processes"
   },
   {
     id: "q-fm-rle-3",
@@ -1548,7 +1680,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 general criteria that a high-quality Referral Letter must fulfill.",
     answer: "1. It must be concise and contain only essential, relevant data.\n2. Written using clear, simple, and legible language.\n3. Explicitly clarify and specify the reasons for referral and expectations from the specialist.\n4. Fully documented within the patient's family file and the center's referral register.",
     isClinical: false,
-    topic: "Referral Letter Elements & Guidelines"
+    topic: "Referral & Consultation Processes"
   },
   {
     id: "q-fm-rle-4",
@@ -1558,20 +1690,20 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 essential clinical \"Elements\" that must be written inside a standard Referral Letter.",
     answer: "1. Socio-demographic data (name, age, sex, family health record number).\n2. Main clinical complaint and brief present history of the illness.\n3. Relevant physical examination findings and matching primary investigation results.\n4. Current medications in use (including exact dosages) and documented drug allergies.",
     isClinical: false,
-    topic: "Referral Letter Elements & Guidelines"
+    topic: "Referral & Consultation Processes"
   },
   {
     id: "q-fm-rle-5",
     chapterId: 5,
     type: "problem-solving",
     title: "Angina Urgency Referral Case",
-    content: "A family physician evaluates a patient with signs of severe, progressive unstable angina. The physician identifies that the patient will suffer direct harm if not shifted immediately, fills out a concise emergency communication form, and coordinates the specialist feedback loop.\n\nQuestions:\n1. What type of referral classification does this emergent scenario represent?\n2. What are the core responsibilities of the receiving consultant specialist back to the referring family physician?",
-    answer: "1. An Urgent Referral.\n2. Providing services in a timely manner, communicating findings in a timely matter, and notifying them when the patient is admitted or discharged.",
+    content: "A family physician evaluates a patient with signs of severe, progressive unstable angina. The physician identifies that the patient will suffer direct harm if not shifted immediately, fills out a concise emergency communication form, and coordinates the specialist feedback loop.\n\nQuestions:\n1. What type of referral classification does this emergent scenario represent?\n2. Enumerate 4 core responsibilities of the receiving consultant specialist back to the referring family physician.",
+    answer: "1. An Urgent Referral.\n2. The responsibilities are:\n   - Provide services in a timely manner depending on the urgency of the condition.\n   - Communicate findings in a timely manner to the referring physician.\n   - Notify the referring physician when the patient has been admitted to the hospital.\n   - Avoid lateral referral (specialist to specialist) without involving the family physician.",
     isClinical: true,
-    topic: "Referral Letter Elements & Guidelines"
+    topic: "Referral & Consultation Processes"
   },
 
-  // topic: "Anticipatory Care: Child Growth & Immunization"
+  // topic: "Anticipatory Care & Immunization Guidelines"
   {
     id: "q-fm-aci-1",
     chapterId: 5,
@@ -1580,7 +1712,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Anticipatory Care\" and differentiate between primary and secondary disease prevention lines.",
     answer: "Anticipatory care refers to all measures aiming to promote good health and prevent or delay diseases or their complications across different age groups. Primary prevention focuses on preventing disease development (vaccines/education), while secondary prevention focuses on early diagnosis and treatment (screening).",
     isClinical: false,
-    topic: "Anticipatory Care: Child Growth & Immunization"
+    topic: "Anticipatory Care & Immunization Guidelines"
   },
   {
     id: "q-fm-aci-2",
@@ -1590,7 +1722,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 important health education messages delivered during childhood anticipatory care visits.",
     answer: "1. The vital importance of well-baby care and the exact timing for periodic visits.\n2. Promotion of exclusive breastfeeding and proper nutritional weaning techniques.\n3. Adherence to the national compulsory immunization schedule.\n4. Home accident prevention and early management of diarrhea using Oral Rehydration Therapy (ORT).",
     isClinical: true,
-    topic: "Anticipatory Care: Child Growth & Immunization"
+    topic: "Anticipatory Care & Immunization Guidelines"
   },
   {
     id: "q-fm-aci-3",
@@ -1600,7 +1732,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 childhood conditions or medical histories that are falsely considered contraindications but are actually SAFE for immunization.",
     answer: "1. Prematurity (infants should be immunized at their usual chronological age).\n2. Mild recent acute infections, such as otitis media or mild fever.\n3. Documented history of penicillin allergy.\n4. Mild localized reactions to a previous vaccine dose.",
     isClinical: true,
-    topic: "Anticipatory Care: Child Growth & Immunization"
+    topic: "Anticipatory Care & Immunization Guidelines"
   },
   {
     id: "q-fm-aci-4",
@@ -1610,7 +1742,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 true, absolute medical \"Contraindications\" to child immunization.",
     answer: "1. Documented history of a severe anaphylactic reaction to a previous vaccine component.\n2. Onset of a seizure or a high fever >40.5°C within 48 hours of a prior pertussis vaccine dose.\n3. True, severe egg allergy or neomycin allergy (specifically for the MMR vaccine).\n4. Severe immunocompromised state (absolute contraindication for live vaccines like OPV).",
     isClinical: true,
-    topic: "Anticipatory Care: Child Growth & Immunization"
+    topic: "Anticipatory Care & Immunization Guidelines"
   },
   {
     id: "q-fm-aci-5",
@@ -1620,10 +1752,20 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "An infant is brought to the primary care unit on his scheduled vaccination day. The mother notes he has a mild runny nose and is breastfeeding normally. The provider notes a mild cough but no danger signs. The mother is worried the vaccine will harm him.\n\nQuestions:\n1. What are the two primary components evaluated during a child's periodic health examination?\n2. Should the clinician administer the scheduled vaccines or delay them due to the mild runny nose?",
     answer: "1. Growth and development monitoring, combined with a full clinical and laboratory examination.\n2. Administer the vaccines; mild recent infections without severe systemic symptoms are not true contraindications to immunization.",
     isClinical: true,
-    topic: "Anticipatory Care: Child Growth & Immunization"
+    topic: "Anticipatory Care & Immunization Guidelines"
+  },
+  {
+    id: "q-fm-aci-6",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Preschool Nutritional Care Interventions",
+    content: "Enumerate the 4 main direct interventions and roles of the family physician for nutritional care in preschool children.",
+    answer: "1. Growth monitoring and early detection and correction of malnutrition.\n2. Nutrition education including promotion of breastfeeding and proper weaning.\n3. Nutrient supplementation including vitamin A, vitamin D, and iron.\n4. Referral of the malnourished child when needed.",
+    isClinical: true,
+    topic: "Anticipatory Care & Immunization Guidelines"
   },
 
-  // topic: "Adolescent Psychosocial Health (HEEADSSS Framework)"
+  // topic: "Adolescent Psychosocial Health & HEADSSS Interview"
   {
     id: "q-fm-aph-1",
     chapterId: 5,
@@ -1632,7 +1774,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define the parameters of \"Adolescence\" according to WHO age group classifications.",
     answer: "WHO defines 'Adolescents' as individuals in the 10-19 years age group, 'Youth' as the 15-24 year age group, and 'Young People' as covering the expanded age range of 10-24 years. It is a developmental phase rather than a fixed time period.",
     isClinical: false,
-    topic: "Adolescent Psychosocial Health (HEEADSSS Framework)"
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
   },
   {
     id: "q-fm-aph-2",
@@ -1642,7 +1784,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the developmental stages represented by the letters in the adolescent \"HEEADSSS\" psychosocial interview tool.",
     answer: "1. Home environment.\n2. Eating and nutrition.\n3. Education and employment.\n4. Activities.\n5. Drugs / Substance use.\n6. Sexuality.\n7. Suicide / Depression.\n8. Safety.",
     isClinical: false,
-    topic: "Adolescent Psychosocial Health (HEEADSSS Framework)"
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
   },
   {
     id: "q-fm-aph-3",
@@ -1650,9 +1792,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     type: "short-essay",
     title: "Adolescence Emergent Health Issues",
     content: "Enumerate 4 common physical or behavioral health problems that emerge during the adolescent phase.",
-    answer: "1. Eating disorders (such as anorexia nervosa, overweight, and structural obesity).\n2. Behavioral and psychological disorders (such as severe depression or adjustment reactions).\n3. Risk-taking substance abuse and early tobacco smoking dependency.\n4. Vulnerability to physical, emotional, or sexual abuse and high rates of accidental injuries.",
+    answer: "1. Eating disorders (such as anorexia nervosa, overweight, and structural obesity).\n2. Behavioral and psychological disorders (such as severe depression or adjustment reactions).\n3. Risk-taking substance abuse and early tobacco smoking dependency.\n4. Dermatological problems (such as acne), or vulnerability to abuse and accidental injuries.",
     isClinical: true,
-    topic: "Adolescent Psychosocial Health (HEEADSSS Framework)"
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
   },
   {
     id: "q-fm-aph-4",
@@ -1662,7 +1804,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 key clinical guidelines recommendations for conducting a physical examination on a teenage patient.",
     answer: "1. Strictly respect physical privacy, avoid unnecessary body exposure, and keep doors closed.\n2. Permit parents to remain inside the examination room only if the adolescent explicitly requests it.\n3. Utilize the examination as a good teaching tool to talk and explain their bodies, lowering anxiety.\n4. Do not perform pelvic or genital examinations routinely; reserve them for direct request, if sexually active, or if presenting with localized pain.",
     isClinical: true,
-    topic: "Adolescent Psychosocial Health (HEEADSSS Framework)"
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
   },
   {
     id: "q-fm-aph-5",
@@ -1672,10 +1814,30 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 15-year-old high school student attends the clinic for a check-up. The family physician builds a comfortable rapport and asks tailored questions about who lives at home, school grades, mood changes from day to day, and the regular use of vehicle seatbelts.\n\nQuestions:\n1. What is the name of this specific psychosocial screening interview framework?\n2. According to global epidemiologic data, what are the most frequent causes of preventable mortality among adolescents?",
     answer: "1. The HEEADSSS interview framework.\n2. Accidents (mostly motor vehicle crashes, many related to drug or alcohol use), followed closely by homicide and suicide.",
     isClinical: true,
-    topic: "Adolescent Psychosocial Health (HEEADSSS Framework)"
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
+  },
+  {
+    id: "q-fm-aph-6",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Five Premises of Adolescent Care",
+    content: "Mention the 5 clinical premises useful when communicating with and caring for adolescents.",
+    answer: "1. Explain Facts (clear understanding of illness).\n2. Explore Fears (worries about body image/identity).\n3. Address any Fables (misinformation).\n4. Explore relationship with Family.\n5. Ask how the adolescent views the Future.",
+    isClinical: true,
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
+  },
+  {
+    id: "q-fm-aph-7",
+    chapterId: 5,
+    type: "short-essay",
+    title: "HEADSSS Safety Component Evaluation",
+    content: "Enumerate 4 separate risk behaviors or issues evaluated under the \"Safety\" component of the HEADSSS adolescent interview.",
+    answer: "1. Regular use of a bicycle helmet or seatbelt.\n2. History of serious injury.\n3. Riding with a driver who was drunk or high.\n4. Presence of violence at home, school, or neighborhood.",
+    isClinical: true,
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
   },
 
-  // topic: "IMCI General Danger Signs & Pneumonia Classification"
+  // topic: "IMCI Case Management Overview"
   {
     id: "q-fm-gds-1",
     chapterId: 5,
@@ -1684,7 +1846,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 4 \"General Danger Signs\" that must be checked in every sick child aged 2 months up to 5 years under IMCI guidelines.",
     answer: "1. Is the child unable to drink or breastfeed?\n2. Does the child vomit everything?\n3. Has the child had convulsions during this current illness?\n4. Is the child lethargic or unconscious?",
     isClinical: true,
-    topic: "IMCI General Danger Signs & Pneumonia Classification"
+    topic: "IMCI Case Management Overview"
   },
   {
     id: "q-fm-gds-2",
@@ -1694,7 +1856,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the clinical signs that look for, count, or listen to when assessing a child presenting with a cough or difficult breathing under IMCI.",
     answer: "1. Counting the breaths in one full minute (while the child is calm).\n2. Looking for the presence of chest indrawing (subcostal/intercostal retractions).\n3. Looking and listening for the presence of stridor.\n4. Looking and listening for the presence of wheezing.",
     isClinical: true,
-    topic: "IMCI General Danger Signs & Pneumonia Classification"
+    topic: "IMCI Case Management Overview"
   },
   {
     id: "q-fm-gds-3",
@@ -1704,7 +1866,27 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the clinical criteria and matching IMCI classifications for respiratory symptoms across the three color-coded bands.",
     answer: "1. SEVERE PNEUMONIA OR VERY SEVERE DISEASE (Red Band): Any general danger sign OR stridor in a calm child OR chest indrawing.\n2. PNEUMONIA (Yellow Band): Presence of fast breathing without severe signs.\n3. NO PNEUMONIA: COUGH OR COLD (Green Band): No signs of pneumonia or very severe disease.",
     isClinical: true,
-    topic: "IMCI General Danger Signs & Pneumonia Classification"
+    topic: "IMCI Case Management Overview"
+  },
+  {
+    id: "q-fm-gds-4",
+    chapterId: 5,
+    type: "short-essay",
+    title: "IMCI Sequential Steps",
+    content: "List the sequential steps involved in the IMCI case management process.",
+    answer: "1. Assess all sick infants and children.\n2. Classify each health condition using color-coded charts.\n3. Treat.\n4. Counsel caregivers.\n5. Provide follow-up care.",
+    isClinical: false,
+    topic: "IMCI Case Management Overview"
+  },
+  {
+    id: "q-fm-gds-6",
+    chapterId: 5,
+    type: "short-essay",
+    title: "IMCI Color-Coded Definition",
+    content: "Explain what the 3 color-coded classifications represent in IMCI.",
+    answer: "1. RED: Very serious condition requiring urgent pre-referral treatment and hospital referral.\n2. YELLOW: Serious condition needing specific treatment and advice within the clinic.\n3. GREEN: Less serious condition needing home treatment and advice.",
+    isClinical: false,
+    topic: "IMCI Case Management Overview"
   },
 
   {
@@ -1715,19 +1897,29 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 14-month-old sick child is brought to a primary care health unit with a cough. On initial assessment, he is alert, able to breastfeed, and does not vomit. The clinician counts his respiratory rate as 46 breaths per minute while calm, and notes the absence of stridor or chest indrawing.\n\nQuestions:\n1. What is the correct IMCI respiratory classification for this child?\n2. Mention the first-line oral antibiotic drug, including the standard treatment duration, indicated by this classification.",
     answer: "1. PNEUMONIA (due to fast breathing >40/min for his age bracket, without danger signs).\n2. Oral Amoxicillin administered for a duration of 5 days.",
     isClinical: true,
-    topic: "IMCI General Danger Signs & Pneumonia Classification"
+    topic: "IMCI Case Management Overview"
+  },
+  {
+    id: "q-fm-gds-7",
+    chapterId: 5,
+    type: "short-essay",
+    title: "IMCI Barriers to Care",
+    content: "Enumerate 4 socioeconomic or resource factors that cause poor health or act as barriers to care as described in the IMCI introduction.",
+    answer: "1. Poor access to health facilities due to poor roads or transportation costs.\n2. Lack of access to education, particularly for the mother.\n3. Food insecurity due to poverty.\n4. Lack of basic resources like clean water and sanitary toilets.",
+    isClinical: false,
+    topic: "IMCI Case Management Overview"
   },
 
-  // topic: "IMCI Sick Young Infant (Up to 2 Months)"
+  // topic: "IMCI Young Infant Care (Up to 2 Months)"
   {
     id: "q-fm-syi-1",
     chapterId: 5,
     type: "short-essay",
-    title: "Sick Young Infant Systemic Checks",
-    content: "Enumerate 4 core clinical conditions that must be systematically checked in every sick young infant up to 2 months of age according to IMCI charts.",
-    answer: "1. Checking for possible serious bacterial infection or local infection.\n2. Checking for significant jaundice.\n3. Checking for diarrhoea and dehydration status.\n4. Checking for feeding problems or low weight status.",
+    title: "Assessment of sick Young Infant",
+    content: "List the 5 primary conditions that must be assessed in every sick young infant up to 2 months old.",
+    answer: "1. Possible bacterial infection.\n2. Significant jaundice.\n3. Diarrhoea.\n4. Feeding problem or low weight.\n5. Young infant's immunization status.",
     isClinical: true,
-    topic: "IMCI Sick Young Infant (Up to 2 Months)"
+    topic: "IMCI Young Infant Care (Up to 2 Months)"
   },
   {
     id: "q-fm-syi-2",
@@ -1737,7 +1929,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical signs that classify a young infant under the critical category of \"POSSIBLE SERIOUS BACTERIAL INFECTION\" (Red Box).",
     answer: "1. Not able to feed or decreased spontaneous movements.\n2. Convulsions (current or history during illness) or a bulging fontanelle.\n3. Fast breathing (60 breaths per minute or more) or severe chest indrawing/nasal flaring/grunting.\n4. High fever (37.5°C or above) or low body temperature (less than 35.5°C).",
     isClinical: true,
-    topic: "IMCI Sick Young Infant (Up to 2 Months)"
+    topic: "IMCI Young Infant Care (Up to 2 Months)"
   },
   {
     id: "q-fm-syi-3",
@@ -1747,7 +1939,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 urgent pre-referral treatment steps required for a young infant classified with a Possible Serious Bacterial Infection.",
     answer: "1. Administration of the first dose of intramuscular antibiotics (Ampicillin plus Gentamicin).\n2. Immediate medical treatment of current convulsions if present (rectal sodium valproate).\n3. Instituting measures to prevent low blood sugar (glucose or expressed breastmilk).\n4. Advising the mother how to keep the young infant warm (prevent hypothermia) on the way to the hospital.",
     isClinical: true,
-    topic: "IMCI Sick Young Infant (Up to 2 Months)"
+    topic: "IMCI Young Infant Care (Up to 2 Months)"
   },
   {
     id: "q-fm-syi-4",
@@ -1757,7 +1949,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 indicators looked for when assessing Breastfeeding positioning and attachment in a young infant.",
     answer: "1. Infant's chin touching the breast, and the mouth wide open.\n2. Lower lip turned outward, and more areola visible above than below the mouth.\n3. Infant's neck straight or bent slightly back, with the body close and turned towards the mother.\n4. Infant suckling effectively, characterized by slow, deep sucks followed by occasional pauses.",
     isClinical: true,
-    topic: "IMCI Sick Young Infant (Up to 2 Months)"
+    topic: "IMCI Young Infant Care (Up to 2 Months)"
   },
   {
     id: "q-fm-syi-5",
@@ -1767,7 +1959,123 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 6-week-old young infant is brought to a clinic. On assessment, he has no fever or severe danger signs, but his umbilicus is noted to be red and draining small amounts of pus, without the redness extending to the surrounding skin.\n\nQuestions:\n1. What is the correct IMCI clinical classification for this infant's umbilical finding?\n2. Enumerate 2 home care training steps the mother must perform to treat this local infection at home.",
     answer: "1. LOCAL BACTERIAL INFECTION.\n2. Washing hands and gently washing off pus with soap and water, followed by painting the area with gentian violet twice daily.",
     isClinical: true,
-    topic: "IMCI Sick Young Infant (Up to 2 Months)"
+    topic: "IMCI Young Infant Care (Up to 2 Months)"
+  },
+  {
+    id: "q-fm-syi-6",
+    chapterId: 5,
+    type: "define",
+    title: "Local Bacterial Infection in Young Infants",
+    content: "Define \"Local Bacterial Infection\" in a young infant and photocopy/enumerate 4 clinical signs that confirm this classification.",
+    answer: "Definition: A localized bacterial infection in an infant up to 2 months old that does not exhibit systemic danger signs or systemic bacterial spread.\nClinical Signs of confirmation:\n1. Pus draining from the ear.\n2. Pus draining from the eyes associated with redness and swelling.\n3. Umbilical redness extending to the skin.\n4. Skin pustules or a red umbilicus/draining pus.",
+    isClinical: true,
+    topic: "IMCI Young Infant Care (Up to 2 Months)"
+  },
+
+  // topic: "IMCI Treatment: Antibiotics & Wheezing Management"
+  {
+    id: "q-fm-im-1",
+    chapterId: 5,
+    type: "short-essay",
+    title: "IMCI Oral Antibiotics",
+    content: "List the recommended IMCI first-line and second-line oral antibiotic treatments for Pneumonia/Acute Ear Infection, and for Dysentery.",
+    answer: "1. Pneumonia or Acute Ear Infection:\n   - First-line: Amoxicillin\n   - Second-line: Cotrimoxazole\n2. Dysentery:\n   - First-line: Cotrimoxazole\n   - Second-line: Ampicillin (given for 5 days).",
+    isClinical: true,
+    topic: "IMCI Treatment: Antibiotics & Wheezing Management"
+  },
+  {
+    id: "q-fm-im-2",
+    chapterId: 5,
+    type: "short-essay",
+    title: "IMCI Wheezing Management",
+    content: "Explain the IMCI management strategy for: 1) A child with wheezing and a general danger sign or stridor; and 2) A child with wheezing and NO danger signs/stridor but presenting with fast breathing or chest indrawing.",
+    answer: "1. Wheezing with a general danger sign or stridor: Give one dose of a rapid-acting bronchodilator (such as nebulized salbutamol or MDI with spacer) and refer urgently to the hospital.\n2. Wheezing with NO danger signs or stridor, but presenting with fast breathing or chest indrawing: Give a rapid-acting bronchodilator and reassess the child 30 minutes later. If chest indrawing persists, treat for severe pneumonia (refer). If fast breathing alone persists, treat for pneumonia and give oral salbutamol for 5 days. If no fast breathing is present, treat for no pneumonia and give oral salbutamol for 5 days.",
+    isClinical: true,
+    topic: "IMCI Treatment: Antibiotics & Wheezing Management"
+  },
+  {
+    id: "q-fm-im-3",
+    chapterId: 5,
+    type: "short-essay",
+    title: "IMCI Hypoglycemia Prevention",
+    content: "Mention the instructions and recipe to treat a child to prevent low blood sugar in the clinic.",
+    answer: "If able to swallow, give expressed breastmilk or sugar water. To make sugar water: Dissolve 4 level teaspoons of sugar (20 grams) in a 200-ml cup of clean water. If unable to swallow, give 50 ml of milk or sugar water by nasogastric tube.",
+    isClinical: true,
+    topic: "IMCI Treatment: Antibiotics & Wheezing Management"
+  },
+
+  // topic: "IMCI Management of Diarrhoea and Dehydration"
+  {
+    id: "q-fm-dd-1",
+    chapterId: 5,
+    type: "short-essay",
+    title: "IMCI Dehydration Signs",
+    content: "List the 4 clinical signs evaluated in IMCI to classify dehydration in a child with diarrhea.",
+    answer: "1. General condition (lethargic/unconscious vs restless/irritable).\n2. Sunken eyes.\n3. Fluid offering response (not able to drink/poorly vs drinking eagerly/thirsty).\n4. Abdominal skin pinch test.",
+    isClinical: true,
+    topic: "IMCI Management of Diarrhoea and Dehydration"
+  },
+  {
+    id: "q-fm-dd-2",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "IMCI Some Dehydration Case",
+    content: "A 3-year-old child presents with watery diarrhea. On exam, the child is restless and irritable, has sunken eyes, and drinks eagerly/thirsty when offered fluid. The skin pinch goes back slowly.\n\nQuestions:\n1. Classify the dehydration status.\n2. Identify the required IMCI treatment plan.",
+    answer: "1. Classification: Some Dehydration (due to presence of two signs: restless/irritable, sunken eyes, and drinking eagerly).\n2. Treatment: Plan B (Treat Some Dehydration with ORS over a 4-hour period in the clinic, give Zinc Syrup for 14 days, and advise on when to return immediately).",
+    isClinical: true,
+    topic: "IMCI Management of Diarrhoea and Dehydration"
+  },
+  {
+    id: "q-fm-dd-3",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Severe Dehydration Plan C Case",
+    content: "A 14-month-old child presents with a 3-day history of loose stools. On clinical evaluation, the child is lethargic, has sunken eyes, and is not able to drink fluid when offered. The abdominal skin pinch goes back very slowly (longer than 2 seconds).\n\nQuestions:\n1. Classify the dehydration status.\n2. Mention the immediate clinical management required according to IMCI.",
+    answer: "1. Classification: Severe Dehydration (classified because two or more signs are present: lethargic, sunken eyes, and not able to drink).\n2. Management: Initiate Plan C (Treat Severe Dehydration Quickly). Start intravenous (IV) fluids immediately with Ringer's Lactate or Normal Saline. For a child of this age (over 12 months), give 30 ml/kg in the first 30 minutes, followed by 70 ml/kg over the next 2.5 hours. If IV is unavailable nearby, implement nasogastric tube rehydration or refer urgently.",
+    isClinical: true,
+    topic: "IMCI Management of Diarrhoea and Dehydration"
+  },
+
+  // topic: "Breastfeeding Management & Composition"
+  {
+    id: "q-fm-bm-1",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Maternal Benefits of Breastfeeding",
+    content: "Enumerate 4 health benefits of breastfeeding for the lactating mother.",
+    answer: "1. Reduces risk of breast and ovarian cancer.\n2. Lowers risk of type 2 diabetes and hypertension.\n3. Reduces risk of developing osteoporosis.\n4. Produces oxytocin to help contract the uterus back to its pre-pregnancy size.",
+    isClinical: false,
+    topic: "Breastfeeding Management & Composition"
+  },
+  {
+    id: "q-fm-bm-2",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Fore-milk vs Hind-milk",
+    content: "Differentiate between \"Fore-milk\" and \"Hind-milk\" in mature breast milk.",
+    answer: "Fore-milk: Found at the beginning of the feeding; contains water, vitamins, and protein to keep the infant hydrated.\nHind-milk: Occurs after the initial release of milk; contains higher levels of fat and is necessary for proper weight gain.",
+    isClinical: false,
+    topic: "Breastfeeding Management & Composition"
+  },
+  {
+    id: "q-fm-bm-3",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Breastfeeding Contraindications",
+    content: "List 3 absolute contraindications where a mother must NOT breastfeed or feed expressed breast milk.",
+    answer: "1. Infant diagnosed with classic galactosemia.\n2. Mother has HIV and is not on antiretroviral therapy (ART).\n3. Mother is using an illicit drug (such as opioids, PCP, or cocaine).",
+    isClinical: true,
+    topic: "Breastfeeding Management & Composition"
+  },
+  {
+    id: "q-fm-bm-4",
+    chapterId: 5,
+    type: "define",
+    title: "Define Colostrum and Protective Properties",
+    content: "Define \"Colostrum\" and enumerate 4 of its unique protective properties or clinical advantages.",
+    answer: "Definition: The initial breast milk produced during days 1–4 postpartum, which is yellowish or creamy in color and thicker than later milk.\nClinical Advantages:\n1. Antibody-rich (protects against infection and allergy).\n2. Rich in white cells (protects against infection).\n3. Purgative property (clears meconium and helps prevent jaundice).\n4. Contains growth factors (helps the intestine mature and prevents intolerance).",
+    isClinical: true,
+    topic: "Breastfeeding Management & Composition"
   },
 
   // ==================== I. Renal Diseases (Bank 2) ====================

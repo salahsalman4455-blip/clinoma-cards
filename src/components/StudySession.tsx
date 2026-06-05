@@ -6,7 +6,9 @@ import {
   HelpCircle,
   Eye, 
   CheckCircle2, 
-  ListFilter
+  ListFilter,
+  AlertCircle,
+  Timer
 } from 'lucide-react';
 import { Question, Chapter, DifficultyLevel } from '../types';
 
@@ -33,6 +35,53 @@ export default function StudySession({
   const [showAnswer, setShowAnswer] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
   const [masteredThisSession, setMasteredThisSession] = useState<Set<string>>(new Set());
+  
+  const currentQuestion = sessionQuestions[currentIndex] || null;
+  
+  // Track time spent on the same question for distraction warning system
+  const [timeSpentOnQuestion, setTimeSpentOnQuestion] = useState(0);
+  const [distractionWarningPhase, setDistractionWarningPhase] = useState<'none' | 'first' | 'second'>('none');
+  const [returnedToSameQuestion, setReturnedToSameQuestion] = useState(false);
+
+  // Distraction Warning system interval timer
+  useEffect(() => {
+    if (!currentQuestion || isFinished || isTopicSelectorOpen) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      if (distractionWarningPhase === 'none') {
+        setTimeSpentOnQuestion(prev => {
+          const nextTime = prev + 1;
+          if (nextTime >= 180) { // 3 minutes = 180 seconds
+            if (!returnedToSameQuestion) {
+              setDistractionWarningPhase('first');
+            } else {
+              setDistractionWarningPhase('second');
+            }
+          }
+          return nextTime;
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [currentQuestion, isFinished, isTopicSelectorOpen, distractionWarningPhase, returnedToSameQuestion]);
+
+  // Reset timers each time the question changes (currentIndex changes)
+  useEffect(() => {
+    setTimeSpentOnQuestion(0);
+    setDistractionWarningPhase('none');
+    setReturnedToSameQuestion(false);
+  }, [currentIndex]);
+
+  const handleResumeFromWarning = () => {
+    if (distractionWarningPhase === 'first') {
+      setReturnedToSameQuestion(true);
+    }
+    setDistractionWarningPhase('none');
+    setTimeSpentOnQuestion(0); // Reset timer to 0 to measure another 3 minutes
+  };
 
   // 1. Process filtering by selected topics.
   const startSession = () => {
@@ -68,8 +117,6 @@ export default function StudySession({
       }
     });
   };
-
-  const currentQuestion = sessionQuestions[currentIndex] || null;
 
   const remainingCount = useMemo(() => {
     const uniqueIds = new Set(sessionQuestions.map(q => q.id));
@@ -268,8 +315,63 @@ export default function StudySession({
           <motion.div 
             layout
             id="active-question-card"
-            className="bg-white rounded-3xl border border-slate-200 shadow-xl shadow-slate-250/20 overflow-hidden min-h-[460px] flex flex-col"
+            className="bg-white rounded-3xl border border-slate-200 shadow-xl shadow-slate-250/20 overflow-hidden min-h-[460px] flex flex-col relative"
           >
+            {/* Distraction Warning overlay */}
+            <AnimatePresence>
+              {distractionWarningPhase !== 'none' && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="absolute inset-0 z-50 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-center"
+                  dir="rtl"
+                >
+                  {distractionWarningPhase === 'first' ? (
+                    <motion.div 
+                      initial={{ scale: 0.9, y: 10 }}
+                      animate={{ scale: 1, y: 0 }}
+                      exit={{ scale: 0.9, y: 10 }}
+                      className="max-w-md w-full space-y-6 flex flex-col items-center"
+                    >
+                      <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 shadow-md animate-bounce">
+                        <Timer className="w-10 h-10" />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-3xl font-black text-yellow-600 tracking-tight">متسرحش⏳</h3>
+                      </div>
+                      <button
+                        onClick={handleResumeFromWarning}
+                        className="px-8 py-3.5 bg-yellow-500 hover:bg-yellow-600 text-slate-900 rounded-2xl font-black text-base shadow-lg shadow-yellow-500/20 active:scale-95 transition-all w-full max-w-xs"
+                      >
+                        يلا بينا
+                      </button>
+                    </motion.div>
+                  ) : (
+                    <motion.div 
+                      initial={{ scale: 0.9, y: 10 }}
+                      animate={{ scale: 1, y: 0 }}
+                      exit={{ scale: 0.9, y: 10 }}
+                      className="max-w-md w-full space-y-6 flex flex-col items-center"
+                    >
+                      <div className="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center text-rose-600 shadow-md animate-pulse">
+                        <AlertCircle className="w-10 h-10" />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-3xl font-black text-rose-600 tracking-tight text-red-600">كفاية سرحان🛑</h3>
+                      </div>
+                      <button
+                        onClick={handleResumeFromWarning}
+                        className="px-8 py-3.5 bg-rose-600 hover:bg-rose-700 text-white rounded-2xl font-black text-base shadow-lg shadow-rose-600/20 active:scale-95 transition-all w-full max-w-xs"
+                      >
+                        يلا بينا
+                      </button>
+                    </motion.div>
+                  )}
+                </motion.div>
+              )}
+            </AnimatePresence>
+
             {/* Question Details header */}
             <div className="p-8 border-b border-slate-100 text-left bg-gradient-to-r from-slate-50/40 to-white">
               <div className="flex flex-wrap items-center gap-2.5 mb-6">

@@ -12,6 +12,20 @@ import {
 } from 'lucide-react';
 import { Question, Chapter, DifficultyLevel } from '../types';
 
+const STICKERS = [
+  'https://i.ibb.co/FkSVV8dd/fjf.webp',
+  'https://i.ibb.co/Kz8DfZY8/mfg.webp',
+  'https://i.ibb.co/hJz75hQz/hdfxdfhm.webp',
+  'https://i.ibb.co/PsbLfTWJ/jfj.webp',
+  'https://i.ibb.co/1tt3xVPF/gf.webp',
+  'https://i.ibb.co/KcC18smy/65424.webp',
+  'https://i.ibb.co/vxZcpw73/54.webp',
+  'https://i.ibb.co/LDSnXV8f/554.webp',
+  'https://i.ibb.co/2m7Lp9y/222.webp',
+  'https://i.ibb.co/zVgJ1W2z/sticker1.webp',
+  'https://i.ibb.co/rG36k3mW/sticker.webp'
+];
+
 interface StudySessionProps {
   chapter: Chapter;
   questions: Question[];
@@ -35,6 +49,9 @@ export default function StudySession({
   const [showAnswer, setShowAnswer] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
   const [masteredThisSession, setMasteredThisSession] = useState<Set<string>>(new Set());
+  const [easyCount, setEasyCount] = useState(0);
+  const [showStickerModal, setShowStickerModal] = useState(false);
+  const [activeSticker, setActiveSticker] = useState('');
   
   const currentQuestion = sessionQuestions[currentIndex] || null;
   
@@ -42,6 +59,58 @@ export default function StudySession({
   const [timeSpentOnQuestion, setTimeSpentOnQuestion] = useState(0);
   const [distractionWarningPhase, setDistractionWarningPhase] = useState<'none' | 'first' | 'second'>('none');
   const [returnedToSameQuestion, setReturnedToSameQuestion] = useState(false);
+
+  const moveToNext = () => {
+    setShowAnswer(false);
+    if (currentIndex < sessionQuestions.length - 1) {
+      setCurrentIndex(prev => prev + 1);
+    } else {
+      setIsFinished(true);
+    }
+  };
+
+  const handleDifficulty = (difficulty: DifficultyLevel) => {
+    if (!currentQuestion) return;
+    const qId = currentQuestion.id;
+
+    if (difficulty === DifficultyLevel.EASY) {
+      markAsMastered(qId);
+      setMasteredThisSession(prev => new Set(prev).add(qId));
+      
+      setEasyCount(prev => {
+        const next = prev + 1;
+        if (next > 0 && next % 5 === 0) {
+          const randomSticker = STICKERS[Math.floor(Math.random() * STICKERS.length)];
+          setActiveSticker(randomSticker);
+          setShowStickerModal(true);
+        }
+        return next;
+      });
+
+      moveToNext();
+    } else {
+      addToReview(qId);
+      
+      // Handle recurrence
+      let jump = 2;
+      if (difficulty === DifficultyLevel.HARD) jump = 5;
+      if (difficulty === DifficultyLevel.MEDIUM) jump = 10;
+      
+      const targetIndex = currentIndex + jump + 1;
+      
+      const updatedQueue = [...sessionQuestions];
+      // Insert a copy of the current question later in the queue
+      if (targetIndex < updatedQueue.length) {
+        updatedQueue.splice(targetIndex, 0, currentQuestion);
+      } else {
+        // Just push to end if it's too short
+        updatedQueue.push(currentQuestion);
+      }
+      
+      setSessionQuestions(updatedQueue);
+      moveToNext();
+    }
+  };
 
   // Distraction Warning system interval timer
   useEffect(() => {
@@ -75,6 +144,69 @@ export default function StudySession({
     setReturnedToSameQuestion(false);
   }, [currentIndex]);
 
+  // Keyboard Shortcuts Listener for Study Session Rating
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      // Don't trigger if user is typing in inputs or textarea fields
+      const activeEl = document.activeElement;
+      if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.hasAttribute('contenteditable'))) {
+        return;
+      }
+
+      // If sticker modal is open, allow pressing Enter or Space to proceed
+      if (showStickerModal) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          setShowStickerModal(false);
+        }
+        return;
+      }
+
+      if (isTopicSelectorOpen || distractionWarningPhase !== 'none' || isFinished) {
+        return;
+      }
+
+      if (!currentQuestion) return;
+
+      // If answer is not shown, let any Enter or Space press reveal the model answer
+      if (!showAnswer) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          setShowAnswer(true);
+        }
+        return;
+      }
+
+      // Ratings Shortcuts: Easy (0), Medium (1), Hard (2), Very Hard (3)
+      if (event.key === '0') {
+        event.preventDefault();
+        handleDifficulty(DifficultyLevel.EASY);
+      } else if (event.key === '1') {
+        event.preventDefault();
+        handleDifficulty(DifficultyLevel.MEDIUM);
+      } else if (event.key === '2') {
+        event.preventDefault();
+        handleDifficulty(DifficultyLevel.HARD);
+      } else if (event.key === '3') {
+        event.preventDefault();
+        handleDifficulty(DifficultyLevel.VERY_HARD);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [
+    isTopicSelectorOpen, 
+    showStickerModal, 
+    distractionWarningPhase, 
+    isFinished, 
+    showAnswer, 
+    currentQuestion, 
+    handleDifficulty
+  ]);
+
   const handleResumeFromWarning = () => {
     if (distractionWarningPhase === 'first') {
       setReturnedToSameQuestion(true);
@@ -98,6 +230,7 @@ export default function StudySession({
     setShowAnswer(false);
     setIsFinished(false);
     setMasteredThisSession(new Set());
+    setEasyCount(0);
     setIsTopicSelectorOpen(false);
   };
 
@@ -123,47 +256,6 @@ export default function StudySession({
     const masteredInThisSession = Array.from(uniqueIds).filter(id => masteredThisSession.has(id)).length;
     return Math.max(0, uniqueIds.size - masteredInThisSession);
   }, [sessionQuestions, masteredThisSession]);
-
-  const handleDifficulty = (difficulty: DifficultyLevel) => {
-    if (!currentQuestion) return;
-    const qId = currentQuestion.id;
-
-    if (difficulty === DifficultyLevel.EASY) {
-      markAsMastered(qId);
-      setMasteredThisSession(prev => new Set(prev).add(qId));
-      moveToNext();
-    } else {
-      addToReview(qId);
-      
-      // Handle recurrence
-      let jump = 2;
-      if (difficulty === DifficultyLevel.HARD) jump = 5;
-      if (difficulty === DifficultyLevel.MEDIUM) jump = 10;
-      
-      const targetIndex = currentIndex + jump + 1;
-      
-      const updatedQueue = [...sessionQuestions];
-      // Insert a copy of the current question later in the queue
-      if (targetIndex < updatedQueue.length) {
-        updatedQueue.splice(targetIndex, 0, currentQuestion);
-      } else {
-        // Just push to end if it's too short
-        updatedQueue.push(currentQuestion);
-      }
-      
-      setSessionQuestions(updatedQueue);
-      moveToNext();
-    }
-  };
-
-  const moveToNext = () => {
-    setShowAnswer(false);
-    if (currentIndex < sessionQuestions.length - 1) {
-      setCurrentIndex(prev => prev + 1);
-    } else {
-      setIsFinished(true);
-    }
-  };
 
   return (
     <div id="study-session-container" className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -373,7 +465,7 @@ export default function StudySession({
             </AnimatePresence>
 
             {/* Question Details header */}
-            <div className="p-8 border-b border-slate-100 text-left bg-gradient-to-r from-slate-50/40 to-white">
+            <div className="p-4 sm:p-8 border-b border-slate-100 text-left bg-gradient-to-r from-slate-50/40 to-white">
               <div className="flex flex-wrap items-center gap-2.5 mb-6">
                 <span className="bg-indigo-50 border border-indigo-100 text-indigo-700 text-[9px] font-black px-2.5 py-1 rounded uppercase tracking-wider">
                   {currentQuestion.type === 'short-essay' ? 'Enumerate' : 
@@ -430,7 +522,7 @@ export default function StudySession({
                     animate={{ opacity: 1, y: 0 }}
                     className="flex-1 flex flex-col"
                   >
-                    <div className="flex-1 bg-slate-50/30 p-8 text-left border-b border-slate-50">
+                    <div className="flex-1 bg-slate-50/30 p-4 sm:p-8 text-left border-b border-slate-50">
                       <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">Model Study Outline</div>
                       <div className="space-y-3.5 max-w-4xl">
                         {currentQuestion.answer.split('\n').map((line, idx) => (
@@ -445,41 +537,53 @@ export default function StudySession({
                     </div>
 
                     {/* Quick Recurrence Controls */}
-                    <div className="bg-slate-50/40 p-4 grid grid-cols-2 md:grid-cols-4 gap-3 border-t border-slate-100">
+                    <div className="bg-slate-50/40 p-2 sm:p-4 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 border-t border-slate-100 font-sans">
                       <button 
                         id="difficulty-very-hard-btn"
                         onClick={() => handleDifficulty(DifficultyLevel.VERY_HARD)}
-                        className="group flex flex-col items-center p-2.5 bg-white rounded-xl border border-slate-200 hover:border-rose-200 hover:bg-rose-50/30 transition-all text-center"
+                        className="group flex flex-col items-center p-1.5 sm:p-2.5 bg-white rounded-xl border border-slate-200 hover:border-rose-200 hover:bg-rose-50/30 transition-all text-center relative"
                       >
-                        <div className="text-rose-600 font-extrabold text-xs">Very Hard</div>
-                        <div className="text-[9px] text-slate-400 font-semibold uppercase tracking-wider mt-0.5">In 2 Cards</div>
+                        <span className="absolute top-1 right-1 flex items-center justify-center w-3.5 h-3.5 text-[8px] font-mono font-bold bg-slate-100 text-slate-500 border border-slate-200 rounded">
+                          3
+                        </span>
+                        <div className="text-rose-600 font-extrabold text-[10px] sm:text-xs mt-1 sm:mt-1.5">Very Hard</div>
+                        <div className="text-[8px] sm:text-[9px] text-slate-400 font-semibold uppercase tracking-wider mt-0.5">In 2 Cards</div>
                       </button>
                       
                       <button 
                         id="difficulty-hard-btn"
                         onClick={() => handleDifficulty(DifficultyLevel.HARD)}
-                        className="group flex flex-col items-center p-2.5 bg-amber-500/10 rounded-xl border border-amber-500/20 hover:border-amber-500/40 hover:bg-amber-500/15 transition-all text-center"
+                        className="group flex flex-col items-center p-1.5 sm:p-2.5 bg-amber-500/10 rounded-xl border border-amber-500/20 hover:border-amber-500/40 hover:bg-amber-500/15 transition-all text-center relative"
                       >
-                        <div className="text-amber-700 font-extrabold text-xs">Hard</div>
-                        <div className="text-[9px] text-amber-500 font-semibold uppercase tracking-wider mt-0.5 font-mono">In 5 Cards</div>
+                        <span className="absolute top-1 right-1 flex items-center justify-center w-3.5 h-3.5 text-[8px] font-mono font-bold bg-amber-500/20 text-amber-800 border border-amber-500/30 rounded">
+                          2
+                        </span>
+                        <div className="text-amber-700 font-extrabold text-[10px] sm:text-xs mt-1 sm:mt-1.5">Hard</div>
+                        <div className="text-[8px] sm:text-[9px] text-amber-500 font-semibold uppercase tracking-wider mt-0.5 font-mono">In 5 Cards</div>
                       </button>
 
                       <button 
                         id="difficulty-medium-btn"
                         onClick={() => handleDifficulty(DifficultyLevel.MEDIUM)}
-                        className="group flex flex-col items-center p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/20 hover:border-blue-500/40 hover:bg-blue-500/15 transition-all text-center"
+                        className="group flex flex-col items-center p-1.5 sm:p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/20 hover:border-blue-500/40 hover:bg-blue-500/15 transition-all text-center relative"
                       >
-                        <div className="text-blue-700 font-extrabold text-xs">Medium</div>
-                        <div className="text-[9px] text-blue-500 font-semibold uppercase tracking-wider mt-0.5">In 10 Cards</div>
+                        <span className="absolute top-1 right-1 flex items-center justify-center w-3.5 h-3.5 text-[8px] font-mono font-bold bg-blue-500/20 text-blue-800 border border-blue-500/30 rounded">
+                          1
+                        </span>
+                        <div className="text-blue-700 font-extrabold text-[10px] sm:text-xs mt-1 sm:mt-1.5">Medium</div>
+                        <div className="text-[8px] sm:text-[9px] text-blue-500 font-semibold uppercase tracking-wider mt-0.5">In 10 Cards</div>
                       </button>
 
                       <button 
                         id="difficulty-easy-btn"
                         onClick={() => handleDifficulty(DifficultyLevel.EASY)}
-                        className="group flex flex-col items-center p-2.5 bg-emerald-500/10 rounded-xl border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/15 transition-all text-center"
+                        className="group flex flex-col items-center p-1.5 sm:p-2.5 bg-emerald-500/10 rounded-xl border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/15 transition-all text-center relative"
                       >
-                        <div className="text-emerald-750 font-extrabold text-xs">Easy</div>
-                        <div className="text-[9px] text-emerald-600 font-semibold uppercase tracking-wider mt-0.5">Ready & Mastered</div>
+                        <span className="absolute top-1 right-1 flex items-center justify-center w-3.5 h-3.5 text-[8px] font-mono font-bold bg-emerald-500/20 text-emerald-850 border border-emerald-500/30 rounded">
+                          0
+                        </span>
+                        <div className="text-emerald-750 font-extrabold text-[10px] sm:text-xs mt-1 sm:mt-1.5">Easy</div>
+                        <div className="text-[8px] sm:text-[9px] text-emerald-600 font-semibold uppercase tracking-wider mt-0.5">Ready & Mastered</div>
                       </button>
                     </div>
                   </motion.div>
@@ -488,29 +592,46 @@ export default function StudySession({
             </div>
           </motion.div>
         )}
+      </div>
 
-        {/* Difficulty Feedback Indicators standard legend */}
-        {!isFinished && sessionQuestions.length > 0 && (
-          <div className="mt-6 flex flex-wrap justify-center items-center gap-6">
-            <div className="flex items-center gap-1.5 grayscale opacity-75">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-              <span className="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Very Hard</span>
-            </div>
-            <div className="flex items-center gap-1.5 grayscale opacity-75">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-              <span className="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Hard</span>
-            </div>
-            <div className="flex items-center gap-1.5 grayscale opacity-75">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-              <span className="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Medium</span>
-            </div>
-            <div className="flex items-center gap-1.5 grayscale opacity-75">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-              <span className="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Easy</span>
-            </div>
+      {/* 5-Easy Sticker Reward Modal */}
+      <AnimatePresence>
+        {showStickerModal && (
+          <div className="fixed inset-0 z-[120] flex items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowStickerModal(false)}
+              className="fixed inset-0 bg-slate-900/60 backdrop-blur-md"
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="bg-white rounded-[2.5rem] p-6 max-w-sm w-full shadow-2xl relative z-10 border border-slate-100 flex flex-col items-center justify-center text-center overflow-hidden"
+            >
+              {/* No words around it - just the sticker inside a clean frame */}
+              <div className="w-full aspect-square max-w-[280px] flex items-center justify-center overflow-hidden rounded-2xl bg-slate-50/50 p-2 border border-slate-100 mb-6">
+                <img 
+                  src={activeSticker} 
+                  alt="Sticker Reward" 
+                  className="w-full h-full object-contain hover:scale-105 transition-all duration-300"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              
+              {/* Below it, a button saying "يلا بينا" to continue */}
+              <button
+                onClick={() => setShowStickerModal(false)}
+                className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-lg rounded-2xl shadow-lg shadow-emerald-600/20 active:scale-95 transition-all duration-200"
+              >
+                يلا بينا
+              </button>
+            </motion.div>
           </div>
         )}
-      </div>
+      </AnimatePresence>
     </div>
   );
 }

@@ -9,7 +9,8 @@ export const CHAPTERS: Chapter[] = [
       'Acute Post-Streptococcal Glomerulonephritis (APSGN)',
       'Nephrotic Syndrome',
       'Acute Kidney Injury (AKI)',
-      'Chronic Kidney Disease (CKD)'
+      'Chronic Kidney Disease (CKD)',
+      'Urinary Tract Infections (UTIs)'
     ]
   },
   {

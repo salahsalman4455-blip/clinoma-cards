@@ -281,7 +281,7 @@ export default function App() {
 
       {/* Main Content Pane */}
       <div className="flex min-h-[calc(100vh-73px)]">
-        <main className="flex-1 overflow-y-auto bg-slate-50 p-4 sm:p-6 md:p-8">
+        <main className="flex-1 overflow-y-auto bg-slate-50 p-2 sm:p-6 md:p-8">
           <div className={`${view === 'study' ? 'max-w-4xl' : 'max-w-5xl'} mx-auto transition-all duration-500`}>
           <AnimatePresence mode="wait">
             {view === 'home' && (

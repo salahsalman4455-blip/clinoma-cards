@@ -3,16 +3,7 @@ import { Question } from '../types';
 export const INITIAL_QUESTIONS: Question[] = [
   // ==================== I. Renal Diseases ====================
   // topic: "Hematuria"
-  {
-    id: "q-r-h-1",
-    chapterId: 1,
-    type: "define",
-    title: "Define Microscopic Hematuria",
-    content: "Define \"Microscopic Hematuria\" in children.",
-    answer: "It is defined as the presence of more than 5 RBCs per high power field (HPF) in the sediment from 10 ml of centrifuged, freshly voided urine.",
-    isClinical: false,
-    topic: "Hematuria"
-  },
+
   {
     id: "q-r-h-2",
     chapterId: 1,
@@ -46,16 +37,7 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   // topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
-  {
-    id: "q-r-a-1",
-    chapterId: 1,
-    type: "define",
-    title: "Define APSGN",
-    content: "Define \"Acute Post-Streptococcal Glomerulonephritis (APSGN)\".",
-    answer: "It is an acute, specific, self-limited glomerulonephritis due to prior streptococcal infection, characterized by the sudden onset of gross hematuria, mild to moderate edema, hypertension, and potential oliguria.",
-    isClinical: false,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
-  },
+
   {
     id: "q-r-a-2",
     chapterId: 1,
@@ -98,16 +80,7 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   // topic: "Nephrotic Syndrome"
-  {
-    id: "q-r-n-1",
-    chapterId: 1,
-    type: "define",
-    title: "Define Nephrotic Syndrome",
-    content: "Define \"Nephrotic Syndrome\" in children.",
-    answer: "It is a primary pediatric glomerular disorder characterized by the triad of heavy proteinuria, hypoalbuminemia, and generalized edema, frequently accompanied by hyperlipidemia.",
-    isClinical: false,
-    topic: "Nephrotic Syndrome"
-  },
+
   {
     id: "q-r-n-2",
     chapterId: 1,
@@ -143,8 +116,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 1,
     type: "problem-solving",
     title: "Eye & Limb Swelling Case",
-    content: "A 4-year-old boy presents with progressive swelling around his eyes and lower limbs. Urinalysis reveals a frothy appearance with 4+ proteinuria. Laboratory values show a serum albumin of 1.7 g/dL and a serum cholesterol of 280 mg/dL. His blood pressure is normal.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. Mention the standard initial drug dose and duration used to induce remission.",
-    answer: "1. Minimal Change Nephrotic Syndrome (MCNS).\n2. Oral Prednisone at 60 mg/m2/day (maximum 60 mg) divided into 2-3 doses for at least 4 consecutive weeks.",
+    content: "A 4-year-old boy presents with progressive swelling around his eyes and lower limbs. Urinalysis reveals a frothy appearance with 4+ proteinuria. Laboratory values show a serum albumin of 1.7 g/dL and a serum cholesterol of 280 mg/dL. His blood pressure is normal.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. Mention the primary pharmacological class used to induce remission, and define 'Steroid-Responsive' in this clinical scenario.",
+    answer: "1. Minimal Change Nephrotic Syndrome (MCNS).\n2. Corticosteroids (specifically oral Prednisone). 'Steroid-Responsive' indicates that the patient achieves complete remission (protein-free urine for 3 consecutive days) within 4-6 weeks of starting steroid therapy.",
     isClinical: true,
     topic: "Nephrotic Syndrome"
   },
@@ -170,16 +143,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Acute Kidney Injury (AKI)"
   },
-  {
-    id: "q-r-ki-3",
-    chapterId: 1,
-    type: "short-essay",
-    title: "Oliguric Phase Findings",
-    content: "Enumerate 4 laboratory or clinical findings seen during the \"Oliguric Phase\" of advanced AKI.",
-    answer: "1. Oliguria or anuria.\n2. Hyperkalemia (inducing cardiac arrhythmias).\n3. Metabolic acidosis (deep, rapid acidotic breathing).\n4. Uremic encephalopathy (confusion, convulsions, or coma).",
-    isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
-  },
+
 
   {
     id: "q-r-ki-5",
@@ -233,6 +197,96 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Anemia of CKD due to inadequate erythropoietin production by the failing kidneys.\n2. Low phosphorus diet and administration of oral phosphate binders followed by active Vitamin D supplementation.",
     isClinical: true,
     topic: "Chronic Kidney Disease (CKD)"
+  },
+  {
+    id: "q-r-ki-4",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Pediatric RIFLE (pRIFLE) Criteria",
+    content: "Enumerate the 5 stages of the Pediatric RIFLE (pRIFLE) criteria used for severity stratification in Acute Kidney Injury, including the eGFR or Urine Output (UOP) criteria for each stage.",
+    answer: "1. R - Risk: eGFR decreases by 25% OR UOP < 0.5 mL/kg/hour for 8 consecutive hours (Mild Decline).\n2. I - Injury: eGFR decreases by 50% OR UOP < 0.5 mL/kg/hour for 16 consecutive hours (Significant Decline).\n3. F - Failure: eGFR decreases by 75% OR UOP < 0.3 mL/kg/hour for 24 hours OR Anuria for 12 hours (Severe Decline).\n4. L - Loss: Persistent acute kidney failure requiring dialysis for > 4 weeks (Persistent Failure).\n5. E - ESRD: Persistent kidney failure requiring permanent renal replacement therapy (RRT) for > 3 months (End-Stage Disease).",
+    isClinical: true,
+    topic: "Acute Kidney Injury (AKI)"
+  },
+  {
+    id: "q-r-ki-6",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Management of Hyperkalemia in AKI",
+    content: "Enumerate 4 aggressive therapeutic control measures utilized to treat life-threatening hyperkalemia in a child with advanced Acute Kidney Injury (AKI).",
+    answer: "1. Intravenous Calcium Gluconate (to stabilize the cardiac cell membrane and prevent arrhythmias).\n2. Intravenous Insulin combined with Glucose (to shift potassium intracellularly).\n3. Sodium Bicarbonate (NaHCO3) administration (to correct acidosis and shift potassium into cells).\n4. Potassium-binding resins (e.g., sodium polystyrene sulfonate) or initiating acute hemodialysis/renal replacement therapy.",
+    isClinical: true,
+    topic: "Acute Kidney Injury (AKI)"
+  },
+  {
+    id: "q-r-a-6",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Pharyngeal vs Cutaneous APSGN",
+    content: "Enumerate 4 clinical or laboratory parameters that distinguish Acute Post-Streptococcal Glomerulonephritis (APSGN) following a throat (pharyngeal) infection from that following a skin (cutaneous) infection.",
+    answer: "1. Nephritogenic Strains: Throat infection is usually caused by Type 4 or 12, whereas skin infection is caused by Type 49.\n2. Latent Period: 1-2 weeks after throat infection, compared to 2-3 weeks after skin infection.\n3. Seasonal Prevalence: Winter/Spring for throat infections, compared to Summer for skin infections.\n4. ASOT Titers: Characteristically elevated after throat infections, whereas ASOT titers may be normal after skin infections.",
+    isClinical: true,
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+  },
+  {
+    id: "q-r-h-4",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Renal Biopsy Indications in Hematuria",
+    content: "Enumerate 4 key clinical indications for performing a Renal Biopsy in a pediatric patient presenting with hematuria.",
+    answer: "1. Unexplained persistent or recurrent gross hematuria.\n2. Biopsy-confirmed or highly suspected Lupus Nephritis.\n3. Atypical Glomerulonephritis course (such as nephritic-nephrotic syndrome, or persistently low C3 complement levels beyond 6-8 weeks).\n4. Unexplained, progressive acute kidney injury or renal failure associated with hematuria.",
+    isClinical: true,
+    topic: "Hematuria"
+  },
+  {
+    id: "q-r-c-4",
+    chapterId: 1,
+    type: "short-essay",
+    title: "CKD 5-Stage GFR Classification",
+    content: "Enumerate the 5 progressive stages of Chronic Kidney Disease (CKD) based on Glomerular Filtration Rate (GFR) levels according to KDOQI guidelines.",
+    answer: "1. Stage 1: GFR is greater than or equal to 90 mL/min/1.73 m² (Normal or elevated filtration with kidney damage).\n2. Stage 2: GFR is 60 - 89 mL/min/1.73 m² (Mild functional renal impairment).\n3. Stage 3: GFR is 30 - 59 mL/min/1.73 m² (Stage 3a: GFR 45-59; Stage 3b: GFR 30-44; reflecting moderate renal failure).\n4. Stage 4: GFR is 15 - 29 mL/min/1.73 m² (Severe pre-terminal renal insufficiency).\n5. Stage 5: GFR is less than 15 mL/min/1.73 m² (End-Stage Renal Disease (ESRD) requiring dialysis or transplantation).",
+    isClinical: false,
+    topic: "Chronic Kidney Disease (CKD)"
+  },
+  {
+    id: "q-r-u-1",
+    chapterId: 1,
+    type: "define",
+    title: "Define Pediatric UTI Classifications",
+    content: "Define the three main clinical classifications of Urinary Tract Infections (UTIs) in pediatric patients: Pyelonephritis, Cystitis, and Asymptomatic Bacteriuria.",
+    answer: "1. Pyelonephritis (Acute Parenchymal Involvement): Characterized by fever, abdominal or flank pain, systemic symptoms (vomiting, irritability in infants), and carries a high risk of renal scarring.\n2. Cystitis (Bladder Involvement): Characterized by localized bladder symptoms (dysuria, urgency, frequency, suprapubic pain) in the absence of fever or renal scarring.\n3. Asymptomatic Bacteriuria: Characterized by a positive urine culture but a complete absence of clinical symptoms, presenting almost exclusively in girls and posing no risk of renal injury.",
+    isClinical: false,
+    topic: "Urinary Tract Infections (UTIs)"
+  },
+  {
+    id: "q-r-u-2",
+    chapterId: 1,
+    type: "short-essay",
+    title: "UTI Pathogens & Risk Factors",
+    content: "Enumerate the most common pathogen and 4 distinct clinical risk factors or predisposing anatomical/behavioral conditions for UTIs in children.",
+    answer: "Most Common Pathogen: Escherichia coli (E. coli), accounting for almost all infections.\n4 Distinct Risk Factors:\n1. Female gender (due to a shorter urethra) or being an uncircumcised male infant (increased periurethral colonization).\n2. Anatomical abnormalities such as Vesicoureteral Reflux (VUR) or posterior urethral valves.\n3. Pediatric behavioral habits or issues such as toilet training phase, poor hygiene, or wearing tight underwear.\n4. Intestinal or bladder dysfunction such as chronic constipation, pinworm infestation, neurogenic bladder, or prolonged voiding dysfunction.",
+    isClinical: true,
+    topic: "Urinary Tract Infections (UTIs)"
+  },
+  {
+    id: "q-r-u-3",
+    chapterId: 1,
+    type: "short-essay",
+    title: "UTI Imaging Guidelines & Indications",
+    content: "Mention the gold-standard test used to confirm a Pediatric UTI, and enumerate 3 primary imaging investigations used in the evaluation of a child with their first febrile UTI along with their clinical indications.",
+    answer: "Gold-Standard Test: Urine Culture (necessary for definitive UTI confirmation).\n3 Primary Imaging Investigations:\n1. Renal Ultrasonogram (RUS): Indicated in all infants and children with a first febrile UTI to rule out hydronephrosis, renal abscess, or anatomical anomalies.\n2. Voiding Cystourethrogram (VCUG): Indicated in infants <5 years with febrile UTI, children with a recurrence, or any male with UTI to identify Vesicoureteral Reflux (VUR - the most common finding).\n3. DMSA Renal Scanning: Indicated when acute pyelonephritis diagnosis is uncertain or to document and assess permanent renal scarring (typically 4-6 months post-infection).",
+    isClinical: true,
+    topic: "Urinary Tract Infections (UTIs)"
+  },
+  {
+    id: "q-r-u-5",
+    chapterId: 1,
+    type: "problem-solving",
+    title: "Infant Febrile UTI Case",
+    content: "An uncircumcised 5-month-old male infant presents with high fever, irritability, poor feeding, and severe jaundice. A catheterized urine specimen shows significant leukocyturia. Urine culture confirms Escherichia coli UTI.\n\nQuestions:\n1. What is the specific clinical classification of this UTI?\n2. State the treatment protocol regarding route, broad-spectrum antibiotic choices, and duration of therapy.",
+    answer: "1. Acute Pyelonephritis (parenchymal involvement with systemic symptoms in an infant).\n2. The patient must be treated with parenteral (intravenous) broad-spectrum antibiotics (such as Ceftriaxone, or Ampicillin combined with Gentamicin) for a total of 14 days, followed by daily oral antibiotic prophylaxis at one-third of the therapeutic dose once daily.",
+    isClinical: true,
+    topic: "Urinary Tract Infections (UTIs)"
   },
 
   // ==================== II. Chest Diseases ====================
@@ -373,6 +427,17 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   {
+    id: "q-c-w-4",
+    chapterId: 2,
+    type: "problem-solving",
+    title: "Atypical Noisy Chemical Wheezing Case",
+    content: "A 3-year-old child is rushed to the emergency department with an acute onset of severe wheezing, excessive salivation, vomiting, pinpoint pupils (miosis), and extreme sweating. The parents suspect he ingested something near their garden shed.\n\nQuestions:\n1. What non-respiratory chemical toxicity must be highly suspected as the cause of this acute wheezing and autonomic presentation?\n2. Enumerate 3 non-asthmatic, non-infectious mechanical or anatomical entities that can produce recurrent or fixed localized wheezing in young children.",
+    answer: "1. Organophosphate Poisoning (which induces a severe cholinergic crisis characterized by pinpoint pupils, hyper-salivation, sweating, and bronchoconstriction mimicking severe asthma/wheezing).\n2. 3 non-asthmatic, non-infectious mechanical/anatomical entities:\n- Sudden Foreign Body Aspiration (producing a fixed, localized unilateral wheeze).\n- Gastroesophageal Reflux Disease (GERD) with recurrent micro-aspiration of gastric contents.\n- Vascular Ring or other mechanical airway compression (e.g., mediastinal mass or vascular anomaly compressing the tracheobronchial tree) or Bronchopulmonary Dysplasia (BPD).",
+    isClinical: true,
+    topic: "Wheezy Chest and Foreign Body Aspiration"
+  },
+
+  {
     id: "q-c-w-5",
     chapterId: 2,
     type: "problem-solving",
@@ -435,6 +500,37 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Pneumonia"
   },
 
+  {
+    id: "q-c-p-6",
+    chapterId: 2,
+    type: "problem-solving",
+    title: "Atypical Infantile Pneumonia Case",
+    content: "A 2-month-old infant is brought to the clinic with a history of progressive, loud, dry, repetitive, and disjointed \"staccato\" coughing fits and fast breathing over the past 2 weeks. The infant is completely afebrile, and the chest X-ray shows significant hyperinflation with mild bilateral interstitial infiltrates. The mother recalls the baby having red, swollen eyes with yellowish discharge at 2 weeks of age.\n\nQuestions:\n1. What is the most likely specific causative pathogen for this child's atypical pneumonia?\n2. Mention the drug of choice, route, and duration for treating this condition.",
+    answer: "1. Chlamydia trachomatis (often transmitted perinatally, causing neonatal conjunctivitis followed by staccato cough, hyperinflation, and absence of fever in infants aged 1-3 months).\n2. Oral Erythromycin for 14 days, or oral Azithromycin for 5 days.",
+    isClinical: true,
+    topic: "Pneumonia"
+  },
+  {
+    id: "q-c-p-7",
+    chapterId: 2,
+    type: "short-essay",
+    title: "Staphylococcus aureus Pneumonia Complications",
+    content: "Enumerate 4 highly aggressive, rapid, and destructive pulmonary complications or imaging signs on chest radiography that point specifically to Staphylococcus aureus etiology in childhood pneumonia.",
+    answer: "1. Development of pneumatoceles (multiple thin-walled, air-filled parenchymal cysts).\n2. Formation of a large pleural empyema.\n3. Development of single or multiple lung abscesses.\n4. Pyopneumothorax (coexisting air and pus in the pleural cavity).",
+    isClinical: true,
+    topic: "Pneumonia"
+  },
+  {
+    id: "q-c-p-8",
+    chapterId: 2,
+    type: "short-essay",
+    title: "Zinc Supplementation in Childhood Pneumonia",
+    content: "Mention the clinical significance of oral Zinc supplementation in the management of severe pediatric pneumonia, including its standard administration duration and the settings where it acts as a primary measure to reduce mortality.",
+    answer: "1. Clinical Significance & Mortality Reduction: Oral Zinc supplementation has been clinically/scientifically proven to significantly shorten recovery times, reduce respiratory distress, and successfully reduce overall mortality in children with severe pneumonia.\n2. Setting: Specifically indicated in low- and middle-income countries.\n3. Duration: Administered daily for a duration of 7 days.",
+    isClinical: true,
+    topic: "Pneumonia"
+  },
+
   // topic: "Bronchiolitis"
   {
     id: "q-c-b-1",
@@ -483,6 +579,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Hyper-resonant Chest Infant Case",
     content: "A 5-month-old infant presents during winter with a 2-day history of rhinitis followed by a severe dry cough, tachypnea, and chest indrawing. Chest exam reveals a hyper-resonant percussion note and diffuse fine end-inspiratory crackles with wheezes.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the primary viral etiology responsible for roughly 50% of these cases?",
     answer: "1. Acute Bronchiolitis.\n2. Respiratory Syncytial Virus (RSV).",
+    isClinical: true,
+    topic: "Bronchiolitis"
+  },
+
+  {
+    id: "q-c-b-6",
+    chapterId: 2,
+    type: "problem-solving",
+    title: "Apnea Risk in Infantile Bronchiolitis",
+    content: "A 6-week-old infant presents during winter with runny nose, a dry hacking cough, and mild tachypnea. On chest examination, bilateral sparse fine crackles are heard. The mother reports no history of fever, but is extremely worried after a local nurse warned her about a sudden respiratory risk.\n\nQuestions:\n1. What critical age-associated clinical alert is this young infant at high risk for in acute child bronchiolitis?\n2. Mention 2 other absolute general restrictions or things to avoid in the clinical management of infantile bronchiolitis to prevent respiratory depression or airway collapse.",
+    answer: "1. Apneic spells (infants under 2 months of age with bronchiolitis are at an exceptionally high risk of sudden, life-threatening apnea, often presenting before severe respiratory distress).\n2. Absolute general restrictions:\n- Strictly avoid the administration of sedatives (which can depress the central respiratory drive and precipitate respiratory failure).\n- Strictly avoid the routine use of systemic corticosteroids or oral/nasal decongestants, and do NOT perform a tracheostomy unless a severe airway anomaly coexists.",
     isClinical: true,
     topic: "Bronchiolitis"
   },
@@ -2302,6 +2409,76 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Chronic Kidney Disease (CKD)"
   },
+  {
+    id: "q-r2-u-1",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Pediatric UTI Gender & Age Prevalence",
+    content: "Enumerate the prevalence rates of Urinary Tract Infections (UTIs) in pediatric girls and boys, and specify how the male-to-female ratio shifts in the first year of life versus beyond 1-2 years.",
+    answer: "1. Overall Prevalence: UTIs occur in 3-5% of girls and 1% of boys.\n2. In Girls: First UTI often occurs by age 5, peaking during infancy and the toilet training phase. Recurrence is high, at 60-80% within 18 months.\n3. In Boys: Most UTIs occur during the first year of life, with uncircumcised boys having a significantly higher risk.\n4. Ratio Shifts: In the first year of life, there is a male-to-female ratio of 2.8-5.4:1 (higher prevalence in males). Beyond 1-2 years, there is a distinct female preponderance with a ratio of 1:10 (males to females).",
+    isClinical: false,
+    topic: "Urinary Tract Infections (UTIs)"
+  },
+  {
+    id: "q-r2-u-2",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Cystitis vs Pyelonephritis Differentiation",
+    content: "Enumerate 4 distinct clinical or pathological differences that help distinguish acute Cystitis (bladder involvement) from acute Pyelonephritis (kidney parenchyma involvement) in pediatric patients.",
+    answer: "1. Fever & Systemic Symptoms: Pyelonephritis is characterized by high fever, malaise, vomiting, or jaundice (in infants), whereas Cystitis features NO fever or mild low-grade fever with localized symptoms.\n2. Localized Pain: Pyelonephritis causes abdominal or flank/back pain, whereas Cystitis causes suprapubic pain.\n3. Voiding Symptoms: Cystitis is dominated by severe dysuria, extreme urgency, urinary frequency, and incontinence, which are less localized in infants with pyelonephritis.\n4. Long-term Sequelae: Pyelonephritis carries a significant risk of permanent renal scarring, whereas Cystitis does NOT cause renal scarring or permanent renal injury.",
+    isClinical: true,
+    topic: "Urinary Tract Infections (UTIs)"
+  },
+  {
+    id: "q-r2-u-3",
+    chapterId: 1,
+    type: "short-essay",
+    title: "UTI Treatment & Antibiotic Prophylaxis",
+    content: "Enumerate the therapeutic protocols for young children with acute uncomplicated cystitis versus those requiring prophylaxis against UTI recurrence.",
+    answer: "1. Acute Cystitis Treatment: Administer Trimethoprim-sulfamethoxazole or Nitrofurantoin for 3-5 days. Amoxicillin (50 mg/kg/24 hr) is another option.\n2. Preventive Prophylaxis Indication: Initiated to prevent reinfection in children with recurrent UTIs or high-grade Vesicoureteral Reflux (VUR).\n3. Prophylaxis Regimen: Administer Sulfamethoxazole-trimethoprim or Nitrofurantoin once daily at bedtime.\n4. Prophylaxis Dosage: The dose is calculated exactly as one-third (1/3) of the standard therapeutic dose.",
+    isClinical: true,
+    topic: "Urinary Tract Infections (UTIs)"
+  },
+  {
+    id: "q-r2-u-5",
+    chapterId: 1,
+    type: "problem-solving",
+    title: "UTI with Suspected Renal Abscess Case",
+    content: "An 8-year-old girl with a history of recurrent febrile UTIs presents with high fever, persistent left-sided flank pain, and significant abdominal tenderness despite being on oral antibiotics for 48 hours. Her CBC reveals a marked leukocytosis of 24,000/mm³ with neutrophilia. An abdominal ultrasound is ordered.\n\nQuestions:\n1. What severe localized complication of pyelonephritis is most likely in this child?\n2. Mention the diagnostic imaging gold-standard for confirming this complication, and its medical/surgical management.",
+    answer: "1. Renal Abscess (marked by high fever, localized flank pain, high WBC >20,000, and non-response to standard therapy).\n2. Confirmation is obtained via Abdominal CT or MRI. Management involves administering high-dose parenteral broad-spectrum antibiotics and undertaking surgical or percutaneous drainage if there is an obstruction or non-resolution.",
+    isClinical: true,
+    topic: "Urinary Tract Infections (UTIs)"
+  },
+  {
+    id: "q-r2-a-6",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Renal Biopsy Indications in APSGN",
+    content: "Enumerate 4 clinical or laboratory indications for performing a Renal Biopsy in a child suspected of having Acute Post-Streptococcal Glomerulonephritis (APSGN).",
+    answer: "1. Presentation with Acute Kidney Injury (AKI) or Rapidly Progressive Glomerulonephritis (RPGN).\n2. Presence of heavy, nephrotic-range proteinuria.\n3. Absence of any streptococcal evidence (normal ASO/ASOT and normal DNase B titers) in a patient with nephritic features.\n4. Persistently low serum C3 complement levels, or persistent hematuria and diminished renal function, extending beyond 2 months (6-8 weeks) from onset.",
+    isClinical: true,
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+  },
+  {
+    id: "q-r2-h-4",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Microscopic vs Gross Hematuria",
+    content: "Enumerate 4 parameters that distinguish Microscopic Hematuria from Gross (Macroscopic) Hematuria in children.",
+    answer: "1. Visual Appearance: Microscopic hematuria is completely invisible to the naked eye (normal urine color), whereas gross hematuria causes a visually obvious red, brown, cola, or smoky urine color.\n2. Quantitation: Microscopic hematuria is quantified as >= 3 RBCs per high-power field (HPF) on 2-3 consecutive centrifuged urine samples, whereas gross hematuria is immediately visually apparent.\n3. Clinical Detection: Microscopic hematuria is usually asymptomatic and discovered incidentally, whereas gross hematuria presents with clear visible symptoms.\n4. Diagnostic Urgency: Gross hematuria requires immediate, systematic diagnostic and clinical evaluation, whereas microscopic hematuria is monitored with serial urinalysis first.",
+    isClinical: false,
+    topic: "Hematuria"
+  },
+  {
+    id: "q-r2-n-6",
+    chapterId: 1,
+    type: "short-essay",
+    title: "Standard Steroid Regimen in MCNS",
+    content: "Enumerate the two main therapeutic phases (Induction and Maintenance Taper) of the curative Standard Corticosteroid Therapy (Prednisone) for Minimal Change Nephrotic Syndrome (MCNS) in children, including dosages and durations.",
+    answer: "1. Induction Phase dosage: Prednisone at a dose of 60 mg/m²/day (maximum 60 mg/day) administered daily.\n2. Induction Phase duration: Maintained for 6 consecutive weeks to induce complete remission.\n3. Maintenance Taper Phase dosage: Prednisone at a dose of 40 mg/m²/day administered on alternate days.\n4. Maintenance Taper Phase duration: Maintained for 6 weeks, followed by a gradual taper to avoid adrenal suppression.",
+    isClinical: true,
+    topic: "Nephrotic Syndrome"
+  },
 
   // ==================== II. Chest Diseases (Bank 2) ====================
   // topic: "Croup"
@@ -2332,6 +2509,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Airway Obstruction Management Precautions",
     content: "Enumerate 4 guidelines or precautions regarding what to avoid during the clinical management of an inflammatory upper airway obstruction.",
     answer: "1. Avoid administration of physical sedation.\n2. Avoid using opiate derivatives.\n3. Avoid prescribing expectorants or antihistamines.\n4. Avoid direct visual inspection of the oral cavity using a tongue depressor if epiglottitis is suspected.",
+    isClinical: true,
+    topic: "Croup"
+  },
+
+  {
+    id: "q-c2-c-4",
+    chapterId: 2,
+    type: "short-essay",
+    title: "Epinephrine Observation in Acute Croup",
+    content: "Enumerate the required observation time course and the critical clinical rationale for monitoring a child with moderate to severe croup after they receive nebulized L-Epinephrine in the emergency department.",
+    answer: "1. Required Observation Time Course: The child must be observed closely in the emergency department or clinic for at least 2 consecutive hours.\n2. Critical Clinical Rationale: Nebulized Epinephrine is a temporary vasoconstrictive agent. Once its vasoactive effects wear off (typically within 2 hours), the patient is at a high risk of developing severe recurrence of airway edema and rebound symptoms, requiring re-treatment or immediate hospitalization.",
     isClinical: true,
     topic: "Croup"
   },
@@ -2481,6 +2669,37 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Pneumonia Tachypnea Case",
     content: "A 3-year-old child presents with a high fever, cough, and tachypnea. On examination, his respiratory rate is 45 breaths/minute, and he displays subcostal and intercostal retractions. Chest X-ray confirms a right lower lobe pneumonia.\n\nQuestions:\n1. Does this child's respiratory rate meet the WHO definition of fast breathing for his age?\n2. Mention the specific inpatient intravenous antibiotic protocol if this child requires hospitalization.",
     answer: "1. Yes, fast breathing for children aged 1-5 years is defined as a respiratory rate >40 breaths/minute.\n2. Intravenous Ceftriaxone (or Cefotaxime), with Vancomycin added if Staphylococcal complications are suspected.",
+    isClinical: true,
+    topic: "Pneumonia"
+  },
+
+  {
+    id: "q-c2-p-6",
+    chapterId: 2,
+    type: "problem-solving",
+    title: "Clinical vs Radiological Recovery in CAP",
+    content: "A 3-year-old child is treated for acute uncomplicated Community-Acquired Pneumonia (CAP) with oral amoxicillin. After 72 hours, his fever resolves, his respiratory rate normalizes, and his appetite returns. However, a chest X-ray repeated by an anxious primary care doctor still reveals persistent infiltration in the left lower lobe.\n\nQuestions:\n1. What is the standard clinical guideline regarding this clinical vs. radiological recovery discrepancy in childhood CAP?\n2. How long can uncomplicated CAP radiographic abnormalities normally persist on a chest X-ray?",
+    answer: "1. Clinical recovery typically occurs within 48 to 72 hours, but radiological abnormalities on X-ray can persist and clear much more slowly. A repeat X-ray is NOT indicated if the child has clinically recovered, and treating asymptomatic, resolving radiographic anomalies with prolonged or repeated courses of antibiotics must be strictly avoided.\n2. Uncomplicated CAP radiographic abnormalities can normally persist on a chest X-ray for up to 3 to 6 months.",
+    isClinical: true,
+    topic: "Pneumonia"
+  },
+  {
+    id: "q-c2-p-7",
+    chapterId: 2,
+    type: "short-essay",
+    title: "Mycoplasma Pneumoniae Clinical Clues",
+    content: "Enumerate 2 common host age and onset patterns of Mycoplasma pneumoniae (atypical) pneumonia in children, and 3 high-yield extrapulmonary clinical manifestations that point specifically to this pathogen.",
+    answer: "Age and Onset Patterns:\n1. Classically affects older children (>5 years of age) and adolescents.\n2. Characterized by an insidious onset with preceding constitutional symptoms (headache, malaise, low-grade fever) and a persistent, dry, hacking cough.\nExtrapulmonary clinical manifestations:\n1. Autoimmune hemolytic anemia.\n2. Splenomegaly.\n3. Erythema multiforme (or other nonspecific skin rashes).",
+    isClinical: true,
+    topic: "Pneumonia"
+  },
+  {
+    id: "q-c2-p-8",
+    chapterId: 2,
+    type: "short-essay",
+    title: "Pediatric COVID-19 Pneumonia Protocol",
+    content: "Enumerate the 4 progressive pharmacological interventions or steps recommended for pediatric COVID-19 pneumonia management based on disease severity and oxygen requirements according to standard protocols.",
+    answer: "1. Intravenous IV Remdesivir (approved for children, especially those aged 12-17 years with moderate to severe disease).\n2. Systemic Dexamethasone (indicated when there are increasing oxygen needs or a transition to mechanical ventilation).\n3. Intravenous Tocilizumab (IL-6 inhibitor) if the patient fails to respond to corticosteroids within 24 hours (indicated for ages 2-11 years).\n4. Prophylactic Anticoagulation (indicated for all adolescents and children aged >=12 years who are hospitalized).",
     isClinical: true,
     topic: "Pneumonia"
   },
@@ -3028,5 +3247,112 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Eye opening to voice = 3; Verbal irritable crying = 3; Motor localizing pain = 5.\n2. Total GCS Score = 3 + 3 + 5 = 11.",
     isClinical: true,
     topic: "Glasgow Coma Scale and its Advantages"
+  },
+
+  // ==================== IV. Emergency Section - New Additions from Slide Materials ====================
+  // topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+  {
+    id: "q-e3-cpr-1",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Pediatric vs Adult Cardiac Arrest & Survival Timelines",
+    content: "Explain how the primary pathophysiology and initial rhythms of cardiopulmonary arrest differ between pediatric and adult patients, and state the critical timelines for brain survival during a arrest.",
+    answer: "1. Pathophysiological Difference: In children, cardiac arrest is usually secondary to progressive respiratory failure or shock (asphyxial arrest), unlike in adults where it is commonly primary cardiac (due to ischemic heart disease).\n2. Initial Rhythm Difference: In children, the initial rhythm is usually bradycardia progressing to asystole, whereas ventricular fibrillation (VF) or pulseless ventricular tachycardia (VT) is less common compared to adults.\n3. Critical Timelines: If successful resuscitative efforts are not established within 5 minutes, brain or cardiovascular death will occur. Irreversible brain damage occurs after approximately 7 minutes.",
+    isClinical: true,
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+  },
+  {
+    id: "q-e3-cpr-2",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Pediatric Compression Techniques & Depths",
+    content: "Mention the cardiac compression guidelines during pediatric resuscitation including the frequency, ratio, and age-specific compression techniques and depths according to resuscitation slides.",
+    answer: "1. Frequency: Approximately 100 compressions per minute for all ages.\n2. Compression-to-Ventilation Ratio: Continue cardiac compression and ventilation at a ratio of 1:5.\n3. Age-Specific Techniques:\n   - Newborns: Hand-encircling (two-thumb) technique.\n   - Infants: Two-finger technique.\n   - Young children: One-hand technique.\n   - Older children: Two-hand technique.\n4. Age-Specific Depths:\n   - Infant: 2 cm depth.\n   - Young child: 3 cm depth.\n   - Older child: 4 cm depth.",
+    isClinical: true,
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+  },
+  {
+    id: "q-e3-cpr-3",
+    chapterId: 4,
+    type: "problem-solving",
+    title: "Pausing Compressions for Pupillary Reflexes Case",
+    content: "During a full cardiac arrest resuscitation of a 6-year-old child in the emergency department, the team leader temporarily pauses compressions every 5 minutes to examine the child's pupillary reflexes.\n\nQuestions:\n1. State the purpose of checking pupillary reflexes in this context.\n2. Under what condition would the resuscitation team leader decide to terminate the resuscitation efforts?",
+    answer: "1. Purpose: To check for pupillary reaction to light, which validates brain viability and helps exclude brain death to continue resuscitation.\n2. Termination: Resuscitative efforts should continue as long as brain death does not occur. The resuscitation team leader can make the decision to terminate resuscitation based on the presence of brain death on repeated examinations.",
+    isClinical: true,
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+  },
+
+  // topic: "Shock"
+  {
+    id: "q-e3-sh-1",
+    chapterId: 4,
+    type: "problem-solving",
+    title: "Cardiogenic Shock in Myocarditis Case",
+    content: "An 8-year-old boy diagnosed with severe acute viral myocarditis presents to the emergency room in severe shock. On examination, he is tachycardic, has a raised jugular venous pressure (JVP), an audible gallop rhythm on cardiac auscultation, wet lung crepitations on breathing, and a tender, enlarged liver.\n\nQuestions:\n1. What is the specific type of shock this patient is presenting with?\n2. What is the physiological goal of contractility augmentation, and which vasoactive drug is indicated if his baseline blood pressure is still within normal limits?",
+    answer: "1. Cardiogenic shock (as defined by myocardial dysfunction and signs of pump failure under cardiorespiratory assessment).\n2. Goal & Drug: The goal is to support and improve myocardial contractility and stroke volume. The indicated drug for low cardiac output with a normal baseline blood pressure is Dobutamine (administered at 5 - 20 mcg/kg/min IV).",
+    isClinical: true,
+    topic: "Shock"
+  },
+  {
+    id: "q-e3-sh-2",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Clinical Grading of Shock",
+    content: "Enumerate the 4 progressive \"Clinical Grades\" of shock, including their core definitions and clinical features according to pediatric shock grading.",
+    answer: "1. Grade I (Early Shock): Characterized by peripheral tissue hypoperfusion, marked tachycardia, and signs of poor capillary refill with preserved central blood pressure.\n2. Grade II (Established Shock): Characterized by arterial hypotension, poor peripheral perfusion, and systemic hypotension.\n3. Grade III (Advanced Shock): Characterized by vital organ hypoperfusion and the clinical onset of Multiple Organ System Failure (MOSF).\n4. Grade IV (Irreversible Shock): Characterized by irreversible systemic cellular damage, profound refractory metabolic acidosis, and eventual death.",
+    isClinical: true,
+    topic: "Shock"
+  },
+  {
+    id: "q-e3-sh-3",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Pediatric Circulatory Compensation Limits",
+    content: "Explain the formula for oxygen delivery (DO2), how cardiac output is calculated, and explain why pediatric patients are at high risk of sudden deterioration when compensating in shock.",
+    answer: "1. Oxygen Delivery (DO2) Formula: DO2 = Cardiac Output (CO) x Oxygen Content of blood.\n2. Cardiac Output Calculation: CO = Heart Rate (HR) x Stroke Volume (SV).\n3. Compensation Risk: Children compensate for circulatory inadequacy by significantly increasing their Heart Rate and Systemic Vascular Resistance (SVR). However, due to an immature and non-compliant myocardium, they cannot significantly increase their Stroke Volume. Therefore, when maximum tachycardia and constriction margins are exhausted, they suffer high risk of sudden, catastrophic circulatory collapse.",
+    isClinical: true,
+    topic: "Shock"
+  },
+  {
+    id: "q-e3-sh-4",
+    chapterId: 4,
+    type: "short-essay",
+    title: "MOSF Manifestations in Shock",
+    content: "Enumerate the affected organ systems and their clinical/laboratory manifestations in Multiple Organ System Failure (MOSF) following untreated advanced shock.",
+    answer: "1. Kidneys: Acute renal failure characterized by oliguria and metabolic acidosis.\n2. Lungs: ARDS (Acute Respiratory Distress Syndrome).\n3. Brain: Hypoxic Ischemic Encephalopathy characterized by distress, convulsions, or coma.\n4. GIT: Ischemia, stress ulcers, hemorrhage, or dynamic ileus.\n5. Blood System: DIC (Disseminated Intravascular Coagulation) and thrombocytopenia.\n6. Heart: Myocardial ischemia and serious ventricular arrhythmias.\n7. Liver: Acute hepatic failure.\n8. Metabolic: Severe progressive lactic acidosis and electrolyte disturbances.",
+    isClinical: true,
+    topic: "Shock"
+  },
+
+  // topic: "Coma"
+  {
+    id: "q-e3-co-1",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Clinical Grading of Coma",
+    content: "Enumerate the 4 clinical grades of Coma, including their defining arousal states and behavioral reactions to painful stimuli.",
+    answer: "1. Grade I (Stupor): The comatose patient can be aroused for only a short period of time (less than a minute).\n2. Grade II (Light Coma): The patient cannot be aroused by painful stimuli, but responds to pain with purposeful withdrawal movements.\n3. Grade III (Deep Coma): There is absolutely no motor response to painful stimuli, but the patient continues to breathe spontaneously.\n4. Grade IV (Deep Coma with Apnea): There is no response to painful stimuli accompanied by apnea. Brain death occurs within 5 minutes if mechanical ventilation is not instituted.",
+    isClinical: true,
+    topic: "Coma"
+  },
+  {
+    id: "q-e3-co-2",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Coma Causes: Primary vs Secondary Brain Lesions",
+    content: "Explain the structural difference between Primary and Secondary Brain Lesions causing pediatric coma, and enumerate 4 distinct causes of Primary Brain Lesions.",
+    answer: "1. Structural Difference: Primary brain lesions arise from direct structural pathology, infections, or trauma within the central nervous system itself. Secondary brain lesions (encephalopathies) arise from systemic or metabolic disturbances outside the brain (like hypoxia, metabolic acidosis, organ failures, or poisonings) that secondarily impair cerebral cortical function.\n2. Causes of Primary Brain Lesions:\n   - Intracranial infections (e.g., meningitis, encephalitis, or brain abscess).\n   - Intracranial hemorrhage (traumatic or non-traumatic such as Hemophilia, DIC, ITP, aneurysmal rupture, A-V malformation).\n   - Cerebral infarction.\n   - Status epilepticus.\n   - Brain tumors.",
+    isClinical: true,
+    topic: "Coma"
+  },
+  {
+    id: "q-e3-co-3",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Extrapolating Brainstem Level of Dysfunction",
+    content: "Describe how to clinically differentiate between Cortical vs. Brain Stem level of dysfunction in a comatose pediatric patient, and mention 3 reflexes evaluated to make this determination.",
+    answer: "1. Differential Method: The level of dysfunction is determined by testing basic brainstem reflexes. In cortical lesions, brainstem reflexes are completely INTACT, whereas in structural brainstem lesions, these reflexes are either SLUGGISH OR completely LOST.\n2. Three Evaluated Reflexes:\n   - Pupillary reaction to light.\n   - Corneal reflex.\n   - Oculocephalic reflex (Doll's eyes response).",
+    isClinical: true,
+    topic: "Coma"
   }
 ];

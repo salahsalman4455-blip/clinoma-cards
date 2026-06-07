@@ -198,29 +198,14 @@ export function ExplanationDrawer({
               </button>
             </div>
 
-            {/* Custom Interactive Banner */}
-            <div className="px-4 py-2.5 sm:px-5 bg-gradient-to-l from-amber-500/90 to-amber-600/90 text-white flex items-center justify-between shadow-inner">
-              <div className="flex items-center gap-2">
-                <span className="text-base sm:text-lg">🥼</span>
-                <span className="text-[11px] sm:text-xs font-black tracking-tight">نبذة العيادة (Clinical Pearl Guide)</span>
-              </div>
-              <div className="text-[10px] bg-white/20 px-2 py-0.5 rounded-md font-bold">
-                شرح مبسط
-              </div>
-            </div>
-
             {/* Scrolling Explanation Content */}
-            <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 scrollbar-thin scrollbar-thumb-slate-200">
-              {/* Question Context preview */}
-              <div className="p-4 sm:p-5 bg-blue-50/70 rounded-2xl border-2 border-blue-100 shadow-sm text-right relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1.5 h-full bg-blue-600/90" />
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-[10px] sm:text-xs font-black uppercase px-2.5 py-0.5 bg-blue-100/80 text-blue-700 border border-blue-200/50 rounded-lg tracking-wider">
-                    السؤال الأصلي (Original Question)
-                  </span>
-                  <span className="text-base sm:text-lg">❓</span>
-                </div>
-                <p className="text-slate-900 text-sm sm:text-base font-extrabold leading-relaxed text-left pl-3 antialiased" dir="ltr">
+            <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-5 scrollbar-thin scrollbar-thumb-slate-200">
+              {/* Prominent Question Header Text - Now highly visible and formatted beautifully */}
+              <div className="pb-4 border-b border-slate-100" dir="ltr">
+                <span className="text-xs font-black text-blue-600 block mb-1.5 uppercase tracking-wider">
+                  Question Content:
+                </span>
+                <p className="text-slate-900 text-base sm:text-lg font-extrabold leading-relaxed text-left antialiased">
                   {questionTitle}
                 </p>
               </div>

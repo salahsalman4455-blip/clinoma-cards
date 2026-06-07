@@ -160,6 +160,52 @@ export default function StudySession({
     }
   }, [timeSpentOnQuestion, distractionWarningPhase, returnedToSameQuestion]);
 
+  // Play a strong buzzer sound when distraction warning phase triggers
+  useEffect(() => {
+    if (distractionWarningPhase === 'first' || distractionWarningPhase === 'second') {
+      try {
+        const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+        if (AudioContextClass) {
+          const ctx = new AudioContextClass();
+          const now = ctx.currentTime;
+          
+          // Generate a highly audible buzzer notification sequence
+          const pulses = distractionWarningPhase === 'first' ? 2 : 3;
+          const frequency = distractionWarningPhase === 'first' ? 620 : 780; // Sharp synth pitches
+          const duration = distractionWarningPhase === 'first' ? 0.18 : 0.28; 
+          
+          for (let i = 0; i < pulses; i++) {
+            const startTime = now + i * 0.25;
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            
+            osc.type = 'sawtooth'; // Gives a clear buzz sound
+            osc.frequency.setValueAtTime(frequency, startTime);
+            
+            // Electronic bandpass filter to accent the beep resonance
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.setValueAtTime(frequency, startTime);
+            filter.Q.setValueAtTime(1.5, startTime);
+            
+            gain.gain.setValueAtTime(0, startTime);
+            gain.gain.linearRampToValueAtTime(0.4, startTime + 0.02);
+            gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+            
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.start(startTime);
+            osc.stop(startTime + duration + 0.05);
+          }
+        }
+      } catch (err) {
+        console.error("Audio buzzer error:", err);
+      }
+    }
+  }, [distractionWarningPhase]);
+
   // Reset timers each time the question changes (currentIndex changes)
   useEffect(() => {
     setTimeSpentOnQuestion(0);

@@ -17,12 +17,12 @@ export const CHAPTERS: Chapter[] = [
     id: 2,
     title: 'II. Chest Diseases',
     topics: [
+      'Bronchial Asthma',
       'Croup',
       'Epiglottitis',
       'Wheezy Chest and Foreign Body Aspiration',
       'Pneumonia',
-      'Bronchiolitis',
-      'Bronchial Asthma'
+      'Bronchiolitis'
     ]
   },
   {

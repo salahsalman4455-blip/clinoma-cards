@@ -9,20 +9,22 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 1,
     type: "short-essay",
     title: "Gross Hematuria Causes",
-    content: "Enumerate 4 common causes of \"Gross Hematuria\" in pediatric patients.",
+    content: "Enumerate 4 common causes of \"Gross Hematuria\" in children.",
     answer: "1. Urinary Tract Infection (UTI).\n2. Acute Post-Streptococcal Glomerulonephritis (APSGN).\n3. Trauma to the urinary tract.\n4. Urolithiasis / Hypercalciuria.",
     isClinical: false,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "Most Common Pediatric Causes of Gross Hematuria:\n\n1. **UTI**: البكتيريا بتخرشم بطانة المثانة وتعمل نزيف بسيط مع حرقان البول.\n2. **APSGN**: أشهر سبب لو كانت هيماتوريا لونها كوكاكولا (Tea-colored) بعد دور لوز أو جلد بـ 10-21 يوم.\n3. **Trauma**: خبطة في البطن/الضهر أو إدخال القسطرة بعنف.\n4. **Urolithiasis / Hypercalciuria**: الكالسيوم لما يزيد في البول بيبخر ويعمل بلورات تجرح المجرى (الرمل بيجرح)."
   },
   {
     id: "q-r-h-3",
     chapterId: 1,
     type: "short-essay",
     title: "Renal vs Lower Hematuria",
-    content: "Enumerate 4 classic features that differentiate Renal (Glomerular) Hematuria from Urinary Tract (Lower) Hematuria.",
+    content: "Enumerate 4 classic differences between Renal (Glomerular) Hematuria and Urinary Tract (Lower) Hematuria.",
     answer: "1. Urine color is cola-colored or smoky in renal hematuria.\n2. RBCs are deformed or dysmorphic under microscopy in renal hematuria.\n3. Blood clots are completely absent in renal hematuria.\n4. Significant proteinuria (exceeding 100 mg/dL) is present in renal hematuria.",
     isClinical: true,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "الفرق الجوهري بين مصدر الدم (من الكلية نفسها يعني من المصفاة Glomerulus) أو من السباكة التحتانية (Lower Tract):\n\n1. الـ **Color (اللون)**:\n- Glomerular: لون الكوكاكولا أو الشاي الغامق (Cola / Smoky) عشان الدم اتأكسد بالـ Acidic pH بتاع الأنابيب.\n- Lower: أحمر زاهي لسه طازة (Bright red / Fresh).\n\n2. الـ **RBCs under microscopy (شكل الخلايا)**:\n- Glomerular: متقطعة ومشوهة (Dysmorphic) عشان عافرت وتفعصت وهي بتعدي من المصفاة الضيقة.\n- Lower: خلايا سليمة وجميلة (Isomorphic) نازلة مستريحة.\n\n3. الـ **Blood Clots (الجلطات)**:\n- Glomerular: مستحيل تلاقي جلطات (No Clots) عشان الـ Urinary tract enzymes بتدوبها.\n- Lower: ممكن تلاقي خيوط تجلطات دم صريحة.\n\n4. الـ **Proteinuria (الزلال)**:\n- Glomerular: بيبهدل المكبس فينزل بروتين وزلال محترم (>100 mg/dL).\n- Lower: الزلال خفيف جداً أو شبه منعدم."
   },
 
   {
@@ -33,7 +35,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "An 11-year-old child presents with painless gross hematuria. Urinalysis shows bright red urine with normal isomorphic RBCs and the presence of blood clots. Proteinuria is minimal (<100 mg/dL).\n\nQuestions:\n1. Is the source of hematuria glomerular or extra-glomerular?\n2. Enumerate 2 potential diagnostic causes for this presentation.",
     answer: "1. Extra-glomerular (Lower urinary tract).\n2. Urinary Tract Infection (UTI) and Urolithiasis (Urinary stones).",
     isClinical: true,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "حل الكيسة دي بذكاء:\n\n1. الخلايا طالعة **Isomorphic** (سليمة مش معفصة) وفي **Blood Clots** ولون البول **Bright red**: دي كلها بصمات واضحة لـ **Extra-glomerular source** (برة الكلية، سباكة تحتانية).\n2. أشهر سببين يعملوا الدم ده هما:\n- **UTI**: التهاب شديد جرح المثانة.\n- **Urolithiasis**: حصوة رمت نفسها في الحالب أو المثانة وعمالة تجرح طوال الطريق."
   },
 
   // topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
@@ -43,20 +46,22 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 1,
     type: "short-essay",
     title: "Nephritic Syndrome Features",
-    content: "Enumerate the 4 core clinical manifestations of the acute nephritic syndrome in APSGN.",
+    content: "Enumerate the 4 core clinical findings of the acute nephritic syndrome in APSGN.",
     answer: "1. Sudden onset of gross hematuria (smoky or cola-colored urine).\n2. Edema (mild to moderate, typically periorbital).\n3. Hypertension.\n4. Oliguria.",
     isClinical: false,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "الرباعي المرعب للـ Nephritic Syndrome:\n\n1. **Hematuria (Smoky/Cola urine)**: نزل دم بسبب التهاب الأوعية الدموية وخراب مصفاة الكلية.\n2. **Edema (Mild-Moderate)**: بتبدأ تحت العين بالذات الصبح (Periorbital Puffiness) مش من فقد الزلال، ده بفعل احتباس المياه والملح (Salt and Water Retention).\n3. **Hypertension**: الكلية حابسة ملح وماية، فضغط وعاء الدم طار في العالي.\n4. **Oliguria**: الكلية شغالة بالقطارة ومصابة بقصور حاد مفاجئ."
   },
   {
     id: "q-r-a-3",
     chapterId: 1,
     type: "short-essay",
     title: "Confirming APSGN",
-    content: "Enumerate 4 essential laboratory investigations used to confirm the diagnosis of APSGN.",
+    content: "Enumerate 4 essential laboratory investigations to confirm the diagnosis of APSGN.",
     answer: "1. Urine analysis (detecting dysmorphic RBCs and RBC casts).\n2. Serum C3 complement level (characteristically reduced in the acute phase).\n3. Antistreptolysin O (ASO) titer (elevated after pharyngeal streptococcal infection).\n4. Renal function tests (elevated blood urea nitrogen and serum creatinine).",
     isClinical: false,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "إزاي تثبت إنها APSGN بالتحاليل؟ (خارطة طريق التأكيد):\n\n1. **Urine analysis**: عشان تدور على الدليل المادي (Dysmorphic RBCs & RBC Casts) اللي بيؤكد إن الالتهاب في الـ Glomerulus.\n2. **Serum C3 Complement**: المتمم المناعي واكل علقة في الحرب المناعية دي، فلازم تلاقيه **Markedly Depressed** (واطي جداً) في أول 6 - 8 أسابيع.\n3. **ASO Titer / Anti-DNase B**: بصمة الجريمة! بنقيس الأجسام المضادة للـ Streptococcal اللي خربت الدنيا بعد عدوى اللوز أو الجلد.\n4. **Renal Function Tests (BUN & Creatinine)**: بنطمن على كفاءة الفلترة وعشان نلقط أي فشل كلوي حاد بدري."
   },
   {
     id: "q-r-a-4",
@@ -66,7 +71,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 life-threatening acute complications (medical emergencies) of APSGN.",
     answer: "1. Hypertensive encephalopathy.\n2. Congestive heart failure / Acute pulmonary edema.\n3. Hyperkalemia.\n4. Rapidly progressive glomerulonephritis (RPGN).",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "مخاطر الـ APSGN اللي ممكن تودي في داهية في ثواني (الطوارئ):\n\n1. **Hypertensive Encephalopathy**: الضغط لما يعلى فجأة يعمل وذمة بالمخ وتشنجات وربما غيبوبة.\n2. **Acute Pulmonary Edema / HF**: احتباس السوائل بيبهدل عضلة القلب ويعمل رشح على الرئة، يخلي الطفل مش قادر ياخد نفسه وكأنه بيغرق في برة ماية.\n3. **Hyperkalemia**: البوتاسيوم بيعلى لأن الكلية مش بتصرف، وزيادة البوتاسيوم سم قاتل للقلب بيعمل Cardiac arrest.\n4. **RPGN (Rapidly Progressive Glomerulonephritis)**: تدهور صاروخي في وظائف الكلى مع تكوين أهلّة كلوية (Crescents) تدمر الفلاتر تماماً."
   },
   {
     id: "q-r-a-5",
@@ -76,7 +82,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "An 8-year-old girl develops generalized body puffiness, a severe headache, and passes tea-colored urine. Her blood pressure is 140/95 mmHg. Urinalysis reveals dysmorphic RBCs and RBC casts. Her serum C3 complement level is markedly depressed.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. Mention the calculated fluid restriction guideline for this patient during the oliguric phase.",
     answer: "1. Acute Post-Streptococcal Glomerulonephritis (APSGN).\n2. Fluid intake = Urine Output + 400 ml/m2 of body surface area.",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "فك شفرة الكيسة الفورية:\n\n1. طفلة عندها نافوخ بيطير من الصداع (Severe Headache) وضغط عالي جدًا (140/95) وبول بلون الشاي (Tea-colored) وخلايا متفعصة (Dysmorphic RBCs & RBC Casts) مضافاً إليها نقص الـ C3: التشخيص **قضي الأمر** هو **APSGN**.\n2. ميزان السوائل الذهبي في فترة قلة البول (Oliguric Phase) لمنع الانفجار وضيق التنفس:\n**Fluid intake = Urine output + 400 mL/m²** (الـ 400 دي لتعويض الفقد غير المحسوس Insensible losses زي العرق والنفس)."
   },
 
   // topic: "Nephrotic Syndrome"
@@ -86,20 +93,22 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 1,
     type: "short-essay",
     title: "Diagnostic Features of Nephrotic Syndrome",
-    content: "Enumerate the 4 essential diagnostic laboratory and clinical features of Nephrotic Syndrome.",
+    content: "Enumerate the 4 essential diagnostic features of Nephrotic Syndrome.",
     answer: "1. Heavy proteinuria (>40 mg/m2/hr or random spot protein/creatinine ratio >2).\n2. Hypoalbuminemia (serum albumin <2.5 g/dL).\n3. Generalized edema (anasarca).\n4. Hyperlipidemia (serum cholesterol >250 mg/dL).",
     isClinical: false,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "كارت التشخيص الأساسي للـ Nephrotic Syndrome (المأساة الرباعية للزلال):\n\n1. **Heavy Proteinuria (زلال فادح في البول)**: الكلية بتسرب الزلال بكميات مهولة أكثر من 40 mg/m²/hr أو النسبة في عينة عشوائية دقيقة > 2.\n2. **Hypoalbuminemia**: لأن الكبد مش ملاحق تصنيع هيدخل Serum Albumin إلى أقل من 2.5 g/dL.\n3. **Generalized Edema (Anasarca)**: لما الألبومين يقل، الـ Oncotic pressure في الأوعية ينهار، فالماوية تخرج للأنسجة وتنفخ الجسم كله (من جفون العين للرجلين للبطن).\n4. **Hyperlipidemia**: الكبد في محاولة بائسة لتعويض جفاف الألبومين بيصنع بروتينات تانية ويزود الـ Lipoproteins والـ Cholesterol عشوائياً في الدم (>250 mg/dL)."
   },
   {
     id: "q-r-n-3",
     chapterId: 1,
     type: "short-essay",
     title: "Nephrotic Syndrome Complications",
-    content: "Enumerate 4 prominent complications associated with Nephrotic Syndrome in children.",
+    content: "Enumerate 4 complications of Nephrotic Syndrome in children.",
     answer: "1. Severe bacterial infections (such as Spontaneous Bacterial Peritonitis).\n2. Thromboembolic events (arterial or venous thrombosis).\n3. Hypovolemic shock (induced by aggressive diuresis or severe fluid shift).\n4. Acute renal failure.",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "المضاعفات الخطيرة المترتبة على تسريب النفروتيك للبروتينات والـ Immunoglobulins:\n\n1. **Infections (بالذات SBP)**: الكلية بتسرب الـ Immunoglobulins والـ Complement في البول، فمناعة الطفل تقع والـ Streptococcus pneumoniae يعمل التهاب بريتوني تلقائي (SBP).\n2. **Thromboembolism (التجلطات)**: الكلية بتسرب مضادات التجلط الطبيعية (Antithrombin III)، والكبد بيصنع عوامل تجلط بزيادة والدم بيبقى لزوجته عالية (Hemoconcentration)، فتظهر الجلطات.\n3. **Hypovolemic Shock**: الماية هربانة برا الأوعية الدموية في الأنسجة، ولو عطينا مدرات بول بعنف من غير تعويض الألبومين، الـ Blood volume هينهار والطفل هيخش في صدمة هبوط الدورة الدموية.\n4. **Acute Renal Failure**: نتيجة للجفاف الحاد داخل الأوعية ورشح خلايا الأنابيب وكثرة إفراز الـ Casts."
   },
   {
     id: "q-r-n-4",
@@ -109,7 +118,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 specific indications for performing a Renal Biopsy in a child with Nephrotic Syndrome.",
     answer: "1. Age of onset less than 1 year or greater than 10 years.\n2. Presence of persistent hypertension or gross hematuria.\n3. Structural renal insufficiency or low complement (C3) level.\n4. Steroid-resistant nephrotic syndrome (failure to respond after 4-6 weeks of prednisone).",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "أيمتى ناخد عينة كلوية (Renal Biopsy) في طفل النفروتيك؟ (لأن الأغلبية العظمى Minimal Change ومش محتاجين عينة):\n\n1. **العمر المريب**: لو الطفل أصغر من سنة (Congenital) أو أكبر من 10 سنين (غالباً مش Minimal change).\n2. **أعراض طارئة ومستمرة**: وجود ضغط عالي مستمر (Persistent Hypertension) أو هيماتوريا صريحة (Gross Hematuria).\n3. **خلل وراثي أو مناعي**: مستوى C3 واطي ومستمر في الواطي، أو قصور كلوية واضح من الأول.\n4. **مقاومة الكورتيزون (Steroid Resistance)**: فشل المريض في الاستجابة واختفاء زلال البول بعد 4 - 6 أسابيع من جرعة البريدنيزون الكاملة."
   },
   {
     id: "q-r-n-5",
@@ -119,7 +129,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 4-year-old boy presents with progressive swelling around his eyes and lower limbs. Urinalysis reveals a frothy appearance with 4+ proteinuria. Laboratory values show a serum albumin of 1.7 g/dL and a serum cholesterol of 280 mg/dL. His blood pressure is normal.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. Mention the primary pharmacological class used to induce remission, and define 'Steroid-Responsive' in this clinical scenario.",
     answer: "1. Minimal Change Nephrotic Syndrome (MCNS).\n2. Corticosteroids (specifically oral Prednisone). 'Steroid-Responsive' indicates that the patient achieves complete remission (protein-free urine for 3 consecutive days) within 4-6 weeks of starting steroid therapy.",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "كيسة النفروتيك الكلاسيكية جداً:\n\n1. التشخيص هو **Minimal Change Nephrotic Syndrome (MCNS)** لأن الطفل عمره 4 سنين وضغطه طبيعي وماعندوش دم في البول، بس مورم وعنده زلال فادح (4+) وألبومين واطي وكوليسترول عالي.\n2. العلاج السحري: **Corticosteroids** (دواء Prednisone الفموي).\n3. معنى **Steroid-Responsive**: يعني البول ينضف تماما من الزلال (Protein-free urine) لـ 3 أيام متتالية خلال أول 4 - 6 أسابيع من بدء العلاج بالكورتيزون."
   },
 
   // topic: "Acute Kidney Injury (AKI)"
@@ -131,7 +142,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Acute Kidney Injury (AKI)\".",
     answer: "It is a rapid decline (within a few hours to days) in glomerular filtration rate (GFR) resulting in the disturbance of renal physiological functions, leading to the impairment of nitrogenous waste product excretion and loss of water, electrolyte, and acid-base regulation.",
     isClinical: false,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "الـ AKI بتبسيط طبي:\n\nهي هبوط حاد وسريع وصادم (في ساعات أو أيام معدودة) لمعدل فلترة الكلية للدم (GFR). الكلية فجأة بتضرب فرامل، فتعجز عن تصريف الفضلات النيتروجينية (اليوريا والكرياتينين) وتبوظ موازين المية والأملاح والـ Acid-base في الجسم."
   },
   {
     id: "q-r-ki-2",
@@ -141,7 +153,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 common \"Prerenal\" causes of AKI in pediatric emergencies.",
     answer: "1. Severe dehydration (e.g., from vomiting and diarrhea).\n2. Massive hemorrhage (acute blood loss).\n3. Septic shock (severe fulminant sepsis causing renal hypoperfusion).\n4. Severe burns (plasma fluid losses).",
     isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "الـ Prerenal هو مشكلة \"برة وجبل\" الكلية، يعني المية مقطوعة عن المحطة (Renal hypoperfusion). الكلية سليمة بس مفيش دم واصل لها عشان المريض ناشف:\n\n1. **Severe Dehydration (جفاف حاد)**: أشهر سبب للأطفال بسبب روتين النزلات المعوية العنيفة (إسهال وترجيع).\n2. **Massive Hemorrhage**: نزيف حاد أدى للانخفاض الشديد لحجم الدم.\n3. **Septic Shock**: البكتيريا في الدم عملت تمدد رهيب للأوعية وهبوط في الضغط فقل الدم الرايح للكلية.\n4. **Severe Burns**: الحروق الكبيرة بتسرب البلازما برة الجسم فتقل السوائل داخل الأوعية."
   },
 
 
@@ -153,7 +166,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 2-year-old infant with a 3-day history of severe vomiting and diarrhea presents with anuria for 14 hours, dry mucous membranes, and tachycardia. Laboratory testing reveals elevated serum blood urea nitrogen (BUN) and creatinine.\n\nQuestions:\n1. What type of Acute Kidney Injury is this?\n2. Enumerate 2 essential initial urinary indicators used to confirm this specific type.",
     answer: "1. Prerenal Acute Kidney Injury.\n2. Low urine sodium (<20 mEq/L) and a Fractional Excretion of Sodium (FENa) less than 1%.",
     isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "قراءة تشخصية عميقة للكيسة:\n\n1. طفل عنده إسهال وترجيع (ناشف وجاف) وجاله انقطاع بول (Anuria) مع تسرع القلب (Tachycardia): الكلية بتحاول تحافظ على الماية اللي باقية بأي طريقة، فالتشخيص طبعاً **Prerenal AKI**.\n2. الإشارات التحليلية بالبول اللي بتثبت كفاءة أنابيب الكلية الكادحة لامتصاص الصوديوم والماء:\n- **Low Urine Sodium < 20 mEq/L** (الكلية بتمتص الصوديوم عشان تحبس سائل فالبول ينزل فاضي صوديوم).\n- **Fractional Excretion of Sodium (FENa) < 1%** (مؤشر ذهبي يؤكد أن الفرز الكلوي ممتاز والقصور بسبب قلة التروية فقط)."
   },
 
   // topic: "Chronic Kidney Disease (CKD)"
@@ -165,7 +179,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Chronic Kidney Disease (CKD)\" according to KDOQI criteria.",
     answer: "It is defined as structural or functional abnormalities of the kidney for more than 3 months with health implications, or a persistent decrease in Glomerular Filtration Rate (GFR) to less than 60 ml/min/1.73m2 for more than 3 months.",
     isClinical: false,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "تعريف قاطع للـ CKD:\n\nهو خراب بنيوي أو خلل وظيفي ممتد ومزمن في الكلية لفترة تتجاوز **3 أشهر**، يترتب عليه مشاكل صحية حقيقية، أو هبوط مستمر لمعدل الترشيح الكلوي (GFR) إلى **أقل من 60 ml/min/1.73m²** لذات الفترة."
   },
   {
     id: "q-r-c-2",
@@ -175,7 +190,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 underlying clinical mechanisms or metabolic findings characteristically seen in CKD.",
     answer: "1. Accumulation of nitrogenous waste products (elevated BUN and creatinine).\n2. Metabolic acidosis (impaired net acid excretion).\n3. Hyperkalemia.\n4. Renal osteodystrophy (secondary hyperparathyroidism).",
     isClinical: false,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "المستنقع الأيضي لمرضى الكلية المزمنين (CKD):\n\n1. **Uremia (تراكم العوادم النيتروجينية)**: تراكم اليوريا والكرياتينين بيبهدل الخلايا ويعمل كسل وتقيؤ وهرش شديد.\n2. **Metabolic Acidosis**: الكلية عاجزة عن التخلص من أيونات الهيدروجين الحامضية وإعادة امتصاص البيكربونات.\n3. **Hyperkalemia**: الفلتر مش شغال، البوتاسيوم بيبدأ يتحبس ويدخل المريض في كوارث كهربية بالقلب.\n4. **Renal Osteodystrophy**: ندر عظام وتراكم فوسفور مع نقص فيتامين D النشط، يثير غضب الغدة الجار درقية (Secondary hyperparathyroidism) فتأكل العضم عشان توفر كالسيوم بالدم!"
   },
   {
     id: "q-r-c-3",
@@ -185,7 +201,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 core long-term complications of CKD that require targeted pharmacological interventions.",
     answer: "1. Renal osteodystrophy (high-turnover bone disease).\n2. Growth retardation (short stature).\n3. Normochromic normocytic anemia (erythropoietin deficiency).\n4. Hypertension (volume overload or excessive renin production).",
     isClinical: true,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "أربع مشاكل تدميرية على المدى الطويل لمريض الـ CKD وعلاجها:\n\n1. **Renal Osteodystrophy**: اعتلال العظام بسب نقص Vit D النشط وحبس الفوسفات.\n2. **Growth Retardation**: قصر القامة وتأخر النمو بسبب الـ Acidosis واليوريميا وضعف هرمون النمو.\n3. **Pediatric Anemia**: أنيميا غريبة (Normochromic normocytic) بسبب غياب هرمون الـ **Erythropoietin** اللي المفروض الكلية بتفرزه لتحفيز نخاع العظام لتصنيع RBCs.\n4. **Hypertension**: الضغط بيولع بسبب زيادة محتوى الماء والملح أو تنشيط مبالغ للـ Renin-Angiotensin system."
   },
 
   {
@@ -196,67 +213,74 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 6-year-old boy with a history of chronic glomerulonephritis presents with short stature, severe pallor, and a bone deformity of the long legs. Lab work demonstrates chronic elevations of serum creatinine, hypocalcemia, hyperphosphatemia, and a hemoglobin level of 7.5 g/dL.\n\nQuestions:\n1. What is the cause of his severe pallor and low hemoglobin?\n2. Enumerate 2 management lines used to treat his specific bone disorder.",
     answer: "1. Anemia of CKD due to inadequate erythropoietin production by the failing kidneys.\n2. Low phosphorus diet and administration of oral phosphate binders followed by active Vitamin D supplementation.",
     isClinical: true,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "تحليل كيسة الفشل الكلوي المزمن في الأطفال:\n\n1. طفل عنده فشل كلوية ومورم وعنده قصر قامة ونقص كالسيوم وزيادة فوسفات وأنيميا حادة (Hemoglobin 7.5): الأنيميا سببها الأساسي هو **فشل الكلى في إنتاج هرمون Erythropoietin**.\n2. خطة حماية العظام من التفتت والتشكل الغلط (Renal Osteodystrophy):\n- **منع الفوسفات**: تقليل الفوسفات في الغذاء وإعطاء رابطات فوسفات بالفم (Phosphate binders) مع الأكل لمنع امتصاصه.\n- **حقن فيتامين D النشط (Calcitriol)**: لتعويض عجز الكلى عن تنشيطه ولزيادة امتصاص الكالسيوم بالتالي هدوء الغدة الجار درقية."
   },
   {
     id: "q-r-ki-4",
     chapterId: 1,
     type: "short-essay",
     title: "Pediatric RIFLE (pRIFLE) Criteria",
-    content: "Enumerate the 5 stages of the Pediatric RIFLE (pRIFLE) criteria used for severity stratification in Acute Kidney Injury, including the eGFR or Urine Output (UOP) criteria for each stage.",
+    content: "Enumerate the 5 pRIFLE stages for Acute Kidney Injury (AKI) with their eGFR or Urine Output (UOP) criteria.",
     answer: "1. R - Risk: eGFR decreases by 25% OR UOP < 0.5 mL/kg/hour for 8 consecutive hours (Mild Decline).\n2. I - Injury: eGFR decreases by 50% OR UOP < 0.5 mL/kg/hour for 16 consecutive hours (Significant Decline).\n3. F - Failure: eGFR decreases by 75% OR UOP < 0.3 mL/kg/hour for 24 hours OR Anuria for 12 hours (Severe Decline).\n4. L - Loss: Persistent acute kidney failure requiring dialysis for > 4 weeks (Persistent Failure).\n5. E - ESRD: Persistent kidney failure requiring permanent renal replacement therapy (RRT) for > 3 months (End-Stage Disease).",
     isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "معايير pRIFLE لتقدير شدة الـ AKI في الأطفال (افتكر الـ RIFLE يعني بندقية الصيد):\n\n1. **R (Risk) - خطورة**: GFR بيقل بـ 25% أو كمية البول لقطت أقل من 0.5 mL/kg/hr لـ 8 ساعات مستمرة.\n2. **I (Injury) - إصابة**: GFR بيقل بـ 50% أو كمية البول أقل من 0.5 mL/kg/hr لـ 16 ساعة مستمرة.\n3. **F (Failure) - فشل**: GFR بيقل بـ 75% أو كمية البول أقل من 0.3 mL/kg/hr لـ 24 ساعة أو انقطاع تام للبول (Anuria) لـ 12 ساعة.\n4. **L (Loss) - خسارة وظيفة**: استمرار الفشل الكلوية والاحتياج للغسيل أكثر من 4 أسابيع.\n5. **E (ESRD) - مرحلة الفشل النهائي**: نهاية المطاف، فقدان كامل للوظائف واحتياج مزمن للغسيل أو الزراعة لأكثر من 3 أشهر."
   },
   {
     id: "q-r-a-6",
     chapterId: 1,
     type: "short-essay",
     title: "Pharyngeal vs Cutaneous APSGN",
-    content: "Enumerate 4 clinical or laboratory parameters that distinguish Acute Post-Streptococcal Glomerulonephritis (APSGN) following a throat (pharyngeal) infection from that following a skin (cutaneous) infection.",
+    content: "Enumerate 4 parameters distinguishing pharyngeal vs. cutaneous APSGN.",
     answer: "1. Nephritogenic Strains: Throat infection is usually caused by Type 4 or 12, whereas skin infection is caused by Type 49.\n2. Latent Period: 1-2 weeks after throat infection, compared to 2-3 weeks after skin infection.\n3. Seasonal Prevalence: Winter/Spring for throat infections, compared to Summer for skin infections.\n4. ASOT Titers: Characteristically elevated after throat infections, whereas ASOT titers may be normal after skin infections.",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "لعبة الفروق الأربعة بين APSGN الحلقية وAPSGN الجلدية:\n\n1. **الجرثومة (Strain)**: عدوى الحلق بفعل سلالات 4 أو 12، بينما عدوى الجلد بفعل سلالة 49.\n2. **فترة الحضانة (Latent Period)**: بعد اللوز بنقعد 1-2 أسبوع وتبدأ أعراض الكلية، أما بعد التهاب الجلد بنقعد 2-3 أسابيع (طريق أطول للمناعة).\n3. **الموسم (Season)**: عدوى الحلق في البرد والشتا، أما الجلد والدمامل في الصيف والحر.\n4. **تحليل الـ ASOT**: بيكون مرتفع كلاسيكي جداً بعد اللوز، وممكن تلاقيه طبيعي خالص بعد التهاب الجلد (الجلد ما فيهوش إنزيمات تحفز ASOT كويس، فبنلجأ لتحليل Anti-DNase B بدالها)."
   },
   {
     id: "q-r-h-4",
     chapterId: 1,
     type: "short-essay",
     title: "Renal Biopsy Indications in Hematuria",
-    content: "Enumerate 4 key clinical indications for performing a Renal Biopsy in a pediatric patient presenting with hematuria.",
+    content: "Enumerate 4 clinical indications for performing a Renal Biopsy in a child with hematuria.",
     answer: "1. Unexplained persistent or recurrent gross hematuria.\n2. Biopsy-confirmed or highly suspected Lupus Nephritis.\n3. Atypical Glomerulonephritis course (such as nephritic-nephrotic syndrome, or persistently low C3 complement levels beyond 6-8 weeks).\n4. Unexplained, progressive acute kidney injury or renal failure associated with hematuria.",
     isClinical: true,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "لو جالك طفل بدم في البول (Hematuria)، أوقات لازم تعمل عينة كلوية فوراً:\n\n1. هيماتوريا صريحة مستمرة أو بتتكرر مش عارفين سببها بالتحاليل العادية.\n2. شك فوري في Lupus Nephritis (ذئبة حمراء هاجمت الكلى).\n3. مسار غريب وغير متوقع للـ Glomerulonephritis (زي زلال ونفروتيك مع بعض، أو C3 complement واطي وماركبش مكانه بعد 8 أسابيع).\n4. تدهور سريع وارتفاع صاروخي لوظائف الكلى (قصور كلوي غير مفسر) مصاحباً للدم."
   },
   {
     id: "q-r-c-4",
     chapterId: 1,
     type: "short-essay",
     title: "CKD 5-Stage GFR Classification",
-    content: "Enumerate the 5 progressive stages of Chronic Kidney Disease (CKD) based on Glomerular Filtration Rate (GFR) levels according to KDOQI guidelines.",
+    content: "Enumerate the 5 stages of Chronic Kidney Disease (CKD) based on GFR levels.",
     answer: "1. Stage 1: GFR is greater than or equal to 90 mL/min/1.73 m² (Normal or elevated filtration with kidney damage).\n2. Stage 2: GFR is 60 - 89 mL/min/1.73 m² (Mild functional renal impairment).\n3. Stage 3: GFR is 30 - 59 mL/min/1.73 m² (Stage 3a: GFR 45-59; Stage 3b: GFR 30-44; reflecting moderate renal failure).\n4. Stage 4: GFR is 15 - 29 mL/min/1.73 m² (Severe pre-terminal renal insufficiency).\n5. Stage 5: GFR is less than 15 mL/min/1.73 m² (End-Stage Renal Disease (ESRD) requiring dialysis or transplantation).",
     isClinical: false,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "التدريج الخماسي لمستويات الـ GFR لمرضى الكلية المزمنين:\n\n- **Stage 1 (الفلتر سليم بس في جرح)**: GFR عالي أكثر من 90 مل/دقيقة، بس في علامات تدمير كلوي (زي زلال بول).\n- **Stage 2 (تعب خفيف جداً)**: GFR بين 60 - 89 مل/دقيقة.\n- **Stage 3 (قصور متوسط المشاكل)**: GFR بين 30 - 59 مل/دقيقة (وبينقسم لـ 3a و 3b).\n- **Stage 4 (قصور حاد قبل النهائي)**: GFR بين 15 - 29 مل/دقيقة، مرحلة التجهيز للغسيل والقصور الشديد.\n- **Stage 5 (الفشل التام - ESRD)**: GFR أقل من 15 مل/دقيقة، الكلية هنا خرجت عن الخدمة ولازم غسيل أو زراعة كلية."
   },
   {
     id: "q-r-u-1",
     chapterId: 1,
     type: "define",
     title: "Define Pediatric UTI Classifications",
-    content: "Define the three main clinical classifications of Urinary Tract Infections (UTIs) in pediatric patients: Pyelonephritis, Cystitis, and Asymptomatic Bacteriuria.",
+    content: "Define the three main clinical classifications of Urinary Tract Infections (UTIs) in children: Pyelonephritis, Cystitis, and Asymptomatic Bacteriuria.",
     answer: "1. Pyelonephritis (Acute Parenchymal Involvement): Characterized by fever, abdominal or flank pain, systemic symptoms (vomiting, irritability in infants), and carries a high risk of renal scarring.\n2. Cystitis (Bladder Involvement): Characterized by localized bladder symptoms (dysuria, urgency, frequency, suprapubic pain) in the absence of fever or renal scarring.\n3. Asymptomatic Bacteriuria: Characterized by a positive urine culture but a complete absence of clinical symptoms, presenting almost exclusively in girls and posing no risk of renal injury.",
     isClinical: false,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "التقسيم الثلاثي للـ UTI في أطفالنا وطرق تشخيصهم:\n\n1. **Pyelonephritis (حريق في الكبر الكلوية نفسه)**: سخونة مولعة، وجع بطن أو ضهر، رجفة وترجيع، مخاطرة شديدة لندبات الكلية (Renal Scarring).\n2. **Cystitis (التهاب محبوس بالمثانة)**: مفيش سخونية، بس في حرقان شديد في البول (Dysuria)، دخول حمام مستمر (Frequency)، وجع فوق العانة.\n3. **Asymptomatic Bacteriuria (بكتيريا مسالمة)**: بكتيريا نبتت في المزرعة بس البنت مفهاش أي حكة أو عرض، ودي غالباً في البنات الصغيرين ولا تضر الكلية ومش محتاجة تتدخل بمضادات."
   },
   {
     id: "q-r-u-2",
     chapterId: 1,
     type: "short-essay",
     title: "UTI Pathogens & Risk Factors",
-    content: "Enumerate the most common pathogen and 4 distinct clinical risk factors or predisposing anatomical/behavioral conditions for UTIs in children.",
+    content: "Enumerate the most common UTI pathogen and 4 risk factors for UTIs in children.",
     answer: "Most Common Pathogen: Escherichia coli (E. coli), accounting for almost all infections.\n4 Distinct Risk Factors:\n1. Female gender (due to a shorter urethra) or being an uncircumcised male infant (increased periurethral colonization).\n2. Anatomical abnormalities such as Vesicoureteral Reflux (VUR) or posterior urethral valves.\n3. Pediatric behavioral habits or issues such as toilet training phase, poor hygiene, or wearing tight underwear.\n4. Intestinal or bladder dysfunction such as chronic constipation, pinworm infestation, neurogenic bladder, or prolonged voiding dysfunction.",
     isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "Most Common Pathogen$E. coli$: الراعي الرسمي للـ UTI في الأطفال.\n\n4 Distinct Risk Factors (The \"Inside & Outside\" Approach):\n\n1. الـ **Structural Defects** (مشاكل في السباكة من جوه):\n**Vesicoureteral Reflux (VUR)**: صمامات بتفوت، فالبول بيرد لفوق (Backward flow) للـ Kidney ويعمل Stasis.\n\n2. الـ **Outflow Obstruction** (سدة في المجرى):\n**Posterior Urethral Valves (PUV) / Chronic Constipation**: الـ PUV بيسد المجرى من جوه، والـ Constipation بيضغط على الـ Bladder من بره. النتيجة واحدة $\\rightarrow$ Incomplete emptying.\n\n3. الـ **Entry Shortcuts** (طريق مختصر ودخول سهل):\n**Female gender**: المسافة قصيرة جداً (Shorter urethra)، فالبكتيريا بتطلع Ascending بسرعة وسهولة.\n\n4. الـ **Local Colonization** (تجمع بكتيري على البوابة):\n**Uncircumcised males / Poor hygiene**: تراكم البكتيريا تحت الـ Foreskin عند الرضع، أو مسح البراز غلط (Back to front) عند البنات."
   },
   {
     id: "q-r-u-3",
@@ -266,7 +290,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Mention the gold-standard test used to confirm a Pediatric UTI, and enumerate 3 primary imaging investigations used in the evaluation of a child with their first febrile UTI along with their clinical indications.",
     answer: "Gold-Standard Test: Urine Culture (necessary for definitive UTI confirmation).\n3 Primary Imaging Investigations:\n1. Renal Ultrasonogram (RUS): Indicated in all infants and children with a first febrile UTI to rule out hydronephrosis, renal abscess, or anatomical anomalies.\n2. Voiding Cystourethrogram (VCUG): Indicated in infants <5 years with febrile UTI, children with a recurrence, or any male with UTI to identify Vesicoureteral Reflux (VUR - the most common finding).\n3. DMSA Renal Scanning: Indicated when acute pyelonephritis diagnosis is uncertain or to document and assess permanent renal scarring (typically 4-6 months post-infection).",
     isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "خارطة الأشعة والتحليل الذهبية للـ UTI لشغل عيادة الأطفال:\n\n- **التحليل الذهبي التأكيدي**: **Urine Culture (مزرعة بول)** من عينة نظيفة، مستحيل تشخص وتدي علاج نهائي لـ UTI بدونه.\n\nالـ 3 فحوصات بالأشعة بعد أول دور سخونة في مجرى البول:\n1. **أشعة تليفزيونية (Renal US)**: لكل طفل جاله UTI وسخونة، عشان نطمن على شكل الكلى ونستبعد أي تضخم أو خراج.\n2. **أشعة صبغية أثناء التبول (VCUG)**: دي الأشعة الأهم لاستبعاد الارتجاع (VUR). بنعملها لو السونار طلع مش مريح، أو لو طفل أصغر من 5 سنين جاله UTI حراري، أو لو المريض ولد.\n3. **مسح ذري كلوية (DMSA Scan)**: بنقيس بيه خلايا قشرة الكلى الباقية، ونعرف هل في ندبات أو جروح بالكلية بعد 4 - 6 شهور من الالتهاب الشديد."
   },
   {
     id: "q-r-u-5",
@@ -276,7 +301,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "An uncircumcised 5-month-old male infant presents with high fever, irritability, poor feeding, and severe jaundice. A catheterized urine specimen shows significant leukocyturia. Urine culture confirms Escherichia coli UTI.\n\nQuestions:\n1. What is the specific clinical classification of this UTI?\n2. State the treatment protocol regarding route, broad-spectrum antibiotic choices, and duration of therapy.",
     answer: "1. Acute Pyelonephritis (parenchymal involvement with systemic symptoms in an infant).\n2. The patient must be treated with parenteral (intravenous) broad-spectrum antibiotics (such as Ceftriaxone, or Ampicillin combined with Gentamicin) for a total of 14 days, followed by daily oral antibiotic prophylaxis at one-third of the therapeutic dose once daily.",
     isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "طبيب الأطفال الناجح يحل الفخ ده كدا:\n\n1. طفل رضيع 5 شهور، عنده حرارة ورفض أكل وصفراء وصديد بالبول: ده كلاسيكي **Acute Pyelonephritis** (الـ UTI في الرضع دايماً بنعتبره فوق في الكلى ومعاه أعراض عامة).\n2. بروتوكول العلاج الحازم لمنع تليف الكلية:\n- **مستشفى ومضاد بالوريد**: لازم يتحجز ياخد مضاد حيوي واسع المجال بالوريد (زي Ceftriaxone أو Ampicillin+Gentamicin) لمدة **14 يوم كاملين**.\n- **وقاية مستمرة**: بعد الـ 14 يوم بنمشيه على جرعة طفيفة وقائية يومية بالليل (Prophylaxis) لحد ما نعمل أشعة الارتجاع ونطمن مفيش عيوب خلقية."
   },
 
   // ==================== II. Chest Diseases ====================
@@ -289,27 +315,30 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Croup (Laryngo-tracheo-bronchitis)\".",
     answer: "It is a viral infection of the glottic and subglottic regions, standing as the most common syndrome of inflammatory upper airway obstruction in young children.",
     isClinical: false,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "الـ **Croup** (الكروب أو الخانوق) هو إصابة فيروسية حادة تصيب منطقة الأحبال الصوتية وما تحتها. يُعد السبب الأكثر شيوعاً لانسداد مجرى الهواء العلوي عند الرضع والأطفال الصغار."
   },
   {
     id: "q-c-cr-2",
     chapterId: 2,
     type: "short-essay",
     title: "Classic Croup Symptoms",
-    content: "Enumerate the 4 classic clinical symptoms that define the presentation of Croup.",
+    content: "Enumerate the 4 classic symptoms of Croup.",
     answer: "1. Barking cough.\n2. Inspiratory stridor.\n3. Hoarseness of voice.\n4. Respiratory distress (worse at night).",
     isClinical: false,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "أشهر 4 علامات سريرية تُميز مرض الخانوق (Croup):\n1. **Barking cough**: الكحة النباحية المميزة (مثل نباح السلب/الفقمة).\n2. **Inspiratory stridor**: صوت تزييق/شهيق خشن ومستمر عند التنفس.\n3. **Hoarseness of voice**: بحة واضحة بالصوت لتأثر الأحبال الصوتية.\n4. **Respiratory distress**: ضيق تنفس واضح يشتد ليلاً بسبب تورم مجرى الهواء."
   },
   {
     id: "q-c-cr-3",
     chapterId: 2,
     type: "short-essay",
     title: "Croup Management Plan",
-    content: "Enumerate 4 components of the therapeutic management plan for a child with Croup.",
+    content: "Enumerate 4 components of the management of Croup.",
     answer: "1. Supplemental humidified oxygen.\n2. Nebulized Epinephrine (L-epinephrine or racemic epinephrine) to reduce edema.\n3. A single dose of systemic Corticosteroids (oral or IM Dexamethasone).\n4. Keeping the patient nothing per mouth (NPO) and avoiding agitation.",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "بروتوكول التعامل والسيطرة على الكروب حاد الأعراض:\n1. **Humidified O2**: أكسجين رطب مهدئ ومرطب.\n2. **Nebulized Epinephrine**: أدرينالين مستنشق لتقليص الأوعية وتقليل تورم مجرى الهواء العاجل.\n3. **Systemic Corticosteroid**: كورتيزون (مثل Dexamethasone فموي أو عضلي بجرعة واحدة) لقمع الالتهاب على المدى المتوسط.\n4. **Rest and NPO**: تجنب استفزاز وهلع الرضيع، وجعله صائماً (NPO) لو تنفسه سريع جداً تلافياً للشرقة والالتهاب الرئوي الكيميائي."
   },
   {
     id: "q-c-cr-4",
@@ -319,7 +348,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical signs that indicate impending respiratory failure in a child with severe Croup.",
     answer: "1. Cyanosis.\n2. Pallor.\n3. Decreased level of consciousness / depressed sensorium.\n4. Decreased stridor or barking cough despite severe retractions (failing effort).",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "علامات الخطر الكبرى للانهيار التنفسي الحاد في طفل الكروب (تستدعي تعاملاً وتنبيباً فورياً):\n1. زرقان مركزي للشفتين واللسان (**Cyanosis**).\n2. شحوب شديد وفقدان الحيوية واللون (**Pallor**).\n3. غياب أو هبوط مستوى الوعي والتركيز لتراكم CO2 ونقص الأكسجين.\n4. **الصمت الارتدادي**: اختفاء التزييق والكحة رغم الجهد العضلي العنيف للصدر، ده معناه تعب كامل للعضلات وانسداد وشيك لمجرى التنفس."
   },
   {
     id: "q-c-cr-5",
@@ -329,7 +359,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 2-year-old boy is brought to the emergency clinic at midnight with a barking cough and high-pitched noisy sounds heard on inspiration. On examination, he has low-grade fever and mild subcostal retractions, but remains alert.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What classic radiological sign is expected on a postero-anterior neck X-ray?",
     answer: "1. Acute Viral Croup.\n2. The Steeple Sign (uniform subglottic narrowing of the airway).",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "تحليل حالة طفل بنباح وصوت شهيق حاد في الليل مع نهجان خفيف:\n1. التشخيص الأقرب هو التهاب حنجرة وقصبة هوائية فيروسي (**Viral Croup**).\n2. العلامة الإشعاعية الفارقة هي **Steeple Sign** (علامة قبة المسجد أو برج الكنيسة) وتظهر كضيق متماثل لمنطقة ما تحت الأحبال اللسانية."
   },
 
   // topic: "Epiglottitis"
@@ -341,17 +372,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Acute Epiglottitis\".",
     answer: "It is a life-threatening, rapidly progressive bacterial infection of the epiglottis and surrounding structures, capable of causing complete airway obstruction.",
     isClinical: false,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "الـ **Epiglottitis** (التهاب لسان المزمار) هو حالة بكتيرية شرسة مهددة للحياة، تسبب انسداداً تاماً وسريعاً بمجرى الهواء العلوي ولا تستجيب لجلسات الأدرينالين أو الكورتيزون."
   },
   {
     id: "q-c-e-2",
     chapterId: 2,
     type: "short-essay",
     title: "Epiglottitis Clinical Picture",
-    content: "Enumerate 4 classic clinical manifestations of Acute Epiglottitis.",
+    content: "Enumerate 4 classic clinical findings of Acute Epiglottitis.",
     answer: "1. Acute onset of high-grade fever and severe sore throat.\n2. Drooling of saliva (due to severe inability to swallow).\n3. Hyperextension of the neck (sniffing position to maintain airway).\n4. Severe, rapidly progressive respiratory distress without a barking cough.",
     isClinical: false,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "أهم 4 علامات سريرية ترفع الشك بالإصابة بالتهاب لسان المزمار:\n1. حرارة عالية نارية مفاجئة وسوء شديد بالحلق.\n2. سيلان اللعاب المستمر من الفم (**Drooling**) لعجز الطفل التام عن البلع لوجع الحلق والورم الشديد.\n3. وضعية الاستنشاق والشم (**Sniffing position**): الطفل بيميل لقدام ويمد رقبته لمحاولة سحب الأكسجين.\n4. صعوبة تنفس خانقة متدهورة بدون وجود كحة نباحية واضحة."
   },
   {
     id: "q-c-e-3",
@@ -361,7 +394,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 critical clinical contraindications in the immediate management of suspected Epiglottitis.",
     answer: "1. Do not place the child in a supine position.\n2. Do not examine the oral cavity or throat using a tongue depressor (risk of sudden cardiac arrest).\n3. Do not perform agitating diagnostic tests (like phlebotomy) before securing the airway.\n4. Do not rely on corticosteroids or nebulized epinephrine, as they are ineffective.",
     isClinical: true,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "المحاذير والأخطاء الفادحة الممنوعة عند الشك بـ Epiglottitis لتلافي حدوث تقلص تشنجي (**Laryngospasm**) يغلق المجرى بالكامل فوراً:\n1. **No Supine**: يمنع منعاً باتاً استلقاء الطفل على ظهره.\n2. **No Tongue Depressor**: ممنوع إدخال خافض اللسان أو فحص الحلق عشوائياً.\n3. **No agitation**: تجنب أي إجراء يسبب هلع للطفل (مثل شك الإبر للمحاليل أو الدم) قبل التحكم في مجرى التنفس وصيانته بالطرق الطبية.\n4. عدم الاعتماد على جلسات الأدرينالين أو إعطاء الكورتيزون فقط لأن المشكلة انسداد ميكانيكي حاد بكتيري."
   },
   {
     id: "q-c-e-4",
@@ -371,7 +405,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 4 components of the standard therapeutic intervention for confirmed Epiglottitis.",
     answer: "1. Immediate insertion of an artificial airway (endotracheal intubation) in the OR or ICU.\n2. Empiric intravenous antibiotic therapy (Vancomycin plus Ceftriaxone for 10 days).\n3. Supplemental oxygen delivery without mask agitation.\n4. Continuous monitoring of airway patency and direct visualization before extubation.",
     isClinical: true,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "روافد علاج حالة لسان المزمار المؤكدة:\n1. تأمين مجرى التنفس بتركيب أنبوب تنفس صناعي (**Intubation**) في غرفة العمليات أو العناية المركزة فوراً.\n2. مضادات بكتيرية وريدية فورية وقوية (**Ceftriaxone + Vancomycin** لمدة 10 أيام).\n3. دعم الأكسجين المستمر بدون استثارة أو هلع الطفل.\n4. المتابعة المستمرة وفحص الحنجرة المباشر للتأكد من هبوط الالتهاب تماماً قبل إزالة أنبوب التنفس."
   },
   {
     id: "q-c-e-5",
@@ -381,7 +416,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 4-year-old unimmunized child presents with a sudden onset of high fever, severe respiratory distress, and is sitting leaning forward while drooling saliva. The clinician suspects an upper airway emergency.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the primary causative organism for this specific presentation?",
     answer: "1. Acute Epiglottitis.\n2. Hemophilus influenzae type b (Hib).",
     isClinical: true,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "تحليل حالة طفل 4 سنوات غير مطعم (Unimmunized) مريض بحرارة شديدة وصعوبة بلع وريالة مع الميل للأمام:\n1. التشخيص هو **Epiglottitis** (التهاب لسان المزمار حاد).\n2. الكائن المسبب والمشهور تاريخياً هو بكتيريا **Haemophilus influenzae type b (Hib)**."
   },
 
   // topic: "Wheezy Chest and Foreign Body Aspiration"
@@ -393,7 +429,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Wheezing\".",
     answer: "It is an expiratory continuous musical respiratory sound produced by turbulent airflow through partially obstructed small bronchi and bronchioles.",
     isClinical: false,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "الـ **Wheezing** (التزييق أو الصفير الرئوي) هو صوت تنفسي موسيقي تصفيري مسموع ومستمر أثناء **الزفير** (**Expiratory**)، وده بيكون نتيجة تدفق هواء سريع عبر شعب وهوائية صغيرة تضيق بسب الورم أو التشنج والبلغم."
   },
   {
     id: "q-c-w-2",
@@ -403,7 +440,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 common pediatric causes of \"Recurrent Wheezing\".",
     answer: "1. Bronchial asthma.\n2. Recurrent aspiration (e.g., in infants with GERD).\n3. Chronic chest infections.\n4. Bronchopulmonary dysplasia (BPD).",
     isClinical: false,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "أشهر 4 أسباب لتكرار تزييق الصدر بالرضع والأطفال:\n1. **Bronchial asthma**: حساسية الصدر أو الربو الشعبي.\n2. **Recurrent aspiration**: الشرقة المتكررة (مثل ارتجاع المرئ الشديد GERD).\n3. **Chronic chest infections**: التهابات الصدر المزمنة.\n4. **BPD (خلل التنسج القصب الرئوي)**: يحدث نتيجة التنفس الصناعي المطول بجرعات أكسجين عالية لحديثي الولادة والخدج."
   },
   {
     id: "q-c-w-3",
@@ -413,7 +451,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical signs or complications characteristic of Foreign Body Aspiration in a child.",
     answer: "1. History of sudden choking, coughing, or gagging while playing.\n2. Fixed, localized unilateral wheeze on auscultation.\n3. Unilaterally diminished breath sounds.\n4. Recurrent pneumonia or abscess localized in the exact same lung lobe.",
     isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "خصائص سريرية تدل على شرقة الطفل وابتلاعه لجسم غريب واستقراره بالرئتين:\n1. قصة شرقة وكحة مفاجئة عنيفة أثناء الأكل أو اللعب بالخرز والألعاب الصغيرة.\n2. وجود تزييق موضعي مستمر غير متحرك في جانب واحد من الصدر (**Fixed localized wheeze**).\n3. ضعف وخفوت مسموع لصوت الهواء والأنفاس في الرئة المصابة.\n4. تكرار الالتهاب الرئوي أو تشكل خراج ميكروبي في نفس فص الرئة بالضبط."
   },
 
   {
@@ -424,7 +463,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 3-year-old child is rushed to the ER with sudden violent coughing, choking, and localized respiratory distress. On chest auscultation, a fixed localized wheeze is heard over the right lung alongside diminished breath sounds on that side.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the definitive management choice for this condition?",
     answer: "1. Foreign Body Aspiration.\n2. Rigid bronchoscopic extraction of the foreign body.",
     isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "تحليل طفل 3 سنوات يعاني من كحة وشرقة مفاجئة مع نقص صوت الهواء وتزييق ثابت بالجهة اليمنى:\n1. التشخيص: شرقة والتهاب بجسم غريب (**Foreign Body Aspiration**).\n2. العلاج الفوري الحاسم: إخراج الجسم الغريب عبر مناظير الشعب الهوائية الصلبة والحديثة (**Rigid bronchoscopy**)."
   },
 
   // topic: "Pneumonia"
@@ -436,7 +476,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Community-Acquired Pneumonia (CAP)\".",
     answer: "It is the presence of clinical signs and symptoms of inflammation of the lung parenchyma in a previously healthy child, caused by an infection acquired outside of a hospital setting.",
     isClinical: false,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "الـ **CAP** (الالتهاب الرئوي المكتسب من البيئة والمجتمع) هو التهاب صديدي ميكروبي يصيب نسيج الرئة والحويصلات الهوائية في طفل كان سليماً تماماً قبل التقاطه للعدوى خارج جدران المستشفيات."
   },
   {
     id: "q-c-p-2",
@@ -446,7 +487,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 physical chest examination findings characteristic of localized lung consolidation in Pneumonia.",
     answer: "1. Diminished breath sounds over the affected field.\n2. Localized scattered crackles (crepitations).\n3. Bronchial breathing.\n4. Dullness on percussion.",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "أهم 4 علامات إكلينيكية تدل على التصلب والالتهاب الرئوي المتماسك (**Consolidation**):\n1. ضعف وصعوبة دخول الهواء وصوت التنفس بالمنطقة المصابة.\n2. سماع كراكلز وفرقعات ناعمة بالسمامع تعكس تعثر الخلايا والسوائل بالحويصلات.\n3. صوت تنفس مزماري أنبوبي (**Bronchial breathing**).\n4. مظهر مكتوم وصوت باهت عند النقر فوق موضع الالتهاب (**Dullness on percussion**)."
   },
   {
     id: "q-c-p-3",
@@ -456,7 +498,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 non-respiratory systemic manifestations that can occur during childhood Pneumonia.",
     answer: "1. Gastrointestinal disturbances (vomiting, anorexia, diarrhea).\n2. Abdominal distention (due to paralytic ileus or swallowed air).\n3. Severe abdominal pain (mimicking acute surgical conditions in lower-lobe pneumonia).\n4. Neck rigidity or meningism (seen in right upper lobe pneumonia).",
     isClinical: false,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "أعراض عامة ومضللة للالتهاب الرئوي في الأطفال تنفي الشبهة المباشرة عن الرئة مخادعة للبطن والأعصاب:\n1. اضطراب الجهاز الهضمي والشهية وحدوث قيء متكرر وبراز غير منتظم.\n2. تمدد وانتفاخ البطن لكسل معوي مصاحب لمظاهر الرئة الملتهبة.\n3. وجع بطن صريح ومستمر يقلد التهاب الزائدة تماماً في التهاب الفصوص الرئوية السفلى.\n4. تصلب رقبي مع محاكاة الحمى الشوكية الكاذبة (**Meningism**) في التهاب الفص العلوي الأيمن."
   },
   {
     id: "q-c-p-4",
@@ -466,7 +509,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 primary clinical criteria used to identify the need for Hospitalization in pediatric Pneumonia.",
     answer: "1. Age less than 6 months.\n2. Moderate to severe respiratory distress or hypoxemia (oxygen saturation <90% in room air).\n3. Toxic appearance or signs of clinical shock/severe dehydration.\n4. Inability to tolerate oral medications/fluids, or failure of oral antibiotic outpatient therapy.",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "معايير وقواعد حجز طفل الالتهاب الرئوي بالقسم الداخلي للمستشفى:\n1. الرضع وصغار السن الأصغر من عمر 6 أشهر.\n2. نهجان شديد أو هبوط نسبة تشبع الأكسجين لأقل من **90%** في ظروف هواء الغرفة.\n3. مظهر معتل صحياً وملمس مسمم (**Toxic appearance**) أو علامات جفاف وصدمة حادة.\n4. العجز التام عن بلع العلاج أو السوائل بالفم، أو فشل تلطيف الحرارة بعد تجربة العلاج والمضادات الفموية بالمنزل."
   },
   {
     id: "q-c-p-5",
@@ -476,7 +520,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 10-month-old infant presents with a high fever, a severe productive cough, and a respiratory rate of 55 breaths/minute. On chest examination, localized bronchial breathing and crackles are heard over the right lung base.\n\nQuestions:\n1. Does this infant meet the WHO criteria for fast breathing (Tachypnea)?\n2. What is the first-line empiric oral antibiotic of choice for outpatient management?",
     answer: "1. Yes, tachypnea for infants aged 2-12 months is defined as a respiratory rate >50 breaths/minute.\n2. High-dose Amoxicillin (90 mg/kg/24 hr).",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "تحليل كيسة رضيع 10 أشهر يعاني من حرارة ونسم كحة ومعدل تنفس 55 نفس بالدقيقة:\n1. نعم، الطفل يعاني من نهجان معتمد (**Tachypnea**)؛ لأن المعايير لمن هم من عمر شهرين لسنة تشترط أن يكون النفس الطبيعي **أقل من 50 نفس بالدقيقة**.\n2. العلاج الفموي الكلاسيكي والأول للصغار هو شراب **Amoxicillin بجرعة هجومية مكسفة (90 mg/kg/day)**."
   },
 
   {
@@ -487,17 +532,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 2-month-old infant is brought to the clinic with a history of progressive, loud, dry, repetitive, and disjointed \"staccato\" coughing fits and fast breathing over the past 2 weeks. The infant is completely afebrile, and the chest X-ray shows significant hyperinflation with mild bilateral interstitial infiltrates. The mother recalls the baby having red, swollen eyes with yellowish discharge at 2 weeks of age.\n\nQuestions:\n1. What is the most likely specific causative pathogen for this child's atypical pneumonia?\n2. Mention the drug of choice, route, and duration for treating this condition.",
     answer: "1. Chlamydia trachomatis (often transmitted perinatally, causing neonatal conjunctivitis followed by staccato cough, hyperinflation, and absence of fever in infants aged 1-3 months).\n2. Oral Erythromycin for 14 days, or oral Azithromycin for 5 days.",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "تحليل رضيع عمره شهران بكحة جافة متقطعة شبيهة بحبات الرشاش (**Staccato Cough**) وبدون أي سخونية، مع خلفية من التهاب صديدي بالعينين بعد الولادة مباشرة:\n1. الكائن المسبب هو **Chlamydia trachomatis** وتنتقل للطفل من رحم وقناة ولادة الأم المصابة.\n2. العلاج السحري والفعال هو شراب مضاد **Erythromycin** لمدة 14 يوماً أو **Azithromycin** لمدة 5 أيام."
   },
   {
     id: "q-c-p-7",
     chapterId: 2,
     type: "short-essay",
     title: "Staphylococcus aureus Pneumonia Complications",
-    content: "Enumerate 4 highly aggressive, rapid, and destructive pulmonary complications or imaging signs on chest radiography that point specifically to Staphylococcus aureus etiology in childhood pneumonia.",
+    content: "Enumerate 4 complications or chest X-ray signs of Staphylococcus aureus pneumonia.",
     answer: "1. Development of pneumatoceles (multiple thin-walled, air-filled parenchymal cysts).\n2. Formation of a large pleural empyema.\n3. Development of single or multiple lung abscesses.\n4. Pyopneumothorax (coexisting air and pus in the pleural cavity).",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "مضاعفات الرئة المخربة للالتهاب الرئوي العنقودي السام (**Staphylococcus aureus**):\n1. كيسات هوائية مدمرة رقيقة الجدار بالرئة تسمى **Pneumatoceles**.\n2. تجمع صديدي مهول بالبلورا والقفص الصدري (**Pleural empyema**).\n3. خراج رئوي منخر بنسيج الحويصلات.\n4. تجمع هواء وصم صديد بالاسترواح الصدري البلوري الصديدي (**Pyopneumothorax**)."
   },
 
 
@@ -510,17 +557,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Acute Bronchiolitis\".",
     answer: "It is the acute inflammatory obstruction of the small airways (bronchioles) by mucus, inflammatory cell infiltration, and desquamated epithelial cells, occurring predominantly during the first 2 years of life with a peak at 6 months of age.",
     isClinical: false,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "الـ **Bronchiolitis** هو التهاب وانسداد مخاطي خلوي صديدي حاد في صغار الشعيبات الرئوية، بيصيب تحديداً الكتاكيت والرضع تحت سن سنتين (ويبلغ ذروة تفشيه عند عمر 6 أشهر)."
   },
   {
     id: "q-c-b-2",
     chapterId: 2,
     type: "short-essay",
     title: "Bronchiolitis Physical Signs",
-    content: "Enumerate 4 standard clinical picture findings seen during a physical examination of an infant with Bronchiolitis.",
+    content: "Enumerate 4 clinical findings during physical examination in Bronchiolitis.",
     answer: "1. Sharp, dry repetitive cough and tachypnea (RR 60-80/min).\n2. Hyperinflation of the chest with an increased anteroposterior diameter.\n3. Subcostal and intercostal retractions with diaphragmatic downward displacement of the liver.\n4. Widespread fine end-inspiratory consonating crackles and prolonged expiration with wheezing.",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "أهم 4 مظاهر سريرية بفحص طفل يعاني من التهاب الشعيبات البرونكيوليتس:\n1. كحة جافة حادة وسريعة متكررة مع نهجان شديد وسريع يصل لـ 60-80 نفس بالدقيقة.\n2. تمدد وانتفاخ طولي لعرض الصدر (**Hyperinflation**) لحبس الصدر للهواء المنطلق.\n3. سحب عضلات عميق تحت وحول الضلوع ونزول ملمس كبد لأسفل بفعل كبس الحجاب الحاجز النازل.\n4. سماع أصوات تنهيد زفيري صفيري متصل مع فرقعات كراكلز ناعمة في آخر الشهيق."
   },
   {
     id: "q-c-b-3",
@@ -530,7 +579,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 complications that can result from severe Acute Bronchiolitis.",
     answer: "1. Apneic spells (especially in young infants <2 months old).\n2. Secondary bacterial infection or otitis media.\n3. Dehydration and electrolyte imbalance.\n4. Respiratory failure or cardiorespiratory collapse.",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "مضاعفات التهاب الشعيبات الرئوية (Bronchiolitis):\n1. **Apneic spells**: نوبات توقف نفس مفاجئ تهدد صغار الأطفال (خاصة الرضع دون الـ شهرين).\n2. **Secondary infections**: التهابات أذن وسطى أو التهابات رئوية بكتيرية ثانوية.\n3. **Dehydration**: خلل أملاح وجفاف بسبب نقص وقدرة الطفل على الرضاعة بالفم لضيق تنفسه المستمر وتسارعه.\n4. **Respiratory Failure**: هبوط وتعب تنفسي كامل يستدعي التنفس الصناعي والمنعش."
   },
   {
     id: "q-c-b-4",
@@ -540,7 +590,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 core treatment modalities for a hospitalized infant with Bronchiolitis.",
     answer: "1. Humidified supplemental oxygen therapy via nasal prongs.\n2. Parenteral fluid therapy to maintain hydration and electrolyte balance.\n3. Implementation of a single-dose trial of an inhaled bronchodilator.\n4. Antiviral Therapy (Ribavirin): The most important treatment modality for high-risk patients.\n5. Avoidance of sedatives, antibiotics, and systemic steroids.",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "مرتكزات خطة علاج ومداواة رضيع البرونكيوليتس بالمستشفى:\n1. دعم الأكسجين الرطب المريح بخرطوم الأنف.\n2. محاليل تروية وريدية دقيقة لتفادي ودعم الجفاف الحاصل والامتناع عن الفم.\n3. تجربة جلسة تنفسية واحدة بجهاز استنشاق موسع شعب (تستكمل لو أظهرت تحسن فوري).\n4. شراب أو استنشاق **Ribavirin** (يُعطى لمرضى الخطورة الشديدة كعيوب القلب والخلل المناعي).\n5. تجنب المهدئات والمضادات والكورتيزون العشوائي الذي تنفيه الدراسات التفاعلية العلمية لعدم جدواه."
   },
   {
     id: "q-c-b-5",
@@ -550,7 +601,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 5-month-old infant presents during winter with a 2-day history of rhinitis followed by a severe dry cough, tachypnea, and chest indrawing. Chest exam reveals a hyper-resonant percussion note and diffuse fine end-inspiratory crackles with wheezes.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the primary viral etiology responsible for roughly 50% of these cases?",
     answer: "1. Acute Bronchiolitis.\n2. Respiratory Syncytial Virus (RSV).",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "تحليل حالة رضيع 5 أشهر مريض بكحة متسارعة ونهجان وصدر مفرط الرنين وقرقعات ناعمة شتاءً:\n1. التشخيص هو **Acute Bronchiolitis** (التهاب شعيبات حاد).\n2. الفيروس المتصدر بأكثر من 50-60% من هذه الحالات هو الفيروس المخلوي التنفسي (**RSV**)."
   },
 
 
@@ -564,7 +616,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Bronchial Asthma\".",
     answer: "It is a chronic, diffuse obstructive inflammatory lung disease characterized by airway hyperreactivity to a variety of stimuli, airway inflammation, and a high degree of reversibility of the obstruction either spontaneously or with treatment.",
     isClinical: false,
-    topic: "Bronchial Asthma"
+    topic: "Bronchial Asthma",
+    explanation: "الـ **Bronchial Asthma** هو مرض التهابي مزمن مفرط الحساسية متكرر وضيق بممرات وشعب التنفس، يقلب وينقبض في الصدر مع مثيرات ومهيجات عادية، ويتصف بوجود مرونة لارتجاع الضيق وزواله بالكامل إما تلقائياً أو مع العلاج وموسعات الشعب."
   },
   {
     id: "q-c-a-2",
@@ -574,7 +627,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 common environmental or physical triggers of childhood Asthma exacerbations.",
     answer: "1. Viral respiratory infections.\n2. Indoor/outdoor allergens (dust mites, pollens, animal dander).\n3. Air pollutants (tobacco smoke, strong chemical odors).\n4. Cold dry air or strenuous physical exercise.",
     isClinical: false,
-    topic: "Bronchial Asthma"
+    topic: "Bronchial Asthma",
+    explanation: "مهيجات مستفزة تفجر أزمات حساسية الصدر في الصغار:\n1. الالتهابات الفيروسية التنفسية (الزكام والبرد).\n2. الملوثات المنزلية والغبار من الأثاث والتراب، حبات الطلع بالخريف، وبر حيوانات المنزل.\n3. ملوثات بيئة العمل والغرف مثل تدخين السجائر السام، المذيبات والعطور شديدة الرائحة.\n4. الرياضة الفجائية العنيفة، أو استنشاق تيارات هوائية باردة جافة."
   },
 
 
@@ -586,7 +640,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 6-year-old boy known to have recurrent wheezing presents to the emergency room with severe breathlessness and a tight cough after playing outdoors in cold weather. Spirometry demonstrates a low FEV1 that increases by 14% after an albuterol nebulizer treatment.\n\nQuestions:\n1. What is the clinical significance of the 14% increase in FEV1?\n2. Enumerate 2 structural thoracic complications this child is at risk of if the acute attack deteriorates suddenly.",
     answer: "1. It demonstrates a high degree of reversible airflow limitation, which is a hallmark diagnostic feature of bronchial asthma.\n2. Pneumothorax (air-leak) and segmental/subsegmental lung collapse.",
     isClinical: true,
-    topic: "Bronchial Asthma"
+    topic: "Bronchial Asthma",
+    explanation: "تحليل كيسة طفل 6 سنوات تعرض لتيار بارد مع تدهور في الـ FEV1 تحسنت بـ 14% بعد جلسة البخاخ البسيطة:\n1. **Reversibility**: تحسن مؤشر FEV1 بأكثر من 9-12% يعتبر المعيار الإكلينيكي الذهبي الحاسم لإثبات إصابة الطفل بـ **Bronchial Asthma**.\n2. المضاعفات الطارئة في حال الهبوط هي: استرواح صدري وتجمع هواء بالبلورة (**Pneumothorax**)، وانخماص فصوص بالرئة (**Atelectasis**)."
   },
 
   // ==================== III. Neonatology Section ====================
@@ -669,7 +724,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 3,
     type: "short-essay",
     title: "Preterm Feeding Modalities",
-    content: "Enumerate 4 basic elements required in the nutritional management and feeding protocol of a stable preterm infant in the NICU.",
+    content: "Enumerate 4 feeding requirements for a stable preterm infant.",
     answer: "1. Utilization of maternal breast milk or specialized preterm formulas.\n2. Implementation of small-volume trophic feedings (minimal enteral nutrition) within 2-4 hours of life if stable to avoid hypoglycemia.\n3. Utilizing a nasogastric tube (gavage feeding) or dropper if the infant lacks coordinated suckling and swallowing reflexes.\n4. Careful monitoring of gastric residuals before each feed, ensuring increments do not exceed 20 mL/kg/24 hr.",
     isClinical: true,
     topic: "Topic Two: Prematurity and its Complications"
@@ -721,7 +776,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 3,
     type: "short-essay",
     title: "Exaggerated Physiological Jaundice risk criteria",
-    content: "Enumerate 4 common underlying clinical risk factors that can lead to an exaggerated or severe physiological jaundice.",
+    content: "Enumerate 4 risk factors that increase physiological jaundice.",
     answer: "1. Prematurity or near-term gestational age.\n2. Maternal diabetes mellitus.\n3. Polycythemia or significant cutaneous bruising/cephalohematoma.\n4. Excessive neonatal weight loss due to dehydration or caloric deprivation from delayed breastfeeding.",
     isClinical: true,
     topic: "Topic Three: Physiological Jaundice and its differentiation from Pathological Jaundice"
@@ -825,7 +880,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 3,
     type: "short-essay",
     title: "Kernicterus long-term manifestations",
-    content: "Enumerate 4 prominent long-term manifestations that comprise the complete chronic neurological syndrome of Kernicterus by 3 years of age.",
+    content: "Enumerate 4 chronic neurological findings of Kernicterus by 3 years of age.",
     answer: "1. Bilateral choreoathetosis (extrapyramidal involuntary movements) and muscle rigidity.\n2. Mental deficiency / cognitive impairment.\n3. High-frequency sensorineural hearing loss.\n4. Squinting and defective upward movement of the eyes.",
     isClinical: true,
     topic: "Topic Five: Complications of Indirect Hyperbilirubinemia"
@@ -900,10 +955,11 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 4,
     type: "short-essay",
     title: "The Three Main Steps of CPR",
-    content: "Enumerate the three main therapeutic stages of Cardiopulmonary Resuscitation (CPR), including the specific clinical steps (A through I) associated with each phase.",
+    content: "Enumerate the three stages of CPR and their clinical steps (A through I).",
     answer: "I- Basic Life Support (A, B, C):\n1. A: Airway control (Triple airway maneuver, clearing oropharynx, oropharyngeal airway).\n2. B: Breathing support (Mouth-to-mouth or bag-and-mask ventilation).\n3. C: Circulation support (Cardiac compression at midsternum).\n\nII- Advanced Life Support (D, E, F):\n1. D: Drugs (IV Adrenaline, fluids, or alkali).\n2. E: ECG monitoring (to detect various cardiac arrhythmias).\n3. F: Fibrillation control (Defibrillation electrical doses).\n\nIII- Prolonged life support (G, H, I):\n1. G: Recognition and treatment of the causative disease according to the etiology.\n2. H: Brain recovery (Control of any convulsive fits or acute increased intracranial pressure).\n3. I: Intensive care for multiple system support performed carefully in the PICU.",
     isClinical: true,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "مراحل الإنعاش القلبي الرئوي الـ **CPR** تتكون من ثلاث فترات أساسية:\n1. **Basic Life Support (BLS)**: ويرمز له بالرموز **A, B, C** لشحن وتوفير الأكسجين الأساسي (تأمين مجرى الهواء والتهوية المساعدة والضغط على الصدر).\n2. **Advanced Life Support (ALS)**: ويرمز له بـ **D, E, F** كخطوات متقدمة تشمل الأدوية المنقذة والربط على جهاز المونيتور للقلب والسيطرة على الرجفان البطيني كهربائياً.\n3. **Prolonged Life Support**: ويرمز له بـ **G, H, I** لإنقاذ وفهم الأسباب وعلاقته بعلاج خلايا المخ والاعتناء بالطفل في غرفة الرعاية بـ **PICU**."
   },
   {
     id: "q-e-cpr-1",
@@ -913,7 +969,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Cardiopulmonary Arrest\" in children.",
     answer: "It is a sudden, unexpected cessation of systemic circulation and/or respiration in a pediatric patient who is unlikely to die and for whom the potential for clinical recovery is good.",
     isClinical: false,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "تعريف **Cardiopulmonary Arrest** (التوقف القلبي التنفسي):\nهو انقطاع مفاجئ وغير متوقع في الدورة الدموية والتنفس عند الأطفال، والذين لم يكن متوقعاً وفاتهم ويكون لديهم أمل وفرصة قوية للتعافي والرجوع للحياة لو تم التدخل بالطرق الطبية السليمة السريعة."
   },
   {
     id: "q-e-cpr-2",
@@ -923,7 +980,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 early warning signs of circulatory or respiratory decompensation (pre-arrest criteria).",
     answer: "1. Cyanosis and slow, irregular respiration.\n2. Bradycardia (impending cardiac arrest in children).\n3. Weak peripheral pulses and poor tissue perfusion.\n4. Decreased responsiveness, altered consciousness, or extreme restlessness.",
     isClinical: false,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "أهم 4 علامات تحذيرية مبكرة للفشل التنفسي والقلبي الوشيك (Pre-arrest criteria):\n1. زرقان الشفتين والوجه للتعبير عن نقص الأكسجين الرهيب.\n2. هبوط ضربات القلب الحاد (**Bradycardia**): وهو المؤشر الأخطر لتوقف عضلة القلب بالكامل في الأطفال وسن الرضاعة.\n3. ضعف النبض الطرفي وبرود الأطراف الشديد.\n4. اضطراب الوعي أو الهياج الشديد نتيجة اختناق خلايا الدماغ والتغير الحاد بالدم."
   },
   {
     id: "q-e-cpr-3",
@@ -933,17 +991,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct components of the Basic Life Support (BLS) airway and ventilation protocols.",
     answer: "1. Opening the airway channel using the Triple Airway Maneuver.\n2. Visualizing and clearing the mouth or oropharynx via suction (avoiding blind finger sweeps).\n3. Inserting an appropriately sized oropharyngeal airway in an unconscious patient.\n4. Providing artificial ventilation using a bag-valve-mask device with 100% oxygen at 20 breaths/min.",
     isClinical: false,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "القواعد الذهبية لدعم مجرى الهواء والأنفاس في الـ **BLS** للأطفال:\n1. فتح مجرى الهواء عن طريق **Triple Airway Maneuver**.\n2. تنظيف الفم والحلق بالشفط اللطيف وتجنب إدخال الأصابع عشوائياً (Blind finger sweeps).\n3. إدخال ممر الهواء الحنجري للفم **Oropharyngeal airway** لرفع فك العاقدين الوعي لتجنب بلع اللسان.\n4. توفير الأنفاس الاصطناعية بمعدل **20 نفس بالدقيقة** بواسطة قناع الأكسجين ممتلئ الركام."
   },
   {
     id: "q-e-cpr-4",
     chapterId: 4,
     type: "short-essay",
     title: "Advanced Life Support medications",
-    content: "Enumerate 4 critical emergency medications administered during Advanced Life Support (ALS), including their indications or doses.",
+    content: "Enumerate 4 medications used in Advanced Life Support (ALS) with their indications or doses.",
     answer: "1. Intravenous fluid bolus (Normal Saline or Ringer's Lactate at 20 ml/kg over 10 minutes).\n2. Intravenous Adrenaline (0.1 ml/kg of a 1:10,000 diluted solution) for asystole.\n3. Intravenous Sodium Bicarbonate (1 ml/kg of an 8.4% solution) to correct severe metabolic acidosis.\n4. Defibrillation electrical doses (2 Joules/kg up to 8 Joules/kg) for ventricular fibrillation control.",
     isClinical: true,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "الأدوية والمداخلات المتقدمة الأربعة المنقذة للحياة بالـ **ALS**:\n1. سوائل التروية الهجومية بسرعة ملحوظة بمقدار **20 ml/kg** من المحلول الفسيولوجي المالح ونحوه لدعم ضغط الدم.\n2. حقن هرمون **Adrenaline** وريداً (بتركيز 1:10,000) لتنشيط وضبط ضغط القلب الحاد والدورة المخية.\n3. حقن **Sodium Bicarbonate** لضبط حموضة الدم عند استقرار التوقف والتردي.\n4. الصدمات الكهربائية للسيطرة بجرعة **2 Joules/kg** للتحكم بالرجفان البطيني."
   },
   {
     id: "q-e-cpr-5",
@@ -953,7 +1013,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 10-month-old infant is brought into the resuscitation bay unresponsive, pulseless, and apneic. The resuscitation team leader institutes immediate basic life support maneuvers.\n\nQuestions:\n1. Mention the 3 specific physical maneuvers that comprise the \"Triple Airway Maneuver\" to open the airway.\n2. What is the correct site, technique, and ratio of chest compressions required if two healthcare rescuers are present?",
     answer: "1. Head tilt, Jaw thrust, and Mouth opening.\n2. Site is midsternum; technique is the two-thumb encircling method; compression-to-ventilation ratio is 15:2.",
     isClinical: true,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "دراسة حالة الرضيع الفاقد للوعي واستجابات الإنعاش:\n1. الـ **Triple Airway Maneuver** تضم: إمالة الرأس للخلف (**Head tilt**)، ورفع الفك السفلي (**Jaw thrust**)، وفتح الفم المباشر.\n2. ضغط الصدر للأطفال يتم بضغط عظمة القص المكتوم، وعند حيازة طاقم إنعاش ثنائي ينبغي السير تكتيكياً بمعدل ضغطات لأنفاس يبلغ **15:2** بأسلوب الضغط الإبهامي المطوق."
   },
 
   // topic: "Topic Two: Shock"
@@ -965,7 +1026,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Provide a comprehensive overview of Shock by defining the clinical state, enumerating its 6 primary types, and listing its life-threatening complications.",
     answer: "1. Definition: A clinical state of circulatory inadequacy due to disruption of tissue perfusion, leading to inadequate oxygen/nutrient supply and metabolite removal from end-organ cells.\n2. 6 Types of Shock:\n   - Septic shock.\n   - Hypovolemic shock (Severe dehydration, hemorrhage, or burns).\n   - Obstructive shock (Tension pneumothorax, tamponade, or vascular lesions).\n   - Cardiogenic shock (Acute heart failure or advanced shock).\n   - Kinetic/Distributive shock (Anaphylactic, Neurogenic, or Early Septic shock).\n   - Metabolic shock (Acute suprarenal failure).\n3. Complications of Untreated Shock: Acute Kidney Injury (AKI), Disseminated Intravascular Coagulation (DIC), Acute Respiratory Distress Syndrome (ARDS), Multiple Organ Dysfunction Syndrome (MODS), and eventually death.",
     isClinical: true,
-    topic: "Topic Two: Shock"
+    topic: "Topic Two: Shock",
+    explanation: "نظرة دقيقة لمرض وعوارض الصدمة (**Shock**):\n1. **التعريف**: هبوط حاد وضعف تروية الخلايا لدم كافٍ، لعيب بالقلب أو قلة السوائل أو توسع الأوعية المفاجئ.\n2. **أنواعه الـ 6 الشهيرة**:\n   - الصدمة التسممية البكتيرية (**Septic**).\n   - صدمة نقص الحجم والسوائل (**Hypovolemic**).\n   - الصدمة الانسدادية الميكانيكية لمرور الدم (**Obstructive**).\n   - الصدمة هبوط وفشل عضلة القلب بمثابة المضخة (**Cardiogenic**).\n   - الصدمة التوزيعية بتدفق وممر الأوعية المتسع كالحساسية الحادة (**Distributive/Anaphylactic**).\n   - الصدمة التفاعلية الفتاكة نتيجة فشل الغدة القشرية فوق الكلوية (**Metabolic/Acute adrenal crisis**).\n3. **مضاعفاته الشرسة**: توقف الكلى وحموضة الصدر المهلكة وتخثر الدم المتكامل وتلف الأجهزة."
   },
   {
     id: "q-e-sh-1",
@@ -975,7 +1037,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Circulatory Shock\".",
     answer: "It is the clinical state of systemic circulatory inadequacy characterized by a disruption of tissue perfusion, leading to inadequate delivery of oxygen and nutrients to cells and inadequate removal of metabolic waste products from end organs.",
     isClinical: false,
-    topic: "Topic Two: Shock"
+    topic: "Topic Two: Shock",
+    explanation: "تعريف الصدمة الوعائية (**Circulatory Shock**):\nهي حالة إكلينيكية حادة من الاعتلال الوعائي تتميز بقصور تروية الدم للأنسجة، لتفشل الأوعية تماماً في نقل الأكسجين والغذاء الخلايا، وعجزها كلياً عن غسيل وتنظيف الفضلات والمخلفات السامة لترسب بالأعضاء والجلد."
   },
   {
     id: "q-e-sh-2",
@@ -985,7 +1048,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 prominent \"Types\" of shock categorized in pediatric emergency medicine.",
     answer: "1. Hypovolemic shock (e.g., from severe dehydration or hemorrhage).\n2. Septic shock (systemic inflammatory response due to fulminant infection).\n3. Cardiogenic shock (due to acute heart failure or myocarditis).\n4. Distributive shock (e.g., Anaphylactic shock or Neurogenic shock).",
     isClinical: false,
-    topic: "Topic Two: Shock"
+    topic: "Topic Two: Shock",
+    explanation: "التصنيفات الأربعة الأكثر انتشاراً للصدمة لدى الطفولة بالعيادة:\n1. صدمة هبوط الحجم والسوائل (**Hypovolemic shock**) من إسهال مائي سام أو جفاف شديد أو نزيف حاد.\n2. الصدمة الإنتانية التسممية (**Septic shock**) بفعل سموم الميكروبات ورجس الدم.\n3. صدمة مضخة القلب المعتلة (**Cardiogenic shock**) لتأثر وبلاء عضلات البطينين.\n4. الصدمة التوزيعية الوعائية (**Distributive shock**) بفعل هبوط المقاومة كأعراض صدمة الحساسية العنيفة."
   },
   {
     id: "q-e-sh-3",
@@ -995,17 +1059,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 classic clinical findings that distinguish \"Compensated Shock\" from decompensated shock.",
     answer: "1. Marked tachycardia.\n2. Delayed capillary refill time (>2 seconds).\n3. Cold, pale, or mottled peripheries.\n4. Normal or near-normal systolic blood pressure.",
     isClinical: true,
-    topic: "Topic Two: Shock"
+    topic: "Topic Two: Shock",
+    explanation: "كيف تفرق الصدمة المعوضة البسيطة (**Compensated**) عن مرحلة الصدمة المنهارة المهلكة (**Decompensated**):\nفي المرحلة المعوضة الأولى، يستميت الجسم لتأمين تدفق الدم بزيادة دقات القلب وتضييق الأوعية السطحية لحراسة ضغط الدم، فتجد ضربات قلب متسارعة، وتأخر زمن امتلاء الشعيرات الطرفية (**CRT > 2 seconds**)، وبرودة وتبرقش أطراف وجلد الطفل، ولكن يظل ضغط الدم الانقباضي سليماً طبيعياً تماماً."
   },
   {
     id: "q-e-sh-4",
     chapterId: 4,
     type: "short-essay",
     title: "Vasoactive Inotropes",
-    content: "Enumerate 4 vasoactive inotropic medications utilized in fluid-refractory shock, including their primary clinical indications.",
+    content: "Enumerate 4 vasoactive inotropic medications in fluid-refractory shock with their indications.",
     answer: "1. Epinephrine (Adrenaline): First-line agent for pediatric fluid-refractory cold septic shock or cardiogenic shock.\n2. Norepinephrine (Noradrenaline): First-line potent vasoconstrictor for warm distributive septic shock.\n3. Dobutamine: Strong inotrope indicated for low cardiac output states with a normal baseline blood pressure.\n4. Milrinone: Inodilator indicated for myocardial dysfunction, left ventricular failure, or post-cardiac surgery.",
     isClinical: true,
-    topic: "Topic Two: Shock"
+    topic: "Topic Two: Shock",
+    explanation: "الرافعات والمنشطات الوعائية الأربعة ودواعي العمل الدقيق بالقسم الداخلي بمشفى الأطفال:\n1. الـ **Epinephrine**: الرقم الأول لترميم وعلاج صدمة الصدر التسممية الباردة وهبوط قوة انقباض القلب.\n2. الـ **Norepinephrine**: أفضل مقبض للأوعية ورفع الضغط لإنقاذ الصدمة التسممية الدافئة متسعة الأوعية.\n3. الـ **Dobutamine**: مقوي كفاءة الانقباض وضبط حجم القذف الصدري والضغط معتدل البنية.\n4. الـ **Milrinone**: الموسع والداعم المجهد للأوعية لإنقاذ عمليات وتشوهات القلب المعتلة."
   },
   {
     id: "q-e-sh-5",
@@ -1015,7 +1081,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 3-year-old child presents with a severe toxic look, high fever, cold hands, bounding peripheral pulses, and a delayed capillary refill of 4 seconds. His systolic blood pressure has dropped significantly below the normal range for his age, and he is passing minimal urine.\n\nQuestions:\n1. Is this shock compensated or uncompensated?\n2. What is the immediate first-line preload fluid expansion protocol, including specific fluid type and initial dose?",
     answer: "1. Uncompensated shock (due to the drop in blood pressure and organ hypoperfusion).\n2. Intravenous bolus of an isotonic crystalloid (Normal Saline or Ringer's Lactate) at a dose of 20 ml/kg infused rapidly over 10-15 minutes.",
     isClinical: true,
-    topic: "Topic Two: Shock"
+    topic: "Topic Two: Shock",
+    explanation: "تحليل طفل التسمم البكتيري وصدمة هبوط الضغط:\n1. الصدمة هنا غير معوضة (**Uncompensated**) بسبب هبوط ضغط اللمس والانقباض والاضطراب البولي بمرور العينات.\n2. علاج التروية الفوري الفارق هو حقن سوائل عضلية هجومية مكثفة من المحلول الفسيولوجي بمقدار **20 ml/kg** تتدفق سريعاً طوال 10-15 دقيقة فقط لدعم وضخ الشرايين."
   },
 
   // topic: "Topic Three: Coma"
@@ -1027,7 +1094,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Coma\".",
     answer: "Coma is a state of prolonged unconsciousness in which the child CANNOT BE AROUSED even with painful stimuli.",
     isClinical: false,
-    topic: "Topic Three: Coma"
+    topic: "Topic Three: Coma",
+    explanation: "تعريف الغيبوبة الحادة (**Coma**):\nهي حالة سريرية مرجوة من الغياب التام لليقظة وعمل القشرة الدماغية واليقظة، حيث يظل الطفل في غفوة طويلة فاقداً للوعي كلياً ولا يستجيب لأعنف وأقوى المثيرات الحركية أو الحثية أو المنبهة الألمية."
   },
   {
     id: "q-e-co-2",
@@ -1037,27 +1105,30 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 secondary brain lesions or encephalopathies that cause a secondary metabolic Coma.",
     answer: "1. Hypoxic encephalopathy (following cardiac arrest or severe shock).\n2. Diabetic Ketoacidosis (DKA) encephalopathy.\n3. Hypoglycemic coma.\n4. Uremic or hepatic encephalopathy (secondary to acute renal or hepatic failure).",
     isClinical: false,
-    topic: "Topic Three: Coma"
+    topic: "Topic Three: Coma",
+    explanation: "الاعتلالات اللمسية ومخ المخات التي تسبب غيبوبة استقلابية كيميائية ثانوية (Secondary metabolic coma):\n1. قصور خلايا الأكسجين بالدماغ المتتابع للتوقف التنفسي أو الصدمة العنيفة.\n2. الـ **DKA**: حموضة وعوارض غيبوبة السكر البولية العتيدة.\n3. هبوط وهفوة مستوى الجلوكوز بالدم للرضع والمصابين.\n4. غيبوبة الفشل الفطري للسموم بتسمم بولينا الكلى أو تلف الكبد الفيروسي والسمي."
   },
   {
     id: "q-e-co-3",
     chapterId: 4,
     type: "short-essay",
     title: "Urgent diagnostic Coma screens",
-    content: "Enumerate 4 urgent diagnostic laboratory or screening investigations required for a child presenting in an unexplained coma.",
+    content: "Enumerate 4 urgent laboratory/screening tests for unexplained coma.",
     answer: "1. Rapid blood glucose level (to rule out hypoglycemia or DKA).\n2. Arterial Blood Gases (ABG) and serum electrolytes.\n3. Renal function tests (blood urea nitrogen and creatinine) and liver enzymes.\n4. Urgent sepsis screening (CBC, CRP) and toxicological screening if suspected.",
     isClinical: false,
-    topic: "Topic Three: Coma"
+    topic: "Topic Three: Coma",
+    explanation: "الشاشات والمحاور المخبرية الفورية العاجلة لحالات الغيبوبة غير معلنة الهوية بالاستقبال:\n1. قياس مستوى السكر العشوائي بالدم فوراً لإنقاذ هبوط السكر أو كشف تشنج السكري.\n2. غازات الدم والتروية الأيونية لدراسة توازن الدم والأملاح.\n3. فحص البول والدم لكشف اليوريا والوظائف الكظرية للتفتيش عن التدمير البوليني والكبدي.\n4. عينات ودراسات التسمم والسميات المحاطة بالاستنشاق والبلع."
   },
   {
     id: "q-e-co-4",
     chapterId: 4,
     type: "short-essay",
     title: "Invasive intracranial pressure management",
-    content: "Enumerate 4 standard non-specific medical measures implemented to control acute increased Intracranial Pressure (ICP) in a comatose child.",
+    content: "Enumerate 4 medical measures to control increased Intracranial Pressure (ICP) in coma.",
     answer: "1. Head elevation to 30 degrees in a neutral midline position (to enhance venous drainage).\n2. Maintenance fluid restriction to approximately 70% of normal requirements.\n3. Administration of osmotic diuretics, specifically intravenous Mannitol (0.25-0.5 g/kg).\n4. Administration of loop diuretics (Lasix) and instituting controlled mechanical hyperventilation.",
     isClinical: true,
-    topic: "Topic Three: Coma"
+    topic: "Topic Three: Coma",
+    explanation: "كيف تعالج طبياً غيبوبة الضغط والورم المخي الزائد بالأدوية والوضعية (Increased ICP Control):\n1. رفع الرأس بمقدار 30 درجة بنمط خط منتصف الرقبة لتيسير التفريغ الوريدي وحماية القفص الصدري.\n2. كبس ودعم السوائل المحاطة إلى 70% فقط من المنسوب الطبيعي لمنع تجمع مياه الورم بالرأس.\n3. استخدام وتدفق حقن الوريد المدرة المجهدة بالأسموزية **Mannitol** بجرعة دقيقة لدفع السوائل خارج مخه.\n4. إضافة حقن مدر بول الأشرطة (لازكس) لرفع التفريغ البولي وحس التهوية التناغمية بجهاز النفس الصناعي."
   },
   {
     id: "q-e-co-5",
@@ -1067,7 +1138,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 5-year-old child is brought to the resuscitation room completely unconscious following a severe head injury. On physical assessment, he does not respond to painful stimuli, breathes spontaneously, features a bulging anterior fontanel, and demonstrates asymmetric sluggish pupillary responses to light.\n\nQuestions:\n1. What does the presence of asymmetric pupillary responses and asymmetric motor signs indicate?\n2. Enumerate 2 gastrointestinal and eye/skin protective measures required in the daily management of this comatose child.",
     answer: "1. It indicates a lateralizing sign, suggesting a focal brain lesion or localized mass effect/hemorrhage.\n2. Administration of antacids to prevent stress ulcers, and applying protective eye drops/ointments to prevent corneal damage.",
     isClinical: true,
-    topic: "Topic Three: Coma"
+    topic: "Topic Three: Coma",
+    explanation: "تحليل وتتبع إصابات الرأس وصعوبة التناغم العصبي للطفل:\n1. غياب وحرارة التفاعل الحدقي وعدم التناسق للعينين والحركة ده معناه **Lateralizing sign** إشارة لوجود نزيف بؤري ضاغط أو ورم وحجم دموي متراكم بجهحة حركية دون الأخرى تستدعي أشعة مقطعية عاجلة.\n2. أهم ركائز اعتناء التمريض هي ترطيب قرنية العين بقطرات ومرهم واقٍ من الجفاف المستمر وحصار حموضة المعدة بأمبولات واقية لمنع النزيف التقرحي."
   },
 
   // topic: "Topic Four: Glasgow Coma Scale and its Advantages"
@@ -1079,7 +1151,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define the \"Glasgow Coma Scale (GCS)\" and state its primary clinical purpose.",
     answer: "It is an objective, standardized neurological scale providing a numerical score from 3 to 15 based on three behavioral parameters (Eye opening, Verbal response, Motor response), utilized to rapidly assess the depth of altered consciousness and cerebral cortical function.",
     isClinical: false,
-    topic: "Topic Four: Glasgow Coma Scale and its Advantages"
+    topic: "Topic Four: Glasgow Coma Scale and its Advantages",
+    explanation: "تعريف غلاكسو لدرجات الغيبوبة (**Glasgow Coma Scale**):\nهو نظام رقمي إحصائي موحد ومبرهن لتقييم عمق تضرر مستوى الوعي لدى المرضى بسرعة وبصورة دقيقة ومقارنة، يعتمد على تقييم 3 معايير سلوكية بمحمية كاملة تتراوح نقاطها من 3 كحد أدنى تدميري إلى 15 كأقصى درجات اليقظة والكمال."
   },
   {
     id: "q-e-gcs-2",
@@ -1089,7 +1162,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct \"Advantages\" of utilizing the Glasgow Coma Scale in pediatric emergency settings.",
     answer: "1. Objective and standardized: Eliminates subjective bias, providing a numerical score to easily track changes over time.\n2. Simple and quick: Can be rapidly applied at the bedside in emergency rooms, trauma bays, and PICUs.\n3. Widely accepted internationally: Allows clear, standardized communication regarding patient status between different medical providers.\n4. Strong predictive and triage value: A GCS score of 8 or less accurately identifies severe brain injury and dictates the immediate need for airway protection.",
     isClinical: false,
-    topic: "Topic Four: Glasgow Coma Scale and its Advantages"
+    topic: "Topic Four: Glasgow Coma Scale and its Advantages",
+    explanation: "الأولى بالاستخدام لمحاور مقياس غلاكسو للوعي (GCS Advantages):\n1. دقيق وصارم ويلغي الاجتهاد والتحيز الشخصي في التقييم والوصف الإكلينيكي.\n2. سهل وبسيط التطبيق في طوارئ تراث الإصابات والإنقاذ بالمشفى.\n3. لغة تواصل عالمية وموحدة بين كل الأطباء وطواقم التمريض بمختلف دول العالم.\n4. مرجع قوي حاسم لفرز الحالات وأخذ تدبير مجرى الـ Airway بالتنبّيب لو تراجعت النقاط لـ 8 أو ما دونها."
   },
   {
     id: "q-e-gcs-3",
@@ -1099,7 +1173,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 prominent \"Disadvantages or Limitations\" of the Glasgow Coma Scale.",
     answer: "1. Limited utility in young preverbal infants: The verbal component is highly difficult to score accurately in children who cannot talk.\n2. Confounded by medical interventions: Therapeutic sedation, endotracheal intubation, or neuromuscular blockade completely alter or mask true scores.\n3. Fails to evaluate brainstem function directly: Crucial indicators like pupillary reactivity, oculocephalic reflexes, and corneal responses are entirely excluded.\n4. Fails to identify the etiology: It solely measures the clinical level of consciousness, providing no diagnostic insight into the cause of coma.",
     isClinical: false,
-    topic: "Topic Four: Glasgow Coma Scale and its Advantages"
+    topic: "Topic Four: Glasgow Coma Scale and its Advantages",
+    explanation: "تجاوزات وعقبات مقياس غلاكسو بالتنفيذ العيادي للأطفال (GCS Disadvantages):\n1. تنبؤ لغوي شبه مستحيل مع الرضع والطفل الصغير العاجز عن النطق الشجي.\n2. التشويش بالتدخلات والأدوية كجرعات مهدئات الصدر والتخدير ومربطات العصب الحركية.\n3. يعجز المقياس كلياً عن دراسة وظائف العصب وعصب جذع الدماغ من فحص تفاعل الضوء المنعكس والقرنية.\n4. لا يرشدنا مطلقاً للسبب السمي أو البيولوجي الكامن وراء التدمير والغيبوبة الحالية."
   },
 
   {
@@ -1110,7 +1185,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 3-year-old child is evaluated in the emergency room following a fall. On assessment, she opens her eyes only when spoken to (3 points), emits consolable crying when irritable (4 points), and withdraws her limb from a painful stimulus (4 points).\n\nQuestions:\n1. Calculate the total Glasgow Coma Scale score for this pediatric patient.\n2. Does this patient's score indicate an immediate, mandatory requirement for endotracheal intubation based on GCS guidelines?",
     answer: "1. Total GCS Score = 3 (Eye) + 4 (Verbal) + 4 (Motor) = 11.\n2. No, aggressive airway protection and intubation are indicated when the GCS score drops to 8 or less.",
     isClinical: true,
-    topic: "Topic Four: Glasgow Coma Scale and its Advantages"
+    topic: "Topic Four: Glasgow Coma Scale and its Advantages",
+    explanation: "حساب توازن درجات وعي طفلة غلاكسو بالاستقبال الحاد:\n1. الدرجة كالتالي: فتح العين بالصوت 3 + البكاء المتألم 4 + تحريك الذراع للألم 4 = **11 نقطة من 15**.\n2. تظل الطفلة مستقرة التروية التنفسية الحرة؛ حيث نفي التنبّيب والتدخل الحنجري القصبي الإجباري طالما المجموع فوق رقم **8** بنصوص الهيئات العالمية."
   },
 
   // ==================== V. Family medicine ====================
@@ -2158,7 +2234,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Glomerular Hematuria\".",
     answer: "It is blood in the urine that originates from the nephron (specifically the glomerulus, convoluted, or collecting tubules), characterized by dysmorphic RBCs and smoky or cola-colored urine.",
     isClinical: false,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "الـ **Glomerular Hematuria** يعني الدم جاي من مصفاة الكلية نفسها (Glomerulus). بنعرفه بوجود خلايا دم حمراء مشوهة ومفعصة (**Dysmorphic RBCs**) لأنها عافرت عشان تعدي من المصفاة الضيقة، مع وجود **RBC Casts** ولون البول الكوكاكولا الفاتح أو الغامق (**Smoky / Cola-colored**) نتيجة أكسدة الهيموجلوبين بالـ Acidic pH في الأنابيب الكلوية."
   },
   {
     id: "q-r2-h-2",
@@ -2168,7 +2245,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 prominent structural or chemical \"Upper Urinary Tract\" causes of extra-glomerular hematuria.",
     answer: "1. Pyelonephritis or interstitial nephritis.\n2. Acute tubular necrosis (ATN).\n3. Vascular thrombosis or malformations.\n4. Crystalluria (Calcium, Oxalate, or Uric acid).",
     isClinical: true,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "الـ **Extra-glomerular Hematuria** اللي مصدرها فوق (Upper Tract) يعني الكلية أو الحالب بس بعيد عن الفلاتر:\n1. **Pyelonephritis**: التهاب صديدي في حوض الكلية بيعمل جرح ونزيف بسيط.\n2. **ATN (Acute Tubular Necrosis)**: تلف خلايا الأنابيب بسبب نقص الدم أو الأدوية بيكشف الأوعية الدموية.\n3. **Renal Vein Thrombosis**: جلطة في وريد الكلية بتزود الضغط بشكل رهيب فتعمل نزيف طارئ.\n4. **Crystalluria**: بلورات الكالسيوم أو الأوكسالات بتجرح جدار الأنابيب الكلوية وهي نازلة (زي الرمل الحامي)."
   },
   {
     id: "q-r2-h-3",
@@ -2178,7 +2256,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 specific indicators searched for during the initial evaluation of a child with hematuria.",
     answer: "1. Careful medical history (including family history of renal disease).\n2. Thorough physical examination for signs of edema or hypertension.\n3. Fresh urine sample analysis for casts, bacteria, and crystals.\n4. Abdominal ultrasound to look for stones, tumors, or anatomical malformations.",
     isClinical: true,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "خطوات فك اللغز عند طفل جاي بهيماتوريا:\n1. **History**: بنسأل عن تاريخ العيلة المرضي (Polycystic kidneys, Deafness, Alport).\n2. **Physical Exam**: بنقيس الضغط (Hypertension) وبنشوف الورم (Edema) ومغص الكلية.\n3. **Urinalysis**: بندور على زلال (Proteinuria)، خلايا مفعصة (Dysmorphic RBCs)، أو RBC Casts.\n4. **Abdominal US**: سونار للبطن والمسالك لاستبعاد الحصوات والأورام (زي Wilms' Tumor) والعيوب الخلقية."
   },
 
   {
@@ -2189,7 +2268,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 6-year-old boy is brought to the clinic with persistent microscopic hematuria. On checking his fresh urine sample, the lab reports more than 5 RBCs per high power field, a protein level exceeding 100 mg/dL, and the distinct presence of red blood cell casts. His blood pressure is elevated.\n\nQuestions:\n1. State the precise clinical site/source of this child's hematuria.\n2. Enumerate 2 multisystem diseases that can cause this specific type of hematuria in children.",
     answer: "1. Renal (Glomerular) source.\n2. Systemic Lupus Erythematosus (SLE) nephritis and Henoch-Schönlein Purpura (HSP) nephritis.",
     isClinical: true,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "لما نلاقي **RBC casts** وزلال محترم مع ضغط عالي، يبقى الإدانة كاملة والدم جاي صراحة من الـ **Glomerular origin** (الفلتر نفسه). أشهر مرضين جهازين (Systemic) بيخربوا الفلاتر في الأطفال هما:\n- **SLE Nephritis** (ذئبة حمراء هاجمت الكلى، بالذات في البنات).\n- **HSP Nephritis** (التهاب وعائي مع طفح جلدي مميز ووجع مفاصل وبطن)."
   },
 
   // topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
@@ -2201,7 +2281,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 essential pathophysiology steps that explain the development of edema and oliguria in a patient with APSGN.",
     answer: "1. Deposition of streptococcal immune complexes (subepithelial humps) in the Glomerular Basement Membrane (GBM).\n2. Proliferation of mesangial and endothelial cells leading to compression of glomerular capillaries.\n3. Decreased glomerular blood flow resulting directly in fluid retention and oliguria.\n4. Activation of the juxtaglomerular apparatus and the renin-angiotensin system, causing severe hypervolemia and edema.",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "خطوات تكوين الورم وقلة البول في الـ **APSGN**:\n1. الأجسام المضادة بتمسك في الـ Streptococcal Antigens وتترسب تحت الخلايا (تسمى **Subepithelial Humps**).\n2. الجسم بيثور ويعمل التهاب خلايا الميزانجيوم والبطانة (**Mesangial proliferation**)، فتقفل كابلات الدم بالفلاتر.\n3. GFR بيقع الأرض (**GFR drops**)، فالكلية متصرفش السوائل ويحصل **Oliguria**.\n4. نقص الفلترة مع استثارة الـ RAAS بيحبس السوائل والصوديوم في الدم، فينفخ المريض ويطير الضغط في السماء."
   },
   {
     id: "q-r2-a-2",
@@ -2211,7 +2292,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 general supportive measures or dietary modifications required during the management of acute APSGN.",
     answer: "1. Strict bed rest, specifically indicated during the oliguric phase of the illness.\n2. Careful fluid restriction calculated precisely based on the patient's urine output and body surface area.\n3. Dietary restriction of both protein and salt (sodium).\n4. Providing a high-carbohydrate diet to ensure adequate caloric intake.",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "بروتوكول الرعاية في الـ **APSGN** (لأن المرض Self-limiting ومالوش دوا مباشر):\n1. **Bed rest**: يرتاح تماماً في السرير في فترة قلة البول عشان يحمي القلب والضغط.\n2. **Fluid restriction**: بنقفل المحبس ونحسب السوائل بالملي (Urine + Insensible losses) عشان نمنع الرشح الرئوي.\n3. **Diet restriction**: ممنوع الملح تماماً (Salt restriction) عشان نتحكم في الضغط والورم، وتقليل البروتين لو اليوريا عالية جداً.\n4. **High-carbohydrate diet**: نشويات عالية عشان تدي طاقة للطفل وتمنع تكسير عضلاته (Catabolism) اللي بيزود اليوريا والبوتاسيوم."
   },
   {
     id: "q-r2-a-3",
@@ -2221,7 +2303,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 classic laboratory or diagnostic features seen on light, immunofluorescence, and electron microscopy in a kidney tissue affected by APSGN.",
     answer: "1. Symmetrically enlarged kidneys with all glomeruli appearing enlarged and relatively bloodless.\n2. Diffuse mesangial cell proliferation with an increase in mesangial matrix on light microscopy.\n3. Lumpy-bumpy deposits of immunoglobulin and complement on the GBM and in the mesangium on immunofluorescence.\n4. Electron-dense deposits or \"humps\" observed on the epithelial side of the GBM on electron microscopy.",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "الـ **APSGN** تحت عين الميكروسكوب:\n1. بالـ **Light Microscope**: الكلى بتظهر متضخمة لكنها باهتة وخالية من الدم لأن الفلاتر مخنوقة بالخلايا الملتهبة (**Hypercellular & bloodless glomeruli**).\n2. بالـ **Immunofluorescence**: ترسيبات مناعية غير منتظمة تدي شكل النجوم أو السماء الليلية المرصعة (**Lumpy-bumpy appearance**).\n3. بالـ **Electron Microscope**: ترسيبات عملاقة زي سنام الجمل (**Subepithelial Humps**) على غشاء الفلتر."
   },
 
   {
@@ -2232,7 +2315,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 10-year-old boy presents with sudden gross hematuria, mild ankle swelling, and oliguria. His serum C3 level is significantly reduced. The physician suspects APSGN but notes that the baseline Antistreptolysin O (ASOT) titer is normal.\n\nQuestions:\n1. What is the single best alternative antibody titer that should be requested to document a prior cutaneous/skin streptococcal infection?\n2. For how long does the serum C3 complement level typically remain depressed before returning to normal?",
     answer: "1. Deoxyribonuclease (DNase) B antigen titer.\n2. It returns to normal within 6 to 8 weeks after the onset of the disease.",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "1. في حالات عدوى الجلد (Strep. Pyoderma or Impetigo)، الـ **ASOT** ممكن يطلع طبيعي خالص لأن إنزيمات الجلد بتدمر الـ Streptolysin O قبل ما يحفز الأجسام المضادة. البديل الذهبي والذكي هنا هو الـ **Anti-DNase B** (أو Antistreptodornase B).\n2. مستوى الـ **Serum C3** المتمم المناعي بيوطى جداً نتيجة فناءه في المعركة، ولازم يرجع لطبيعته خلال **6 لـ 8 أسابيع**. لو فضل واطي بعد كدا، فكر فوراً في Membranoproliferative GN (MPGN) أو Lupus!"
   },
 
   // topic: "Nephrotic Syndrome"
@@ -2244,7 +2328,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Minimal Change Nephrotic Syndrome (MCNS)\".",
     answer: "It is the most common histological type of idiopathic nephrotic syndrome in children, characterized by normal-appearing glomeruli under light microscopy, negative immunofluorescence, and complete effacement of epithelial cell foot processes under electron microscopy.",
     isClinical: false,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "الـ **MCNS** هو أشهر نوع نفروتيك في الأطفال. تحت الـ **Light Microscope** الفلاتر بتظهر طبيعية وسليمة بنسبة 100% (علشان كدا اسمه Minimal Change)، وحتى الـ **Immunofluorescence** بيطلع سلبي تماماً.\nالـ Diagnosis الصريح بيبان بس بالـ **Electron Microscope**: بنلاقي دمار وتناغم كامل لأقدام الخلايا (**Effacement of foot processes**) اللي كانت مانعة تسريب زلال الألبومين."
   },
   {
     id: "q-r2-n-2",
@@ -2254,7 +2339,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical or laboratory findings that suggest a secondary cause of Nephrotic Syndrome rather than a primary idiopathic minimal change disease.",
     answer: "1. Age of onset greater than 8 years.\n2. Persistent hypertension.\n3. Presence of gross hematuria or structural renal impairment.\n4. Persistently depressed serum C3 complement levels or presence of extra-renal symptoms (like arthritis).",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "علامات خطر بتصرخ إن النفروتيك ده مش **Minimal Change** البسيط المحبوب، وإن في سبب تاني (Secondary Non-MCNS):\n1. **العمر الغريب**: طفل أصغر من سنة أو أكبر من 8 - 10 سنين.\n2. **Persistent Hypertension**: ضغط عالي مستمر ومستعصي.\n3. **Gross hematuria**: دم صريح ولون كوكاكولا في البول.\n4. **Low Serum C3**: متمم مناعي واطي مش راضي يرفع (يفكرنا بالـ MPGN أو Lupus)."
   },
   {
     id: "q-r2-n-3",
@@ -2264,7 +2350,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical monitoring parameters that must be tracked daily for a hospitalized child during an acute nephrotic relapse.",
     answer: "1. Assessment of 24-hour urinary protein excretion.\n2. Daily recording of body weight (to track fluid accumulation or loss).\n3. Continuous monitoring of blood pressure.\n4. Close tracking of total urine output and searching for early signs of clinical infection.",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "في عنبر الأطفال، عينك في عنكبوت على مريض انتكاسة النفروتيك:\n1. **Urinary protein**: بنقيس الزلال يومياً بالتجربة لمعرفة بدابة الاستجابة للكورتيزون.\n2. **Daily weight**: الميزان بنفس اللبس والظروف الصبح لقط فوري لمروق أو تراكم السوائل.\n3. **Blood Pressure**: هبوط فجائي قد يعني Hypovolemic shock، وارتفاعه قد يكون من الكورتيزون الحاد.\n4. **Infections checking**: قياس الحرارة وملاحظة وجع البطن أو الرشح لاستباق صدمة التسمم وموت المناعة."
   },
   {
     id: "q-r2-n-4",
@@ -2274,7 +2361,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 underlying factors or causes that explain the increased susceptibility to bacterial infections in children during a nephrotic relapse.",
     answer: "1. Significant urinary losses of immunoglobulins and properdin factor B.\n2. Defective cell-mediated immunity and abnormal leukocytic function.\n3. Immunosuppressive or prolonged corticosteroid therapy.\n4. Accumulation of edema and ascites fluid acting as an excellent culture medium for bacteria.",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "ليه طفل انتكاسة النفروتيك مناعته في الأرض ومعرض للموت من الالتهابات؟\n1. بيفقد الأجسام المضادة المناعية بالبول (**Urinary loss of IgG & properdin factor B**).\n2. كفاءة الخلايا المناعية والـ chemotaxis تعبانة بسبب اليوريميا ونقص الغذاء.\n3. العلاج بـ **Corticosteroids** بجرعات عالية بيقفل جهاز المناعة الباقي.\n4. تراكم مياه الرشح والـ **Ascites** في البطن بتعتبر بيئة غذاء ذهبية (Culture medium) تعشقها بكتيريا الـ Pneumococcus وتعمل Spontaneous Bacterial Peritonitis (SBP)."
   },
   {
     id: "q-r2-n-5",
@@ -2284,7 +2372,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 5-year-old child known to have steroid-responsive nephrotic syndrome is brought to the hospital during a relapse. He has developed a high fever, severe abdominal pain, and abdominal tenderness. The physician suspects spontaneous bacterial peritonitis.\n\nQuestions:\n1. What is the single most common bacterial organism responsible for causing peritonitis in nephrotic children?\n2. Mention 2 factors that explain the increased risk of intravascular thrombosis in this patient.",
     answer: "1. Streptococcus pneumoniae (Gram-negative bacteria like E. coli can also be encountered).\n2. Increased prothrombotic factors (like fibrinogen and thrombocytosis) and decreased fibrinolytic factors due to urinary losses of antithrombin III.",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "1. أشهر ميكروب بشع يهاجم بطن طفل النفروتيك ويعمل التهاب بريتوني حاد (**SBP**) هو **Streptococcus pneumoniae** (تليها الـ E. coli).\n2. الجلطات (**Thrombosis**) مرعبة في النفروتيك لسببين:\n- الكلية بتسرب مضاد الجلطات الطبيعي **Antithrombin III** في البول فتسهل التجلط.\n- الكبد بيصنع فايبرينوجين عشوائي بزيادة مع وجود جفاف مية بالدم (**Hemoconcentration**) بسبب هروب المياه للأنسجة."
   },
 
   // topic: "Acute Kidney Injury (AKI)"
@@ -2296,7 +2385,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct \"Intrinsic Renal\" parenchymal causes that lead to Acute Kidney Injury in children.",
     answer: "1. Acute post-infectious or post-streptococcal glomerulonephritis.\n2. Hemolytic-Uremic Syndrome (HUS).\n3. Acute Tubular Necrosis (ATN) induced by prolonged ischemia or nephrotoxic medications.\n4. Acute interstitial nephritis or renal vein thrombosis.",
     isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "الـ **Intrinsic AKI** يعني الكارثة والضربة حلت داخل لحم الكلية وجدرانها الفلترية نفسها:\n1. **Severe APSGN** (التهاب حاد دمر جدران المصفاة الكلوية).\n2. **HUS (Hemolytic Uremic Syndrome)**: جلطات ميكروسكوبية خربت شرايين الكلية ودمرت خلايا الدم والصفائح.\n3. **ATN (Acute Tubular Necrosis)**: موت خلايا أنابيب الكلية بسبب سموم الأدوية (Aminoglycosides) أو انقطاع الدم الطويل.\n4. **Acute Interstitial Nephritis**: حساسية مناعية حادة من أدوية محددة ترسبت في جدار النسيج الكلوي."
   },
   {
     id: "q-r2-k-2",
@@ -2306,7 +2396,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 structural post-renal obstructive causes that can induce bilateral urinary tract obstruction and cause AKI.",
     answer: "1. Posterior Urethral Valves (PUV) in male neonates.\n2. Bilateral ureterovesical or pelviureteric junction (PUJ) obstruction.\n3. Urolithiasis (Urinary stones blocks).\n4. Neurogenic bladder or hemorrhagic cystitis.",
     isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "الـ **Post-renal AKI** يعني المواتير سليمة والسباكة سليمة، بس الصرف مسدود في السكة برة الكليتين (Obstrucive uropathy) ولازم السدة تكون ثنائية (**Bilateral**) أو في مخرج المثانة عشان تبوظ وظائف الكلى:\n1. **PUV (Posterior Urethral Valves)**: أشهر سبب لخناق المجرى في الصبيان حديثي الولادة.\n2. **Bilateral Kidneys Stones / PUJ obstruction**: حصوة سدت الحالبين معاً أو عيب خلقي في مخرج الحالبين.\n3. **Neurogenic Bladder**: مثانة مشلولة عصبياً خازنة السائل وترده لفوق.\n4. **Hemorrhagic Cystitis**: نزيف وتجلط دموي في عنق المثانة خانق المجرى تماماً."
   },
   {
     id: "q-r2-k-3",
@@ -2316,9 +2407,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical manifestations that differentiate the early oliguric phase of AKI from the advanced phase.",
     answer: "1. Early phase features simple oliguria, mild edema, and mild hypertension.\n2. Advanced phase features severe uremic encephalopathy (confusion, convulsions, or coma).\n3. Advanced phase features hyperkalemia leading to cardiac arrhythmias.\n4. Advanced phase features hypervolemia causing congestive heart failure and acute pulmonary edema.",
     isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "الفرق بين البداية الهادئة والنهاية العنيفة للـ **AKI**:\n- **Oliguric Phase (البسيطة)**: مجرد قلة بول شوية ورم طفيف على العين وضغط منضبط.\n- **Advanced Phase (المرعبة)**: uremic toxins تطلع للمخ وتعمل غيبوبة وتشنجات (**Uremic Encephalopathy**)، البوتاسيوم يعلى فيلخبط كهربة القلب والـ T wave ومستعد يوقف النبض فجأة، وحجم المياه يتراكم لدرجة فشل القلب الحاد ورشح الرئة الخانق (**Pulmonary Edema**)."
   },
-
   {
     id: "q-r2-k-5",
     chapterId: 1,
@@ -2327,7 +2418,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A critically ill 4-year-old child with a history of protracted systemic hypotension and prolonged exposure to known nephrotoxic medications develops acute renal failure. Urinalysis shows a low urine specific gravity (<1010), high urine sodium (>40 mEq/L), and a FENa greater than 2%.\n\nQuestions:\n1. What is the specific intrinsic renal diagnosis for this presentation?\n2. Enumerate 2 types of urine casts or cells characteristic of this intrinsic parenchymal condition.",
     answer: "1. Acute Tubular Necrosis (ATN).\n2. Granular casts and renal tubular epithelial cell casts.",
     isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
+    topic: "Acute Kidney Injury (AKI)",
+    explanation: "قراءة تحليلية فذة للكيسة:\n1. طفل ضغطه واطى لفترة طويلة وتعرض لأدوية سامة للكلى واستجابته الكلوية صفر مع **FENa > 2%** و **Urine Sodium > 40 mEq/L**: دي بصمة **ATN** (موت خلايا الأنابيب) لأن الأنابيب تالفة ومش عارفة تمتص صوديوم فبتسربه في البول بكميات مهولة.\n2. النسيج التالف المتساقط من جدران الأنابيب بينزل في البول على شكل اسطوانات طينية وحبيبية مميزة جداً تسمى **Muddy brown granular casts** و **Renal tubular epithelial cell casts**."
   },
 
   // topic: "Chronic Kidney Disease (CKD)"
@@ -2339,7 +2431,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct structural or congenital causes that are responsible for Chronic Kidney Disease in children younger than 5 years of age.",
     answer: "1. Congenital renal hypoplasia or dysplasia.\n2. Severe reflux nephropathy.\n3. Congenital obstructive uropathy (e.g., posterior urethral valves).\n4. Congenital nephrotic syndrome or polycystic kidney disease.",
     isClinical: true,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "في الأطفال اللي أصغر من 5 سنين، الفشل الكلوي المزمن (**CKD**) مبيبقاش من التهابات، بيكون بنسبة 90% عيوب خلقية في التكوين أو السباكة:\n1. **Renal Hypoplasia/Dysplasia**: الكلية مولودة حجمها قزم أو متكيسة غير ناضجة.\n2. **Reflux Nephropathy**: صمام وحالب مفوت عمال يرجع البول للكلية بضغط عالي وجرح النسيج.\n3. **Posterior Urethral Valves (PUV)**: انسداد مخرج المثانة حجز البول لفوق فدمر الفلاتر على مدار شهور.\n4. **Congenital PKD**: مرض الكلي المتعددة الأكياس الوراثي."
   },
   {
     id: "q-r2-c-2",
@@ -2349,7 +2442,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct clinical or laboratory mechanisms that explain the development of Short Stature (Growth Retardation) in children with CKD.",
     answer: "1. Chronic inadequate caloric and nutritional intake.\n2. Severe chronic metabolic acidosis.\n3. Advanced renal osteodystrophy.\n4. Growth hormone resistance state (elevated GH but decreased insulin-like growth factor-I).",
     isClinical: true,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "ليه طفل الفشل الكلوي المزمن بيكون قزم ومش بيكبر؟\n1. **Caloric intake**: الشهية ميتة بسبب سموم اليوريا والترجيع الدائم.\n2. **Metabolic Acidosis**: حموضة الدم المزمنة بتسحب الكالسيوم والمعادن من العضم وتدمر بروتينات البناء.\n3. **Renal Osteodystrophy**: تفتت وتشوه العظام بسبب خلل هرمون الغدة الجار درقية.\n4. **Growth Hormone Resistance**: هرمون النمو سليم وبيفرز، لكن المستقبلات في الأنسجة معطلة باليوريا ومفيش إنتاج كافي للـ IGF-1 البنائي."
   },
   {
     id: "q-r2-c-3",
@@ -2359,38 +2453,31 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical, laboratory, or radiological features that characterize the presence of \"Renal Osteodystrophy\" in a child with advanced CKD.",
     answer: "1. Muscle weakness, bone pain, and skeletal fractures with minor trauma.\n2. Rachitic changes, and varus or valgus deformities of the long bones.\n3. Laboratory findings of hypocalcemia, hyperphosphatemia, and elevated parathyroid hormone (PTH) levels.\n4. Subperiosteal bone resorption with widening of the metaphysis on X-ray.",
     isClinical: true,
-    topic: "Chronic Kidney Disease (CKD)"
-  },
-
-  {
-    id: "q-r2-c-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Chronic Metabolic Acidosis Case",
-    content: "A 7-year-old child with Stage 4 Chronic Kidney Disease presents to the clinic. Her laboratory parameters demonstrate a persistent serum bicarbonate level significantly below 22 mEq/L due to decreased net acid excretion by the failing kidneys.\n\nQuestions:\n1. What metabolic complication has this child developed?\n2. Mention 2 oral alkalinizing pharmacological agents utilized to manage this condition and maintain safe bicarbonate levels.",
-    answer: "1. Chronic Metabolic Acidosis.\n2. Bicitra (sodium citrate) and Sodium Bicarbonate tablets.",
-    isClinical: true,
-    topic: "Chronic Kidney Disease (CKD)"
+    topic: "Chronic Kidney Disease (CKD)",
+    explanation: "الـ **Renal Osteodystrophy** (العظام المتفحمة كلوياً):\n- **Clinical**: الطفل بيعاني من وجع شديد في العظم وضغف عضلات، وسهل يتكسر من خبطة تافهة، ورجله بتتقوس وتقرب لبعضها (Knock knees / Genu valgum).\n- **Labs**: نقص حاد في كالسيوم الدم (**Hypocalcemia**) مع تراكم الفوسفات عاجز التصريف (**Hyperphosphatemia**)، واستفزاز هرمون الـ **PTH** ليتجاوز أرقامه الطبيعية بأضعاف.\n- **X-Ray**: تأكل العظام تحت القشرة في الأصابع (**Subperiosteal resorption**)."
   },
   {
     id: "q-r2-u-1",
     chapterId: 1,
     type: "short-essay",
-    title: "Pediatric UTI Gender & Age Prevalence",
+    title: "UTI Prevalence & Gender Shifts",
     content: "Enumerate the prevalence rates of Urinary Tract Infections (UTIs) in pediatric girls and boys, and specify how the male-to-female ratio shifts in the first year of life versus beyond 1-2 years.",
     answer: "1. Overall Prevalence: UTIs occur in 3-5% of girls and 1% of boys.\n2. In Girls: First UTI often occurs by age 5, peaking during infancy and the toilet training phase. Recurrence is high, at 60-80% within 18 months.\n3. In Boys: Most UTIs occur during the first year of life, with uncircumcised boys having a significantly higher risk.\n4. Ratio Shifts: In the first year of life, there is a male-to-female ratio of 2.8-5.4:1 (higher prevalence in males). Beyond 1-2 years, there is a distinct female preponderance with a ratio of 1:10 (males to females).",
     isClinical: false,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "لعبة انتشار الـ UTI بالأعمار والنوع:\n- **الرضع في السنة الأولى**: الأولاد غير المختونين (Uncircumcised) بيكتسحوا الإصابات بنسبة رهيبة (من 3 لـ 5 مرات أكثر من البنات) بسبب تراكم البكتيريا تحت القلفة.\n- **بعد سن سنة أو سنتين**: تنعكس الآية تماماً وتتفوق البنات باكتساح كاسح (بنسبة 10 بنات لكل ولد واحد) بسبب قصر المجرى البولي (Shorter urethra) وقرب فتحة البول من المخرج الخلفي بالتالي زحف الـ E. coli السريع."
   },
+
   {
     id: "q-r2-u-2",
     chapterId: 1,
     type: "short-essay",
     title: "Cystitis vs Pyelonephritis Differentiation",
-    content: "Enumerate 4 distinct clinical or pathological differences that help distinguish acute Cystitis (bladder involvement) from acute Pyelonephritis (kidney parenchyma involvement) in pediatric patients.",
+    content: "Enumerate 4 distinct clinical or pathological differences that help distinguish acute Cystitis (bladder involvement) from acute Pyelonephritis (kidney parenchyma involvement) in children.",
     answer: "1. Fever & Systemic Symptoms: Pyelonephritis is characterized by high fever, malaise, vomiting, or jaundice (in infants), whereas Cystitis features NO fever or mild low-grade fever with localized symptoms.\n2. Localized Pain: Pyelonephritis causes abdominal or flank/back pain, whereas Cystitis causes suprapubic pain.\n3. Voiding Symptoms: Cystitis is dominated by severe dysuria, extreme urgency, urinary frequency, and incontinence, which are less localized in infants with pyelonephritis.\n4. Long-term Sequelae: Pyelonephritis carries a significant risk of permanent renal scarring, whereas Cystitis does NOT cause renal scarring or permanent renal injury.",
     isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "الفرق السريري الخطير بين التهاب المثانة البسيط والتهاب الكلية العنيف:\n- **Location**: الـ **Cystitis** محصورة تحت بوجع فوق العانة وحرقان بول رهيب ودخول متكرر، ومفيش سخخونية (No systemic features).\n- **Pyelonephritis**: تسمم حراري عام، سخونية، قشعريرة، وجع في الضهر أو الخواصر، وفي الرضع صفراء وترفض الرضاعة.\n- **Complications**: الـ Cystitis لا تضر النسيج أبداً، أما الـ Pyelonephritis بتعمل بؤر تليف وجروح بالـ Kidney تسبب ضغط وضياع لوظائف الكلى بالمستقبل (Renal Scarring)."
   },
   {
     id: "q-r2-u-3",
@@ -2400,7 +2487,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the therapeutic protocols for young children with acute uncomplicated cystitis versus those requiring prophylaxis against UTI recurrence.",
     answer: "1. Acute Cystitis Treatment: Administer Trimethoprim-sulfamethoxazole or Nitrofurantoin for 3-5 days. Amoxicillin (50 mg/kg/24 hr) is another option.\n2. Preventive Prophylaxis Indication: Initiated to prevent reinfection in children with recurrent UTIs or high-grade Vesicoureteral Reflux (VUR).\n3. Prophylaxis Regimen: Administer Sulfamethoxazole-trimethoprim or Nitrofurantoin once daily at bedtime.\n4. Prophylaxis Dosage: The dose is calculated exactly as one-third (1/3) of the standard therapeutic dose.",
     isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "1. علاج الـ **Cystitis** بسيط ومقتضب: بنمشي الطفل على مضاد عن طريق الفم لمدة 3 - 5 أيام (زي الـ Septrin / TMP-SMX أو الـ Nitrofurantoin المتمركز بالبول).\n2. بروتوكول الوقاية الـ **Prophylaxis**: لو الطفل عنده ارتجاع صمامات عالي (VUR) أو أدوار متكررة، بنعطيه جرعة وقائية واحدة بالليل يومياً بجرعة **ثلث الجرعة العلاجية** لتأمين الطريق ومنع مستعمرات البكتيريا من الصعود مجدداً للكلية."
   },
   {
     id: "q-r2-u-5",
@@ -2410,7 +2498,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "An 8-year-old girl with a history of recurrent febrile UTIs presents with high fever, persistent left-sided flank pain, and significant abdominal tenderness despite being on oral antibiotics for 48 hours. Her CBC reveals a marked leukocytosis of 24,000/mm³ with neutrophilia. An abdominal ultrasound is ordered.\n\nQuestions:\n1. What severe localized complication of pyelonephritis is most likely in this child?\n2. Mention the diagnostic imaging gold-standard for confirming this complication, and its medical/surgical management.",
     answer: "1. Renal Abscess (marked by high fever, localized flank pain, high WBC >20,000, and non-response to standard therapy).\n2. Confirmation is obtained via Abdominal CT or MRI. Management involves administering high-dose parenteral broad-spectrum antibiotics and undertaking surgical or percutaneous drainage if there is an obstruction or non-resolution.",
     isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)"
+    topic: "Urinary Tract Infections (UTIs)",
+    explanation: "طفلة جالها دور التهاب كلى ومستجابتش للمضاد في أول 48 ساعة، وحرارتها طارت ووجع الخصر زاد وكرات الدم تجاوزت 24,000:\n1. الشك الفوري هو تكون **Renal Abscess** (خراج بداخل الكلية حبس الصديد والحرارة ومنع المضاد السطحي من العمل).\n2. الفحص الذهبي: **Abdominal CT / MRI** بالصبغة.\n3. الحل: حجز بـ **IV antibiotics** بجرعات قصوى، وفي حال كان الخراج كبير أو سادد الطريق بيتم سحبه بإبرة تحت السونار (Percutaneous drainage)."
   },
   {
     id: "q-r2-a-6",
@@ -2420,7 +2509,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical or laboratory indications for performing a Renal Biopsy in a child suspected of having Acute Post-Streptococcal Glomerulonephritis (APSGN).",
     answer: "1. Presentation with Acute Kidney Injury (AKI) or Rapidly Progressive Glomerulonephritis (RPGN).\n2. Presence of heavy, nephrotic-range proteinuria.\n3. Absence of any streptococcal evidence (normal ASO/ASOT and normal DNase B titers) in a patient with nephritic features.\n4. Persistently low serum C3 complement levels, or persistent hematuria and diminished renal function, extending beyond 2 months (6-8 weeks) from onset.",
     isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
+    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
+    explanation: "طبيعي الـ APSGN بتتحسن لوحدها ومبنعملش عينة، لكن أيمتى بنضطر لجرعة العينة الكلوية (Renal Biopsy) لاستبعاد الخطر؟\n1. لو الطفل دخل في فشل كلوي صاروخي ومصاحب بـ **AKI or RPGN**.\n2. لو كمية تسريب الزلال فظيعة ووصلت للـ **Nephrotic range**.\n3. لو مفيش أي دليل على Strep infection بالتحاليل (لا ASOT ولا Anti-DNase B).\n4. لو المتمم الـ **C3** فضل منخفض لأكثر من 8 أسابيع (الشك بيتحول لأمراض مناعية مزمنة)."
   },
   {
     id: "q-r2-h-4",
@@ -2430,7 +2520,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 parameters that distinguish Microscopic Hematuria from Gross (Macroscopic) Hematuria in children.",
     answer: "1. Visual Appearance: Microscopic hematuria is completely invisible to the naked eye (normal urine color), whereas gross hematuria causes a visually obvious red, brown, cola, or smoky urine color.\n2. Quantitation: Microscopic hematuria is quantified as >= 3 RBCs per high-power field (HPF) on 2-3 consecutive centrifuged urine samples, whereas gross hematuria is immediately visually apparent.\n3. Clinical Detection: Microscopic hematuria is usually asymptomatic and discovered incidentally, whereas gross hematuria presents with clear visible symptoms.\n4. Diagnostic Urgency: Gross hematuria requires immediate, systematic diagnostic and clinical evaluation, whereas microscopic hematuria is monitored with serial urinalysis first.",
     isClinical: false,
-    topic: "Hematuria"
+    topic: "Hematuria",
+    explanation: "الفرق بين الهيماتوريا الظاهرة والمستترة:\n- **Gross Hematuria (دم صريح)**: البول لونه أحمر زاهي أو شاي غامق وظاهر بوضوح للعين من أول لحظة، ودي حالة طارئة تقلق الأهل ولازم تقييم فوري.\n- **Microscopic Hematuria (دم مجهري)**: البول لونه طبيعي وأصفر وصافي خالص، والدم مستتر لا يُرى إلا تحت الميكروسكوب (بشرط تكرار وجود حمر كرات دم >= 3 RBC/HPF في عينتين متتاليتين)، ودي غالباً بتكتشف صدفة وبنبذل معاها هدوء وتحليل متكرر لاستبعاد الأسباب العابرة."
   },
   {
     id: "q-r2-n-6",
@@ -2440,7 +2531,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the two main therapeutic phases (Induction and Maintenance Taper) of the curative Standard Corticosteroid Therapy (Prednisone) for Minimal Change Nephrotic Syndrome (MCNS) in children, including dosages and durations.",
     answer: "1. Induction Phase dosage: Prednisone at a dose of 60 mg/m²/day (maximum 60 mg/day) administered daily.\n2. Induction Phase duration: Maintained for 4 consecutive weeks to induce complete remission.\n3. Maintenance Taper Phase dosage: Prednisone at a dose of 40 mg/m²/day administered on alternate days.\n4. Maintenance Taper Phase duration: Maintained for 4 weeks (as per bank question update), followed by a gradual taper to avoid adrenal suppression.",
     isClinical: true,
-    topic: "Nephrotic Syndrome"
+    topic: "Nephrotic Syndrome",
+    explanation: "أهم بروتوكول في طب الأطفال؛ كورس الكورتيزون الذهبي لإنقاذ النفروتيك MCNS:\n1. **Phase 1: Induction (جرعة الهجوم)**: بنمشي على جرعة **60 mg/m²/day** (الحد الأقصى 60 مجم باليوم) متوزعة يومياً بانتظام لمدة **4 أسابيع كاملين**.\n2. **Phase 2: Tapering/Maintenance (الانسحاب التدريجي)**: بنقلب الجرعة لـ **40 mg/m²** بس يوم آه ويوم لا (**Alternate days**) لمدة **4 أسابيع** (تبعاً لنسخة البنك المحدثة) ثم نسحبه ببطء لحماية الغدة الكظرية من الخمول الكلي للإنتاج الطبيعي."
   },
 
   // ==================== II. Chest Diseases (Bank 2) ====================
@@ -2450,10 +2542,11 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 2,
     type: "short-essay",
     title: "Croup Differential Diagnosis",
-    content: "Enumerate 4 prominent entities or disorders that must be included in the differential diagnosis of a child presenting with acute upper airway stridor and croupy symptoms.",
+    content: "Enumerate 4 differential diagnoses for a child with acute upper airway stridor and croupy symptoms.",
     answer: "1. Acute Epiglottitis.\n2. Acute Bacterial Tracheitis.\n3. Sudden Aspiration of a Foreign Body.\n4. Retropharyngeal or peritonsillar abscess.",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "مش كل طفل بيكح كحة نباحية وعنده تزييق حاد في التنفس (**Stridor**) يبقى مجرد Croup بسيط! لازم نستبعد التشخيصات الفارقة الخطيرة دي:\n1. **Acute Epiglottitis**: التهاب لسان المزمار البكتيري، طوارئ مهددة للحياة.\n2. **Bacterial Tracheitis**: صديد والتهاب بكتيري حاد في القصبة الهوائية.\n3. **Foreign Body Aspiration**: بلع جسم غريب فجأة وسد مجرى الهواء.\n4. **Retropharyngeal Abscess**: خراج خلف البلعوم خانق الطريق."
   },
   {
     id: "q-c2-c-2",
@@ -2463,7 +2556,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical or historical features that explicitly differentiate \"Spasmodic Croup\" from acute viral laryngotracheobronchitis.",
     answer: "1. Spasmodic croup occurs suddenly at night with brief and less severe symptoms.\n2. There is a complete absence of a preceding viral prodrome (no runny nose or catarrh).\n3. The child is completely afebrile (no fever).\n4. Symptoms resolve rapidly within several hours.",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "إزاي تفرق الـ **Spasmodic Croup** (الكروب اللعبي/التقلصي) عن الـ **Viral Croup** (الالتهابي الفيروسي):\n- **Spasmodic Croup**: بيحصل فجأة في نص الليل، الطفل بيبدأ يكح كحة نباحية ويتخنق، بدون أي مقدمات برد أو رشح (**No viral prodrome**)، ومفيش سخونية نهائي (**Afebrile**)، والأهم إنه بيتحسن بسرعة جداً في خلال ساعات مجرد ما يتعرض لهواء بارد أو رطب.\n- **Viral Croup**: بيبدأ بـ Prodrome (رشح ورشحان وسخونية بسيطة) ويزيد بالتدريج على كذا يوم."
   },
   {
     id: "q-c2-c-3",
@@ -2473,7 +2567,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 guidelines or precautions regarding what to avoid during the clinical management of an inflammatory upper airway obstruction.",
     answer: "1. Avoid administration of physical sedation.\n2. Avoid using opiate derivatives.\n3. Avoid prescribing expectorants or antihistamines.\n4. Avoid direct visual inspection of the oral cavity using a tongue depressor if epiglottitis is suspected.",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "محاذير ذهبية ممنوع تعملها مع أي طفل يعاني من انسداد في مجرى التنفس العلوي:\n1. **No Sedation**: ممنوع تدي مهدئات نهائياً لأنك هتقفل الـ Respiratory drive ويموت الطفل اختناقاً.\n2. **No Opiates**: ممنوع مشتقات الأفيون لنفس السبب (بتموت التنفس).\n3. **No Expectorants/Antihistamines**: ممنوع أدوية الكحة أو مضادات الهيستامين لأنها بتنشف الإفرازات وتعمل سدادات مخاطية صعبة (**Mucous plugs**).\n4. **No Tongue Depressor**: أوعى تلمس زور العيان بخافض اللسان لو شاكك في **Epiglottitis**؛ لأن ده ممكن يستثير رفلكس تشنجي (**Laryngospasm**) يقفل مجرى الهواء للأبد فوراً!"
   },
 
   {
@@ -2484,7 +2579,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the required observation time course and the critical clinical rationale for monitoring a child with moderate to severe croup after they receive nebulized L-Epinephrine in the emergency department.",
     answer: "1. Required Observation Time Course: The child must be observed closely in the emergency department or clinic for at least 2 consecutive hours.\n2. Critical Clinical Rationale: Nebulized Epinephrine is a temporary vasoconstrictive agent. Once its vasoactive effects wear off (typically within 2 hours), the patient is at a high risk of developing severe recurrence of airway edema and rebound symptoms, requiring re-treatment or immediate hospitalization.",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "ليه بنراقب الطفل لمدة **ساعتين على الأقل** في الطوارئ بعد جلسة الـ **L-Epinephrine** المستنشق؟\n- الـ L-Epinephrine بيشتغل كـ Vasoconstrictor مؤقت بيلمس الأوعية الملتهبة ويريح الورم فوراً. لكن بمجرد ما مفعوله يخلص (في حدود ساعتين)، بيحصل حاجة اسمها **Rebound edema**، يعني الورم بيرجع تاني وبقوة! لو روحنا الطفل بدري ممكن يحصله اختناق مفاجئ في البيت يهدد حياته. الملاحظة بتأمن إن التأثير زال بأمان وبدون ارتداد للأعراض."
   },
 
   {
@@ -2495,7 +2591,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 2-year-old child presents with progressive inspiratory stridor at rest, severe chest retractions, cyanosis, and a barking cough. The emergency physician establishes the diagnosis of severe croup.\n\nQuestions:\n1. What is the immediate clinical indication suggested by the presence of stridor at rest and cyanosis?\n2. Mention the precise dose and administration routes of the first-line corticosteroid indicated to treat this condition.",
     answer: "1. Severe airway obstruction indicating hospitalization and urgent medical intervention.\n2. A single dose of Dexamethasone administered at 0.6 mg/kg either intramuscularly (IM) or orally.",
     isClinical: true,
-    topic: "Croup"
+    topic: "Croup",
+    explanation: "قراءة عيادية ذكية لحالة الكروب العنيف:\n1. وجود **Stridor at rest** مع زرقان (**Cyanosis**) ده معناه انسداد شديد في مجرى الهواء ومؤشر خطر يستدعي حجز فوري بالمستشفى للإنقاذ.\n2. العلاج السحري والذهبي لتقليل ورم الحنجرة هو: حقنة **Dexamethasone** بجرعة واحدة صريحة بمقدار **0.6 mg/kg** وتؤخذ إما بالفم (لو الطفل مش بيرجع) أو كـ **IM injection**."
   },
 
   // topic: "Epiglottitis"
@@ -2507,7 +2604,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 primary differences that clinically distinguish Acute Epiglottitis from classic Viral Croup.",
     answer: "1. Epiglottitis presents with a very high-grade fever, while croup features a low-grade fever.\n2. Severe drooling of saliva is a hallmark of epiglottitis, but is completely absent in croup.\n3. A barking cough is characteristically rare or absent in epiglottitis, but defines croup.\n4. Epiglottitis peaks in older children (2-7 years), while croup affects younger infants.",
     isClinical: true,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "الفرق السريري الحاسم بين **Epiglottitis** (التهاب لسان المزمار) والـ **Croup** الفيروسي:\n- **Epiglottitis**: حرارة نارية عالية جداً، سيلان لعاب مستمر (**Severe drooling**) لعدم القدرة على البلع نهائياً بسبب الورم، كحة مخنوقة وصامتة وليست نباحية، وبيصيب سن أكبر شوية (من 2 لـ 7 سنين)، وهي طوارئ من الدرجة الأولى.\n- **Croup**: حرارة بسيطة، كحة نباحية واضحة (**Barking cough**)، ومفيش ريالة أو سيلان لعاب لعجز البلع."
   },
   {
     id: "q-c2-e-2",
@@ -2517,7 +2615,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 complications or associated systemic infections that can rarely occur during the course of acute Epiglottitis.",
     answer: "1. Pneumonia.\n2. Acute Bacterial Meningitis.\n3. Acute Otitis Media.\n4. Septic Arthritis.",
     isClinical: true,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "مضاعفات الـ **Epiglottitis**: بما إن الكائن المسبب هو بكتيريا عنيفة (غالباً *H. influenzae b*)، فممكن تنتشر في الدم وتسبب مضاعفات خطيرة في أماكن تانية:\n1. **Pneumonia**: التهاب رئوي حاد.\n2. **Acute Meningitis**: التهاب السحايا الغشائي في المخ.\n3. **Septic Arthritis**: التهاب مفاصل صديدي.\n4. **Otitis Media**: التهاب الأذن الوسطى الحاد."
   },
   {
     id: "q-c2-e-3",
@@ -2527,7 +2626,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 parameters or clinical settings required to safely perform a direct diagnostic visualization of the epiglottis.",
     answer: "1. Must be performed exclusively by a highly skilled doctor.\n2. Must be conducted only within an Operating Room (OR) or an Intensive Care Unit (ICU).\n3. Requires readiness for immediate endotracheal intubation or surgical airway backup.\n4. Visualization must reveal a swollen, cherry-red epiglottis via laryngoscopy.",
     isClinical: true,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "شروط فحص لسان المزمار بأمان لتجنب إغلاق المجرى الهوائي التام:\n1. يتم الفحص بواسطة **طبيب خبير جداً**.\n2. في **غرفة العمليات (OR)** أو **العناية المركزة (ICU)** حصراً.\n3. الجاهزية الكاملة للتنبيب الرغامي السريع (**Intubation**) أو شق حنجري طارئ.\n4. الفحص بيظهر لسان مزمار منتفخ وبلون أحمر كرزي مميز جداً (**Cherry-red epiglottis**)."
   },
 
   {
@@ -2538,7 +2638,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 3.5-year-old child presents with a sudden onset of high fever, severe sore throat, and a complete inability to swallow, causing continuous drooling of saliva. A lateral view radiograph of the neck is performed carefully.\n\nQuestions:\n1. What specific radiological sign is expected on the lateral neck film?\n2. When should the artificial endotracheal tube safely be removed from this patient?",
     answer: "1. The Thumb Sign (representing the edematous epiglottis).\n2. After a few days, when a repeat direct laryngoscopy shows that the inflammatory edema has completely subsided.",
     isClinical: true,
-    topic: "Epiglottitis"
+    topic: "Epiglottitis",
+    explanation: "قراءة حالة طفل 3.5 سنوات يعاني من ريالة وسخونية شديدة وصعوبة بلع:\n1. **Thumb Sign**: أهم علامة في الأشعة الجانبية للرقبة (**Lateral Neck X-ray**)، تظهر لسان المزمار المتورم كأنه بصمة إبهام تسد المجرى الهوائي.\n2. **Extubation**: بيتم شيل الأنبوب الحنجري بعد أيام لما الفحص المباشر (**Direct laryngoscopy**) يأكد زوال التورم والالتهاب تماماً."
   },
 
   // topic: "Wheezy Chest and Foreign Body Aspiration"
@@ -2550,7 +2651,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 acute medical conditions that can cause a sudden onset of \"Acute Wheezing\" in infants and young children.",
     answer: "1. Acute Viral Bronchiolitis.\n2. Severe bacterial bronchopneumonia.\n3. Sudden Foreign Body Aspiration.\n4. First acute episode of bronchial asthma.",
     isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "أسباب تزييق الصدر الحاد (**Acute Wheezing**) في الأطفال الرضع:\n1. **Viral Bronchiolitis**: التهاب الشعيرات الهوائية الفيروسي (السبب الأشهر للرضع).\n2. **Bronchial Asthma**: الأزمة الربوية أو الربو الشعبي الحاد.\n3. **Foreign Body Aspiration**: جسم غريب دخل مجرى الهواء فجأة.\n4. **Severe Bronchopneumonia**: التهاب رئوي بكتيري حاد وشديد يسبب ضيق وتشنج شعبي."
   },
   {
     id: "q-c2-w-2",
@@ -2560,7 +2662,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 noisy breathing sounds that must be differentiated from true wheezing, including their character or mechanism.",
     answer: "1. Snoring: Inspiratory irregular sound due to partial nose or nasopharyngeal obstruction.\n2. Stridor: Inspiratory continuous harsh sound due to partial larynx or trachea obstruction.\n3. Grunting: Early expiratory short sound due to forced expiration against a closed epiglottis.\n4. Rattling: Irregular sound due to partial obstruction of the trachea and major bronchi by secretions.",
     isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "الفرق بين أصوات التنفس غير الطبيعية في الأطفال:\n- **Snoring (الشخير)**: صوت ملخبط أثناء الشهيق بسبب انسداد الأنف أو البلعوم الأنفي.\n- **Stridor (التزييق الحنجري)**: صوت مستمر حاد في الشهيق بسبب ضيق الحنجرة أو القصبة الهوائية.\n- **Grunting (الأنين)**: زفرة قصيرة في بداية الزفير بسبب محاولة الزفير ضد مزمار مغلق لحماية الحويصلات.\n- **Rattling (الخرخرة)**: ناتجة عن تجمع الإفرازات والمخاط في القصبة الهوائية والشعب الهوائية الكبيرة."
   },
   {
     id: "q-c2-w-3",
@@ -2570,7 +2673,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 long-term localized pulmonary complications that can result from an unrecognized or untreated impacted foreign body.",
     answer: "1. Recurrent pneumonia localized in the exact same lung lobe.\n2. Formation of a lung abscess.\n3. Development of localized bronchiectasis.\n4. Segmental or lobar lung collapse.",
     isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "مخاطر ترك جسم غريب يستقر في الرئة دون تدفق أو إزالة:\n1. **Recurrent pneumonia**: التهاب رئوي متكرر في نفس الفص والمنطقة بالضبط.\n2. **Lung Abscess**: خراج صديدي متجمع حول الجسم الغريب.\n3. **Bronchiectasis**: تمدد وتلف دائم في جدران الشعب الهوائية.\n4. **Lung collapse**: انخماص كامل في فص الرئة المسدود تماماً (**Atelectasis**)."
   },
 
   {
@@ -2581,7 +2685,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 2-year-old boy is brought to the clinic due to recurrent chest issues. Physical exam reveals a fixed localized wheeze and unilaterally diminished breath sounds over the right lung field. Chest X-ray films are requested.\n\nQuestions:\n1. In what percentage of foreign body aspiration cases are radiographic findings completely positive/diagnostic?\n2. What specific view of chest radiography is most helpful to reveal obstructive emphysema or collapse?",
     answer: "1. Positive in only about 50% of cases.\n2. An expiratory chest radiograph film.",
     isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
+    topic: "Wheezy Chest and Foreign Body Aspiration",
+    explanation: "تحليل كيسة طفل سنتين يعاني من تزييق في جانب واحد (**Fixed localized wheeze**) ونقص أصوات التنفس في الرئة اليمين:\n1. نسبة وضوح الشرقة في الأشعة العادية هي **50% فقط**؛ لأن معظم الأجسام الغريبة المبتلعة بتكون غير ظليلة للأشعة (**Radiolucent** مثل البلاستيك أو الأكل).\n2. الأشعة الأفضل هي **Expiratory Chest X-ray** (أشعة أثناء الزفير)؛ لأنها بتظهر احتباس الهواء وتضخم الرئة المسدودة (**Obstructive emphysema**) لعدم قدرة الهواء على الخروج منها."
   },
 
   // topic: "Pneumonia"
@@ -2593,7 +2698,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Hospital-Acquired Pneumonia (HAP)\" and \"Ventilator-Associated Pneumonia (VAP)\".",
     answer: "Hospital-Acquired Pneumonia is a lung parenchyma inflammation that presents clinically after 2 days (48 hours) of hospital admission. Ventilator-Associated Pneumonia is a specific type of HAP that presents more than 48 hours after undergoing endotracheal intubation.",
     isClinical: false,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "الفرق الزمني والشروطي لتعريف عدوى المستشفيات الرئوية:\n- **HAP (الالتهاب الرئوي المكتسب من المستشفى)**: التهاب رئوي يحصل بعد مرور **48 ساعة على الأقل** من دخول الطفل للمستشفى لأي سبب تاني.\n- **VAP (الالتهاب الرئوي المصاحب للتنفس الصناعي)**: نوع خاص من الـ HAP بيحصل بعد **48 ساعة على الأقل** من تركيب الأنبوب الحنجري وجهاز التنفس الصناعي (**Intubation**)."
   },
   {
     id: "q-c2-p-2",
@@ -2603,7 +2709,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct bacterial pathogens responsible for causing community or neonatal pneumonia in children.",
     answer: "1. Streptococcus pneumoniae (Gram-positive).\n2. Staphylococcus aureus (associated with pneumatoceles and empyema).\n3. Haemophilus influenzae type b (Hib).\n4. Group B Streptococcus (predominantly in neonates).",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "البكتيريا الأشهر المسببة للالتهاب الرئوي في الأطفال:\n1. **Streptococcus pneumoniae (المكورات الرئوية)**: السبب البكتيري الرئيسي الأكثر انتشاراً في الأطفال بعد فترة حديثي الولادة.\n2. **Staphylococcus aureus (المكورات العنقودية العنيفة)**: مشهورة بعمل تجمعات هوائية (**Pneumatoceles**) وصديد بالبلورا (**Empyema**).\n3. **Haemophilus influenzae type b (الهيموفيلس)**.\n4. **Group B Streptococcus (GBS)**: رأس الحية والسبب الأول للالتهابات الرئوية في حديثي الولادة والأيام الأولى."
   },
   {
     id: "q-c2-p-3",
@@ -2613,7 +2720,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct diagnostic methods utilized to isolate or confirm the specific causative etiology of bacterial or viral pneumonia.",
     answer: "1. Blood culture isolation (though it fails to detect the organism in most patients).\n2. Polymerase Chain Reaction (PCR) on nasopharyngeal or throat swabs (preferred for rapid viral and mycoplasma detection).\n3. Bronchoalveolar Lavage (BAL) secretions culture via bronchoscopy (indicated in persistent or immunocompromised cases).\n4. Percutaneous lung aspiration guided by CT scan for culture and sensitivity.",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "طرق التعرف بدقة على الميكروب المسبب لالتهاب الرئة:\n1. **Blood Culture**: مزرعة دم (رغم إن نتيجتها إيجابية في نسبة قليلة فقط).\n2. **PCR Swab**: فحص الـ PCR من المسحات الأنف بلعومية (سريع ودقيق للفيروسات والميكوبلازما).\n3. **BAL (غسيل القصبات)**: سحب إفرازات الرئة عبر المنظار للشعب الهوائية (**Bronchoscopy**).\n4. **Lung Aspiration**: سحب عينة مباشرة من الرئة بإبرة دقيقة بتوجيه الأشعة المقطعية في الحالات الشرسة والمقاومة للمضادات."
   },
   {
     id: "q-c2-p-4",
@@ -2623,7 +2731,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 conditions or metabolic disorders that cause tachypnea and can clinically mimic pneumonia, requiring completely different management.",
     answer: "1. Diabetic Ketoacidosis (DKA) or other inborn errors causing deep metabolic acidosis.\n2. Acute Congestive Heart Failure (presents with tachypnea, crackles, and hepatomegaly).\n3. Acute Kidney Injury (AKI) presenting with fluid overload and hypervolemic heart failure.\n4. Central Nervous System insults (like intracranial hemorrhage causing central hyperventilation).",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "حالات خطيرة تسبب تنفس سريع جداً تخدع الطبيب وتظنها التهاباً رئوياً:\n1. **DKA (حموضة الدم لمرض السكري)**: تسبب تنفس سريع وعميق جداً (**Kussmaul breathing**) لطرد ثنائي أكسيد الكربون.\n2. **Heart Failure (هبوط القلب الحاد)**: الطفل بيتنفس سريع وعنده رشح مياه في الرئة وكبد متضخم.\n3. **AKI (الفشل الكلوي الحاد)**: تسبب احتباس شديد للسوائل ورشح الرئة.\n4. **CNS Insult (أمراض المخ الحادة)**: مثل نزيف المخ الذي يستثير مركز التنفس مسبباً زيادة تهوية مركزية (**Central hyperventilation**)."
   },
   {
     id: "q-c2-p-5",
@@ -2633,7 +2742,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 3-year-old child presents with a high fever, cough, and tachypnea. On examination, his respiratory rate is 45 breaths/minute, and he displays subcostal and intercostal retractions. Chest X-ray confirms a right lower lobe pneumonia.\n\nQuestions:\n1. Does this child's respiratory rate meet the WHO definition of fast breathing for his age?\n2. Mention the specific inpatient intravenous antibiotic protocol if this child requires hospitalization.",
     answer: "1. Yes, fast breathing for children aged 1-5 years is defined as a respiratory rate >40 breaths/minute.\n2. Intravenous Ceftriaxone (or Cefotaxime), with Vancomycin added if Staphylococcal complications are suspected.",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "تحليل كيسة طفل 3 سنوات بنهجان 45 نفس في الدقيقة:\n1. **Tachypnea Definition**: نعم، الطفل عنده نهجان معتمد؛ لأن المعدل الطبيعي حسب منظمة الصحة العالمية لمن هم بين سن سنة لـ 5 سنوات هو **أقل من 40**. لو وصل 40 فأكثر فهو نهجان (**Fast Breathing**).\n2. **Inpatient Treatment**: المضاد الوريدي الأول هو الجيل الثالث من السيفالوسبورينات (**IV Ceftriaxone / Cefotaxime**)، وبنضيف **Vancomycin** لو شاكين في عدوى عنقودية عنيفة أو صديد."
   },
 
   {
@@ -2644,7 +2754,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 3-year-old child is treated for acute uncomplicated Community-Acquired Pneumonia (CAP) with oral amoxicillin. After 72 hours, his fever resolves, his respiratory rate normalizes, and his appetite returns. However, a chest X-ray repeated by an anxious primary care doctor still reveals persistent infiltration in the left lower lobe.\n\nQuestions:\n1. What is the standard clinical guideline regarding this clinical vs. radiological recovery discrepancy in childhood CAP?\n2. How long can uncomplicated CAP radiographic abnormalities normally persist on a chest X-ray?",
     answer: "1. Clinical recovery typically occurs within 48 to 72 hours, but radiological abnormalities on X-ray can persist and clear much more slowly. A repeat X-ray is NOT indicated if the child has clinically recovered, and treating asymptomatic, resolving radiographic anomalies with prolonged or repeated courses of antibiotics must be strictly avoided.\n2. Uncomplicated CAP radiographic abnormalities can normally persist on a chest X-ray for up to 3 to 6 months.",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "الفجوة الزمنية بين الشفاء السريري والشفاء الإشعاعي للالتهاب الرئوي:\n1. **Clinical vs X-Ray**: الطفل بيتحسن سريرياً ويفوق وتنزل حرارته في غضون 48-72 ساعة من العلاج، لكن تظل الأشعة مليانة بقع والتهاب وتتحسن ببطء شديد. **ممنوع تماماً** تعيد الأشعة طالما الطفل اتحسن وصحته كويسة، وممنوع تزود كورس المضاد لمجرد تنظيف فلوح الأشعة.\n2. **Duration**: البقع الالتهابية في الأشعة ممكن تاخد من **3 إلى 6 أشهر** لحد ما تصفى تماماً في الحالات البسيطة ولا تدل على فشل العلاج."
   },
   {
     id: "q-c2-p-7",
@@ -2654,7 +2765,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 2 common host age and onset patterns of Mycoplasma pneumoniae (atypical) pneumonia in children, and 3 high-yield extrapulmonary clinical manifestations that point specifically to this pathogen.",
     answer: "Age and Onset Patterns:\n1. Classically affects older children (>5 years of age) and adolescents.\n2. Characterized by an insidious onset with preceding constitutional symptoms (headache, malaise, low-grade fever) and a persistent, dry, hacking cough.\nExtrapulmonary clinical manifestations:\n1. Autoimmune hemolytic anemia.\n2. Splenomegaly.\n3. Erythema multiforme (or other nonspecific skin rashes).",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "خصائص وعلامات الـ **Mycoplasma pneumoniae** (الالتهاب الرئوي اللا نموذجي):\n- **Age & Onset**: بتصيب عادةً الأطفال الكبار والأولاد بالمدرسة (أكبر من 5 سنوات)، وبتبدأ ببطء شديد وتدريجي بوجع دماغ وهمدان مع كحة جافة ومستمرة ومزعجة (**Dry hacking cough**).\n- **Extrapulmonary signs (مظاهر خارج الرئة مهمة للتشخيص)**:\n  1. أنيميا تكسيرية ذاتية مناعية (**Autoimmune hemolytic anemia**).\n  2. تضخم الطحال (**Splenomegaly**).\n  3. طفح جلدي احمراري مميز (**Erythema multiforme**)."
   },
   {
     id: "q-c2-p-8",
@@ -2664,7 +2776,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 4 progressive pharmacological interventions or steps recommended for pediatric COVID-19 pneumonia management based on disease severity and oxygen requirements according to standard protocols.",
     answer: "1. Intravenous IV Remdesivir (approved for children, especially those aged 12-17 years with moderate to severe disease).\n2. Systemic Dexamethasone (indicated when there are increasing oxygen needs or a transition to mechanical ventilation).\n3. Intravenous Tocilizumab (IL-6 inhibitor) if the patient fails to respond to corticosteroids within 24 hours (indicated for ages 2-11 years).\n4. Prophylactic Anticoagulation (indicated for all adolescents and children aged >=12 years who are hospitalized).",
     isClinical: true,
-    topic: "Pneumonia"
+    topic: "Pneumonia",
+    explanation: "بروتوكول علاج الالتهاب الرئوي الشديد المصاحب لـ كورونا (COVID-19) بالأطفال:\n1. **Remdesivir**: مضاد الفيروسات الوريدي المعتمد للموجات المتوسطة والشديدة.\n2. **Dexamethasone**: كورتيزون منشط لجهاز المناعة المتضارب، يُعطى فور زيادة الحاجة للأكسجين والتنفس الصناعي.\n3. **Tocilizumab**: مضاد للإنترلوكين-6 (IL-6 inhibitor) للتحكم في عاصفة السيتوكين لو لم يستجب للكورتيزون في أول 24 ساعة.\n4. **Prophylactic Anticoagulation**: مانع للتجلط وقائي لجميع المراهقين المحجوزين بالمستشفى لوجود خطر كبير للتجلطات الرئوية."
   },
 
   // topic: "Bronchiolitis"
@@ -2676,7 +2789,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 viral pathogens other than RSV that can be responsible for causing Acute Bronchiolitis in infants.",
     answer: "1. Parainfluenza virus.\n2. Adenovirus.\n3. Rhinovirus.\n4. Herpes virus.",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "الفيروسات الأخرى المسببة لالتهاب الشعب الهوائية الحاد (**Bronchiolitis**):\nالمسبب الأول هو فيروس التنفسي المخلوي (**RSV**)، لكن في فيروسات تانية منافسة بتعمل نفس الصورة السريرية تماماً:\n1. **Parainfluenza virus**.\n2. **Adenovirus** (بيعمل التهاب شرس وممكن يسيب تليفات).\n3. **Rhinovirus** (فيروس البرد الشائع).\n4. **Herpes virus**."
   },
   {
     id: "q-c2-b-2",
@@ -2686,7 +2800,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 sequence steps that describe the detailed pathophysiology of RSV-induced Bronchiolitis.",
     answer: "1. RSV infection causes a structural loss of epithelial cilia and sloughing of epithelial cells in the small airways.\n2. Accumulation of desquamated airway cells, neutrophils, and lymphocytes within the airway lumen, causing mucosal edema.\n3. Partial or complete plugging of the bronchioles, leading to localized atelectasis of some units and over-distention of others.\n4. Development of a severe ventilation-perfusion mismatch, resulting in systemic hypoxemia.",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "التسلسل المرضي لغزو فيروس الـ RSV لشعب الرئة الرضيعة:\n1. الفيروس بيدمر أهداب الخلايا المبطنة للصبيبيات الهوائية (**Ciliated epithelium**) فتتساقط داخل المجرى.\n2. تجمع الخلايا الميتة المتساقطة مع كرات ليمفاوية ومخاط غليظ مع ورم في جدار الشعبة الهوائية.\n3. انسداد جزئي أو كلي للصبيبات الهوائية، الجزئي يحبس الهواء ويكبر الصدر والكامل ينفث فيموت خلايا الرئة المجاورة (**Atelectasis**).\n4. اضطراب التبادل الغازي والتهوية والتروية الكلية (**V/Q mismatch**)، وبالتالي نقص حاد ومستمر في أكسجين الدم وموت الخلايا."
   },
   {
     id: "q-c2-b-3",
@@ -2696,7 +2811,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 key clinical parameters that signify a severe presentation of Bronchiolitis requiring mandatory admission.",
     answer: "1. Severe respiratory distress accompanied by a respiratory rate of 60-80/min.\n2. Presence of central cyanosis or marked pallor.\n3. Development of clinical signs of severe dehydration.\n4. Appearance of dangerous apneic spells (especially in infants under 4 months of age).",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "مؤشرات الخطر الحتمية لحجز طفل البرونكيوليتس بالعناية أو الجناح:\n1. النهجان الشديد بمعدل يتجاوز **60 إلى 80 نفس/الدقيقة** بالدقيقة مع سحب ضلعي شديد.\n2. وجود زرقان مركزي (**Central cyanosis**) في اللسان والشفتين.\n3. علامات جفاف واضحة (**Severe dehydration**) بسبب عجزه عن الرضاعة لشدة ضيق تنفسه.\n4. نوبات توقف تنفس مفاجئة (**Apneic spells**)، خاصة في الرضع الأصغر من عمر 4 أشهر."
   },
 
   {
@@ -2707,7 +2823,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 6-month-old infant is admitted to the hospital with respiratory distress, tachypnea, and a repetitive dry cough due to bronchiolitis. The mother asks about the utility of administering oral sedatives or systemic steroids to calm the infant's breathing.\n\nQuestions:\n1. State the clinical guidelines regarding the use of sedatives, steroids, or tracheostomy in this disease.\n2. What specific supportive fluid administration route is indicated if the infant is too distressed to feed orally?",
     answer: "1. They must be strictly avoided during the management of bronchiolitis.\n2. Parenteral fluid therapy with careful electrolyte and pH adjustment.",
     isClinical: true,
-    topic: "Bronchiolitis"
+    topic: "Bronchiolitis",
+    explanation: "تحليل كيسة رضيع 6 أشهر يعاني من Bronchiolitis:\n1. **الممنوعات الثلاث الصارمة**: يمنع منعاً باتاً إعطاء المهدئات السلوكية (بتموت التنفس)، والكورتيزون (ملوش أي قيمة ومثبت علمياً عدم جدواه في البرونكيوليتس)، وشق الحنجرة (الانسداد تحت الحنجرة بكثير).\n2. **الإنقاذ بالسوائل**: لو الطفل مش عارف يرضع من ضيق النفس وسرعته، بنمنع الرضاعة بالفم منعاً للشرقة والالتهاب الرئوي الكيميائي، ونحوله فوراً محاليل وريدية دقيقة (**IV fluids**)."
   },
 
   // topic: "Bronchial Asthma"
@@ -2717,10 +2834,11 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 2,
     type: "short-essay",
     title: "Acute Asthma Physical exam findings",
-    content: "Enumerate 4 clinical signs or findings identifiable on a physical examination during an acute asthma exacerbation.",
+    content: "Enumerate 4 physical examination findings of an acute asthma exacerbation.",
     answer: "1. Continuous expiratory wheezing with prolonged expiration and use of accessory muscles.\n2. Cyanosis and thoracic hyperinflation (barrel chest appearance).\n3. Marked tachycardia and presence of pulsus paradoxus.\n4. Palpable liver and spleen due to severe diaphragmatic downward displacement from lung hyperinflation.",
     isClinical: true,
-    topic: "Bronchial Asthma"
+    topic: "Bronchial Asthma",
+    explanation: "أربعة علامات مذهلة في فحص طفل الأزمة الربوية الحادة:\n1. تزييق زفيري مستمر مع زفير ومجهود عضلي مساعد (**Accessory muscles**).\n2. انتفاخ الصدر وبروزه للخارج كشكل البرميل (**Chest Hyperinflation**) ونقص الأكسجين والزرقان.\n3. تسارع ضربات القلب وحدوث الـ **Pulsus paradoxus** (هبوط ضغط الدم الانقباضي أكثر من 10 ملم مع الشهيق).\n4. نزول الكبد والطحال لأسفل لدرجة تجعلها محسوسة في البطن ليس لتضخم المخرجات، بل بسبب هبوط الحجاب الحاجز لأسفل بفعل انتفاخ الرئتين الشديد بالهواء المحبوس."
   },
   {
     id: "q-c2-a-3",
@@ -2730,7 +2848,41 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 diagnostic guidelines or physiological findings obtained via Spirometry (Pulmonary Function Tests) that characterize Asthma in children >5 years.",
     answer: "1. Demonstration of a low baseline Forced Expiratory Volume in 1 second (FEV1).\n2. Demonstration of a reduced FEV1/FVC ratio.\n3. An increase in FEV1 greater than 9% to 12% after the inhalation of a short-acting Beta2-agonist (reversibility).\n4. A morning-to-evening variation of daily peak expiratory flow (PEF) or FEV1 equal to or greater than 20%.",
     isClinical: true,
-    topic: "Bronchial Asthma"
+    topic: "Bronchial Asthma",
+    explanation: "تشخيص الربو باختبارات وظائف الرئة (السلاسل الذهبية للمار فما فوق 5 سنوات):\n1. انخفاض نسبة حجم الهواء المطرود في أول ثانية للزفير (**FEV1**).\n2. انخفاض نسبة الـ **FEV1 / FVC ratio** عن المعدلات الطبيعية.\n3. **Reversibility (الارتجاع والفعالية)**: تحسن الـ FEV1 بمقدار يتجاوز **9-12%** بعد استنشاق بخاخ موسع الشعب سريع المفعول (سالبوتامول).\n4. تغير قراءات جهاز قياس التدفق ذروي الأداء (**PEF**) من الصباح لليل بفرق يعادل أو يتجاوز **20%**."
+  },
+  {
+    id: "q-c2-a-4",
+    chapterId: 2,
+    type: "short-essay",
+    title: "Asthma Comorbidities, Onset Types, and Abdominal Pain",
+    content: "Answer the following questions regarding bronchial asthma clinical presentation and comorbidities:\n1. Enumerate 3 major comorbid conditions commonly associated with asthma in children that make its management more difficult.\n2. Distinguish the triggers/causes associated with an \"acute episode\" of asthma versus an \"insidious onset\" of asthma.\n3. State the precise clinical reason why a child might experience abdominal pain during an acute asthma exacerbation.",
+    answer: "1. Rhinitis, Sinusitis, and Gastroesophageal reflux.\n2. Acute episodes: Caused by exposure to irritants (e.g., cold air, noxious fumes). Insidious onset: Occurs following viral respiratory infections.\n3. Abdominal pain is due to the strenuous, hyperactive use of abdominal muscles and the diaphragm to assist in respiration.",
+    isClinical: true,
+    topic: "Bronchial Asthma",
+    explanation: "تحليل تفصيلي لمظاهر الربو الشعبي الإكلينيكية ومصاحبات المرض:\n1. **المصاحبات المرضية (Comorbid conditions)** الثلاثة الأشهر التي تزيد من صعوبة السيطرة على الربو هي: التهاب الأنف (**Rhinitis**)، التهاب الجيوب الأنفية (**Sinusitis**)، والارتجاع المريئي (**Gastroesophageal reflux**).\n2. **بداية الأزمة (Onset)**: النوبات الحادة الفجائية (**Acute episodes**) تفجرها مهيجات مباشرة كالتعرض للهواء البارد أو الأبخرة السامة، بينما البداية التدريجية المتسللة (**Insidious onset**) تحدث عادةً تلو الإصابة بالالتهابات التنفسية الفيروسية.\n3. **ألم البطن (Abdominal pain)**: خلال النوبة الشديدة، يشتكي الطفل من آلام بالبطن نتيجة الإجهاد العضلي العنيف والاستخدام المستمر والشديد لعضلات البطن والحجاب الحاجز كمساعدات للتنفس (**Accessory muscles**)."
+  },
+  {
+    id: "q-c2-a-5",
+    chapterId: 2,
+    type: "short-essay",
+    title: "Asthma Laboratory Findings, Sputum, and Chest X-ray Role",
+    content: "Regarding diagnostic workups and investigations for childhood bronchial asthma, address the following:\n1. Specify the characteristic blood CBC and sputum findings (including specific cell counts and details) seen in asthma patients.\n2. In spirometry (Pulmonary Function Tests), what specific FEV1 percentage decline is diagnostic of asthma during an exercise challenge test?\n3. State the precise clinical role and indication of performing a Chest X-ray (CXR) in a pediatric patient with suspected asthma.",
+    answer: "1. CBC: Eosinophilia (more than 250-400 cell/mm3) and usually elevated serum IgE levels. Sputum: White, tenacious sputum showing eosinophilia and granules from disrupted cells.\n2. A worsening of FEV1 by >= 15% after an exercise challenge test.\n3. Chest X-ray is required only to exclude other possible alternative diagnoses or complications (such as pneumothorax or collapse), not to diagnose asthma itself.",
+    isClinical: true,
+    topic: "Bronchial Asthma",
+    explanation: "الفحوصات المخبرية ودور الأشعة السينية في تشخيص الربو:\n1. **صورة الدم والبلغم (CBC & Sputum)**: يظهر في تحليل الدم زيادة خلايا الإيوزينوفيل (**Eosinophilia > 250-400 cell/mm3**) مع ارتفاع مستوى الأجسام المضادة الـ **IgE**. بينما نجد البلغم بلون أبيض ولزج (**white & tenacious**) ويتميز إجهرائياً بوجود خلايا الإيوزينوفيل وحبيبات دقيقة ناتجة عن الخلايا الممزقة.\n2. **اختبار المجهود الرياضي (Exercise Challenge Test)**: انخفاض أو تدهور كفاءة زفير الرئة الـ **FEV1 بمقدار يعادل أو يزيد عن 15%** بعد بذل مجهود بدني رياضي يعتبر محدداً ممتازاً للربو.\n3. **دور الأشعة السينية للصدر (CXR)**: الأشعة السينية **ليست لتشخيص الربو** بل تُطلب فقط لاستبعاد التشخيصات البديلة الأخرى أو كشف حدوث مضاعفات طارئة (**only to exclude other diagnoses or complications**)."
+  },
+  {
+    id: "q-c2-a-6",
+    chapterId: 2,
+    type: "problem-solving",
+    title: "Arterial Blood Gas Evolution in Asthma",
+    content: "A 7-year-old child with severe acute asthma exacerbation is managed in the pediatric hospital. Serial Arterial Blood Gas (ABG) monitoring is requested.\n1. Describe the characteristic evolution of PCO2 from the early stages of an asthma attack to the late, worsening stage of airway obstruction.\n2. What are the typical expected changes in PO2 and arterial pH as severe obstruction progresses to a critical stage?",
+    answer: "1. PCO2 is usually low in the early stages (due to hyperventilation), but becomes high (hypercapnia) as the airway obstruction worsens and the child fatigues.\n2. PO2 is typically low (hypoxemia). The arterial pH remains normal in early/moderate stages but progresses to clinical acidosis in late, severe obstruction.",
+    isClinical: true,
+    topic: "Bronchial Asthma",
+    explanation: "دراسة وتحليل غازات الدم الشرياني (ABG) وتطوراتها الخطيرة لدى مرضى الربو:\n1. **غاز ثاني أكسيد الكربون (PCO2)**: في بداية النوبة والانسداد الخفيف، يكون الـ PCO2 **منخفضاً (Hypocapnia)** نتيجة سرعة غسيل وتدفق الأنفاس المتسارعة بالخوف والمجهود، ولكن يرتفع الـ PCO2 ويتراكم بشدة (**Hypercapnia**) عندما يسوء الانسداد وتتعب عضلات تنفس الطفل وهو مؤشر فتاك لفشل التنفس الوشيك.\n2. **غاز الأكسجين والحموضة (PO2 & pH)**: يكون ضغط الأكسجين الـ **PO2 منخفضاً** طوال مراحل الاعتدال والشدة. أما درجة حموضة الدم الـ **pH فتظل طبيعية** في المراحل الأولى والمتوسطة، لتنحدر فجأة لحموضة بالدم (**late acidosis**) في المراحل المتأخرة والحرجة جداً."
   },
 
 
@@ -2943,7 +3095,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 3,
     type: "short-essay",
     title: "Chronic Kernicterus neurological deficits",
-    content: "Enumerate 4 distinct clinical or neurological deficits seen during the 3rd year of life in a child surviving chronic Kernicterus.",
+    content: "Enumerate 4 clinical/neurological deficits in chronic Kernicterus by year 3.",
     answer: "1. Bilateral choreoathetosis and extrapyramidal movement disorders.\n2. High-frequency sensorineural hearing loss.\n3. Mental deficiency or cognitive impairment.\n4. Squinting and defective upward movement of the eyes.",
     isClinical: true,
     topic: "Complications of Indirect Hyperbilirubinemia"
@@ -2953,7 +3105,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 3,
     type: "short-essay",
     title: "Phototherapy side effects",
-    content: "Enumerate 4 distinct complications or physical side effects that can result from Phototherapy exposure.",
+    content: "Enumerate 4 complications/side effects of phototherapy.",
     answer: "1. Loose stools or increased diarrhea.\n2. Erythematous macular skin rash.\n3. Overheating and dehydration due to increased insensible water loss.\n4. Bronze Baby Syndrome (dark grayish-brown discoloration of the skin in infants with cholestasis).",
     isClinical: true,
     topic: "Complications of Indirect Hyperbilirubinemia"
@@ -2995,7 +3147,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 3,
     type: "short-essay",
     title: "Neonatal Sepsis screen criteria",
-    content: "Enumerate 4 hematologic parameters or septic screen criteria used to support the diagnosis of Probable Neonatal Sepsis.",
+    content: "Enumerate 4 septic screen / hematologic criteria for Neonatal Sepsis.",
     answer: "1. Marked neutropenia (a strong indicator of severe sepsis).\n2. An elevated ratio of immature band cells to total neutrophils greater than 0.2.\n3. Total platelet count showing significant thrombocytopenia (late finding).\n4. Highly elevated acute-phase reactants, specifically C-Reactive Protein (CRP) and ESR.",
     isClinical: true,
     topic: "Neonatal Sepsis"
@@ -3019,30 +3171,33 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 4,
     type: "short-essay",
     title: "Pediatric Cardiopulmonary arrest situated causes",
-    content: "Enumerate 4 acute non-pulmonary critical medical situations (cardiovascular or metabolic) that can lead to secondary cardiopulmonary arrest in children.",
+    content: "Enumerate 4 non-pulmonary causes of cardiopulmonary arrest in children.",
     answer: "1. Hypovolemic shock (severe dehydration, massive hemorrhage, or extensive burns).\n2. Septic shock due to severe fulminant sepsis.\n3. Cardiogenic shock secondary to severe myocarditis or serious arrhythmias.\n4. Severe acid-base or electrolyte disturbances, or acute organ failure (renal/hepatic).",
     isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "الأسباب المفرطة غير الصدرية التي تقتل الدورة الدموية في الأطفال وتسبب توقف القلب الرئوي:\n1. صدمات نزف الحجم الحادث وحمض الحروق أو خسارة ماء الجسم الكلي.\n2. الصدمة الإنتانية شديدة البؤس للسموم الميكروبية.\n3. صدمة اعتلال وهيام عضلة القلب للفيروسات والتهاب البطينين أو تشتيت ضربات القلب والكهرباء.\n4. اضطراب توازن الأيونات بكهرباء الدم وفشل وظائف طرد الكلى أو أزمات الكبد."
   },
   {
     id: "q-e2-c-2",
     chapterId: 4,
     type: "short-essay",
     title: "Cardiopulmonary arrest triggering procedures",
-    content: "Enumerate 4 stressful medical procedures performed on critically ill children that can inadvertently trigger cardiopulmonary arrest if not preceded by pre-oxygenation.",
+    content: "Enumerate 4 medical procedures that can trigger cardiopulmonary arrest in children.",
     answer: "1. Aggressive airway suctioning.\n2. Intensive chest physiotherapy.\n3. Endotracheal intubation maneuvers.\n4. Performing a lumbar puncture.",
     isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "الإجراءات الطبية بالرعاية المركزة وأقسام الحجز التي تتسبب بتوقف التنفس والقلب في الأطفال الحرجة لو تمت بدون تزويد الطفل بالأكسجين عالي الضغط قبلها:\n1. شفط البلغم بعنف وبصورة طويلة تضطهد الأنفاس.\n2. العلاج الطبيعي على الصدر بالضغط والطرق المتكرر.\n3. محاولات إدخال الأنبوب الحنجري بصعوبة وتعثر زمني.\n4. إجراء بذل سائل النخاع الشوكي الـ **Lumbar puncture** بنمط يمنع كبس وتمدد مجرى الهواء والصدر."
   },
   {
     id: "q-e2-c-3",
     chapterId: 4,
     type: "short-essay",
     title: "Cardiopulmonary Arrest diagnosis criteria",
-    content: "Enumerate 4 explicit criteria or physical findings that establish the clinical diagnosis of complete Cardiopulmonary Arrest.",
+    content: "Enumerate 4 criteria to diagnose Cardiopulmonary Arrest.",
     answer: "1. Respiratory: Complete absence of respiration (respiratory arrest).\n2. Cardiac: Complete absence of audible or palpable heartbeats (cardiac arrest).\n3. Circulatory: Pulselessness with no peripheral tissue perfusion.\n4. Central Nervous System: Complete unresponsiveness to painful external stimuli.",
     isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "الشروط والأعراض الأربعة الحاسمة لتأكيد الانهيار التوقف القلبي الرئوي السريري الكلي في الأطفال:\n1. غياب كامل ومطبق لصوت أو تنفس المريض وصدره (التوقف التنفسي).\n2. فقد كامل لدقات القلب العيادية بالصدر (التوقف القلبي).\n3. غياب وضياع كامل للنبض المركزي بالشرايين الكبرى.\n4. الموت الوعي والغياب الفاقد للحركة ولا يستجيب لأشرس طرق وجع الألم الحسي."
   },
 
   {
@@ -3053,7 +3208,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A pediatric resuscitation is ongoing in the emergency unit. The team leader pauses compressions briefly every 5 minutes to evaluate the child's pupillary reactions to a light source.\n\nQuestions:\n1. What is the clinical significance of finding active, reactive pupils during a arrest evaluation?\n2. What do dilated, fixed unreactive pupils indicate in this setting?",
     answer: "1. It indicates that the brain tissue is still viable/intact, validating the continuation of resuscitation.\n2. It signifies brain death.",
     isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "قراءة وعي عيون طفل الإنعاش المتكرر:\n1. وجود رد فعل قزحي في حدقة العين تفاعلي ومنكمش للضوء الساطع ده إشعار مبهج بسلامة وحيوية عصب وجذع الدماغ الكامن مما يأمر بفرصة الاستمرار بالإنعاش بالـ CPR.\n2. وجود حدقة واسعة ممتدة جامدة لا يغيرها اللمس أو الضوء بمرور المرات ده معناه **Brain Death** موت خلايا المخ السريري."
   },
 
   // topic: "Shock"
@@ -3065,7 +3221,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct clinical or structural causes that result in \"Obstructive Shock\" in children.",
     answer: "1. Tension pneumothorax or hemothorax.\n2. Cardiac tamponade secondary to severe pericardial effusion.\n3. Critical congenital obstructive heart lesions (critical aortic stenosis or coarctation).\n4. Massive pulmonary embolism.",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "أشهر مسببات حدوث الصدمة الانسدادية الميكانيكية الـ **Obstructive shock** في طب الأطفال:\n1. استرواح الصدر المتوتر وضيق الهواء الحبيس بالبلورة الضاغط على الأوردة الحامية للقلب.\n2. تجمع سوائل والتهاب تام بعضلة غلاف القلب الخانق للراحة الحجرية للبطينين (**Cardiac tamponade**).\n3. العيوب الخلقية لانسداد ممر هبوط الشريان الأورطي للدم للبدن كالتضيقات الصارمة بالصمام.\n4. جلطات الشرايين الرئوية العملاقة السدودة لمسار التبادل الغازي."
   },
   {
     id: "q-e2-s-2",
@@ -3075,17 +3232,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 classic clinical findings that signify the transition from compensated shock to \"Uncompensated Shock\".",
     answer: "1. A significant, documented fall in systolic blood pressure (arterial hypotension).\n2. Development of severe systemic metabolic acidosis.\n3. Onset of profound oliguria or anuria.\n4. Progressive reduction in the level of consciousness (lethargy, stupor, or coma).",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "علامات ومؤشرات عبور الصدمة المعوضة البسيطة وانزلاقها للمرحلة غير المعوضة الوشيكة للتلف والوفاة:\n1. هبوط حاد وصدمة بمستويات قياس ضغط الدم الشرياني الانقباضي.\n2. انفجار وحموضة تروية الدم العميقة بتنامي معايير الـ Lactic acid.\n3. تراجع شديد للبول ليصبح شحيحاً أو منعدماً كلياً لعجر الدم عن كلى المريض.\n4. التدهور الملحوظ بمستويات تيقظ وتركيز عقل الطفل بمظهر ذابل تائه أو غيبوبة."
   },
   {
     id: "q-e2-s-3",
     chapterId: 4,
     type: "short-essay",
     title: "Severe Shock monitoring parameters",
-    content: "Enumerate 4 distinct parameters or investigations monitored in late-stage or severe shock within a PICU.",
+    content: "Enumerate 4 parameters monitored in severe shock.",
     answer: "1. Serial Arterial Blood Gases (ABGs) and serum lactic acid levels.\n2. Renal function tests and serum electrolytes.\n3. Coagulation profile and platelet count to screen for DIC.\n4. Invasive hemodynamic monitoring including Central Venous Pressure (CVP) and cardiac output.",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "المعايير المراقبة والمقاسة بدقة بالغة بمرضى الصدمة الصعبة بالعناية المركزة (PICU Monitor):\n1. الغازات الشريانية وتنامي حمض اللاكتيك المتنفس عن تدهور خلايا الأعضاء.\n2. مراقبة وظائف وفحوصات كلى الطفولة الكرياتينين والأملاح بالتروية والتحليل.\n3. عمل ومتابعة اختبارات تخثر الدم والسيولة لشكوى الـ DIC السامة.\n4. وخذ ومتابعة ضغط الدم والضغط الوريدي المركزي المسمى **CVP** لقياس حجم تروية الدم."
   },
 
   {
@@ -3096,7 +3255,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 12-year-old girl is rushed to the emergency department after an insect sting. She has an explosive generalized skin rash, severe wheezing, cold extremities, and a drop in blood pressure. The diagnosis of anaphylactic distributive shock is made.\n\nQuestions:\n1. What is the immediate first-line medication of choice for this condition, including its proper route?\n2. Enumerate 2 adjuvant intravenous drugs that should be administered next to manage this allergic shock.",
     answer: "1. Epinephrine (Adrenaline) administered subcutaneously (SC) or intravenously (IV).\n2. Hydrocortisone IV and an Antihistaminic IV agent.",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "تحليل طفلة الحساسية المنهارة صدمة الحشرات والحقن:\n1. مضاد الإنقاذ الأول والقاتل لتهيج شرايين الحساسية هو هرمون الـ **Epinephrine** بحقن خارجي دقيق بالعضل أو الوريد.\n2. الأدوية المساعدة اللاحقة لترويض التفاعل والالتهاب الوعائي هي حقن الكورتيزون الوريدية ومضادات الهيستامين الحادة."
   },
 
   // topic: "Coma"
@@ -3105,30 +3265,33 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 4,
     type: "short-essay",
     title: "Secondary Systemic Coma encephalopathies",
-    content: "Enumerate 4 secondary systemic or metabolic encephalopathies that cause a secondary brain lesion resulting in Coma.",
+    content: "Enumerate 4 secondary metabolic encephalopathies causing Coma.",
     answer: "1. Hypoxic encephalopathy secondary to severe prolonged shock or anemia.\n2. Endogenous encephalopathy due to severe dehydration and metabolic acidosis.\n3. Diabetic Ketoacidosis (DKA) or profound hypoglycemia.\n4. Acute organ failure encephalopathy (acute renal failure or acute hepatic failure).",
     isClinical: true,
-    topic: "Coma"
+    topic: "Coma",
+    explanation: "غيبوبة الضعيات الاستقلابية الناتجة عن بلايا أزمة وظائف البدن خارج الدماغ وعلاجها:\n1. تلف خلايا الأكسيجين بسبب الصدمة الطويلة والأورام المنتفية بالتهوية.\n2. غيبوبة الجفاف والتركيز المتضاعف لحموضة الدم بالأيونات الخاطئة.\n3. صدمة غيبوبة كيتونات السكر أو تلف التروية الشحومية السكرية.\n4. غيبوبة تراكم السموم البوليلية للفشل العضلي الكبدي والكلوي المتكامل."
   },
   {
     id: "q-e2-co-2",
     chapterId: 4,
     type: "short-essay",
     title: "Meningeal Irritation signs in coma",
-    content: "Enumerate 4 clinical signs or physical markers that indicate the presence of Meningeal Irritation in a comatose child.",
+    content: "Enumerate 4 signs of Meningeal Irritation.",
     answer: "1. Neck rigidity (nuchal rigidity).\n2. Neck retraction.\n3. Positive Kernig's sign.\n4. Positive Brudzinski's sign.",
     isClinical: true,
-    topic: "Coma"
+    topic: "Coma",
+    explanation: "أهم 4 علامات إكلينيكية تكشف تهيج الأغشية السحائية الكامنة للمخ بغيبوبة الطفل:\n1. تيبس وصلابة عضلات الرقبة لمقاومة الانحناء الأمامي (**Nuchal rigidity**).\n2. التقهقر الرقبي مع تقوس الظهر الخلفي.\n3. علامة **Kernig** الإيجابية للوجع عند فرد ركبة الفخذ القائم.\n4. علامة **Brudzinski** بانقباض الركبتين تلقائياً عند ثني الرقبة للأمام."
   },
   {
     id: "q-e2-co-3",
     chapterId: 4,
     type: "short-essay",
     title: "Comatose patient preservation parameters",
-    content: "Enumerate 4 critical nursing and medical care parameters implemented for the preservation of the gastrointestinal, skin, and eye health in a comatose patient.",
+    content: "Enumerate 4 nursing/medical care parameters for a comatose patient.",
     answer: "1. Administration of antacids or H2 blockers to prevent stress ulcers.\n2. Use of laxatives to prevent chronic constipation.\n3. Routine instillation of protective eye drops and ointments to prevent corneal drying.\n4. Frequent changes of body position combined with skin care to prevent infection and bedsores.",
     isClinical: true,
-    topic: "Coma"
+    topic: "Coma",
+    explanation: "شؤون وأولويات تمريض ومعالجة مريض الغيبوبة الطويلة لحمايته من البلاء والتقرح:\n1. تنشيط ودعم المعدة وحمايتها من أشرار قرح التوتر المدمية بأمبولات واقية حاسمة.\n2. استخدام الملينات والمساندات لمنع تيبس الفضلات وعرقلة الأمعاء.\n3. تروية وترطيب القرنية لحماية عينه المغمضة الضعيفة بقطرات ومراهم جيل دموع صناعية متلاحقة.\n4. تقليب مستمر دوري للبدن والجلد مع العناية بمظهر الجسم تفادياً لالتقاط تقرحات الفراش الخبيثة."
   },
 
   {
@@ -3139,7 +3302,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 4-year-old child presents in a deep coma. Physical examination reveals a bulged anterior fontanel, hypertonia, hyperreflexia, and a sluggish pupillary response to light. The physician diagnoses acute increased intracranial pressure.\n\nQuestions:\n1. What is the initial physical positioning technique indicated to enhance cerebral venous return?\n2. Mention the primary osmotic diuretic drug, including its standard effective dose, used to reduce this pressure.",
     answer: "1. Head elevation to 30 degrees in a neutral midline position.\n2. Intravenous Mannitol administered at a dose ranging from 0.25 to 0.5 g/kg.",
     isClinical: true,
-    topic: "Coma"
+    topic: "Coma",
+    explanation: "تتبع علاج حالات الرأس وارتفاع الضغط للمخ الـ ICP بالفحص والدواء:\n1. طريقة التموضع المثالية بالوسادة هي توجيه رفع الرأس بزاوية 30 درجة لراحة وتسهيل الجريان الدموي الهابط.\n2. العلاج الأسموزي المقبول لسحب المياه والورم خارج كبسولة الرأس هو حقن الوريد المدر الكيميائي **Mannitol** بتركيز فاعل وبجرعة 0.25 إلى 0.5 g/kg."
   },
 
   // topic: "Glasgow Coma Scale and its Advantages"
@@ -3151,7 +3315,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 3 specific behavioral response parameters evaluated by the Glasgow Coma Scale, including the total maximum points for each.",
     answer: "1. Eye opening response (maximum total of 4 points).\n2. Verbal response (maximum total of 5 points).\n3. Motor response (maximum total of 6 points).",
     isClinical: true,
-    topic: "Glasgow Coma Scale and its Advantages"
+    topic: "Glasgow Coma Scale and its Advantages",
+    explanation: "المقاييس السلوكية المحددة المعيارية بمقياس غلاكسو GCS للوعي ونقاطها الـ 3 المجمعة:\n1. استجابة حركة الرموش وفتح جفن العين بفرصة تقييم الحد الأقصى البالغ **4 نقاط**.\n2. الاستجابة اللفظية والكحة والقول بأقصى فرصة تقييد تبلغ **5 نقاط**.\n3. استجابة الحركة العضلية للجسم للألم والأمور بأعلى مراتب تقييم تبلغ **6 نقاط**."
   },
   {
     id: "q-e2-g-2",
@@ -3161,17 +3326,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 specific behavioral indicators used to score the \"Verbal Response\" parameter specifically in non-verbal infants and young children.",
     answer: "1. Appropriate words, smiles, fixes, and follows objects (scores 5 points).\n2. Consolable crying when upset (scores 4 points).\n3. Persistent irritable crying (scores 3 points).\n4. Restless, agitated, or grunting behavior (scores 2 points).",
     isClinical: true,
-    topic: "Glasgow Coma Scale and its Advantages"
+    topic: "Glasgow Coma Scale and its Advantages",
+    explanation: "السبل الدقيقة لتقييم الرد اللفظي والنطق اللغوي في الرضيع الصغير بمقياس غلاكسو:\n1. الضحك التفاعلي ومتابعة الصور والألعاب الوديعة بالوجه يمنحه **5 نقاط كاملة**.\n2. البكاء البسيط الذي يطول ويهدأ بالاحتضان المريح المتألم يمنحه **4 نقاط**.\n3. البكاء المستمر المزعج الذي يصعب ترويضه أو تلطيفه يمنحه **3 نقاط**.\n4. الهياج المستمر أو الشكوى الخارخرة المستثارة بالألم تمنحه **2 نقطتين**."
   },
   {
     id: "q-e2-g-3",
     chapterId: 4,
     type: "short-essay",
     title: "GCS False Underestimation factors",
-    content: "Enumerate 4 distinct clinical or pharmacological factors that act as limitations, falsely altering or underestimating a child's true GCS score.",
+    content: "Enumerate 4 factors that falsely alter/limit GCS score.",
     answer: "1. Confounding use of therapeutic sedation or analgesics.\n2. Therapeutic neuromuscular blockade or chemical paralysis.\n3. Presence of an endotracheal tube (making verbal assessment impossible).\n4. Preverbal developmental stage or extreme young age of an infant.",
     isClinical: true,
-    topic: "Glasgow Coma Scale and its Advantages"
+    topic: "Glasgow Coma Scale and its Advantages",
+    explanation: "الأمور المعرقلة لتقييد فحص غلاكسو الحقيقي بالأطفال وتظلمه كذباً بدرجات متدنية:\n1. الأدوية المنومة والمهدئة وحقن السيطرة الصدرية الرئوية بالرعاية المركزة.\n2. حقن شلل وارتخاء العضلات الطبي المستخدمة بالتهوية لتيسير التنفس الحنجري.\n3. تركيب الأنبوب الحنجري التنفسي الكاتم تماماً لممر الحنجرة والأصوات واللفظ.\n4. سن الرضيع الصغير جداً وتأخر النطق العقلي لتبرئة الملاحظات اللغوية العادية."
   },
 
   {
@@ -3182,7 +3349,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "An 18-month-old infant is evaluated in the emergency ward following a head trauma. On serial neurological tracking, the clinician notes the infant opens his eyes only when a loud voice is used, emits persistent irritable crying, and localizes the site of a painful stimulus purposefully.\n\nQuestions:\n1. Calculate the infant's specific scores for Eye, Verbal, and Motor parameters.\n2. What is the total composite Glasgow Coma Scale score for this infant?",
     answer: "1. Eye opening to voice = 3; Verbal irritable crying = 3; Motor localizing pain = 5.\n2. Total GCS Score = 3 + 3 + 5 = 11.",
     isClinical: true,
-    topic: "Glasgow Coma Scale and its Advantages"
+    topic: "Glasgow Coma Scale and its Advantages",
+    explanation: "تحليل حالة رضيع تراث صدمة الرأس وحساب مجموع نقاط غلاكسو للوعي:\n1. النقاط للوسوم السلوكية كالتالي: فتح الجفن للصوت 3 + البكاء النكد غير المستكين 3 + توجيه يده لضرب مصدر الوجع 5.\n2. حاصل المعيار كالتالي: 3 (عين) + 3 (لفظ) + 5 (حركي) = **11 نقطة من مقياس غلاكسو الكلي**."
   },
 
   // ==================== IV. Emergency Section - New Additions from Slide Materials ====================
@@ -3195,7 +3363,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Explain how the primary pathophysiology and initial rhythms of cardiopulmonary arrest differ between pediatric and adult patients, and state the critical timelines for brain survival during a arrest.",
     answer: "1. Pathophysiological Difference: In children, cardiac arrest is usually secondary to progressive respiratory failure or shock (asphyxial arrest), unlike in adults where it is commonly primary cardiac (due to ischemic heart disease).\n2. Initial Rhythm Difference: In children, the initial rhythm is usually bradycardia progressing to asystole, whereas ventricular fibrillation (VF) or pulseless ventricular tachycardia (VT) is less common compared to adults.\n3. Critical Timelines: If successful resuscitative efforts are not established within 5 minutes, brain or cardiovascular death will occur. Irreversible brain damage occurs after approximately 7 minutes.",
     isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "الاختلافات الوظيفية بالإنعاش وصمود مخ مخ الطفل بالثواني والدقائق:\n1. **أساس التوقف**: بالأطفال يكون قصور وتوقف القلب ثانوياً بالعادة لفشل النفس أو هبوط التروية الكلي بصدمات الجفاف المسمى بالإقفار الصامت العضلي، بعكس البالغين فالتوقف أولي قلبي بمكيدة جلطة الشريان التاجي الفجائية.\n2. **نمط الكهرباء**: في الأطفال نتحرك تدريجياً من بطء الضربات إلى الصمت الكهربائي المطبق Asystole، بينما الكبار يفوقهم الرجفان والنبض السريع المهتز VT/VF.\n3. **عمر خلايا الدماغ**: تبدأ تلفيات خلايا المخ عند غياب تروية الأكسجين والنبض لأكثر من **5 دقائق متتالية**، بينما يموت المخ سريرياً بخراب دائم يتعذر علاجه لو طال الضياع لما وراء الـ **7 دقائق أولية**."
   },
   {
     id: "q-e3-cpr-2",
@@ -3205,7 +3374,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Mention the cardiac compression guidelines during pediatric resuscitation including the frequency, ratio, and age-specific compression techniques and depths according to resuscitation slides.",
     answer: "1. Frequency: Approximately 100 compressions per minute for all ages.\n2. Compression-to-Ventilation Ratio: Continue cardiac compression and ventilation at a ratio of 1:5.\n3. Age-Specific Techniques:\n   - Newborns: Hand-encircling (two-thumb) technique.\n   - Infants: Two-finger technique.\n   - Young children: One-hand technique.\n   - Older children: Two-hand technique.\n4. Age-Specific Depths:\n   - Infant: 2 cm depth.\n   - Young child: 3 cm depth.\n   - Older child: 4 cm depth.",
     isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "أطوار وأقسام دقات ونسب وعمق ضغط إنعاش الصدر بالأطفال:\n1. المقاس المتكرر: **100 ضغطة متماثلة طوال الدقيقة الواحدة** بمختلف أطوار طفولته.\n2. معدل التفاعل والنسب التبادلية: المتابعة والربط بمعدل **1 نفَس مستنشق لـ 5 ضغطات قلبية متتابعة** للأطفال.\n3. تكتيك القبضة والعمق للقص بمرور السن بالسنتمترات لمرحلة الصغار:\n   - لحديثي الولادة: بالابهامين وتطويق ضلوع القفص.\n   - للرضيع: بنقر إصبعين دائمين بعمق 2 سم.\n   - للأطفال المتوسطين: وجه كف واحد بعمق 3 سم.\n   - لليافعين والشباب: قبضة اليدين متشابكتي العظام بعمق 4 سم."
   },
   {
     id: "q-e3-cpr-3",
@@ -3215,7 +3385,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "During a full cardiac arrest resuscitation of a 6-year-old child in the emergency department, the team leader temporarily pauses compressions every 5 minutes to examine the child's pupillary reflexes.\n\nQuestions:\n1. State the purpose of checking pupillary reflexes in this context.\n2. Under what condition would the resuscitation team leader decide to terminate the resuscitation efforts?",
     answer: "1. Purpose: To check for pupillary reaction to light, which validates brain viability and helps exclude brain death to continue resuscitation.\n2. Termination: Resuscitative efforts should continue as long as brain death does not occur. The resuscitation team leader can make the decision to terminate resuscitation based on the presence of brain death on repeated examinations.",
     isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "تحليل محاور تفقد الرموش وحدقة عيون الإنعاش الدقيق بالاستقبال:\n1. الأهمية لغلق الصدر لفحص الرمش الحدقي للضوء هو متابعة سلامة وقدرة تغذية جذع المخ الدموية لإيقاف أو ترسيخ مواصلة الإنعاش القلبي الرئوي الـ CPR.\n2. يفوض القائم بال resuscitation قرار إعلان وفاة وإنهاء جهود الإنعاش إذا تم رصد وفاة خلايا الدماغ والمخ الكلية وتكرار جمود وعدم تفاعل الحدقتين الساحقتين للضوء طوال تكرار الفحوص السريعة."
   },
 
   // topic: "Shock"
@@ -3227,7 +3398,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "An 8-year-old boy diagnosed with severe acute viral myocarditis presents to the emergency room in severe shock. On examination, he is tachycardic, has a raised jugular venous pressure (JVP), an audible gallop rhythm on cardiac auscultation, wet lung crepitations on breathing, and a tender, enlarged liver.\n\nQuestions:\n1. What is the specific type of shock this patient is presenting with?\n2. What is the physiological goal of contractility augmentation, and which vasoactive drug is indicated if his baseline blood pressure is still within normal limits?",
     answer: "1. Cardiogenic shock (as defined by myocardial dysfunction and signs of pump failure under cardiorespiratory assessment).\n2. Goal & Drug: The goal is to support and improve myocardial contractility and stroke volume. The indicated drug for low cardiac output with a normal baseline blood pressure is Dobutamine (administered at 5 - 20 mcg/kg/min IV).",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "تحليل ومواجهة حالة صدمة عضلة القلب المعتلة بفيروسات الصدر للرضع:\n1. التشخيص الدقيق هو صدمة القلب المباشرة (**Cardiogenic shock**) بالاستناد لأمارات هبوط المضخة والضخ مع ارتفاع وريد الرقبة الـ JVP وتورم الكبد بفعل الاحتقان الرئوي والكبدي العنيف.\n2. الواسم السحري لحث انقباض وتأمين مخرجات الضربات للدم بدون هدم ضغط شرايينه هو منبع أمبولات الـ **Dobutamine** بجرعة وريدية تتراوح بين 5 - 20 mcg/kg/min."
   },
   {
     id: "q-e3-sh-2",
@@ -3237,7 +3409,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 4 progressive \"Clinical Grades\" of shock, including their core definitions and clinical features according to pediatric shock grading.",
     answer: "1. Grade I (Early Shock): Characterized by peripheral tissue hypoperfusion, marked tachycardia, and signs of poor capillary refill with preserved central blood pressure.\n2. Grade II (Established Shock): Characterized by arterial hypotension, poor peripheral perfusion, and systemic hypotension.\n3. Grade III (Advanced Shock): Characterized by vital organ hypoperfusion and the clinical onset of Multiple Organ System Failure (MOSF).\n4. Grade IV (Irreversible Shock): Characterized by irreversible systemic cellular damage, profound refractory metabolic acidosis, and eventual death.",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "المراحل السريرية المتتابعة الأربعة لتفاقم صدمة الطفولة الصدرية وحصادها:\n1. الدرجة الأولى الـ **Grade I (المعوضة)**: تتميز بنبض سريع وتضيق أوعية الجلد لامتلاء ال CRT والمحافظة الكاملة لخط ضغط البدن الانقباضي سليماً.\n2. الدرجة الثانية الـ **Grade II (المتأسسة)**: انهيار الضغط وهبوطه الواضح مع فقد التروية الجلدية للأطراف.\n3. الدرجة الثالثة الـ **Grade III (المتقدمة)**: تعطل تروية ونبض الكلى والأعضاء وإصابتها بالعجز والقصور لتبدأ علامات تدمير كفاءة الأجهزة.\n4. الدرجة الرابعة الـ **Grade IV (المخربة المهلكة)**: تلف وعطب دائم للخلايا وفساد كيميائي بالحموضة لا يرجع منه الطفل ولو تدفقت المحاليل والمساندات المذكورة لتنتهي السطور بالوفاة."
   },
   {
     id: "q-e3-sh-3",
@@ -3247,7 +3420,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Explain the formula for oxygen delivery (DO2), how cardiac output is calculated, and explain why pediatric patients are at high risk of sudden deterioration when compensating in shock.",
     answer: "1. Oxygen Delivery (DO2) Formula: DO2 = Cardiac Output (CO) x Oxygen Content of blood.\n2. Cardiac Output Calculation: CO = Heart Rate (HR) x Stroke Volume (SV).\n3. Compensation Risk: Children compensate for circulatory inadequacy by significantly increasing their Heart Rate and Systemic Vascular Resistance (SVR). However, due to an immature and non-compliant myocardium, they cannot significantly increase their Stroke Volume. Therefore, when maximum tachycardia and constriction margins are exhausted, they suffer high risk of sudden, catastrophic circulatory collapse.",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "القواعد الفسيولوجية المفسرة للانهيار الوعائي المفاجئ والقاتل بقلب شرايين الأطفال:\n1. قانون تروية الأكسجين للبدن ومخرج الضخ القلبي يتمثل تالياً: الضخ القلبي = ضربات السهم القلبي بالدقيقة (Heart Rate) مضروبة بقيمة حجم الضرب المنفث بكل نبضة (Stroke Volume).\n2. لغز الطفولة يكمن في قصور عضلات بطين الطفل الصغير عن التمدد والضخ اللين الكافي لحجم الضرب الواحد، فيعيش معتمداً على زيادة ضربات القلب وتسارع التنفس للدفاع والتعويض الصامت. فحينما يبلغ هذا التسارع الشرس حدوده العظمى للتعب العضلي، يسقط الطفل دفعة واحدة بانهيار دوري فجائي وقاتل بلا مقدمات هبوطية لينة تدريجية."
   },
   {
     id: "q-e3-sh-4",
@@ -3257,7 +3431,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the affected organ systems and their clinical/laboratory manifestations in Multiple Organ System Failure (MOSF) following untreated advanced shock.",
     answer: "1. Kidneys: Acute renal failure characterized by oliguria and metabolic acidosis.\n2. Lungs: ARDS (Acute Respiratory Distress Syndrome).\n3. Brain: Hypoxic Ischemic Encephalopathy characterized by distress, convulsions, or coma.\n4. GIT: Ischemia, stress ulcers, hemorrhage, or dynamic ileus.\n5. Blood System: DIC (Disseminated Intravascular Coagulation) and thrombocytopenia.\n6. Heart: Myocardial ischemia and serious ventricular arrhythmias.\n7. Liver: Acute hepatic failure.\n8. Metabolic: Severe progressive lactic acidosis and electrolyte disturbances.",
     isClinical: true,
-    topic: "Shock"
+    topic: "Shock",
+    explanation: "تلف وتفتيت الغزو الميكروبي لصدمات الدم وتدمير أجهزة الجسم الـ MOSF:\n1. كليتا الطفل: قصور تام وبولينا واحتباس وعطب للأملاح وحامض الفوسفور.\n2. الصدر: حموضة ورشح وتلف حويصلات الرئة ARDS.\n3. المخ والدماغ: غيبوبة وتائه وهياج وتشنجات عضلية مستثارة.\n4. الجهاز الهضمي والبطن: احتقان وكسل معوي وتقرح مدمٍ بالمعدة.\n5. تماسك الدم وسيولته: صدمة التخثر المنتثر بالدم الـ DIC ونفاد صفائح التجلط الحامية للشرايين وموت خلايا الكبد التامة بالسم."
   },
 
   // topic: "Coma"
@@ -3269,17 +3444,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 4 clinical grades of Coma, including their defining arousal states and behavioral reactions to painful stimuli.",
     answer: "1. Grade I (Stupor): The comatose patient can be aroused for only a short period of time (less than a minute).\n2. Grade II (Light Coma): The patient cannot be aroused by painful stimuli, but responds to pain with purposeful withdrawal movements.\n3. Grade III (Deep Coma): There is absolutely no motor response to painful stimuli, but the patient continues to breathe spontaneously.\n4. Grade IV (Deep Coma with Apnea): There is no response to painful stimuli accompanied by apnea. Brain death occurs within 5 minutes if mechanical ventilation is not instituted.",
     isClinical: true,
-    topic: "Coma"
+    topic: "Coma",
+    explanation: "التصنيفات والدرجات الإكلينيكية الأربعة لغيبوبة طوكيو والطب السريري (Coma Grading):\n1. المرتبة الأولى **Grade I (الوهن العضلي/Stupor)**: يمكن إيقاظ وتنبيه عقل الطفل البائس لفترة وجيزة جداً تقل عن الـ دقيقة واحدة فقط ليرتد نائماً.\n2. المرتبة الثانية **Grade II (الغيبوبة الخفيفة)**: لا فواق بالنداء أو الصوت، ولكنه يحرك ذراعه أو قدمه بدفاع وتكتيك هادف هارب للتخلص من وخز الألم.\n3. المرتبة الثالثة **Grade III (الغيبوبة العميقة)**: غياب واختفاء كلي لأي حركة عضلية مدافعة للألم أو وخز الحقن، ولكنه لا يزال يحافظ على الأنفاس وحركة صدره رغماً عن الغياب.\n4. المرتبة الرابعة **Grade IV (الوفاة الدماغية الكلية/Deep Coma with Apnea)**: غياب تام وصامت عن اللفظ والحركة مع توقف الأنفاس وتسطح الصدر لتحدث الوفاة السريرية والنهائية خلال 5 دقائق لو حجب التهوية الاصطناعية الميكانيكية الرعائية."
   },
   {
     id: "q-e3-co-2",
     chapterId: 4,
     type: "short-essay",
     title: "Coma Causes: Primary vs Secondary Brain Lesions",
-    content: "Explain the structural difference between Primary and Secondary Brain Lesions causing pediatric coma, and enumerate 4 distinct causes of Primary Brain Lesions.",
+    content: "Explain the structural difference between Primary and Secondary Brain Lesions causing pediatric coma, and Enumerate 4 causes of Primary Brain Lesions.",
     answer: "1. Structural Difference: Primary brain lesions arise from direct structural pathology, infections, or trauma within the central nervous system itself. Secondary brain lesions (encephalopathies) arise from systemic or metabolic disturbances outside the brain (like hypoxia, metabolic acidosis, organ failures, or poisonings) that secondarily impair cerebral cortical function.\n2. Causes of Primary Brain Lesions:\n   - Intracranial infections (e.g., meningitis, encephalitis, or brain abscess).\n   - Intracranial hemorrhage (traumatic or non-traumatic such as Hemophilia, DIC, ITP, aneurysmal rupture, A-V malformation).\n   - Cerebral infarction.\n   - Status epilepticus.\n   - Brain tumors.",
     isClinical: true,
-    topic: "Coma"
+    topic: "Coma",
+    explanation: "التمييز بين مسببات إصابة خلايا الوعي الدماغية الأولية المباشرة والثانوية السهمية الاستقلابية:\n1. **العلة الهيكلية الأولية**: تنشأ من غزو بكتيري أو جلطة وتدمير أو ضرب ورض ميكانيكي بخلية وجهاز عصب الرأس بذاته كالتهاب السحايا ونزيف الدماغ والأورام والجلطات الصريحة.\n2. **العلة الثانوية الكيميائية**: تحدث لمخ سليم تماماً تأذى ثانوياً بتسمم وأبخرة وخلل توازن أملاح وغازات الجسم الخارجي كغيبوبة تسمم البولينا، وحموضة الديايبتك كيتوأسيدوسيس DKA، وخسارة أكسجين الصدمات الخانقة."
   },
   {
     id: "q-e3-co-3",
@@ -3289,6 +3466,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Describe how to clinically differentiate between Cortical vs. Brain Stem level of dysfunction in a comatose pediatric patient, and mention 3 reflexes evaluated to make this determination.",
     answer: "1. Differential Method: The level of dysfunction is determined by testing basic brainstem reflexes. In cortical lesions, brainstem reflexes are completely INTACT, whereas in structural brainstem lesions, these reflexes are either SLUGGISH OR completely LOST.\n2. Three Evaluated Reflexes:\n   - Pupillary reaction to light.\n   - Corneal reflex.\n   - Oculocephalic reflex (Doll's eyes response).",
     isClinical: true,
-    topic: "Coma"
+    topic: "Coma",
+    explanation: "فن وملاحظات التفريق الإكلينيكي العصبي بين عيوب قشرة مخ وجذع الدماغ بغيبوبة الأطفال:\n1. المسار الفعلي: يتم عبر فحص ورصد ردود الأفعال العصبية والانعكاسات الحيوية بجذع الدماغ. فإذا كانت انعكاسات الحدقة وجريان الدموع وحركة بؤبؤ العين سليمة فالعيب معزول بقشرة الدماغ العليا، بينما لو غابت وخمد تفاعلها فالوهن مقيم بجذع المخ العصبي المهلك.\n2. الانعكاسات الثلاثة المستخدمة بالعيادة بالتفصيل للحكم:\n   - انعكاس وقدرة فحص انكماش قزحية حدقة العين للضوء الحاد.\n   - رد الفعل اللمسي لقرنيات وجفن الرمش للرعش.\n   - انعكاس Doll's eyes حركية حنجرة المخ الحركي عند تدوير الرأس."
   }
 ];

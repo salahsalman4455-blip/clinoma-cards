@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { Question, Chapter, DifficultyLevel } from '../types';
 import { INITIAL_QUESTIONS } from '../data/questions';
+import { ExplanationDrawer } from './ExplanationDrawer';
 
 const STICKERS = [
   'https://i.ibb.co/FkSVV8dd/fjf.webp',
@@ -80,9 +81,11 @@ export default function StudySession({
   const [timeSpentOnQuestion, setTimeSpentOnQuestion] = useState(0);
   const [distractionWarningPhase, setDistractionWarningPhase] = useState<'none' | 'first' | 'second'>('none');
   const [returnedToSameQuestion, setReturnedToSameQuestion] = useState(false);
+  const [showExplanation, setShowExplanation] = useState(false);
 
   const moveToNext = () => {
     setShowAnswer(false);
+    setShowExplanation(false);
     if (currentIndex < sessionQuestions.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
@@ -400,24 +403,66 @@ export default function StudySession({
 
               {/* Scrollable Topics Area */}
               <div className="flex-1 overflow-y-auto pr-2 space-y-3 custom-scrollbar mb-8">
-                 <button
-                   onClick={() => toggleTopic('all')}
-                   className={`w-full flex items-center justify-between p-4 rounded-2xl text-left transition-all border-2 ${selectedTopics.includes('all') ? 'bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-200' : 'bg-slate-50 border-transparent text-slate-700 hover:bg-slate-100'}`}
-                 >
-                   <span className="font-bold text-sm">📚 Show All of Chapter Questions</span>
-                   {selectedTopics.includes('all') && <CheckCircle2 className="w-5 h-5" />}
-                 </button>
+                 {(() => {
+                   const chapterTotal = INITIAL_QUESTIONS.filter(q => q.chapterId === chapter.id).length;
+                   const chapterActive = questions.filter(q => q.chapterId === chapter.id).length;
+                   return (
+                     <button
+                       onClick={() => toggleTopic('all')}
+                       className={`w-full flex items-center justify-between p-4 rounded-2xl text-left transition-all border-2 ${selectedTopics.includes('all') ? 'bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-200' : 'bg-slate-50 border-transparent text-slate-700 hover:bg-slate-100'}`}
+                     >
+                       <span className="font-bold text-sm">📚 Show All of Chapter Questions</span>
+                       <div className="flex items-center gap-2">
+                         <span className={`text-xs font-mono px-2.5 py-0.5 rounded-full font-bold ${selectedTopics.includes('all') ? 'bg-blue-700/50 text-blue-100' : 'bg-slate-200 text-slate-600'}`}>
+                           {chapterActive !== chapterTotal ? `${chapterActive}/${chapterTotal}` : `${chapterTotal}`} Qs
+                         </span>
+                         {selectedTopics.includes('all') && <CheckCircle2 className="w-5 h-5 shrink-0" />}
+                       </div>
+                     </button>
+                   );
+                 })()}
                  
                  {chapter.topics && chapter.topics.map((top, idx) => {
                     const isSelected = selectedTopics.includes(top);
+                    const isAsthma = top.toLowerCase() === 'bronchial asthma';
+                    const totalTopicQuestions = INITIAL_QUESTIONS.filter(q => q.chapterId === chapter.id && q.topic === top).length;
+                    const activeTopicQuestions = questions.filter(q => q.chapterId === chapter.id && q.topic === top).length;
                     return (
                       <button
                         key={idx}
                         onClick={() => toggleTopic(top)}
-                        className={`w-full flex items-center justify-between p-4 rounded-2xl text-left transition-all border-2 ${isSelected ? 'bg-blue-50 border-blue-600 text-blue-700' : 'bg-white border-slate-100 text-slate-600 hover:border-slate-200'}`}
+                        className={`w-full flex items-center justify-between p-4 rounded-2xl text-left transition-all border-2 ${
+                          isAsthma
+                            ? isSelected
+                              ? 'bg-rose-50 border-rose-600 text-rose-700 shadow-lg shadow-rose-100/50'
+                              : 'bg-white border-rose-200 text-rose-600 hover:border-rose-300'
+                            : isSelected
+                            ? 'bg-blue-50 border-blue-600 text-blue-700'
+                            : 'bg-white border-slate-100 text-slate-600 hover:border-slate-200'
+                        }`}
                       >
-                        <span className="font-bold text-sm">{idx + 1}. {top}</span>
-                        {isSelected && <CheckCircle2 className="w-5 h-5 text-blue-600" />}
+                        <span className="font-bold text-sm">
+                          {idx + 1}. {top}
+                          {isAsthma && (
+                            <span className="mx-2 text-xs font-black px-2.5 py-1 rounded-full text-white bg-rose-600 border border-rose-600 animate-pulse inline-flex items-center gap-1">
+                              مهم جداً 🔥
+                            </span>
+                          )}
+                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className={`text-xs font-mono px-2.5 py-0.5 rounded-full font-bold ${
+                            isAsthma
+                              ? isSelected
+                                ? 'bg-rose-100 text-rose-800'
+                                : 'bg-rose-50 text-rose-600'
+                              : isSelected
+                              ? 'bg-blue-100 text-blue-800'
+                              : 'bg-slate-100 text-slate-500'
+                          }`}>
+                            {activeTopicQuestions !== totalTopicQuestions ? `${activeTopicQuestions}/${totalTopicQuestions}` : `${totalTopicQuestions}`} Qs
+                          </span>
+                          {isSelected && <CheckCircle2 className={`w-5 h-5 shrink-0 ${isAsthma ? 'text-rose-600' : 'text-blue-600'}`} />}
+                        </div>
                       </button>
                     );
                  })}
@@ -696,20 +741,46 @@ export default function StudySession({
             </AnimatePresence>
 
             {/* Question Details header */}
-            <div className="p-4 sm:p-8 border-b border-slate-100 text-left bg-gradient-to-r from-slate-50/40 to-white">
-              <div className="flex flex-wrap items-center gap-2.5 mb-6">
-                {currentQuestion.topic && (
-                  <span className="text-blue-600 text-[9px] font-black uppercase tracking-wider border border-blue-100 bg-blue-50/50 px-3 py-1 rounded-lg">
-                    {currentQuestion.topic}
-                  </span>
+            <div id="question-details-card" className="p-4 sm:p-8 border-b border-slate-100 text-left bg-gradient-to-r from-slate-50/40 to-white">
+              <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+                <div className="flex flex-wrap items-center gap-2.5">
+                  {currentQuestion.topic && (
+                    <span className="text-blue-600 text-[9px] font-black uppercase tracking-wider border border-blue-100 bg-blue-50/50 px-3 py-1 rounded-lg">
+                      {currentQuestion.topic}
+                    </span>
+                  )}
+                </div>
+                {currentQuestion.explanation && (
+                  <button
+                    id="toggle-explanation-btn"
+                    onClick={() => setShowExplanation(prev => !prev)}
+                    className={`text-[10.5px] font-black px-4 py-1.5 rounded-xl transition-all flex items-center gap-1.5 active:scale-95 border cursor-pointer ${
+                      showExplanation
+                        ? "bg-amber-500 hover:bg-amber-600 text-neutral-900 border-amber-500 shadow-md shadow-amber-500/20 animate-pulse"
+                        : "bg-amber-100/65 hover:bg-amber-100 text-amber-800 border-amber-200"
+                    }`}
+                    dir="rtl"
+                  >
+                    <span className="text-sm">💡</span>
+                    <span>شرح السؤال 🤔</span>
+                  </button>
                 )}
               </div>
               
-              <div className="flex-1 flex flex-col pt-2">
+              <div className="flex-1 flex flex-col pt-2 mb-2">
                 <p className="text-xl md:text-2xl text-slate-800 leading-relaxed font-semibold max-w-4xl">
                    {currentQuestion.content}
                 </p>
               </div>
+
+              {/* Explanation Panel if toggled */}
+              <ExplanationDrawer
+                isOpen={showExplanation}
+                onClose={() => setShowExplanation(false)}
+                explanation={currentQuestion.explanation || ""}
+                questionTitle={currentQuestion.content}
+                topic={currentQuestion.topic}
+              />
             </div>
 
             {/* Answer Display Card view */}

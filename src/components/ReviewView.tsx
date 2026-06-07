@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, CheckCircle2, Clock, AlertTriangle, ChevronDown, ChevronUp, Brain } from 'lucide-react';
 import { Question, Chapter } from '../types';
 import { CHAPTERS } from '../data/chapters';
+import { ExplanationDrawer } from './ExplanationDrawer';
 
 interface ReviewViewProps {
   reviewIds: string[];
@@ -134,6 +135,7 @@ function ReviewCard({
   onRemoveReview: (id: string) => void;
 }) {
   const [showAnswer, setShowAnswer] = useState(false);
+  const [showExplanation, setShowExplanation] = useState(false);
 
   return (
     <motion.div 
@@ -151,6 +153,19 @@ function ReviewCard({
             <span className="text-[9px] font-black bg-blue-50 text-blue-600 px-2.5 py-1 rounded uppercase tracking-wider">
               Clinical Case
             </span>
+          )}
+          {q.explanation && (
+            <button
+              onClick={() => setShowExplanation(!showExplanation)}
+              className={`text-[9px] font-black px-2.5 py-1 rounded transition-all flex items-center gap-1 active:scale-95 border cursor-pointer ${
+                showExplanation
+                  ? "bg-amber-500 hover:bg-amber-600 text-neutral-900 border-amber-500 shadow-sm"
+                  : "bg-amber-50 hover:bg-amber-100 text-amber-700 border-amber-200"
+              }`}
+              dir="rtl"
+            >
+              <span>💡 شرح</span>
+            </button>
           )}
         </div>
         <div className="flex items-center gap-2">
@@ -172,6 +187,15 @@ function ReviewCard({
       </div>
 
       <p className="text-slate-800 text-base md:text-lg font-medium leading-relaxed mt-1">{q.content}</p>
+
+      {/* Explanation Panel if toggled */}
+      <ExplanationDrawer
+        isOpen={showExplanation}
+        onClose={() => setShowExplanation(false)}
+        explanation={q.explanation || ""}
+        questionTitle={q.content}
+        topic={q.topic}
+      />
 
       {/* Answer Reveal Panel */}
       <div className="mt-2 border-t border-slate-100 pt-4">

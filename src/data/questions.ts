@@ -209,16 +209,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Acute Kidney Injury (AKI)"
   },
   {
-    id: "q-r-ki-6",
-    chapterId: 1,
-    type: "short-essay",
-    title: "Management of Hyperkalemia in AKI",
-    content: "Enumerate 4 aggressive therapeutic control measures utilized to treat life-threatening hyperkalemia in a child with advanced Acute Kidney Injury (AKI).",
-    answer: "1. Intravenous Calcium Gluconate (to stabilize the cardiac cell membrane and prevent arrhythmias).\n2. Intravenous Insulin combined with Glucose (to shift potassium intracellularly).\n3. Sodium Bicarbonate (NaHCO3) administration (to correct acidosis and shift potassium into cells).\n4. Potassium-binding resins (e.g., sodium polystyrene sulfonate) or initiating acute hemodialysis/renal replacement therapy.",
-    isClinical: true,
-    topic: "Acute Kidney Injury (AKI)"
-  },
-  {
     id: "q-r-a-6",
     chapterId: 1,
     type: "short-essay",
@@ -427,17 +417,6 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   {
-    id: "q-c-w-4",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Atypical Noisy Chemical Wheezing Case",
-    content: "A 3-year-old child is rushed to the emergency department with an acute onset of severe wheezing, excessive salivation, vomiting, pinpoint pupils (miosis), and extreme sweating. The parents suspect he ingested something near their garden shed.\n\nQuestions:\n1. What non-respiratory chemical toxicity must be highly suspected as the cause of this acute wheezing and autonomic presentation?\n2. Enumerate 3 non-asthmatic, non-infectious mechanical or anatomical entities that can produce recurrent or fixed localized wheezing in young children.",
-    answer: "1. Organophosphate Poisoning (which induces a severe cholinergic crisis characterized by pinpoint pupils, hyper-salivation, sweating, and bronchoconstriction mimicking severe asthma/wheezing).\n2. 3 non-asthmatic, non-infectious mechanical/anatomical entities:\n- Sudden Foreign Body Aspiration (producing a fixed, localized unilateral wheeze).\n- Gastroesophageal Reflux Disease (GERD) with recurrent micro-aspiration of gastric contents.\n- Vascular Ring or other mechanical airway compression (e.g., mediastinal mass or vascular anomaly compressing the tracheobronchial tree) or Bronchopulmonary Dysplasia (BPD).",
-    isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration"
-  },
-
-  {
     id: "q-c-w-5",
     chapterId: 2,
     type: "problem-solving",
@@ -520,16 +499,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Pneumonia"
   },
-  {
-    id: "q-c-p-8",
-    chapterId: 2,
-    type: "short-essay",
-    title: "Zinc Supplementation in Childhood Pneumonia",
-    content: "Mention the clinical significance of oral Zinc supplementation in the management of severe pediatric pneumonia, including its standard administration duration and the settings where it acts as a primary measure to reduce mortality.",
-    answer: "1. Clinical Significance & Mortality Reduction: Oral Zinc supplementation has been clinically/scientifically proven to significantly shorten recovery times, reduce respiratory distress, and successfully reduce overall mortality in children with severe pneumonia.\n2. Setting: Specifically indicated in low- and middle-income countries.\n3. Duration: Administered daily for a duration of 7 days.",
-    isClinical: true,
-    topic: "Pneumonia"
-  },
+
 
   // topic: "Bronchiolitis"
   {
@@ -568,7 +538,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     type: "short-essay",
     title: "Hospitalized Bronchiolitis Treatment",
     content: "Enumerate 4 core treatment modalities for a hospitalized infant with Bronchiolitis.",
-    answer: "1. Humidified supplemental oxygen therapy via nasal prongs.\n2. Parenteral fluid therapy to maintain hydration and electrolyte balance.\n3. Implementation of a single-dose trial of an inhaled bronchodilator.\n4. Avoidance of sedatives, antibiotics, and systemic steroids (unless specifically indicated).",
+    answer: "1. Humidified supplemental oxygen therapy via nasal prongs.\n2. Parenteral fluid therapy to maintain hydration and electrolyte balance.\n3. Implementation of a single-dose trial of an inhaled bronchodilator.\n4. Antiviral Therapy (Ribavirin): The most important treatment modality for high-risk patients.\n5. Avoidance of sedatives, antibiotics, and systemic steroids.",
     isClinical: true,
     topic: "Bronchiolitis"
   },
@@ -583,16 +553,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Bronchiolitis"
   },
 
-  {
-    id: "q-c-b-6",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Apnea Risk in Infantile Bronchiolitis",
-    content: "A 6-week-old infant presents during winter with runny nose, a dry hacking cough, and mild tachypnea. On chest examination, bilateral sparse fine crackles are heard. The mother reports no history of fever, but is extremely worried after a local nurse warned her about a sudden respiratory risk.\n\nQuestions:\n1. What critical age-associated clinical alert is this young infant at high risk for in acute child bronchiolitis?\n2. Mention 2 other absolute general restrictions or things to avoid in the clinical management of infantile bronchiolitis to prevent respiratory depression or airway collapse.",
-    answer: "1. Apneic spells (infants under 2 months of age with bronchiolitis are at an exceptionally high risk of sudden, life-threatening apnea, often presenting before severe respiratory distress).\n2. Absolute general restrictions:\n- Strictly avoid the administration of sedatives (which can depress the central respiratory drive and precipitate respiratory failure).\n- Strictly avoid the routine use of systemic corticosteroids or oral/nasal decongestants, and do NOT perform a tracheostomy unless a severe airway anomaly coexists.",
-    isClinical: true,
-    topic: "Bronchiolitis"
-  },
+
 
   // topic: "Bronchial Asthma"
   {
@@ -615,26 +576,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Bronchial Asthma"
   },
-  {
-    id: "q-c-a-3",
-    chapterId: 2,
-    type: "short-essay",
-    title: "Status Asthmaticus Signs",
-    content: "Enumerate 4 physical signs indicating a severe acute asthma attack (Status Asthmaticus).",
-    answer: "1. Severe dyspnea with prolonged expiration and intense use of accessory muscles (SCM retraction).\n2. Cyanosis and thoracic hyperinflation.\n3. Tachycardia and pulsus paradoxus.\n4. Altered mental status ranging from agitation to somnolence.",
-    isClinical: true,
-    topic: "Bronchial Asthma"
-  },
-  {
-    id: "q-c-a-4",
-    chapterId: 2,
-    type: "short-essay",
-    title: "Rapid-acting Asthma Relievers",
-    content: "Enumerate 4 rapid-acting pharmacological medications used as \"Quick Relievers\" during an acute asthma attack.",
-    answer: "1. Inhaled Short-Acting Beta2-agonists (SABAs like nebulized Albuterol/Salbutamol).\n2. Inhaled Anticholinergics (Nebulized Ipratropium bromide).\n3. Systemic Corticosteroids (Oral Prednisolone or IV Dexamethasone).\n4. Intravenous Magnesium Sulphate (infused slowly over 15-30 minutes).",
-    isClinical: true,
-    topic: "Bronchial Asthma"
-  },
+
+
   {
     id: "q-c-a-5",
     chapterId: 2,
@@ -953,6 +896,16 @@ export const INITIAL_QUESTIONS: Question[] = [
   // ==================== IV. Emergency Section ====================
   // topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
   {
+    id: "q-e-cpr-steps",
+    chapterId: 4,
+    type: "short-essay",
+    title: "The Three Main Steps of CPR",
+    content: "Enumerate the three main therapeutic stages of Cardiopulmonary Resuscitation (CPR), including the specific clinical steps (A through I) associated with each phase.",
+    answer: "I- Basic Life Support (A, B, C):\n1. A: Airway control (Triple airway maneuver, clearing oropharynx, oropharyngeal airway).\n2. B: Breathing support (Mouth-to-mouth or bag-and-mask ventilation).\n3. C: Circulation support (Cardiac compression at midsternum).\n\nII- Advanced Life Support (D, E, F):\n1. D: Drugs (IV Adrenaline, fluids, or alkali).\n2. E: ECG monitoring (to detect various cardiac arrhythmias).\n3. F: Fibrillation control (Defibrillation electrical doses).\n\nIII- Prolonged life support (G, H, I):\n1. G: Recognition and treatment of the causative disease according to the etiology.\n2. H: Brain recovery (Control of any convulsive fits or acute increased intracranial pressure).\n3. I: Intensive care for multiple system support performed carefully in the PICU.",
+    isClinical: true,
+    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+  },
+  {
     id: "q-e-cpr-1",
     chapterId: 4,
     type: "define",
@@ -1004,6 +957,16 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   // topic: "Topic Two: Shock"
+  {
+    id: "q-e-sh-comp",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Comprehensive Overview of Shock",
+    content: "Provide a comprehensive overview of Shock by defining the clinical state, enumerating its 6 primary types, and listing its life-threatening complications.",
+    answer: "1. Definition: A clinical state of circulatory inadequacy due to disruption of tissue perfusion, leading to inadequate oxygen/nutrient supply and metabolite removal from end-organ cells.\n2. 6 Types of Shock:\n   - Septic shock.\n   - Hypovolemic shock (Severe dehydration, hemorrhage, or burns).\n   - Obstructive shock (Tension pneumothorax, tamponade, or vascular lesions).\n   - Cardiogenic shock (Acute heart failure or advanced shock).\n   - Kinetic/Distributive shock (Anaphylactic, Neurogenic, or Early Septic shock).\n   - Metabolic shock (Acute suprarenal failure).\n3. Complications of Untreated Shock: Acute Kidney Injury (AKI), Disseminated Intravascular Coagulation (DIC), Acute Respiratory Distress Syndrome (ARDS), Multiple Organ Dysfunction Syndrome (MODS), and eventually death.",
+    isClinical: true,
+    topic: "Topic Two: Shock"
+  },
   {
     id: "q-e-sh-1",
     chapterId: 4,
@@ -1062,7 +1025,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     type: "define",
     title: "Define Coma",
     content: "Define \"Coma\".",
-    answer: "It is a state of prolonged, sustained unconsciousness from which the pediatric patient cannot be aroused, failing to show any purposeful response even to deep painful external stimuli.",
+    answer: "Coma is a state of prolonged unconsciousness in which the child CANNOT BE AROUSED even with painful stimuli.",
     isClinical: false,
     topic: "Topic Three: Coma"
   },
@@ -2393,7 +2356,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 1,
     type: "short-essay",
     title: "Renal Osteodystrophy features",
-    content: "Enumerate 4 clinical or radiological features that characterize the presence of \"Renal Osteodystrophy\" in a child with advanced CKD.",
+    content: "Enumerate 4 clinical, laboratory, or radiological features that characterize the presence of \"Renal Osteodystrophy\" in a child with advanced CKD.",
     answer: "1. Muscle weakness, bone pain, and skeletal fractures with minor trauma.\n2. Rachitic changes, and varus or valgus deformities of the long bones.\n3. Laboratory findings of hypocalcemia, hyperphosphatemia, and elevated parathyroid hormone (PTH) levels.\n4. Subperiosteal bone resorption with widening of the metaphysis on X-ray.",
     isClinical: true,
     topic: "Chronic Kidney Disease (CKD)"
@@ -2475,7 +2438,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     type: "short-essay",
     title: "Standard Steroid Regimen in MCNS",
     content: "Enumerate the two main therapeutic phases (Induction and Maintenance Taper) of the curative Standard Corticosteroid Therapy (Prednisone) for Minimal Change Nephrotic Syndrome (MCNS) in children, including dosages and durations.",
-    answer: "1. Induction Phase dosage: Prednisone at a dose of 60 mg/m²/day (maximum 60 mg/day) administered daily.\n2. Induction Phase duration: Maintained for 6 consecutive weeks to induce complete remission.\n3. Maintenance Taper Phase dosage: Prednisone at a dose of 40 mg/m²/day administered on alternate days.\n4. Maintenance Taper Phase duration: Maintained for 6 weeks, followed by a gradual taper to avoid adrenal suppression.",
+    answer: "1. Induction Phase dosage: Prednisone at a dose of 60 mg/m²/day (maximum 60 mg/day) administered daily.\n2. Induction Phase duration: Maintained for 4 consecutive weeks to induce complete remission.\n3. Maintenance Taper Phase dosage: Prednisone at a dose of 40 mg/m²/day administered on alternate days.\n4. Maintenance Taper Phase duration: Maintained for 4 weeks (as per bank question update), followed by a gradual taper to avoid adrenal suppression.",
     isClinical: true,
     topic: "Nephrotic Syndrome"
   },
@@ -2748,16 +2711,7 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   // topic: "Bronchial Asthma"
-  {
-    id: "q-c2-a-1",
-    chapterId: 2,
-    type: "short-essay",
-    title: "Childhood Asthma Risk Factors",
-    content: "Enumerate 4 prominent historical risk factors associated with a higher prevalence or increased mortality of childhood Bronchial Asthma.",
-    answer: "1. Positive family history of asthma or atopic disorders in parents.\n2. Maternal smoking during pregnancy or intense allergen exposure in infancy.\n3. Low birth weight (less than 2500 grams) or low maternal age at birth.\n4. Socioeconomic factors like poverty and severe urban overcrowding.",
-    isClinical: true,
-    topic: "Bronchial Asthma"
-  },
+
   {
     id: "q-c2-a-2",
     chapterId: 2,
@@ -2778,26 +2732,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Bronchial Asthma"
   },
-  {
-    id: "q-c2-a-4",
-    chapterId: 2,
-    type: "short-essay",
-    title: "Asthma Long-Term Controllers",
-    content: "Enumerate 4 distinct pharmacological agents used as \"Long-Term Controllers\" to prevent recurrences of asthma attacks.",
-    answer: "1. Inhaled Corticosteroids (ICS) like Fluticasone or Beclomethasone (drugs of choice).\n2. Long-Acting Inhaled Beta2-agonists (LABAs) like Salmeterol or Formoterol.\n3. Oral Leukotriene receptor antagonists (such as Montelukast).\n4. Biological agents, specifically anti-IgE preparations (Omalizumab) for severe resistant cases.",
-    isClinical: true,
-    topic: "Bronchial Asthma"
-  },
-  {
-    id: "q-c2-a-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Status Asthmaticus Case",
-    content: "A 7-year-old known asthmatic boy is admitted with an acute severe attack. He has received three consecutive doses of nebulized albuterol combined with ipratropium bromide over one hour, but continues to exhibit severe distress, accessory muscle retractions, and low oxygen saturation.\n\nQuestions:\n1. What is the clinical diagnosis for this severe, non-responsive state?\n2. Enumerate 2 adjunctive intravenous or inhalation pharmacological steps that should be implemented next.",
-    answer: "1. Status Asthmaticus (Life-threatening Asthma).\n2. Administration of systemic corticosteroids and utilizing intravenous or inhaled Magnesium Sulphate.",
-    isClinical: true,
-    topic: "Bronchial Asthma"
-  },
+
+
 
   // ==================== III. Neonatology Section (Bank 2) ====================
   // topic: "Transient Cutaneous Lesions"

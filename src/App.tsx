@@ -52,21 +52,20 @@ export default function App() {
   const startChapter = (chapter: Chapter) => {
     setActiveChapter(chapter);
     const chapterQuestions = INITIAL_QUESTIONS.filter(q => q.chapterId === chapter.id);
-    // Filter out mastered questions to avoid repetition, unless they already mastered all of them
+    // Filter out mastered questions to avoid repetition
     const unmastered = chapterQuestions.filter(q => !masteredIds.includes(q.id));
-    setSessionQuestions(unmastered.length > 0 ? unmastered : chapterQuestions);
+    setSessionQuestions(unmastered);
     setView('study');
     setSidebarOpen(false);
   };
 
   const startMixedSession = () => {
     setActiveChapter(MIXED_CHAPTER);
-    // Shuffle unmastered questions across all chapters, or all if everything is mastered
+    // Shuffle unmastered questions across all chapters
     const unmastered = INITIAL_QUESTIONS.filter(q => !masteredIds.includes(q.id));
-    const pool = unmastered.length > 0 ? unmastered : INITIAL_QUESTIONS;
     
     // Perform standard random sort
-    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    const shuffled = [...unmastered].sort(() => Math.random() - 0.5);
     setSessionQuestions(shuffled);
     setView('study');
     setSidebarOpen(false);
@@ -94,11 +93,30 @@ export default function App() {
     setShowResetConfirm(true);
   };
 
+  const resetChapterProgress = (chapterId: number) => {
+    if (chapterId === 0) {
+      // General reset/all
+      setMasteredIds([]);
+      setReviewList([]);
+      localStorage.removeItem('clinoma_review_list');
+      localStorage.removeItem('clinoma_mastered_ids');
+      if (activeChapter?.id === 0) {
+        setSessionQuestions(INITIAL_QUESTIONS);
+      }
+    } else {
+      // Specific chapter questions
+      const chapterQuestions = INITIAL_QUESTIONS.filter(q => q.chapterId === chapterId);
+      const chapterQuestionIds = chapterQuestions.map(q => q.id);
+      setMasteredIds(prev => prev.filter(id => !chapterQuestionIds.includes(id)));
+      setReviewList(prev => prev.filter(id => !chapterQuestionIds.includes(id)));
+      if (activeChapter?.id === chapterId) {
+        setSessionQuestions(chapterQuestions);
+      }
+    }
+  };
+
   const confirmResetProgress = () => {
-    setMasteredIds([]);
-    setReviewList([]);
-    localStorage.removeItem('clinoma_review_list');
-    localStorage.removeItem('clinoma_mastered_ids');
+    resetChapterProgress(0);
     setShowResetConfirm(false);
     setSidebarOpen(false);
   };
@@ -402,6 +420,7 @@ export default function App() {
                   onBack={() => setView('home')}
                   addToReview={addToReview}
                   markAsMastered={markAsMastered}
+                  onResetChapterProgress={resetChapterProgress}
                 />
               </motion.div>
             )}
@@ -428,7 +447,7 @@ export default function App() {
         </main>
       </div>
 
-      {/* Reset Confirmation Modal */}
+      {/* Reset Confirmation Modal / Interactive Tab Reset Dashboard */}
       <AnimatePresence>
         {showResetConfirm && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
@@ -443,28 +462,99 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="bg-white rounded-3xl p-6 md:p-8 max-w-sm w-full shadow-2xl relative z-10 border border-slate-100 text-center"
+              className="bg-white rounded-[2rem] p-6 md:p-8 max-w-lg w-full shadow-2xl relative z-10 border border-slate-100 flex flex-col max-h-[85vh]"
               dir="rtl"
             >
-              <div className="w-16 h-16 bg-rose-50 rounded-full flex items-center justify-center text-rose-500 mx-auto mb-5 shadow-inner">
-                <AlertCircle className="w-8 h-8" />
+              <div className="flex justify-between items-start mb-6">
+                 <div>
+                   <h3 className="text-xl font-black text-slate-900 leading-tight">تصفير وإعادة تعيين التقدم 🔄</h3>
+                   <p className="text-xs text-slate-450 font-semibold mt-1">اختر التبويب أو الفصل الذي ترغب ببدء المذاكرة فيه من الصفر:</p>
+                 </div>
+                 <button onClick={() => setShowResetConfirm(false)} className="p-2 text-slate-400 hover:text-slate-650 hover:bg-slate-50 rounded-xl transition-all">
+                   <X className="w-5 h-5" />
+                 </button>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Reset All Progress?</h3>
-              <p className="text-sm text-slate-500 mb-6 leading-relaxed">
-                Are you sure you want to clear all progress, including saved review questions and mastered status, and start completely over? This action cannot be undone.
-              </p>
-              <div className="grid grid-cols-2 gap-3">
+
+              {/* Scrollable list of resetable progress categories */}
+              <div className="flex-1 overflow-y-auto space-y-3.5 pr-1 max-h-[50vh] custom-scrollbar mb-6">
+                
+                {/* 1. Global Complete Wipeout */}
+                <div className="p-4 bg-rose-500/[0.04] border border-rose-500/10 rounded-2.5xl text-right space-y-3">
+                  <div className="flex justify-between items-start gap-4">
+                    <div className="space-y-0.5">
+                      <span className="text-sm font-black text-rose-800 block">تصفير شامل (جميع الفصول والمراجعات) 🚨</span>
+                      <span className="text-[11px] text-rose-600 block leading-normal font-medium">سيتم مسح كافّة الأسئلة المتقنة والمحفوظة للمراجعة والبدء تماماً من جديد.</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-end gap-2">
+                    <button
+                      onClick={() => {
+                        resetChapterProgress(0);
+                        setShowResetConfirm(false);
+                      }}
+                      className="w-full sm:w-auto px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-black shadow-lg shadow-rose-650/20 active:scale-95 transition-all text-center"
+                    >
+                      تصفير كافّة البيانات 🔄
+                    </button>
+                  </div>
+                </div>
+
+                {/* 2. Individual Chapters */}
+                <div className="space-y-2">
+                  <span className="text-[10px] font-black text-slate-400 tracking-wider block text-right pr-1 uppercase">تصفير تبويب مخصص لبعض الفصول</span>
+                  
+                  {CHAPTERS.map(ch => {
+                    const chapterQuestions = INITIAL_QUESTIONS.filter(q => q.chapterId === ch.id);
+                    const totalCount = chapterQuestions.length;
+                    const masteredCount = chapterQuestions.filter(q => masteredIds.includes(q.id)).length;
+                    const percent = totalCount > 0 ? Math.round((masteredCount / totalCount) * 100) : 0;
+                    
+                    return (
+                      <div 
+                        key={ch.id} 
+                        className="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-slate-50 hover:bg-slate-100/50 rounded-2xl border border-slate-100 text-right gap-3 transition-colors"
+                      >
+                        <div className="space-y-1.5 flex-1 pr-1">
+                          <div className="flex items-center gap-2">
+                            <span className="text-[10px] font-mono font-bold bg-slate-205 text-slate-650 px-1.5 py-0.5 rounded leading-none">Ch0{ch.id}</span>
+                            <span className="text-xs font-extrabold text-slate-800 block leading-tight">{ch.title}</span>
+                          </div>
+                          
+                          <div className="flex items-center gap-3">
+                            <span className="text-[10px] text-slate-500 block font-semibold leading-none">
+                              تم إتقان: <span className="font-mono text-blue-600 font-bold">{masteredCount} / {totalCount}</span>
+                            </span>
+                            <div className="w-16 h-1.5 bg-slate-200/80 rounded-full overflow-hidden p-0">
+                              <div style={{ width: `${percent}%` }} className="h-full bg-blue-500 rounded-full" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          onClick={() => {
+                            resetChapterProgress(ch.id);
+                          }}
+                          disabled={masteredCount === 0}
+                          className={`px-4 py-2 text-[11px] font-black rounded-xl transition-all border ${
+                            masteredCount === 0 
+                              ? 'bg-slate-100 border-transparent text-slate-400 cursor-not-allowed' 
+                              : 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100/80'
+                          }`}
+                        >
+                          تصفير التبويب
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="pt-2 border-t border-slate-100">
                 <button
                   onClick={() => setShowResetConfirm(false)}
-                  className="px-4 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition-all"
+                  className="w-full py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-black transition-all"
                 >
-                  Cancel
-                </button>
-                <button
-                  onClick={confirmResetProgress}
-                  className="px-4 py-3 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold rounded-xl shadow-lg shadow-rose-600/20 transition-all"
-                >
-                  Yes, Reset and Start Over
+                  إغلاق النافذة
                 </button>
               </div>
             </motion.div>

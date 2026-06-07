@@ -11,6 +11,7 @@ import {
   Timer
 } from 'lucide-react';
 import { Question, Chapter, DifficultyLevel } from '../types';
+import { INITIAL_QUESTIONS } from '../data/questions';
 
 const STICKERS = [
   'https://i.ibb.co/FkSVV8dd/fjf.webp',
@@ -32,6 +33,7 @@ interface StudySessionProps {
   onBack: () => void;
   addToReview: (id: string) => void;
   markAsMastered: (id: string) => void;
+  onResetChapterProgress?: (chapterId: number) => void;
 }
 
 export default function StudySession({ 
@@ -39,7 +41,8 @@ export default function StudySession({
   questions, 
   onBack, 
   addToReview, 
-  markAsMastered 
+  markAsMastered,
+  onResetChapterProgress
 }: StudySessionProps) {
   const [isTopicSelectorOpen, setIsTopicSelectorOpen] = useState(true);
   const [selectedTopics, setSelectedTopics] = useState<string[]>(['all']);
@@ -53,7 +56,25 @@ export default function StudySession({
   const [showStickerModal, setShowStickerModal] = useState(false);
   const [activeSticker, setActiveSticker] = useState('');
   
+  // Timer system
+  const [isTimerModalOpen, setIsTimerModalOpen] = useState(false);
+  const [sessionDuration, setSessionDuration] = useState(30);
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [isTimerActive, setIsTimerActive] = useState(false);
+  
+  // Distraction system toggle
+  const [distractionReminderEnabled, setDistractionReminderEnabled] = useState(true);
+  
   const currentQuestion = sessionQuestions[currentIndex] || null;
+
+  const isEverythingCompleted = useMemo(() => {
+    if (chapter.id === 0) {
+      return questions.length === 0;
+    } else {
+      const totalCount = INITIAL_QUESTIONS.filter(q => q.chapterId === chapter.id).length;
+      return totalCount > 0 && questions.length === 0;
+    }
+  }, [chapter, questions]);
   
   // Track time spent on the same question for distraction warning system
   const [timeSpentOnQuestion, setTimeSpentOnQuestion] = useState(0);
@@ -77,15 +98,13 @@ export default function StudySession({
       markAsMastered(qId);
       setMasteredThisSession(prev => new Set(prev).add(qId));
       
-      setEasyCount(prev => {
-        const next = prev + 1;
-        if (next > 0 && next % 5 === 0) {
-          const randomSticker = STICKERS[Math.floor(Math.random() * STICKERS.length)];
-          setActiveSticker(randomSticker);
-          setShowStickerModal(true);
-        }
-        return next;
-      });
+      const nextCount = easyCount + 1;
+      setEasyCount(nextCount);
+      if (nextCount > 0 && nextCount % 5 === 0) {
+        const randomSticker = STICKERS[Math.floor(Math.random() * STICKERS.length)];
+        setActiveSticker(randomSticker);
+        setShowStickerModal(true);
+      }
 
       moveToNext();
     } else {
@@ -114,28 +133,29 @@ export default function StudySession({
 
   // Distraction Warning system interval timer
   useEffect(() => {
-    if (!currentQuestion || isFinished || isTopicSelectorOpen) {
+    if (!currentQuestion || isFinished || isTopicSelectorOpen || !distractionReminderEnabled) {
       return;
     }
 
     const interval = setInterval(() => {
       if (distractionWarningPhase === 'none') {
-        setTimeSpentOnQuestion(prev => {
-          const nextTime = prev + 1;
-          if (nextTime >= 180) { // 3 minutes = 180 seconds
-            if (!returnedToSameQuestion) {
-              setDistractionWarningPhase('first');
-            } else {
-              setDistractionWarningPhase('second');
-            }
-          }
-          return nextTime;
-        });
+        setTimeSpentOnQuestion(prev => prev + 1);
       }
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [currentQuestion, isFinished, isTopicSelectorOpen, distractionWarningPhase, returnedToSameQuestion]);
+  }, [currentQuestion, isFinished, isTopicSelectorOpen, distractionWarningPhase, distractionReminderEnabled]);
+
+  // Monitor distraction warning time threshold to set the phase cleanly
+  useEffect(() => {
+    if (distractionWarningPhase === 'none' && timeSpentOnQuestion >= 180) { // 3 minutes = 180 seconds
+      if (!returnedToSameQuestion) {
+        setDistractionWarningPhase('first');
+      } else {
+        setDistractionWarningPhase('second');
+      }
+    }
+  }, [timeSpentOnQuestion, distractionWarningPhase, returnedToSameQuestion]);
 
   // Reset timers each time the question changes (currentIndex changes)
   useEffect(() => {
@@ -143,6 +163,41 @@ export default function StudySession({
     setDistractionWarningPhase('none');
     setReturnedToSameQuestion(false);
   }, [currentIndex]);
+
+  // Session Duration Countdown Timer
+  useEffect(() => {
+    if (!isTimerActive || timeLeft <= 0 || isFinished) {
+      return;
+    }
+
+    const timerInterval = setInterval(() => {
+      setTimeLeft(prev => Math.max(0, prev - 1));
+    }, 1000);
+
+    return () => clearInterval(timerInterval);
+  }, [isTimerActive, timeLeft, isFinished]);
+
+  // Handle countdown completion side-effect
+  useEffect(() => {
+    if (isTimerActive && timeLeft === 0 && !isFinished) {
+      setIsTimerActive(false);
+      onBack();
+    }
+  }, [timeLeft, isTimerActive, isFinished, onBack]);
+
+  const formatTime = (secs: number) => {
+    const h = Math.floor(secs / 3600);
+    const m = Math.floor((secs % 3600) / 60);
+    const s = secs % 60;
+    
+    const mStr = m < 10 ? `0${m}` : m;
+    const sStr = s < 10 ? `0${s}` : s;
+    
+    if (h > 0) {
+      return `${h}:${mStr}:${sStr}`;
+    }
+    return `${mStr}:${sStr}`;
+  };
 
   // Keyboard Shortcuts Listener for Study Session Rating
   useEffect(() => {
@@ -215,8 +270,14 @@ export default function StudySession({
     setTimeSpentOnQuestion(0); // Reset timer to 0 to measure another 3 minutes
   };
 
-  // 1. Process filtering by selected topics.
-  const startSession = () => {
+  // 1. Process filtering by selected topics and show timer setup.
+  const openTimerSettings = () => {
+    setIsTopicSelectorOpen(false);
+    setIsTimerModalOpen(true);
+  };
+
+  // 2. Actually confirm duration and start session.
+  const confirmAndStartSession = () => {
     let filtered;
     if (selectedTopics.includes('all') || selectedTopics.length === 0) {
       filtered = questions.filter(q => q.chapterId === chapter.id);
@@ -231,7 +292,13 @@ export default function StudySession({
     setIsFinished(false);
     setMasteredThisSession(new Set());
     setEasyCount(0);
-    setIsTopicSelectorOpen(false);
+    
+    // Set up active countdown timer
+    setTimeLeft(sessionDuration * 60);
+    setIsTimerActive(true);
+    
+    // Closer timer modal & activate cards
+    setIsTimerModalOpen(false);
   };
 
   const toggleTopic = (topic: string) => {
@@ -256,6 +323,53 @@ export default function StudySession({
     const masteredInThisSession = Array.from(uniqueIds).filter(id => masteredThisSession.has(id)).length;
     return Math.max(0, uniqueIds.size - masteredInThisSession);
   }, [sessionQuestions, masteredThisSession]);
+
+  if (isEverythingCompleted) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[70vh] p-4 text-center mt-6" dir="rtl">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="bg-white rounded-[2.5rem] border border-slate-200 p-8 md:p-12 max-w-lg w-full shadow-2xl space-y-6 text-center"
+        >
+          <div className="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-500 mx-auto mb-2 shadow-inner">
+            <CheckCircle2 className="w-10 h-10" />
+          </div>
+          <h2 className="text-2xl font-black text-slate-900">أحسنت واصل الاجتهاد! 🎉</h2>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            لقد تمكّنت من تجاوز وإتقان جميع الأسئلة والبطاقات في تبويب{" "}
+            <strong className="text-blue-600">"{chapter.title}"</strong> بنجاح. لن تظهر هذه الأسئلة مجدداً تجنباً للتكرار حتى تقوم بتصفير تقدم هذا التبويب.
+          </p>
+          
+          <div className="bg-slate-50/70 p-4 rounded-2xl border border-slate-100 flex items-center justify-between text-xs font-bold text-slate-500">
+            <span>إجمالي الأسئلة في هذا التبويب:</span>
+            <span className="text-slate-800 font-mono text-base font-black">
+              {chapter.id === 0 ? INITIAL_QUESTIONS.length : INITIAL_QUESTIONS.filter(q => q.chapterId === chapter.id).length} سؤالاً
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
+            <button
+              onClick={onBack}
+              className="w-full py-4 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-2xl text-xs font-black uppercase tracking-wider transition-all"
+            >
+              العودة للفصول الرئيسية
+            </button>
+            <button
+              onClick={() => {
+                if (onResetChapterProgress) {
+                  onResetChapterProgress(chapter.id);
+                }
+              }}
+              className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl text-xs font-black uppercase tracking-wider transition-all shadow-lg shadow-blue-600/20"
+            >
+              🔄 تصفير التقدم والبدء مجدداً
+            </button>
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
     <div id="study-session-container" className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -311,10 +425,119 @@ export default function StudySession({
 
               <div className="pt-6 border-t border-slate-100">
                 <button
-                  onClick={startSession}
+                  onClick={openTimerSettings}
                   className="w-full py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-2xl text-sm font-black uppercase tracking-widest transition-all shadow-xl active:scale-95"
                 >
                   Start Recall Session
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* 2. Timer Setup Modal */}
+      <AnimatePresence>
+        {isTimerModalOpen && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md"
+          >
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              className="bg-white rounded-[2rem] p-6 sm:p-8 w-full max-w-md shadow-2xl border border-slate-100 flex flex-col text-center"
+              dir="rtl"
+            >
+              <div className="flex justify-between items-start mb-6">
+                 <button 
+                   onClick={() => {
+                     setIsTimerModalOpen(false);
+                     setIsTopicSelectorOpen(true);
+                   }} 
+                   className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-xl transition-all"
+                 >
+                   <ArrowLeft className="w-5 h-5 rotate-180" />
+                 </button>
+                 <div>
+                   <h2 className="text-xl font-black text-slate-900 leading-tight">تحديد وقت الجلسة ⏱️</h2>
+                   <p className="text-xs text-slate-400 font-medium mt-1">اختر المدة الزمنية المناسبة لمراجعتك</p>
+                 </div>
+                 <div className="w-9" /> {/* Spacer */}
+              </div>
+
+              <div className="my-6 py-5 bg-blue-50/40 rounded-[1.5rem] border border-blue-50 space-y-2">
+                <div className="text-[10px] font-black text-blue-500 uppercase tracking-widest">الوقت المحدد</div>
+                <div className="text-4xl font-black text-blue-600 tracking-tight flex items-baseline justify-center gap-1">
+                  <span>{sessionDuration}</span>
+                  <span className="text-base text-slate-500 font-bold">دقيقة</span>
+                </div>
+                <span className="inline-block px-3 py-1 bg-white text-blue-700 text-[10px] font-bold rounded-full border border-blue-100">
+                  {sessionDuration >= 60 ? `${Math.floor(sessionDuration / 60)} ساعة ${sessionDuration % 60 > 0 ? ` و ${sessionDuration % 60} دقيقة` : ''}` : `${sessionDuration} دقيقة`}
+                </span>
+              </div>
+
+              {/* Slider Component */}
+              <div className="space-y-4 mb-6">
+                <input 
+                  type="range" 
+                  min="10" 
+                  max="120" 
+                  step="5"
+                  value={sessionDuration} 
+                  onChange={(e) => setSessionDuration(Number(e.target.value))} 
+                  className="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                />
+                
+                <div className="flex justify-between text-[11px] text-slate-400 font-bold px-1">
+                  <span>10 دقائق</span>
+                  <span>ساعتين (120 د)</span>
+                </div>
+              </div>
+
+              {/* Quick Select Grid */}
+              <div className="grid grid-cols-4 gap-2.5 mb-6">
+                {[15, 30, 45, 60].map((mins) => (
+                  <button
+                    key={mins}
+                    onClick={() => setSessionDuration(mins)}
+                    className={`py-2 px-1 rounded-xl text-xs font-bold border transition-all ${
+                      sessionDuration === mins 
+                        ? 'bg-blue-600 border-blue-600 text-white shadow-md shadow-blue-100' 
+                        : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                    }`}
+                  >
+                    {mins === 60 ? 'ساعة' : `${mins} د`}
+                  </button>
+                ))}
+              </div>
+
+              {/* Distraction/Focus Reminder Switch */}
+              <div className="p-4 bg-amber-50/40 rounded-2.5xl border border-amber-100/60 flex items-center justify-between text-right mb-6" dir="rtl">
+                <div className="space-y-0.5 ml-4 flex-1 text-right">
+                  <span className="text-xs font-black text-amber-800 block">تذكير عدم السرحان 🧠</span>
+                  <span className="text-[10px] text-slate-500 block leading-relaxed font-semibold">تنبهك الشاشة تلقائياً في حال قضيت أكثر من 3 دقائق على نفس السؤال لمساعدتك في الحفاظ على تركيزك.</span>
+                </div>
+                <label className="relative inline-flex items-center cursor-pointer shrink-0 select-none">
+                  <input 
+                    type="checkbox" 
+                    checked={distractionReminderEnabled}
+                    onChange={() => setDistractionReminderEnabled(!distractionReminderEnabled)}
+                    className="sr-only peer"
+                  />
+                  <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[-20px] after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-250 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                </label>
+              </div>
+
+              <div className="pt-2">
+                <button
+                  onClick={confirmAndStartSession}
+                  className="w-full py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-2xl text-sm font-black uppercase tracking-wider transition-all shadow-xl active:scale-95"
+                >
+                  ابدأ الجلسة الآن 🚀
                 </button>
               </div>
             </motion.div>
@@ -342,6 +565,14 @@ export default function StudySession({
         </div>
 
         <div className="flex items-center gap-4">
+           {isTimerActive && !isFinished && (
+             <div className="flex items-center gap-2 bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-xl text-rose-600" title="الوقت المتبقي">
+               <Timer className="w-4 h-4 text-rose-500 animate-pulse" />
+               <span className="font-mono text-sm font-black leading-none">
+                 {formatTime(timeLeft)}
+               </span>
+             </div>
+           )}
            {!isFinished && (
              <div className="hidden md:flex flex-col items-end bg-blue-50/50 border border-blue-100 px-3 py-1.5 rounded-xl">
                 <span className="text-[8px] font-black text-blue-400 uppercase tracking-widest leading-none mb-1">Session Progress</span>
@@ -467,22 +698,10 @@ export default function StudySession({
             {/* Question Details header */}
             <div className="p-4 sm:p-8 border-b border-slate-100 text-left bg-gradient-to-r from-slate-50/40 to-white">
               <div className="flex flex-wrap items-center gap-2.5 mb-6">
-                <span className="bg-indigo-50 border border-indigo-100 text-indigo-700 text-[9px] font-black px-2.5 py-1 rounded uppercase tracking-wider">
-                  {currentQuestion.type === 'short-essay' ? 'Enumerate' : 
-                   currentQuestion.type === 'problem-solving' ? 'Patient Case' : 
-                   currentQuestion.type === 'define' ? 'Define' : 'Short Answer'}
-                </span>
-                <span className="text-slate-205 text-xs font-light">|</span>
-                <span className="text-slate-400 text-[9px] font-black uppercase tracking-widest">
-                   {currentQuestion.isClinical ? 'Clinical Recoil Selection' : 'Theoretical Concept'}
-                </span>
                 {currentQuestion.topic && (
-                  <>
-                    <span className="text-slate-205 text-xs font-light">|</span>
-                    <span className="text-blue-600 text-[9px] font-black uppercase tracking-wider border border-blue-100 bg-blue-50/50 px-2 py-0.5 rounded">
-                      {currentQuestion.topic}
-                    </span>
-                  </>
+                  <span className="text-blue-600 text-[9px] font-black uppercase tracking-wider border border-blue-100 bg-blue-50/50 px-3 py-1 rounded-lg">
+                    {currentQuestion.topic}
+                  </span>
                 )}
               </div>
               
@@ -528,8 +747,9 @@ export default function StudySession({
                         {currentQuestion.answer.split('\n').map((line, idx) => (
                           <div key={idx} className="flex items-start gap-3">
                             <div className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0 mt-2.5" />
-                            <p className="text-slate-705 font-medium text-base md:text-lg leading-relaxed">
+                            <p className={`font-medium text-base md:text-lg leading-relaxed ${line.toLowerCase().includes('ribavirin') ? 'text-rose-600 font-bold' : 'text-slate-705'}`}>
                               {line.replace(/^([•●\-*]|\s)+/, '')}
+                              {line.toLowerCase().includes('ribavirin') && ' ⭐'}
                             </p>
                           </div>
                         ))}

@@ -697,7 +697,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define a \"Premature Infant\" according to the World Health Organization.",
     answer: "It is defined as any live-born infant delivered before 37 completed weeks of gestation (less than 37 weeks).",
     isClinical: false,
-    topic: "Topic Two: Prematurity and its Complications"
+    topic: "Prematurity and its Complications"
   },
   {
     id: "q-n-pr-2",
@@ -707,7 +707,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 major \"Physiological Handicaps\" resulting from the functional immaturity of organ systems in a premature infant.",
     answer: "1. Immature thermoregulatory mechanisms (due to a large surface area, lack of subcutaneous fat, and immature centers).\n2. Respiratory center immaturity combined with a structural deficiency of pulmonary surfactant.\n3. Hepatic immaturity causing impaired conjugation of bilirubin and deficiency of Vitamin K-dependent clotting factors.\n4. Renal immaturity leading to a low glomerular filtration rate (GFR) and inability to effectively concentrate urine.",
     isClinical: false,
-    topic: "Topic Two: Prematurity and its Complications"
+    topic: "Prematurity and its Complications"
   },
   {
     id: "q-n-pr-3",
@@ -717,7 +717,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 prominent \"Central Nervous System and Sensory\" complications that specifically affect preterm neonates.",
     answer: "1. Intraventricular Hemorrhage (IVH).\n2. Periventricular Leukomalacia (PVL).\n3. Retinopathy of Prematurity (ROP).\n4. Kernicterus (bilirubin encephalopathy developing at lower total bilirubin thresholds).",
     isClinical: true,
-    topic: "Topic Two: Prematurity and its Complications"
+    topic: "Prematurity and its Complications"
   },
   {
     id: "q-n-pr-4",
@@ -727,7 +727,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 feeding requirements for a stable preterm infant.",
     answer: "1. Utilization of maternal breast milk or specialized preterm formulas.\n2. Implementation of small-volume trophic feedings (minimal enteral nutrition) within 2-4 hours of life if stable to avoid hypoglycemia.\n3. Utilizing a nasogastric tube (gavage feeding) or dropper if the infant lacks coordinated suckling and swallowing reflexes.\n4. Careful monitoring of gastric residuals before each feed, ensuring increments do not exceed 20 mL/kg/24 hr.",
     isClinical: true,
-    topic: "Topic Two: Prematurity and its Complications"
+    topic: "Prematurity and its Complications"
   },
   {
     id: "q-n-pr-5",
@@ -737,114 +737,34 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A male infant is delivered via emergency cesarean section at 31 weeks of gestation due to severe maternal pre-eclampsia. His birth weight is 1300 grams. On admission to the NICU, he is weak, hypoactive, has thin translucent skin, and underdeveloped sole creases.\n\nQuestions:\n1. Classify this newborn based on his birth weight category.\n2. Enumerate 2 immediate respiratory or gastrointestinal complications this preterm infant is at high risk of developing in his first week of life.",
     answer: "1. Very Low Birth Weight (VLBW) infant (defined as a birth weight less than 1500 grams).\n2. Respiratory Distress Syndrome (RDS / Hyaline Membrane Disease) and Necrotizing Enterocolitis (NEC).",
     isClinical: true,
-    topic: "Topic Two: Prematurity and its Complications"
+    topic: "Prematurity and its Complications"
   },
 
-  // topic: "Topic Three: Physiological Jaundice and its differentiation from Pathological Jaundice"
+  // topic: "Physiological Jaundice"
   {
-    id: "q-n-phy-1",
-    chapterId: 3,
-    type: "define",
-    title: "Define Neonatal Jaundice",
-    content: "Define \"Neonatal Jaundice\".",
-    answer: "It is the yellowish discoloration of the skin, sclera, and mucous membranes in a newborn infant, caused by the systemic accumulation of bilirubin exceeding 1 mg/dL due to increased RBC turnover and immature conjugation.",
-    isClinical: false,
-    topic: "Topic Three: Physiological Jaundice and its differentiation from Pathological Jaundice"
-  },
-  {
-    id: "q-n-phy-2",
+    id: "q-n-phy-compare-term",
     chapterId: 3,
     type: "short-essay",
-    title: "Physiological Jaundice characteristics",
-    content: "Enumerate 4 core clinical characteristics of \"Physiological Jaundice\" in a full-term infant.",
-    answer: "1. It appears after the first 24 hours of life (typically on the second or third day).\n2. The total serum bilirubin level is mild and remains below 12 mg/dL.\n3. It reaches a peak at day 3 to 5, and resolves spontaneously within 7 days.\n4. The infant is completely healthy, active, feeds well, and exhibits no anemia or hepatosplenomegaly.",
-    isClinical: false,
-    topic: "Topic Three: Physiological Jaundice and its differentiation from Pathological Jaundice"
+    title: "Compare Jaundice in Term Infants",
+    content: "Compare between Physiological Jaundice and Pathological Jaundice in a Full-Term infant.",
+    answer: "1. Physiological Jaundice:\n- Onset: Appears after 24 hours of age (typically on the 2nd or 3rd day).\n- Peak Serum Bilirubin: Mild level and remains Below 12 mg/dL.\n- Rate of Rise: Bilirubin rises slowly (<5 mg/dL/24 hours).\n- Duration: Resolves spontaneously within 7-10 days.\n- Clinical Status: Completely asymptomatic with normal stool/urine color and no active hemolysis.\n\n2. Pathological Jaundice:\n- Onset: Appears early, within the first 24 hours of life.\n- Peak Serum Bilirubin: Exceeds 12 mg/dL.\n- Rate of Rise: Rises rapidly at a rate >5 mg/dL/24 hours.\n- Duration: Persists beyond 14 days.\n- Clinical Status: Symptomatic (e.g., lethargy, poor sucking), has dark urine, clay-colored stools, or hepatosplenomegaly.",
+    isClinical: true,
+    topic: "Physiological Jaundice",
+    explanation: "مقارنة دقيقة بين الصفراء الفسيولوجية والصفراء المرضية في الأطفال مكتملي النمو (Full-Term):\n\n1. **الصفراء الفسيولوجية (Physiological Jaundice)**:\n   - **وقت الظهور**: يوم 2 أو 3 بعد الولادة (بعد مرور 24 ساعة).\n   - **أعلى مستوى للصفراء**: يظل أقل من 12 مجم/ديسيلتر.\n   - **معدل الزيادة**: بطيء (أقل من 5 مجم/يوم).\n   - **المدة**: تختفي تلقائيًا خلال 7 إلى 10 أيام.\n   - **الحالة الإكلينيكية**: الطفل نشيط ويرضع بشكل طبيعي، والبول والبراز لونهما طبيعي.\n\n2. **الصفراء المرضية (Pathological Jaundice)**:\n   - **وقت الظهور**: مبكر جدًا خلال أول 24 ساعة من العمر.\n   - **أعلى مستوى للصفراء**: يتعدى 12 مجم/ديسيلتر.\n   - **معدل الزيادة**: سريع جدًا (أكثر من 5 مجم/يوم).\n   - **المدة**: تستمر لأكثر من 14 يومًا.\n   - **الحالة الإكلينيكية**: قد يصاحبها خمول، ضعف رضاعة، براز باهت (clay-colored)، بول غامق، أو تضخم بالكبد والطحال."
   },
   {
-    id: "q-n-phy-3",
+    id: "q-n-pat-compare-preterm",
     chapterId: 3,
     type: "short-essay",
-    title: "Clinical Signs of Pathological jaundice",
-    content: "Enumerate 4 distinct clinical or laboratory warning signs that signify the presence of \"Pathological Jaundice\".",
-    answer: "1. Jaundice that appears within the first 24 hours of life.\n2. Total serum bilirubin rising rapidly at a rate faster than 5 mg/dL/24 hours.\n3. Total serum bilirubin exceeding 12 mg/dL in a full-term infant or 14 mg/dL in a preterm infant.\n4. Jaundice that persists beyond 14 days of life, or is associated with a high direct-reacting (conjugated) bilirubin fraction.",
+    title: "Compare Jaundice in Preterm Infants",
+    content: "Compare between Physiological Jaundice and Pathological Jaundice in a Preterm infant.",
+    answer: "1. Physiological Jaundice:\n- Onset: Appears later, typically on the 4th to 6th day of life.\n- Peak Serum Bilirubin: Remains below 14-15 mg/dL.\n- Rate of Rise: Bilirubin rises slowly (<5 mg/dL/24 hours).\n- Duration: Resolves within 10 to 14 days of life.\n- Clinical Status: Infant is completely asymptomatic, active, and requires no medical therapy.\n\n2. Pathological Jaundice:\n- Onset: Appears in the first 24 hours of life.\n- Peak Serum Bilirubin: Exceeds 14-15 mg/dL.\n- Rate of Rise: Rises rapidly at a rate >5 mg/dL/24 hours.\n- Duration: Persists beyond 21 days of life.\n- Clinical Status: Often symptomatic and requires active monitoring, phototherapy, or exchange transfusion to prevent kernicterus.",
     isClinical: true,
-    topic: "Topic Three: Physiological Jaundice and its differentiation from Pathological Jaundice"
-  },
-  {
-    id: "q-n-phy-4",
-    chapterId: 3,
-    type: "short-essay",
-    title: "Exaggerated Physiological Jaundice risk criteria",
-    content: "Enumerate 4 risk factors that increase physiological jaundice.",
-    answer: "1. Prematurity or near-term gestational age.\n2. Maternal diabetes mellitus.\n3. Polycythemia or significant cutaneous bruising/cephalohematoma.\n4. Excessive neonatal weight loss due to dehydration or caloric deprivation from delayed breastfeeding.",
-    isClinical: true,
-    topic: "Topic Three: Physiological Jaundice and its differentiation from Pathological Jaundice"
-  },
-  {
-    id: "q-n-phy-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Breastfeeder Third Day Jaundice Case",
-    content: "A full-term healthy infant develops mild jaundice on his third day of life. He is active, breastfeeds eagerly, and has completely normal stool and urine color. His serum bilirubin is checked and reveals a level of 9 mg/dL, which is entirely unconjugated.\n\nQuestions:\n1. What is the diagnostic classification of this jaundice?\n2. What is the expected course and recommended treatment line for this infant?",
-    answer: "1. Physiological Jaundice.\n2. It will resolve spontaneously within 7 days; no treatment is required except clinical observation and ensuring adequate feeding.",
-    isClinical: true,
-    topic: "Topic Three: Physiological Jaundice and its differentiation from Pathological Jaundice"
+    topic: "Pathological Jaundice",
+    explanation: "مقارنة دقيقة بين الصفراء الفسيولوجية والصفراء المرضية في الأطفال المبتسرين (Preterm):\n\n1. **الصفراء الفسيولوجية (Physiological Jaundice)**:\n   - **وقت الظهور**: تظهر متأخرًا، عادة بين اليوم الـ 4 والـ 6 من العمر.\n   - **أعلى مستوى للصفراء**: يظل أقل من 14-15 مجم/ديسيلتر.\n   - **معدل الزيادة**: بطيء (أقل من 5 مجم/يوم).\n   - **المدة**: أطول، وتختفي تلقائيًا خلال 10 إلى 14 يومًا.\n   - **الحالة الإكلينيكية**: الطفل لا يعاني من أعراض ولا يحتاج لعلاج.\n\n2. **الصفراء المرضية (Pathological Jaundice)**:\n   - **وقت الظهور**: تظهر مبكرًا خلال أول 24 ساعة.\n   - **أعلى مستوى للصفراء**: يتعدى 14-15 مجم/ديسيلتر.\n   - **معدل الزيادة**: سريع (أكثر من 5 مجم/يوم).\n   - **المدة**: تستمر لأكثر من 21 يومًا.\n   - **الحالة الإكلينيكية**: يصاحبها خمول وضعف رضاعة وتحتاج تدخل علاجي سريع كالعلاج الضوئي (Phototherapy) لمنع ترسب البيليروبين في المخ (Kernicterus)."
   },
 
-  // topic: "Topic Four: Pathological Jaundice (ABO incompatibility, Breast milk jaundice, Galactosemia, Biliary atresia Extrahepatic type)"
-  {
-    id: "q-n-pat-1",
-    chapterId: 3,
-    type: "short-essay",
-    title: "ABO Incompatibility features",
-    content: "Enumerate 4 characteristic \"Clinical Features\" of Pathological Jaundice caused specifically by ABO Incompatibility.",
-    answer: "1. Early onset of jaundice developing within the first 24 hours of life.\n2. Presence of hemolytic anemia and active hemolysis.\n3. Significant elevation of toxic unconjugated bilirubin.\n4. Presence of a positive direct Coombs test result.",
-    isClinical: true,
-    topic: "Topic Four: Pathological Jaundice (ABO incompatibility, Breast milk jaundice, Galactosemia, Biliary atresia Extrahepatic type)"
-  },
-  {
-    id: "q-n-pat-2",
-    chapterId: 3,
-    type: "short-essay",
-    title: "Galactosemia Diagnostic features",
-    content: "Enumerate 4 distinct \"Clinical Features\" that define the presentation of Galactosemia in a newborn.",
-    answer: "1. Onset of severe pathological jaundice shortly after milk feeding is initiated.\n2. Severe vomiting and poor feeding.\n3. Marked hepatomegaly.\n4. Presence of hypoglycemia and reducing substances in the urine.",
-    isClinical: true,
-    topic: "Topic Four: Pathological Jaundice (ABO incompatibility, Breast milk jaundice, Galactosemia, Biliary atresia Extrahepatic type)"
-  },
-  {
-    id: "q-n-pat-3",
-    chapterId: 3,
-    type: "short-essay",
-    title: "Extrahepatic Biliary Atresia elements",
-    content: "Enumerate 4 characteristic clinical or laboratory manifestations of Extrahepatic Biliary Atresia.",
-    answer: "1. Persistent jaundice that continues or worsens beyond 2 weeks of age.\n2. Progressively pale, clay-colored, or acholic stools.\n3. Dark yellow urine that stains the diaper.\n4. Persistent conjugated (direct) hyperbilirubinemia accompanied by hepatomegaly.",
-    isClinical: true,
-    topic: "Topic Four: Pathological Jaundice (ABO incompatibility, Breast milk jaundice, Galactosemia, Biliary atresia Extrahepatic type)"
-  },
-  {
-    id: "q-n-pat-4",
-    chapterId: 3,
-    type: "short-essay",
-    title: "Breast Milk Jaundice criteria",
-    content: "Enumerate the clinical presentation findings that distinguish \"Breast Milk Jaundice\" from other forms of pathological hyperbilirubinemia.",
-    answer: "1. It typically appears later, during the first or second week of life.\n2. It presents as a mild, prolonged, but completely unconjugated hyperbilirubinemia.\n3. The infant is completely healthy, active, and gaining weight normally.\n4. Stool and urine maintain completely normal color, and breastfeeding should safely continue.",
-    isClinical: false,
-    topic: "Topic Four: Pathological Jaundice (ABO incompatibility, Breast milk jaundice, Galactosemia, Biliary atresia Extrahepatic type)"
-  },
-  {
-    id: "q-n-pat-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Clay Stools Dark Urine Case",
-    content: "A 3-week-old female infant presents with a history of persistent yellow skin. Her mother reports that the baby's stools are clay-colored and her urine is dark. On examination, she has a firm, enlarged liver. Laboratory analysis demonstrates severe conjugated hyperbilirubinemia.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the required definitive management, and what is its prognosis if delayed?",
-    answer: "1. Extrahepatic Biliary Atresia.\n2. Early surgical intervention (Kasai portoenterostomy); delay significantly worsens the prognosis, leading to biliary cirrhosis.",
-    isClinical: true,
-    topic: "Topic Four: Pathological Jaundice (ABO incompatibility, Breast milk jaundice, Galactosemia, Biliary atresia Extrahepatic type)"
-  },
-
-  // topic: "Topic Five: Complications of Indirect Hyperbilirubinemia"
+  // topic: "Complications of Indirect Hyperbilirubinemia"
   {
     id: "q-n-comp-1",
     chapterId: 3,
@@ -853,7 +773,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Kernicterus (Bilirubin Encephalopathy)\".",
     answer: "It is a severe neurological syndrome resulting from the structural deposition of unconjugated bilirubin in the basal ganglia and brainstem nuclei, leading to irreversible cell death and neural damage.",
     isClinical: false,
-    topic: "Topic Five: Complications of Indirect Hyperbilirubinemia"
+    topic: "Complications of Indirect Hyperbilirubinemia",
+    explanation: "التعريف الدقيق للـ Kernicterus (Bilirubin Encephalopathy):\nهو متلازمة عصبية خطيرة تنتج عن ترسب البيليروبين غير المباشر (غير المقترن Unconjugated) في خلايا المخ العميقة مثل النواة القاعدية (Basal ganglia) وجذع الدماغ (Brainstem nuclei)، مما يؤدي إلى تلف خلايا وتدمير دائم للأعصاب."
+  },
+  {
+    id: "q-n-comp-preventable",
+    chapterId: 3,
+    type: "short-essay",
+    title: "Preventable causes of Kernicterus",
+    content: "Enumerate 6 preventable causes of Kernicterus.",
+    answer: "1. Early discharge (<48 hr) with NO FOLLOW-UP.\n2. Failure to check bilirubin level in infants with early jaundice (<24 hr).\n3. Failure to recognize clinical risk factors for severe hyperbilirubinemia.\n4. Visual underestimation of the severity of jaundice.\n5. Lack of concern or professional delay in ordering measurements/phototherapy.\n6. Failure to respond to parental concern regarding jaundice severity.",
+    isClinical: true,
+    topic: "Complications of Indirect Hyperbilirubinemia",
+    explanation: "الأسباب التي يمكن تجنبها ومنعها لمنع حدوث الـ Kernicterus حسب المخطط:\n1. **الخروج المبكر**: خروج الطفل من المستشفى مبكراً (قبل 48 ساعة من الولادة) دون تحديد موعد للمتابعة.\n2. **تأخر فحص الصفراء**: عدم قياس نسبة الصفراء في حالات الصفراء المبكرة (التي تظهر في أول 24 ساعة).\n3. **عدم الانتباه لعلامات الخطورة**: الفشل في معرفة واستيعاب عوامل الخطورة التي تزيد فرصة حدوث الصفراء الشديدة.\n4. **التقدير البصري الخاطئ**: الاعتماد على العين لتخمين نسبة الصفراء بدلاً من القياس الكمي.\n5. **قلة الاهتمام أو تأخير العلاج**: التراخي من مقدم الخدمة في طلب الفحص أو بدء العلاج الضوئي.\n6. **تجاهل قلق الأهل**: عدم الاستماع لشكوى الأبوين بشأن زيادة صفار الطفل أو خموله."
   },
   {
     id: "q-n-comp-2",
@@ -863,7 +795,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 predisposing clinical risk factors that facilitate the development of Kernicterus.",
     answer: "1. Severe, uncontrolled unconjugated hyperbilirubinemia.\n2. Severe hypoalbuminemia (decreasing bilirubin binding capacity).\n3. Disruption or increased permeability of the blood-brain barrier (caused by hypoxia, acidosis, or sepsis).\n4. Administration of drugs that compete for albumin binding sites (such as sulfonamides, salicylates, or heavy vitamin K3).",
     isClinical: true,
-    topic: "Topic Five: Complications of Indirect Hyperbilirubinemia"
+    topic: "Complications of Indirect Hyperbilirubinemia",
+    explanation: "عوامل الخطورة المهيئة لحدوث الـ Kernicterus وعمل ترسب البيليروبين في المخ:\n1. **ارتفاع بيليروبين الدم غير المباشر**: المستويات العالية وغير المستقرة من الـ Unconjugated Bilirubin.\n2. **نقص الألبومين الشديد (Hypoalbuminemia)**: يقلل من قدرة الدم على ربط ونقل البيليروبين في الدم.\n3. **زيادة نفاذية الحاجز الدموي الدماغي (BBB)**: بسبب حدوث عدوى عامة (Sepsis)، نقص الأكسجين (Hypoxia)، أو حموضة الدم (Acidosis).\n4. **أدوية منافسة**: تعاطي أدوية تزيح البيليروبين من على الألبومين (مثل Sulfonamides, Salicylates, Vitamin K3)."
   },
   {
     id: "q-n-comp-3",
@@ -873,7 +806,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 clinical signs seen during Phase 1 (the first 1-2 days) of the acute form of Kernicterus.",
     answer: "1. Poor sucking and feeding intolerance.\n2. Loss of the normal Moro reflex.\n3. Marked lethargy or stupor.\n4. Hypotonia accompanied by a high-pitched cry or seizures.",
     isClinical: true,
-    topic: "Topic Five: Complications of Indirect Hyperbilirubinemia"
+    topic: "Complications of Indirect Hyperbilirubinemia",
+    explanation: "المظاهر الإكلينيكية للمرحلة الأولى (Phase 1) للـ Acute Kernicterus (تظهر في أول يوم أو يومين):\n1. **ضعف الرضاعة**: رفض الرضاعة وضعف المص (Poor sucking).\n2. **فقدان منعكس مورو**: غياب الـ Moro reflex الطبيعي.\n3. **خمول شديد**: فقدان النشاط (Lethargy or stupor).\n4. **ارتخاء حاد بالعضلات**: ارتخاء الجسم (Hypotonia) مصحوبًا بصرخة عالية النبرة (High-pitched cry) أو حدوث تشنجات."
   },
   {
     id: "q-n-comp-4",
@@ -883,7 +817,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 chronic neurological findings of Kernicterus by 3 years of age.",
     answer: "1. Bilateral choreoathetosis (extrapyramidal involuntary movements) and muscle rigidity.\n2. Mental deficiency / cognitive impairment.\n3. High-frequency sensorineural hearing loss.\n4. Squinting and defective upward movement of the eyes.",
     isClinical: true,
-    topic: "Topic Five: Complications of Indirect Hyperbilirubinemia"
+    topic: "Complications of Indirect Hyperbilirubinemia",
+    explanation: "الأعراض العصبية المزمنة للـ Kernicterus التي تتضح عند عمر 3 سنوات:\n1. **حركات لا إرادية ثنائية (Bilateral choreoathetosis)**: حركات عشوائية واهتزازية في الأطراف وتصلب العضلات.\n2. **تأخر عقلي**: ضعف القدرات المعرفية والعقلية (Mental deficiency).\n3. **فقدان السمع عصبي حسي**: فقدان القدرة الإدراكية للأصوات عالية التردد (High-frequency sensorineural hearing loss).\n4. **الحول وصعوبة حركة العين**: مشاكل بالرؤية وحركة العين لأعلى (Defective upward eye movement)."
   },
   {
     id: "q-n-comp-5",
@@ -893,10 +828,11 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 5-day-old term infant with a total serum bilirubin level of 34 mg/dL exhibits poor sucking, hypotonia, a high-pitched cry, and an episodic backwards arching of his neck and trunk (opisthotonos).\n\nQuestions:\n1. What severe complication has this infant developed?\n2. Enumerate 2 major therapeutic modalities used immediately to reduce indirect bilirubin levels below neurotoxic thresholds.",
     answer: "1. Bilirubin Encephalopathy / Acute Kernicterus.\n2. Intensive Phototherapy and immediate Exchange Transfusion.",
     isClinical: true,
-    topic: "Topic Five: Complications of Indirect Hyperbilirubinemia"
+    topic: "Complications of Indirect Hyperbilirubinemia",
+    explanation: "تحليل الكيسة العصبية:\n1. طفل عنده 5 أيام، نسبة الصفراء 34 مجم/ديسيلتر (عالية جداً وفوق المسموح) وعنده مظاهر عصبية صريحة كارتخاء مع تقوس للخلف (Opisthotonos) وصرخة نبرتها عالية: التشخيص هو **Kernicterus / Acute Bilirubin Encephalopathy**.\n2. طرق التدخل العاجل لخفض النسبة المهولة وتجنب تدمير الدماغ:\n- **Phototherapy**: علاج ضوئي مكثف.\n- **Exchange Transfusion**: تغيير دم الطفل الفوري."
   },
-
-  // topic: "Topic Six: Neonatal Sepsis and its Clinical Sepsis Score"
+ 
+  // topic: "Neonatal Sepsis"
   {
     id: "q-n-sep-1",
     chapterId: 3,
@@ -905,7 +841,19 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Define \"Neonatal Sepsis (Septicemia)\".",
     answer: "It is a clinical syndrome of systemic illness characterized by signs of systemic infection and accompanied by documented bacteremia occurring within the first 4 weeks of life.",
     isClinical: false,
-    topic: "Topic Six: Neonatal Sepsis and its Clinical Sepsis Score"
+    topic: "Neonatal Sepsis",
+    explanation: "التعريف الرسمي لتسمم الدم في حديثي الولادة (Neonatal Sepsis):\nهو متلازمة سريرية تتميز بوجود أعراض وعلامات عدوى بكتيرية عامة في الجسم، وتكون مصحوبة بمزرعة دم إيجابية (Bacteremia) تظهر خلال أول 4 أسابيع من عمر الطفل (الـ 28 يومًا الأولى)."
+  },
+  {
+    id: "q-n-sep-css-define",
+    chapterId: 3,
+    type: "define",
+    title: "Define Clinical Sepsis Score",
+    content: "Define \"Clinical Sepsis Score\" and state its clinical diagnostic threshold.",
+    answer: "It is a clinical scoring system used to suspect neonatal sepsis based on 7 categories of clinical signs (respiratory, cardiovascular, neuromuscular, circulatory, behavioral, gastrointestinal, and metabolic). Sepsis is strongly suspected if a newborn exhibits 3 or more of these clinical signs.",
+    isClinical: false,
+    topic: "Neonatal Sepsis",
+    explanation: "تعريف الـ Clinical Sepsis Score وحدود الاشتباه الإكلينيكي:\nهو نظام تقييم سريري يُستخدم للاشتباه بحدوث تسمم الدم لدى حديثي الولادة بناءً على 7 علامات سريرية تغطي وظائف أجهزة الجسم (التنفس، القلب والدورة الدموية، الأعصاب، التروية، السلوك والرضاعة، الجهاز الهضمي، والتمثيل الغذائي). يُشتبه بشدة في إصابة الطفل بالتسمم عندما يسجل 3 علامات أو أكثر من هذه العلامات."
   },
   {
     id: "q-n-sep-2",
@@ -915,7 +863,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 critical \"Maternal Risk Factors\" strongly correlated with the development of early-onset Neonatal Sepsis.",
     answer: "1. Premature Rupture of Membranes (PROM) lasting longer than 24 hours.\n2. Maternal peripartum fever (temperature >=38°C) or documented chorioamnionitis.\n3. Active maternal urinary tract infection (UTI) or perineal colonization with E. coli/GBS.\n4. Foul-smelling, cloudy, or meconium-stained amniotic fluid.",
     isClinical: true,
-    topic: "Topic Six: Neonatal Sepsis and its Clinical Sepsis Score"
+    topic: "Neonatal Sepsis",
+    explanation: "عوامل الخطورة المتعلقة بالأم (Maternal Risk Factors) التي تزيد خطر تسمم الدم بدري:\n1. **PROM > 24 hours**: انفجار جيب المياه قبل الولادة بأكثر من 24 ساعة، مما يسهل صعود البكتيريا للطفل.\n2. **Maternal Fever**: سخونية الأم أثناء الولادة (temperatue >= 38°C) أو التهاب السائل الأمنيوسي (Chorioamnionitis).\n3. **Maternal UTI**: وجود التهاب نشط في مجرى البول للأم أو استيطان بكتيريا GBS أو E. Coli بالمهبل.\n4. **Foul-smelling liquor**: نزول مياه الولادة برائحة كريهة أو معكرة بالبراز الجنيني (Meconium)."
   },
   {
     id: "q-n-sep-3",
@@ -925,7 +874,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate the 7 clinical components/signs utilized to calculate the \"Clinical Sepsis Score\" (Sepsis is suspected if 3 or more are present).",
     answer: "1. Respiratory signs: Apnea, tachypnea, cyanosis, or respiratory distress.\n2. Cardiovascular signs: Bradycardia or tachycardia.\n3. Neuromuscular signs: Hypotonia or seizures.\n4. Circulatory signs: Poor skin color or poor peripheral circulation.\n5. Behavioral signs: Irritability, lethargy, or poor feeding.\n6. Gastrointestinal signs: Hepatosplenomegaly or abdominal distension.\n7. Metabolic signs: Fever or hypothermia.",
     isClinical: false,
-    topic: "Topic Six: Neonatal Sepsis and its Clinical Sepsis Score"
+    topic: "Neonatal Sepsis",
+    explanation: "مكونات الـ Clinical Sepsis Score لتخمين احتمالية إصابة الطفل بتسمم الدم (يشتبه بالمرض عند وجود 3 علامات أو أكثر):\n1. **الجهاز التنفسي**: حدوث نوبات انقطاع نفس (Apnea) أو تنفس سريع (Tachypnea) أو زرقان.\n2. **جهاز الدوري**: تباطؤ أو تسارع ضربات القلب.\n3. **الجهاز العصبي العضلي**: ارتخاء شديد بالجسم أو تشنجات.\n4. **التروية والدورة اللمفاوية**: شحوب حاد بالجلد أو ضعف التدفق الدموي المحيطي.\n5. **السلوك والوعي**: تهيج الطفل، خموله الشديد، أو صعوبة الرضاعة.\n6. **الجهاز الهضمي**: وذمة وانتفاخ بالبطن أو تضخم الكبد والطحال.\n7. **التمثيل الغذائي**: ارتفاع الحرارة أو هبوطها (برودة الجسم)."
   },
   {
     id: "q-n-sep-4",
@@ -935,7 +885,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 inflammatory laboratory biomarkers or findings included in a neonatal Sepsis Workup.",
     answer: "1. Neutropenia (a sign of severe sepsis) or neutrophilia.\n2. An elevated ratio of immature band cells to total neutrophils greater than 0.2.\n3. Marked thrombocytopenia (a late finding).\n4. Significantly elevated acute-phase reactants, specifically C-Reactive Protein (CRP) and ESR.",
     isClinical: true,
-    topic: "Topic Six: Neonatal Sepsis and its Clinical Sepsis Score"
+    topic: "Neonatal Sepsis",
+    explanation: "أهم العلامات والمؤشرات المعملية لالتهاب الدم (Sepsis workup):\n1. **Neutropenia/Neutrophilia**: نقص كرات الدم البيضاء المتعادلة (مؤشر خطير!) أو زيادتها.\n2. **I/T Ratio > 0.2**: زيادة الخلايا غير الناضجة (Band cells) بالنسبة للمتعادلة، تدل على استهلاك النخاع.\n3. **Thrombocytopenia**: نقص صفائح الدم (يحدث متأخرًا كدليل على انتشار الالتهاب).\n4. **CRP / ESR**: ارتفاع مؤشرات الالتهاب الحادة في الدم مثل البروتين التفاعلي C."
   },
   {
     id: "q-n-sep-5",
@@ -945,76 +896,88 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "A 4-day-old preterm infant in the NICU exhibits a sudden onset of temperature instability (hypothermia of 35.4°C), poor feeding, new-onset apneic spells, and severe abdominal distention. The maternal history confirms a prolonged rupture of membranes lasting 30 hours.\n\nQuestions:\n1. Calculate the infant's clinical status based on the Clinical Sepsis Score parameters.\n2. Mention the diagnostic category if this infant features a highly suggestive clinical picture alongside a positive blood culture for Klebsiella.",
     answer: "1. The infant exhibits 4 positive signs (respiratory/apnea, behavioral/poor feeding, GI/distention, metabolic/hypothermia), strongly indicating sepsis as the score is >=3.\n2. Proven Neonatal Sepsis.",
     isClinical: true,
-    topic: "Topic Six: Neonatal Sepsis and its Clinical Sepsis Score"
+    topic: "Neonatal Sepsis",
+    explanation: "تحليل كيسة تسمم الدم بالـ NICU:\n1. طفل مبتسر ظهرت عليه علامات انقطاع نفس وخمول وانتفاخ بطن وهبوط حرارة (4 علامات صريحة من الـ Sepsis Score)، مع تاريخ PROM 30 ساعة بالأم: نعم، الطفل يحتاج فوراً علاج مضاد حيوي تجريبي عاجل لأن نتيجته >= 3.\n2. لو كانت الأعراض مصحوبة بمزرعة دم إيجابية لبكتيريا الـ Klebsiella: يصنف كـ **Proven Neonatal Sepsis** (تسمم دم مؤكد معمليًا)."
   },
 
   // ==================== IV. Emergency Section ====================
-  // topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)"
+  // topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
   {
-    id: "q-e-cpr-steps",
-    chapterId: 4,
-    type: "short-essay",
-    title: "The Three Main Steps of CPR",
-    content: "Enumerate the three stages of CPR and their clinical steps (A through I).",
-    answer: "I- Basic Life Support (A, B, C):\n1. A: Airway control (Triple airway maneuver, clearing oropharynx, oropharyngeal airway).\n2. B: Breathing support (Mouth-to-mouth or bag-and-mask ventilation).\n3. C: Circulation support (Cardiac compression at midsternum).\n\nII- Advanced Life Support (D, E, F):\n1. D: Drugs (IV Adrenaline, fluids, or alkali).\n2. E: ECG monitoring (to detect various cardiac arrhythmias).\n3. F: Fibrillation control (Defibrillation electrical doses).\n\nIII- Prolonged life support (G, H, I):\n1. G: Recognition and treatment of the causative disease according to the etiology.\n2. H: Brain recovery (Control of any convulsive fits or acute increased intracranial pressure).\n3. I: Intensive care for multiple system support performed carefully in the PICU.",
-    isClinical: true,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "مراحل الإنعاش القلبي الرئوي الـ **CPR** تتكون من ثلاث فترات أساسية:\n1. **Basic Life Support (BLS)**: ويرمز له بالرموز **A, B, C** لشحن وتوفير الأكسجين الأساسي (تأمين مجرى الهواء والتهوية المساعدة والضغط على الصدر).\n2. **Advanced Life Support (ALS)**: ويرمز له بـ **D, E, F** كخطوات متقدمة تشمل الأدوية المنقذة والربط على جهاز المونيتور للقلب والسيطرة على الرجفان البطيني كهربائياً.\n3. **Prolonged Life Support**: ويرمز له بـ **G, H, I** لإنقاذ وفهم الأسباب وعلاقته بعلاج خلايا المخ والاعتناء بالطفل في غرفة الرعاية بـ **PICU**."
-  },
-  {
-    id: "q-e-cpr-1",
+    id: "q-cpr-def",
     chapterId: 4,
     type: "define",
-    title: "Define Cardiopulmonary Arrest",
-    content: "Define \"Cardiopulmonary Arrest\" in children.",
-    answer: "It is a sudden, unexpected cessation of systemic circulation and/or respiration in a pediatric patient who is unlikely to die and for whom the potential for clinical recovery is good.",
+    title: "Definition & Brain Survival in CPR",
+    content: "Define Cardiopulmonary Resuscitation (CPR) and state the critical timelines for brain and cardiovascular survival.",
+    answer: "1. Definition: CPR is a sudden unexpected cessation of circulation and or respiration in a patient who is unlikely to die and whom the potentials for recovery are good.\n2. Survival Timelines: If successful resuscitative efforts are not performed within 5 minutes, brain or cardiovascular death will occur. Irreversible brain damage happens after about seven minutes.",
     isClinical: false,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "تعريف **Cardiopulmonary Arrest** (التوقف القلبي التنفسي):\nهو انقطاع مفاجئ وغير متوقع في الدورة الدموية والتنفس عند الأطفال، والذين لم يكن متوقعاً وفاتهم ويكون لديهم أمل وفرصة قوية للتعافي والرجوع للحياة لو تم التدخل بالطرق الطبية السليمة السريعة."
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "تعريف الـ **CPR**:\nهو انقطاع مفاجئ غير متوقع للدورة الدموية أو التنفس في مريض غير متوقع وفاته وفرص شفائه جيدة.\n\nالجدول الزمني الحرج:\n- إذا لم يتم الإنعاش خلال **5 دقائق**، يحدث موت للمخ أو القلب.\n- يحدث ضرر دائم غير قابل للإصلاح بخلايا المخ بعد **7 دقائق**."
   },
   {
-    id: "q-e-cpr-2",
+    id: "q-cpr-levels",
     chapterId: 4,
     type: "short-essay",
-    title: "Early warning circulatory signs",
-    content: "Enumerate 4 early warning signs of circulatory or respiratory decompensation (pre-arrest criteria).",
-    answer: "1. Cyanosis and slow, irregular respiration.\n2. Bradycardia (impending cardiac arrest in children).\n3. Weak peripheral pulses and poor tissue perfusion.\n4. Decreased responsiveness, altered consciousness, or extreme restlessness.",
+    title: "Three Levels of CPR Support",
+    content: "Enumerate the three types (levels) of Life Support in CPR and their corresponding alphabetic steps.",
+    answer: "1. Basic Life Support (BLS): Steps A, B, and C.\n2. Advanced Life Support (ALS): Steps D, E, and F.\n3. Prolonged Life Support (PLS): Steps G, H, and I.",
     isClinical: false,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "أهم 4 علامات تحذيرية مبكرة للفشل التنفسي والقلبي الوشيك (Pre-arrest criteria):\n1. زرقان الشفتين والوجه للتعبير عن نقص الأكسجين الرهيب.\n2. هبوط ضربات القلب الحاد (**Bradycardia**): وهو المؤشر الأخطر لتوقف عضلة القلب بالكامل في الأطفال وسن الرضاعة.\n3. ضعف النبض الطرفي وبرود الأطراف الشديد.\n4. اضطراب الوعي أو الهياج الشديد نتيجة اختناق خلايا الدماغ والتغير الحاد بالدم."
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "مستويات الإنعاش الثلاثة:\n- **Basic Life Support (BLS)**: خطوات أ، ب، ج (A, B, C).\n- **Advanced Life Support (ALS)**: خطوات د، هـ، و (D, E, F).\n- **Prolonged Life Support (PLS)**: خطوات ز، ح، ط (G, H, I)."
   },
   {
-    id: "q-e-cpr-3",
+    id: "q-cpr-bls-steps",
     chapterId: 4,
     type: "short-essay",
-    title: "Basic Life Support features",
-    content: "Enumerate 4 distinct components of the Basic Life Support (BLS) airway and ventilation protocols.",
-    answer: "1. Opening the airway channel using the Triple Airway Maneuver.\n2. Visualizing and clearing the mouth or oropharynx via suction (avoiding blind finger sweeps).\n3. Inserting an appropriately sized oropharyngeal airway in an unconscious patient.\n4. Providing artificial ventilation using a bag-valve-mask device with 100% oxygen at 20 breaths/min.",
-    isClinical: false,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "القواعد الذهبية لدعم مجرى الهواء والأنفاس في الـ **BLS** للأطفال:\n1. فتح مجرى الهواء عن طريق **Triple Airway Maneuver**.\n2. تنظيف الفم والحلق بالشفط اللطيف وتجنب إدخال الأصابع عشوائياً (Blind finger sweeps).\n3. إدخال ممر الهواء الحنجري للفم **Oropharyngeal airway** لرفع فك العاقدين الوعي لتجنب بلع اللسان.\n4. توفير الأنفاس الاصطناعية بمعدل **20 نفس بالدقيقة** بواسطة قناع الأكسجين ممتلئ الركام."
-  },
-  {
-    id: "q-e-cpr-4",
-    chapterId: 4,
-    type: "short-essay",
-    title: "Advanced Life Support medications",
-    content: "Enumerate 4 medications used in Advanced Life Support (ALS) with their indications or doses.",
-    answer: "1. Intravenous fluid bolus (Normal Saline or Ringer's Lactate at 20 ml/kg over 10 minutes).\n2. Intravenous Adrenaline (0.1 ml/kg of a 1:10,000 diluted solution) for asystole.\n3. Intravenous Sodium Bicarbonate (1 ml/kg of an 8.4% solution) to correct severe metabolic acidosis.\n4. Defibrillation electrical doses (2 Joules/kg up to 8 Joules/kg) for ventricular fibrillation control.",
+    title: "Basic Life Support (A, B, C) Steps",
+    content: "Enumerate the clinical steps for A, B, and C in Basic Life Support (BLS).",
+    answer: "A (Airway control):\n1. Open airway (triple airway maneuver).\n2. Clear airway (remove foreign bodies, suction mouth/oropharynx).\n3. Maintain patent airway (oropharyngeal airway, ETT).\n\nB (Breathing support):\n- Mouth-to-mouth, Bag and mask (20 breaths/min), or Bag and tube ventilation with O2.\n\nC (Circulation support):\n- Cardiac compression at midsternum (Freq ~100/min, Ratio of ventilation to compression 1:5).",
     isClinical: true,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "الأدوية والمداخلات المتقدمة الأربعة المنقذة للحياة بالـ **ALS**:\n1. سوائل التروية الهجومية بسرعة ملحوظة بمقدار **20 ml/kg** من المحلول الفسيولوجي المالح ونحوه لدعم ضغط الدم.\n2. حقن هرمون **Adrenaline** وريداً (بتركيز 1:10,000) لتنشيط وضبط ضغط القلب الحاد والدورة المخية.\n3. حقن **Sodium Bicarbonate** لضبط حموضة الدم عند استقرار التوقف والتردي.\n4. الصدمات الكهربائية للسيطرة بجرعة **2 Joules/kg** للتحكم بالرجفان البطيني."
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "خطوات الدعم الأساسي للحياة (BLS):\n\n**A: التحكم في مسار الهواء (Airway control)**\n1. فتح المجرى (Triple maneuver).\n2. تنظيف المجرى (شفط وإزالة أي أجسام غريبة).\n3. الحفاظ على المجرى مفتوحاً (Oropharyngeal airway أو أنبوبة حنجرية).\n\n**B: دعم التنفس (Breathing support)**\n- تنفس صناعي (من الفم للفم، أو بالماسك والأمبوباج بمعدل 20 نفس/دقيقة).\n\n**C: دعم الدورة الدموية (Circulation support)**\n- تدليك القلب عند نقطة منتصف عظمة القص (بسرعة 100 ضغطة/دقيقة، ونسبة 1 نفس لكل 5 ضغطات)."
   },
   {
-    id: "q-e-cpr-5",
+    id: "q-cpr-comp-techs",
     chapterId: 4,
-    type: "problem-solving",
-    title: "Unresponsive Pulseless infant Case",
-    content: "A 10-month-old infant is brought into the resuscitation bay unresponsive, pulseless, and apneic. The resuscitation team leader institutes immediate basic life support maneuvers.\n\nQuestions:\n1. Mention the 3 specific physical maneuvers that comprise the \"Triple Airway Maneuver\" to open the airway.\n2. What is the correct site, technique, and ratio of chest compressions required if two healthcare rescuers are present?",
-    answer: "1. Head tilt, Jaw thrust, and Mouth opening.\n2. Site is midsternum; technique is the two-thumb encircling method; compression-to-ventilation ratio is 15:2.",
+    type: "short-essay",
+    title: "CPR Compression Techniques & Depths",
+    content: "Enumerate the age-specific compression techniques and depths for Basic Life Support.",
+    answer: "Techniques:\n- Newborns: Hand encircling technique.\n- Infants: Two fingers technique.\n- Young children: One hand technique.\n- Old children: Two hands technique.\n\nDepths:\n- Infant: 2 cm.\n- Young child: 3 cm.\n- Old child: 4 cm.",
     isClinical: true,
-    topic: "Topic One: Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "دراسة حالة الرضيع الفاقد للوعي واستجابات الإنعاش:\n1. الـ **Triple Airway Maneuver** تضم: إمالة الرأس للخلف (**Head tilt**)، ورفع الفك السفلي (**Jaw thrust**)، وفتح الفم المباشر.\n2. ضغط الصدر للأطفال يتم بضغط عظمة القص المكتوم، وعند حيازة طاقم إنعاش ثنائي ينبغي السير تكتيكياً بمعدل ضغطات لأنفاس يبلغ **15:2** بأسلوب الضغط الإبهامي المطوق."
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "تقنيات وعمق ضغط الصدر حسب العمر:\n\n**التقنية:**\n- حديث الولادة: تطويق باليد (Hand encircling).\n- الرضع: إصبعين (Two fingers).\n- الأطفال الصغار: يد واحدة (One hand).\n- الأطفال الكبار: يدين (Two hands).\n\n**العمق:**\n- الرضع: 2 سم.\n- الأطفال الصغار: 3 سم.\n- الأطفال الكبار: 4 سم."
+  },
+  {
+    id: "q-cpr-als-steps",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Advanced Life Support (D, E, F) Steps",
+    content: "Enumerate the clinical steps for D, E, and F in Advanced Life Support (ALS).",
+    answer: "D (Drugs I.V.):\n- Sodium bicarbonate (1-2 ml/kg), Adrenaline (0.1 ml/kg of 1:10,000 solution), and Fluids (20 ml/kg over 10 min).\n\nE (ECG monitoring):\n- Detect arrhythmias. In asystole: repeat adrenaline at 10 times the first dose.\n\nF (Fibrillation control):\n- Defibrillation (2 joules/kg, 4 joules/kg, then 8 joules/kg).",
+    isClinical: true,
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "خطوات الدعم المتقدم للحياة (ALS):\n\n**D: الأدوية (Drugs)**\n- بيكربونات الصوديوم، وأدرينالين، وسوائل تعويضية (20 مل/كجم).\n\n**E: رسم القلب (ECG)**\n- مراقبة ضربات القلب، وفي حالة التوقف التام (Asystole) تكرر جرعة الأدرينالين بـ 10 أضعاف الجرعة الأولى.\n\n**F: التحكم في الرجفان (Fibrillation control)**\n- الصدمات الكهربائية (2 ثم 4 ثم 8 جول/كجم)."
+  },
+  {
+    id: "q-cpr-pls-steps",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Prolonged Life Support (G, H, I) Steps",
+    content: "Enumerate the clinical steps for G, H, and I in Prolonged Life Support (PLS).",
+    answer: "G (Recognition and treatment):\n- Treatment of the causative disease according to etiology.\n\nH (Brain recovery):\n- Control of convulsive fits or acute increased intracranial pressure (ICP).\n\nI (Intensive care):\n- Multiple system support performed carefully in the PICU.",
+    isClinical: true,
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "خطوات الدعم الممتد للحياة (PLS):\n\n**G: التشخيص والعلاج (Recognition and treatment)**\n- علاج المرض المسبب للارست.\n\n**H: تعافي المخ (Brain recovery)**\n- التحكم في التشنجات أو ارتفاع ضغط المخ.\n\n**I: الرعاية المركزة (Intensive care)**\n- دعم أجهزة الجسم المتعددة في العناية المركزة للأطفال."
+  },
+  {
+    id: "q-cpr-arrest-warning",
+    chapterId: 4,
+    type: "short-essay",
+    title: "Impending Arrest Warning Signs",
+    content: "Enumerate the clinical warning signs of impending cardiac arrest.",
+    answer: "1. Altered mental status.\n2. Decreasing respiratory effort.\n3. Rising CO2 level.\n4. Bradycardia.\n5. Hypotension.",
+    isClinical: true,
+    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
+    explanation: "علامات الإنذار بقرب توقف القلب:\n1. تغير الحالة الذهنية (Altered mental status).\n2. تناقص مجهود التنفس.\n3. ارتفاع نسبة ثاني أكسيد الكربون CO2.\n4. بطء ضربات القلب (Bradycardia).\n5. هبوط ضغط الدم (Hypotension)."
   },
 
   // topic: "Topic Two: Shock"
@@ -1147,46 +1110,45 @@ export const INITIAL_QUESTIONS: Question[] = [
     id: "q-e-gcs-1",
     chapterId: 4,
     type: "define",
-    title: "Define Glasgow Coma Scale",
-    content: "Define the \"Glasgow Coma Scale (GCS)\" and state its primary clinical purpose.",
-    answer: "It is an objective, standardized neurological scale providing a numerical score from 3 to 15 based on three behavioral parameters (Eye opening, Verbal response, Motor response), utilized to rapidly assess the depth of altered consciousness and cerebral cortical function.",
+    title: "GCS Purpose & Score Range",
+    content: "Define the purpose of the Glasgow Coma Scale (GCS) and state the total score range.",
+    answer: "1. Purpose: To assess the level of consciousness and neurological function in children with altered mental status. It provides a rapid assessment of cerebral cortical function.\n2. Score Range: The total GCS score ranges from 3 to 15 points.",
     isClinical: false,
     topic: "Topic Four: Glasgow Coma Scale and its Advantages",
-    explanation: "تعريف غلاكسو لدرجات الغيبوبة (**Glasgow Coma Scale**):\nهو نظام رقمي إحصائي موحد ومبرهن لتقييم عمق تضرر مستوى الوعي لدى المرضى بسرعة وبصورة دقيقة ومقارنة، يعتمد على تقييم 3 معايير سلوكية بمحمية كاملة تتراوح نقاطها من 3 كحد أدنى تدميري إلى 15 كأقصى درجات اليقظة والكمال."
+    explanation: "الغرض من مقياس غلاكسو للوعي (GCS):\n1. الهدف: تقييم مستوى الوعي والوظائف العصبية للأطفال الذين يعانون من تغير في الحالة الذهنية. يوفر تقييماً سريعاً لوظائف قشرة المخ.\n2. المدى: يتراوح مجموع النقاط من **3 (الأدنى)** إلى **15 (الأقصى)**."
   },
   {
     id: "q-e-gcs-2",
     chapterId: 4,
     type: "short-essay",
-    title: "GCS Advantages",
-    content: "Enumerate 4 distinct \"Advantages\" of utilizing the Glasgow Coma Scale in pediatric emergency settings.",
-    answer: "1. Objective and standardized: Eliminates subjective bias, providing a numerical score to easily track changes over time.\n2. Simple and quick: Can be rapidly applied at the bedside in emergency rooms, trauma bays, and PICUs.\n3. Widely accepted internationally: Allows clear, standardized communication regarding patient status between different medical providers.\n4. Strong predictive and triage value: A GCS score of 8 or less accurately identifies severe brain injury and dictates the immediate need for airway protection.",
+    title: "Advantages of GCS",
+    content: "Enumerate the 5 primary advantages of using the Glasgow Coma Scale according to the clinical guidelines.",
+    answer: "1. Objective & standardized: Provides a reliable numerical score to track consciousness over time.\n2. Simple and quick: Easily applied at the bedside in emergency situations.\n3. Widely accepted: Used internationally across trauma, PICU, and emergency settings.\n4. Predictive value: Patients with a GCS score of 8 or less indicate severe brain injury requiring aggressive management.\n5. Communication tool: Allows clinicians to communicate patient status clearly and unambiguously.",
     isClinical: false,
     topic: "Topic Four: Glasgow Coma Scale and its Advantages",
-    explanation: "الأولى بالاستخدام لمحاور مقياس غلاكسو للوعي (GCS Advantages):\n1. دقيق وصارم ويلغي الاجتهاد والتحيز الشخصي في التقييم والوصف الإكلينيكي.\n2. سهل وبسيط التطبيق في طوارئ تراث الإصابات والإنقاذ بالمشفى.\n3. لغة تواصل عالمية وموحدة بين كل الأطباء وطواقم التمريض بمختلف دول العالم.\n4. مرجع قوي حاسم لفرز الحالات وأخذ تدبير مجرى الـ Airway بالتنبّيب لو تراجعت النقاط لـ 8 أو ما دونها."
+    explanation: "مميزات مقياس غلاكسو (GCS Advantages):\n1. **موضوعي وموحد**: يوفر درجة رقمية موثوقة لتتبع الوعي.\n2. **بسيط وسريع**: يسهل تطبيقه بجانب السرير في الحالات الطارئة.\n3. **مقبول عالمياً**: يستخدم في كل وحدات الطوارئ والرعاية دولياً.\n4. **له قيمة تنبؤية**: الدرجة **8 أو أقل** تشير إلى إصابة حادة وتحتاج تدخل سريع.\n5. **أداة تواصل**: تمكن الأطباء من وصف حالة المريض بوضوح وبدون لبس."
   },
   {
-    id: "q-e-gcs-3",
+    id: "q-e-gcs-scoring",
     chapterId: 4,
     type: "short-essay",
-    title: "GCS Disadvantages",
-    content: "Enumerate 4 prominent \"Disadvantages or Limitations\" of the Glasgow Coma Scale.",
-    answer: "1. Limited utility in young preverbal infants: The verbal component is highly difficult to score accurately in children who cannot talk.\n2. Confounded by medical interventions: Therapeutic sedation, endotracheal intubation, or neuromuscular blockade completely alter or mask true scores.\n3. Fails to evaluate brainstem function directly: Crucial indicators like pupillary reactivity, oculocephalic reflexes, and corneal responses are entirely excluded.\n4. Fails to identify the etiology: It solely measures the clinical level of consciousness, providing no diagnostic insight into the cause of coma.",
+    title: "Scale Components & Points",
+    content: "Enumerate the three components of the GCS and the maximum points for each.",
+    answer: "1. Eye Opening: Total points 4.\n2. Verbal Response: Total points 5.\n3. Motor Response: Total points 6.",
     isClinical: false,
     topic: "Topic Four: Glasgow Coma Scale and its Advantages",
-    explanation: "تجاوزات وعقبات مقياس غلاكسو بالتنفيذ العيادي للأطفال (GCS Disadvantages):\n1. تنبؤ لغوي شبه مستحيل مع الرضع والطفل الصغير العاجز عن النطق الشجي.\n2. التشويش بالتدخلات والأدوية كجرعات مهدئات الصدر والتخدير ومربطات العصب الحركية.\n3. يعجز المقياس كلياً عن دراسة وظائف العصب وعصب جذع الدماغ من فحص تفاعل الضوء المنعكس والقرنية.\n4. لا يرشدنا مطلقاً للسبب السمي أو البيولوجي الكامن وراء التدمير والغيبوبة الحالية."
+    explanation: "مكونات مقياس غلاكسو ونقاطها:\n1. فتح العين: 4 نقاط.\n2. الاستجابة اللفظية: 5 نقاط.\n3. الاستجابة الحركية: 6 نقاط."
   },
-
   {
     id: "q-e-gcs-5",
     chapterId: 4,
     type: "problem-solving",
-    title: "Fall assessment scoring Case",
-    content: "A 3-year-old child is evaluated in the emergency room following a fall. On assessment, she opens her eyes only when spoken to (3 points), emits consolable crying when irritable (4 points), and withdraws her limb from a painful stimulus (4 points).\n\nQuestions:\n1. Calculate the total Glasgow Coma Scale score for this pediatric patient.\n2. Does this patient's score indicate an immediate, mandatory requirement for endotracheal intubation based on GCS guidelines?",
-    answer: "1. Total GCS Score = 3 (Eye) + 4 (Verbal) + 4 (Motor) = 11.\n2. No, aggressive airway protection and intubation are indicated when the GCS score drops to 8 or less.",
+    title: "GCS Calculation & Triage Case",
+    content: "A 3-year-old child is evaluated following a fall. She opens her eyes only when spoken to, emits consolable crying when irritable, and withdraws her limb from painful stimulus.\n\nQuestions:\n1. Calculate the total GCS score.\n2. Does this score indicate severe brain injury requiring aggressive management (score ≤ 8)?",
+    answer: "1. Total GCS Score: Eye (3) + Verbal (4) + Motor (4) = 11.\n2. No, severe brain injury is indicated by a score of 8 or less.",
     isClinical: true,
     topic: "Topic Four: Glasgow Coma Scale and its Advantages",
-    explanation: "حساب توازن درجات وعي طفلة غلاكسو بالاستقبال الحاد:\n1. الدرجة كالتالي: فتح العين بالصوت 3 + البكاء المتألم 4 + تحريك الذراع للألم 4 = **11 نقطة من 15**.\n2. تظل الطفلة مستقرة التروية التنفسية الحرة؛ حيث نفي التنبّيب والتدخل الحنجري القصبي الإجباري طالما المجموع فوق رقم **8** بنصوص الهيئات العالمية."
+    explanation: "حساب وعي الطفلة:\n1. المجموع: العين (3) + اللفظي (4) + الحركي (4) = **11**.\n2. التقييم: الدرجة **ليست** ضمن نطاق الإصابة الحادة (8 أو أقل)، لذا لا تتطلب تداخلاً جراحياً أو تنبياً إجبارياً حالياً."
   },
 
   // ==================== V. Family medicine ====================
@@ -2894,8 +2856,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 3,
     type: "short-essay",
     title: "Transient Cutaneous Lesions Vasomotor",
-    content: "Enumerate 4 distinct benign \"Transient Cutaneous Lesions\" seen in newborns that are directly related to vasomotor instability or peripheral circulatory sluggishness.",
-    answer: "1. Acrocyanosis (harmless cyanosis of hands and feet when cool).\n2. Cutis Marmorata or mottling (circulatory response to transient skin temperature fluctuations).\n3. Harlequin color change (rare division of the body into red and pale halves when lying on the side).\n4. Transitory macular capillary hemangiomas (such as Salmon patch on the eyelids).",
+    content: "Enumerate 3 distinct benign \"Transient Cutaneous Lesions\" seen in newborns that are directly related to vasomotor instability or peripheral circulatory sluggishness.",
+    answer: "1. Acrocyanosis (harmless cyanosis of hands and feet when cool).\n2. Cutis Marmorata or mottling (circulatory response to transient skin temperature fluctuations).\n3. Harlequin color change (rare division of the body into red and pale halves when lying on the side).",
     isClinical: true,
     topic: "Transient Cutaneous Lesions"
   },
@@ -2982,92 +2944,41 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Prematurity and its Complications"
   },
-
-  // topic: "Physiological Jaundice"
   {
-    id: "q-n2-pj-1",
+    id: "q-n2-p-6",
     chapterId: 3,
-    type: "short-essay",
-    title: "Bilirubin Metabolism sequence",
-    content: "Enumerate 4 sequence steps that describe the normal physiology of Bilirubin Metabolism from production to excretion.",
-    answer: "1. Breakdown of hemoglobin from senescent RBCs in reticuloendothelial cells forms water-insoluble unconjugated bilirubin.\n2. Unconjugated bilirubin binds to albumin in plasma and is transported to the liver membrane.\n3. Inside liver cells, unconjugated bilirubin is conjugated to water-soluble glucuronide forms by glucuronyl transferase (G.T.) enzyme.\n4. Conjugated bilirubin is secreted into bile ducts, enters the intestine, and is excreted via feces (as stercobilinogen) or urine (as urobilinogen).",
-    isClinical: true,
-    topic: "Physiological Jaundice"
+    type: "define",
+    title: "Define prematurity",
+    content: "Define \"Prematurity\" according to the World Health Organization (WHO).",
+    answer: "Prematurity is defined as any live-born infant delivered before 37 completed weeks of gestation (less than 37 completed weeks).",
+    isClinical: false,
+    topic: "Prematurity and its Complications",
+    explanation: "التعريف الرسمي للـ Prematurity حسب منظمة الصحة العالمية:\n- **Premature Infant**: هو أي طفل يولد حيًا قبل إتمام **37 أسبوعًا** من الحمل (أي < 37 completed weeks)."
   },
   {
-    id: "q-n2-pj-2",
+    id: "q-n2-p-7",
     chapterId: 3,
     type: "short-essay",
-    title: "Preterm Physiological Jaundice properties",
-    content: "Enumerate 4 specific properties or timelines that define \"Physiological Jaundice\" in a Preterm infant.",
-    answer: "1. It appears later than in term infants, typically on the 4th to 6th day of life.\n2. The peak total serum bilirubin concentration characteristically remains below 14 mg/dL.\n3. It has a longer duration, disappearing within 10 to 14 days of life.\n4. The infant remains clinically asymptomatic and requires no medical treatment or investigations.",
+    title: "Maternal causes of prematurity",
+    content: "Enumerate 4 distinct \"Maternal Causes\" (pregnancy-related or non-pregnancy related) that predispose to prematurity.",
+    answer: "1. Extreme maternal age (<20 or >40 years).\n2. Pregnancy-related complications (e.g., pre-eclampsia, placenta previa, abruptio placentae, chorioamnionitis, incompetent os, or PROM).\n3. Chronic maternal illnesses (e.g., Diabetes Mellitus, heart/renal diseases, or active infections).\n4. Maternal trauma or substance/drug abuse.",
     isClinical: true,
-    topic: "Physiological Jaundice"
+    topic: "Prematurity and its Complications",
+    explanation: "الأسباب المتعلقة بالأم (Maternal Causes) التي تؤدي لولادة طفل مبتسر:\n1. **العمر**: أقل من 20 سنة أو أكثر من 40 سنة.\n2. **مضاعفات الحمل**: زي تسمم الحمل (Pre-eclampsia)، انفصال المشيمة (Abruption)، المشيمة المنزاحة (Placenta previa)، التهاب السائل الأمنيوسي (Chorioamnionitis) أو اتساع عنق الرحم (Incompetent os)، وتدلي الغشاء الأمينوسي المبكر (SROM/PROM).\n3. **أمراض مزمنة**: زي مرض السكر (DM)، أمراض القلب أو الكلى، والعدوى.\n4. **أخرى**: التعرض لتروما أو إساءة استخدام العقاقير (Drug abuse)."
   },
   {
-    id: "q-n2-pj-3",
+    id: "q-n2-p-8",
     chapterId: 3,
     type: "short-essay",
-    title: "Pathological Jaundice findings",
-    content: "Enumerate 4 distinct historical, physical, or laboratory findings that classify neonatal jaundice as Pathological.",
-    answer: "1. Onset of visible jaundice within the first 24 hours of life.\n2. A rapid rate of total serum bilirubin rise exceeding 5 mg/dL/day (or 0.5 mg/dL/hour).\n3. Jaundice persistence beyond 14 days of life in a full-term infant.\n4. Presence of an elevated direct-reacting (conjugated) bilirubin fraction (>20% of total) accompanied by clay-colored stools.",
+    title: "Lines of feeding",
+    content: "Enumerate the clinical methods or \"Lines of feeding\" utilized for premature infants based on their neurological and physical development.",
+    answer: "1. Suck and Swallow method (via breast or bottle) for infants with coordinated reflexes.\n2. Swallow only method (via dropper or spoon) for infants who can swallow but lack strong sucking coordination.\n3. Gavage feeding / Nasogastric (NG) tube or Intravenous Fluids (IVF) for infants who have neither coordinated sucking nor swallowing reflexes.",
     isClinical: true,
-    topic: "Physiological Jaundice"
-  },
-
-  {
-    id: "q-n2-pj-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "12-hour Neonatal Jaundice Case",
-    content: "A 12-hour-old full-term newborn is noted by the nursery nurse to have distinct yellowish discoloration of her skin and sclera. The physician orders an urgent total and direct serum bilirubin level.\n\nQuestions:\n1. Is this infant's jaundice classified as physiological or pathological?\n2. Enumerate 2 non-immune hemolytic or enzymatic red blood cell defects that can cause early pathological jaundice.",
-    answer: "1. Pathological Jaundice (because it appeared within the first 24 hours of life).\n2. Glucose-6-Phosphate Dehydrogenase (G6PD) deficiency and Congenital Spherocytosis.",
-    isClinical: true,
-    topic: "Physiological Jaundice"
+    topic: "Prematurity and its Complications",
+    explanation: "طرق ومستويات تغذية الأطفال المبتسرين حسب تطورهم العصبي والفسيولوجي:\n1. **Suck/Swallow** (الرضاعة الطبيعية أو الببرونة): للطفل المستقر اللي عنده المنعكسات دي شغالة ومنسقة.\n2. **Swallow only** (بالقطارة أو الملعقة Dropper/Spoon): للطفل اللي بيقدر يبلع بس معندهوش قدرة يمص بقوة.\n3. **Neither NG tube/IVF** (الأنبوب الأنفي المعدي أو المحاليل الوريدية): للطفل اللي مش بيقدر يمص ولا يبلع، أو حالته غير مستقرة لمنع حدوث مضاعفات كالاختناق أو الـ NEC."
   },
 
-  // topic: "Pathological Jaundice"
-  {
-    id: "q-n2-pa-1",
-    chapterId: 3,
-    type: "short-essay",
-    title: "ABO Incompatibility diagnosis",
-    content: "Enumerate 4 distinct clinical or laboratory findings that establish the diagnosis of Pathological Jaundice due to ABO Incompatibility.",
-    answer: "1. Documented blood group combination of an O-type mother and an A-type or B-type infant.\n2. Rapid onset of visible jaundice developing within the first 24 hours of life.\n3. Urinalysis showing elevated unconjugated bilirubin accompanied by an increased reticulocyte count (10-15%).\n4. Demonstration of a weakly to moderately positive direct Coombs test result.",
-    isClinical: true,
-    topic: "Pathological Jaundice"
-  },
-  {
-    id: "q-n2-pa-2",
-    chapterId: 3,
-    type: "short-essay",
-    title: "Extrahepatic Biliary Atresia sequence",
-    content: "Enumerate 4 sequence steps or features that define the management of an infant suspected of having Extrahepatic Biliary Atresia.",
-    answer: "1. Immediate measurement of direct/conjugated bilirubin fractions when jaundice persists beyond 2 weeks.\n2. Performing diagnostic evaluations including liver function tests, abdominal ultrasound, and a liver biopsy.\n3. Performing an exploratory laparotomy and direct cholangiography to determine the exact site of obstruction.\n4. Carrying out the surgical hepatoportoenterostomy procedure of Kasai if no correctable lesion is found.",
-    isClinical: true,
-    topic: "Pathological Jaundice"
-  },
-  {
-    id: "q-n2-pa-3",
-    chapterId: 3,
-    type: "short-essay",
-    title: "Breast Milk Jaundice parameters",
-    content: "Enumerate 4 clinical parameters that define \"Breast Milk Jaundice\" and ensure its safe prognosis.",
-    answer: "1. It occurs in completely healthy, thriving breastfed infants after the first week of life.\n2. Driven by specific substances in breast milk that increase the enterohepatic circulation of bilirubin.\n3. Presents as a mild, prolonged, but completely unconjugated hyperbilirubinemia.\n4. Infant shows normal urine and stool color, and breastfeeding should safely continue.",
-    isClinical: true,
-    topic: "Pathological Jaundice"
-  },
 
-  {
-    id: "q-n2-pa-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Vomiting & Reducing Substances Case",
-    content: "A 10-day-old infant presents with severe vomiting, poor feeding, hypoglycemia, and a sudden onset of dark, pathological jaundice. The clinician checks the urine and finds positive reducing substances, confirming an inherited enzyme deficiency.\n\nQuestions:\n1. What is the specific metabolic diagnosis for this infant?\n2. What is the mandatory dietary treatment line indicated for this condition?",
-    answer: "1. Galactosaemia.\n2. Initiation of a completely lactose-free and galactose-free diet.",
-    isClinical: true,
-    topic: "Pathological Jaundice"
-  },
 
   // topic: "Complications of Indirect Hyperbilirubinemia"
   {
@@ -3097,16 +3008,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Chronic Kernicterus neurological deficits",
     content: "Enumerate 4 clinical/neurological deficits in chronic Kernicterus by year 3.",
     answer: "1. Bilateral choreoathetosis and extrapyramidal movement disorders.\n2. High-frequency sensorineural hearing loss.\n3. Mental deficiency or cognitive impairment.\n4. Squinting and defective upward movement of the eyes.",
-    isClinical: true,
-    topic: "Complications of Indirect Hyperbilirubinemia"
-  },
-  {
-    id: "q-n2-ci-4",
-    chapterId: 3,
-    type: "short-essay",
-    title: "Phototherapy side effects",
-    content: "Enumerate 4 complications/side effects of phototherapy.",
-    answer: "1. Loose stools or increased diarrhea.\n2. Erythematous macular skin rash.\n3. Overheating and dehydration due to increased insensible water loss.\n4. Bronze Baby Syndrome (dark grayish-brown discoloration of the skin in infants with cholestasis).",
     isClinical: true,
     topic: "Complications of Indirect Hyperbilirubinemia"
   },
@@ -3165,52 +3066,7 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   // ==================== IV. Emergency Section (Bank 2) ====================
-  // topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
-  {
-    id: "q-e2-c-1",
-    chapterId: 4,
-    type: "short-essay",
-    title: "Pediatric Cardiopulmonary arrest situated causes",
-    content: "Enumerate 4 non-pulmonary causes of cardiopulmonary arrest in children.",
-    answer: "1. Hypovolemic shock (severe dehydration, massive hemorrhage, or extensive burns).\n2. Septic shock due to severe fulminant sepsis.\n3. Cardiogenic shock secondary to severe myocarditis or serious arrhythmias.\n4. Severe acid-base or electrolyte disturbances, or acute organ failure (renal/hepatic).",
-    isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "الأسباب المفرطة غير الصدرية التي تقتل الدورة الدموية في الأطفال وتسبب توقف القلب الرئوي:\n1. صدمات نزف الحجم الحادث وحمض الحروق أو خسارة ماء الجسم الكلي.\n2. الصدمة الإنتانية شديدة البؤس للسموم الميكروبية.\n3. صدمة اعتلال وهيام عضلة القلب للفيروسات والتهاب البطينين أو تشتيت ضربات القلب والكهرباء.\n4. اضطراب توازن الأيونات بكهرباء الدم وفشل وظائف طرد الكلى أو أزمات الكبد."
-  },
-  {
-    id: "q-e2-c-2",
-    chapterId: 4,
-    type: "short-essay",
-    title: "Cardiopulmonary arrest triggering procedures",
-    content: "Enumerate 4 medical procedures that can trigger cardiopulmonary arrest in children.",
-    answer: "1. Aggressive airway suctioning.\n2. Intensive chest physiotherapy.\n3. Endotracheal intubation maneuvers.\n4. Performing a lumbar puncture.",
-    isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "الإجراءات الطبية بالرعاية المركزة وأقسام الحجز التي تتسبب بتوقف التنفس والقلب في الأطفال الحرجة لو تمت بدون تزويد الطفل بالأكسجين عالي الضغط قبلها:\n1. شفط البلغم بعنف وبصورة طويلة تضطهد الأنفاس.\n2. العلاج الطبيعي على الصدر بالضغط والطرق المتكرر.\n3. محاولات إدخال الأنبوب الحنجري بصعوبة وتعثر زمني.\n4. إجراء بذل سائل النخاع الشوكي الـ **Lumbar puncture** بنمط يمنع كبس وتمدد مجرى الهواء والصدر."
-  },
-  {
-    id: "q-e2-c-3",
-    chapterId: 4,
-    type: "short-essay",
-    title: "Cardiopulmonary Arrest diagnosis criteria",
-    content: "Enumerate 4 criteria to diagnose Cardiopulmonary Arrest.",
-    answer: "1. Respiratory: Complete absence of respiration (respiratory arrest).\n2. Cardiac: Complete absence of audible or palpable heartbeats (cardiac arrest).\n3. Circulatory: Pulselessness with no peripheral tissue perfusion.\n4. Central Nervous System: Complete unresponsiveness to painful external stimuli.",
-    isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "الشروط والأعراض الأربعة الحاسمة لتأكيد الانهيار التوقف القلبي الرئوي السريري الكلي في الأطفال:\n1. غياب كامل ومطبق لصوت أو تنفس المريض وصدره (التوقف التنفسي).\n2. فقد كامل لدقات القلب العيادية بالصدر (التوقف القلبي).\n3. غياب وضياع كامل للنبض المركزي بالشرايين الكبرى.\n4. الموت الوعي والغياب الفاقد للحركة ولا يستجيب لأشرس طرق وجع الألم الحسي."
-  },
 
-  {
-    id: "q-e2-c-5",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Pupillary reaction arrest Case",
-    content: "A pediatric resuscitation is ongoing in the emergency unit. The team leader pauses compressions briefly every 5 minutes to evaluate the child's pupillary reactions to a light source.\n\nQuestions:\n1. What is the clinical significance of finding active, reactive pupils during a arrest evaluation?\n2. What do dilated, fixed unreactive pupils indicate in this setting?",
-    answer: "1. It indicates that the brain tissue is still viable/intact, validating the continuation of resuscitation.\n2. It signifies brain death.",
-    isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "قراءة وعي عيون طفل الإنعاش المتكرر:\n1. وجود رد فعل قزحي في حدقة العين تفاعلي ومنكمش للضوء الساطع ده إشعار مبهج بسلامة وحيوية عصب وجذع الدماغ الكامن مما يأمر بفرصة الاستمرار بالإنعاش بالـ CPR.\n2. وجود حدقة واسعة ممتدة جامدة لا يغيرها اللمس أو الضوء بمرور المرات ده معناه **Brain Death** موت خلايا المخ السريري."
-  },
 
   // topic: "Shock"
   {
@@ -3311,82 +3167,35 @@ export const INITIAL_QUESTIONS: Question[] = [
     id: "q-e2-g-1",
     chapterId: 4,
     type: "short-essay",
-    title: "Behavioral response GCS parameters",
-    content: "Enumerate the 3 specific behavioral response parameters evaluated by the Glasgow Coma Scale, including the total maximum points for each.",
-    answer: "1. Eye opening response (maximum total of 4 points).\n2. Verbal response (maximum total of 5 points).\n3. Motor response (maximum total of 6 points).",
+    title: "GCS Detailed Components",
+    content: "Enumerate the points breakdown for each component of the Glasgow Coma Scale (Eye, Verbal, Motor).",
+    answer: "1. Eye Opening (Total 4): Spontaneous (4), To voice (3), To pain (2), None (1).\n2. Verbal Response (Total 5): Oriented/appropriate (5), Confused/consolable (4), Inappropriate words/irritable (3), Incomprehensible/restless (2), None (1).\n3. Motor Response (Total 6): Obeys (6), Localizes pain (5), Withdraws (4), Flexion (3), Extension (2), None (1).",
     isClinical: true,
     topic: "Glasgow Coma Scale and its Advantages",
-    explanation: "المقاييس السلوكية المحددة المعيارية بمقياس غلاكسو GCS للوعي ونقاطها الـ 3 المجمعة:\n1. استجابة حركة الرموش وفتح جفن العين بفرصة تقييم الحد الأقصى البالغ **4 نقاط**.\n2. الاستجابة اللفظية والكحة والقول بأقصى فرصة تقييد تبلغ **5 نقاط**.\n3. استجابة الحركة العضلية للجسم للألم والأمور بأعلى مراتب تقييم تبلغ **6 نقاط**."
+    explanation: "تفاصيل نقاط مقياس غلاكسو للوعي:\n1. **فتح العين (4 نقاط)**: تلقائي (4)، للصوت (3)، للألم (2)، لا يوجد (1).\n2. **الاستجابة اللفظية (5 نقاط)**: طبيعية (5)، مرتبك (4)، كلمات غير مناسبة (3)، أصوات غير مفهومة (2)، لا يوجد (1).\n3. **الاستجابة الحركية (6 نقاط)**: يطيع الأوامر (6)، يحدد مكان الألم (5)، ينسحب من الألم (4)، انثناء (3)، انبساط (2)، لا يوجد (1)."
   },
   {
     id: "q-e2-g-2",
     chapterId: 4,
     type: "short-essay",
-    title: "Pediatric GCS Verbal indicators",
-    content: "Enumerate 4 specific behavioral indicators used to score the \"Verbal Response\" parameter specifically in non-verbal infants and young children.",
-    answer: "1. Appropriate words, smiles, fixes, and follows objects (scores 5 points).\n2. Consolable crying when upset (scores 4 points).\n3. Persistent irritable crying (scores 3 points).\n4. Restless, agitated, or grunting behavior (scores 2 points).",
+    title: "Pediatric GCS Verbal Scoring",
+    content: "Describe the scoring for the Verbal Response specifically for infants and young children.",
+    answer: "1. Appropriate words, smiles, fixes, and follows: 5 points.\n2. Consolable crying: 4 points.\n3. Persistent irritable crying: 3 points.\n4. Restless, agitated: 2 points.\n5. None: 1 point.",
     isClinical: true,
     topic: "Glasgow Coma Scale and its Advantages",
-    explanation: "السبل الدقيقة لتقييم الرد اللفظي والنطق اللغوي في الرضيع الصغير بمقياس غلاكسو:\n1. الضحك التفاعلي ومتابعة الصور والألعاب الوديعة بالوجه يمنحه **5 نقاط كاملة**.\n2. البكاء البسيط الذي يطول ويهدأ بالاحتضان المريح المتألم يمنحه **4 نقاط**.\n3. البكاء المستمر المزعج الذي يصعب ترويضه أو تلطيفه يمنحه **3 نقاط**.\n4. الهياج المستمر أو الشكوى الخارخرة المستثارة بالألم تمنحه **2 نقطتين**."
-  },
-  {
-    id: "q-e2-g-3",
-    chapterId: 4,
-    type: "short-essay",
-    title: "GCS False Underestimation factors",
-    content: "Enumerate 4 factors that falsely alter/limit GCS score.",
-    answer: "1. Confounding use of therapeutic sedation or analgesics.\n2. Therapeutic neuromuscular blockade or chemical paralysis.\n3. Presence of an endotracheal tube (making verbal assessment impossible).\n4. Preverbal developmental stage or extreme young age of an infant.",
-    isClinical: true,
-    topic: "Glasgow Coma Scale and its Advantages",
-    explanation: "الأمور المعرقلة لتقييد فحص غلاكسو الحقيقي بالأطفال وتظلمه كذباً بدرجات متدنية:\n1. الأدوية المنومة والمهدئة وحقن السيطرة الصدرية الرئوية بالرعاية المركزة.\n2. حقن شلل وارتخاء العضلات الطبي المستخدمة بالتهوية لتيسير التنفس الحنجري.\n3. تركيب الأنبوب الحنجري التنفسي الكاتم تماماً لممر الحنجرة والأصوات واللفظ.\n4. سن الرضيع الصغير جداً وتأخر النطق العقلي لتبرئة الملاحظات اللغوية العادية."
+    explanation: "تقييم النطق للرضع وصغار الأطفال:\n1. كلمات مناسبة، ابتسام، تثبيت النظر والمتابعة: 5 نقاط.\n2. بكاء يمكن تهدئته: 4 نقاط.\n3. بكاء مستمر غير هادئ: 3 نقاط.\n4. قلق وتوتر: 2 نقطة.\n5. لا يوجد: 1 نقطة."
   },
 
   {
     id: "q-e2-g-5",
     chapterId: 4,
     type: "problem-solving",
-    title: "Infant Trauma GCS Calculation Case",
-    content: "An 18-month-old infant is evaluated in the emergency ward following a head trauma. On serial neurological tracking, the clinician notes the infant opens his eyes only when a loud voice is used, emits persistent irritable crying, and localizes the site of a painful stimulus purposefully.\n\nQuestions:\n1. Calculate the infant's specific scores for Eye, Verbal, and Motor parameters.\n2. What is the total composite Glasgow Coma Scale score for this infant?",
-    answer: "1. Eye opening to voice = 3; Verbal irritable crying = 3; Motor localizing pain = 5.\n2. Total GCS Score = 3 + 3 + 5 = 11.",
+    title: "Infant GCS Scoring Case",
+    content: "An 18-month-old infant following head trauma opens his eyes to voice, emits persistent irritable crying, and localizes the painful stimulus.\n\nQuestions:\n1. Calculate the Eye, Verbal, and Motor scores.\n2. What is the total composite GCS score?",
+    answer: "1. Eye (3) + Verbal (3) + Motor (5).\n2. Total GCS Score = 11.",
     isClinical: true,
     topic: "Glasgow Coma Scale and its Advantages",
-    explanation: "تحليل حالة رضيع تراث صدمة الرأس وحساب مجموع نقاط غلاكسو للوعي:\n1. النقاط للوسوم السلوكية كالتالي: فتح الجفن للصوت 3 + البكاء النكد غير المستكين 3 + توجيه يده لضرب مصدر الوجع 5.\n2. حاصل المعيار كالتالي: 3 (عين) + 3 (لفظ) + 5 (حركي) = **11 نقطة من مقياس غلاكسو الكلي**."
-  },
-
-  // ==================== IV. Emergency Section - New Additions from Slide Materials ====================
-  // topic: "Steps of Cardiopulmonary Resuscitation (CPR)"
-  {
-    id: "q-e3-cpr-1",
-    chapterId: 4,
-    type: "short-essay",
-    title: "Pediatric vs Adult Cardiac Arrest & Survival Timelines",
-    content: "Explain how the primary pathophysiology and initial rhythms of cardiopulmonary arrest differ between pediatric and adult patients, and state the critical timelines for brain survival during a arrest.",
-    answer: "1. Pathophysiological Difference: In children, cardiac arrest is usually secondary to progressive respiratory failure or shock (asphyxial arrest), unlike in adults where it is commonly primary cardiac (due to ischemic heart disease).\n2. Initial Rhythm Difference: In children, the initial rhythm is usually bradycardia progressing to asystole, whereas ventricular fibrillation (VF) or pulseless ventricular tachycardia (VT) is less common compared to adults.\n3. Critical Timelines: If successful resuscitative efforts are not established within 5 minutes, brain or cardiovascular death will occur. Irreversible brain damage occurs after approximately 7 minutes.",
-    isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "الاختلافات الوظيفية بالإنعاش وصمود مخ مخ الطفل بالثواني والدقائق:\n1. **أساس التوقف**: بالأطفال يكون قصور وتوقف القلب ثانوياً بالعادة لفشل النفس أو هبوط التروية الكلي بصدمات الجفاف المسمى بالإقفار الصامت العضلي، بعكس البالغين فالتوقف أولي قلبي بمكيدة جلطة الشريان التاجي الفجائية.\n2. **نمط الكهرباء**: في الأطفال نتحرك تدريجياً من بطء الضربات إلى الصمت الكهربائي المطبق Asystole، بينما الكبار يفوقهم الرجفان والنبض السريع المهتز VT/VF.\n3. **عمر خلايا الدماغ**: تبدأ تلفيات خلايا المخ عند غياب تروية الأكسجين والنبض لأكثر من **5 دقائق متتالية**، بينما يموت المخ سريرياً بخراب دائم يتعذر علاجه لو طال الضياع لما وراء الـ **7 دقائق أولية**."
-  },
-  {
-    id: "q-e3-cpr-2",
-    chapterId: 4,
-    type: "short-essay",
-    title: "Pediatric Compression Techniques & Depths",
-    content: "Mention the cardiac compression guidelines during pediatric resuscitation including the frequency, ratio, and age-specific compression techniques and depths according to resuscitation slides.",
-    answer: "1. Frequency: Approximately 100 compressions per minute for all ages.\n2. Compression-to-Ventilation Ratio: Continue cardiac compression and ventilation at a ratio of 1:5.\n3. Age-Specific Techniques:\n   - Newborns: Hand-encircling (two-thumb) technique.\n   - Infants: Two-finger technique.\n   - Young children: One-hand technique.\n   - Older children: Two-hand technique.\n4. Age-Specific Depths:\n   - Infant: 2 cm depth.\n   - Young child: 3 cm depth.\n   - Older child: 4 cm depth.",
-    isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "أطوار وأقسام دقات ونسب وعمق ضغط إنعاش الصدر بالأطفال:\n1. المقاس المتكرر: **100 ضغطة متماثلة طوال الدقيقة الواحدة** بمختلف أطوار طفولته.\n2. معدل التفاعل والنسب التبادلية: المتابعة والربط بمعدل **1 نفَس مستنشق لـ 5 ضغطات قلبية متتابعة** للأطفال.\n3. تكتيك القبضة والعمق للقص بمرور السن بالسنتمترات لمرحلة الصغار:\n   - لحديثي الولادة: بالابهامين وتطويق ضلوع القفص.\n   - للرضيع: بنقر إصبعين دائمين بعمق 2 سم.\n   - للأطفال المتوسطين: وجه كف واحد بعمق 3 سم.\n   - لليافعين والشباب: قبضة اليدين متشابكتي العظام بعمق 4 سم."
-  },
-  {
-    id: "q-e3-cpr-3",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Pausing Compressions for Pupillary Reflexes Case",
-    content: "During a full cardiac arrest resuscitation of a 6-year-old child in the emergency department, the team leader temporarily pauses compressions every 5 minutes to examine the child's pupillary reflexes.\n\nQuestions:\n1. State the purpose of checking pupillary reflexes in this context.\n2. Under what condition would the resuscitation team leader decide to terminate the resuscitation efforts?",
-    answer: "1. Purpose: To check for pupillary reaction to light, which validates brain viability and helps exclude brain death to continue resuscitation.\n2. Termination: Resuscitative efforts should continue as long as brain death does not occur. The resuscitation team leader can make the decision to terminate resuscitation based on the presence of brain death on repeated examinations.",
-    isClinical: true,
-    topic: "Steps of Cardiopulmonary Resuscitation (CPR)",
-    explanation: "تحليل محاور تفقد الرموش وحدقة عيون الإنعاش الدقيق بالاستقبال:\n1. الأهمية لغلق الصدر لفحص الرمش الحدقي للضوء هو متابعة سلامة وقدرة تغذية جذع المخ الدموية لإيقاف أو ترسيخ مواصلة الإنعاش القلبي الرئوي الـ CPR.\n2. يفوض القائم بال resuscitation قرار إعلان وفاة وإنهاء جهود الإنعاش إذا تم رصد وفاة خلايا الدماغ والمخ الكلية وتكرار جمود وعدم تفاعل الحدقتين الساحقتين للضوء طوال تكرار الفحوص السريعة."
+    explanation: "حساب وعي الرضيع:\n1. النقاط: العين للصوت (3) + اللفظي بكاء مستمر (3) + الحركي تحديد الألم (5).\n2. المجموع النهائي: **11**."
   },
 
   // topic: "Shock"

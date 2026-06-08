@@ -19,6 +19,7 @@ import { INITIAL_QUESTIONS } from './data/questions';
 import { Question, Chapter } from './types';
 import StudySession from './components/StudySession';
 import ReviewView from './components/ReviewView';
+import CountdownTimer from './components/CountdownTimer';
 
 const MIXED_CHAPTER: Chapter = {
   id: 0,
@@ -143,6 +144,11 @@ export default function App() {
               <span className="text-[9px] text-slate-400 uppercase tracking-widest font-bold leading-none mt-1 block">Pediatric Board Preparation</span>
             </div>
           </a>
+        </div>
+
+        {/* Top Middle Countdown */}
+        <div className="absolute left-1/2 -translate-x-1/2 hidden md:block">
+          <CountdownTimer />
         </div>
 
         {/* Global Top Stats */}

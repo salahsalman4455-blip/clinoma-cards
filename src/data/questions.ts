@@ -27,17 +27,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "الفرق الجوهري بين مصدر الدم (من الكلية نفسها يعني من المصفاة Glomerulus) أو من السباكة التحتانية (Lower Tract):\n\n1. الـ **Color (اللون)**:\n- Glomerular: لون الكوكاكولا أو الشاي الغامق (Cola / Smoky) عشان الدم اتأكسد بالـ Acidic pH بتاع الأنابيب.\n- Lower: أحمر زاهي لسه طازة (Bright red / Fresh).\n\n2. الـ **RBCs under microscopy (شكل الخلايا)**:\n- Glomerular: متقطعة ومشوهة (Dysmorphic) عشان عافرت وتفعصت وهي بتعدي من المصفاة الضيقة.\n- Lower: خلايا سليمة وجميلة (Isomorphic) نازلة مستريحة.\n\n3. الـ **Blood Clots (الجلطات)**:\n- Glomerular: مستحيل تلاقي جلطات (No Clots) عشان الـ Urinary tract enzymes بتدوبها.\n- Lower: ممكن تلاقي خيوط تجلطات دم صريحة.\n\n4. الـ **Proteinuria (الزلال)**:\n- Glomerular: بيبهدل المكبس فينزل بروتين وزلال محترم (>100 mg/dL).\n- Lower: الزلال خفيف جداً أو شبه منعدم."
   },
 
-  {
-    id: "q-r-h-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Painless Gross Hematuria Case",
-    content: "An 11-year-old child presents with painless gross hematuria. Urinalysis shows bright red urine with normal isomorphic RBCs and the presence of blood clots. Proteinuria is minimal (<100 mg/dL).\n\nQuestions:\n1. Is the source of hematuria glomerular or extra-glomerular?\n2. Enumerate 2 potential diagnostic causes for this presentation.",
-    answer: "1. Extra-glomerular (Lower urinary tract).\n2. Urinary Tract Infection (UTI) and Urolithiasis (Urinary stones).",
-    isClinical: true,
-    topic: "Hematuria",
-    explanation: "حل الكيسة دي بذكاء:\n\n1. الخلايا طالعة **Isomorphic** (سليمة مش معفصة) وفي **Blood Clots** ولون البول **Bright red**: دي كلها بصمات واضحة لـ **Extra-glomerular source** (برة الكلية، سباكة تحتانية).\n2. أشهر سببين يعملوا الدم ده هما:\n- **UTI**: التهاب شديد جرح المثانة.\n- **Urolithiasis**: حصوة رمت نفسها في الحالب أو المثانة وعمالة تجرح طوال الطريق."
-  },
 
   // topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
 
@@ -73,17 +62,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
     explanation: "مخاطر الـ APSGN اللي ممكن تودي في داهية في ثواني (الطوارئ):\n\n1. **Hypertensive Encephalopathy**: الضغط لما يعلى فجأة يعمل وذمة بالمخ وتشنجات وربما غيبوبة.\n2. **Acute Pulmonary Edema / HF**: احتباس السوائل بيبهدل عضلة القلب ويعمل رشح على الرئة، يخلي الطفل مش قادر ياخد نفسه وكأنه بيغرق في برة ماية.\n3. **Hyperkalemia**: البوتاسيوم بيعلى لأن الكلية مش بتصرف، وزيادة البوتاسيوم سم قاتل للقلب بيعمل Cardiac arrest.\n4. **RPGN (Rapidly Progressive Glomerulonephritis)**: تدهور صاروخي في وظائف الكلى مع تكوين أهلّة كلوية (Crescents) تدمر الفلاتر تماماً."
-  },
-  {
-    id: "q-r-a-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Body Puffiness & Tea-colored Urine Case",
-    content: "An 8-year-old girl develops generalized body puffiness, a severe headache, and passes tea-colored urine. Her blood pressure is 140/95 mmHg. Urinalysis reveals dysmorphic RBCs and RBC casts. Her serum C3 complement level is markedly depressed.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. Mention the calculated fluid restriction guideline for this patient during the oliguric phase.",
-    answer: "1. Acute Post-Streptococcal Glomerulonephritis (APSGN).\n2. Fluid intake = Urine Output + 400 ml/m2 of body surface area.",
-    isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
-    explanation: "فك شفرة الكيسة الفورية:\n\n1. طفلة عندها نافوخ بيطير من الصداع (Severe Headache) وضغط عالي جدًا (140/95) وبول بلون الشاي (Tea-colored) وخلايا متفعصة (Dysmorphic RBCs & RBC Casts) مضافاً إليها نقص الـ C3: التشخيص **قضي الأمر** هو **APSGN**.\n2. ميزان السوائل الذهبي في فترة قلة البول (Oliguric Phase) لمنع الانفجار وضيق التنفس:\n**Fluid intake = Urine output + 400 mL/m²** (الـ 400 دي لتعويض الفقد غير المحسوس Insensible losses زي العرق والنفس)."
   },
 
   // topic: "Nephrotic Syndrome"
@@ -121,17 +99,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Nephrotic Syndrome",
     explanation: "أيمتى ناخد عينة كلوية (Renal Biopsy) في طفل النفروتيك؟ (لأن الأغلبية العظمى Minimal Change ومش محتاجين عينة):\n\n1. **العمر المريب**: لو الطفل أصغر من سنة (Congenital) أو أكبر من 10 سنين (غالباً مش Minimal change).\n2. **أعراض طارئة ومستمرة**: وجود ضغط عالي مستمر (Persistent Hypertension) أو هيماتوريا صريحة (Gross Hematuria).\n3. **خلل وراثي أو مناعي**: مستوى C3 واطي ومستمر في الواطي، أو قصور كلوية واضح من الأول.\n4. **مقاومة الكورتيزون (Steroid Resistance)**: فشل المريض في الاستجابة واختفاء زلال البول بعد 4 - 6 أسابيع من جرعة البريدنيزون الكاملة."
   },
-  {
-    id: "q-r-n-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Eye & Limb Swelling Case",
-    content: "A 4-year-old boy presents with progressive swelling around his eyes and lower limbs. Urinalysis reveals a frothy appearance with 4+ proteinuria. Laboratory values show a serum albumin of 1.7 g/dL and a serum cholesterol of 280 mg/dL. His blood pressure is normal.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. Mention the primary pharmacological class used to induce remission, and define 'Steroid-Responsive' in this clinical scenario.",
-    answer: "1. Minimal Change Nephrotic Syndrome (MCNS).\n2. Corticosteroids (specifically oral Prednisone). 'Steroid-Responsive' indicates that the patient achieves complete remission (protein-free urine for 3 consecutive days) within 4-6 weeks of starting steroid therapy.",
-    isClinical: true,
-    topic: "Nephrotic Syndrome",
-    explanation: "كيسة النفروتيك الكلاسيكية جداً:\n\n1. التشخيص هو **Minimal Change Nephrotic Syndrome (MCNS)** لأن الطفل عمره 4 سنين وضغطه طبيعي وماعندوش دم في البول، بس مورم وعنده زلال فادح (4+) وألبومين واطي وكوليسترول عالي.\n2. العلاج السحري: **Corticosteroids** (دواء Prednisone الفموي).\n3. معنى **Steroid-Responsive**: يعني البول ينضف تماما من الزلال (Protein-free urine) لـ 3 أيام متتالية خلال أول 4 - 6 أسابيع من بدء العلاج بالكورتيزون."
-  },
 
   // topic: "Acute Kidney Injury (AKI)"
   {
@@ -158,17 +125,6 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
 
-  {
-    id: "q-r-ki-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Vomiting, Diarrhea & Anuria Case",
-    content: "A 2-year-old infant with a 3-day history of severe vomiting and diarrhea presents with anuria for 14 hours, dry mucous membranes, and tachycardia. Laboratory testing reveals elevated serum blood urea nitrogen (BUN) and creatinine.\n\nQuestions:\n1. What type of Acute Kidney Injury is this?\n2. Enumerate 2 essential initial urinary indicators used to confirm this specific type.",
-    answer: "1. Prerenal Acute Kidney Injury.\n2. Low urine sodium (<20 mEq/L) and a Fractional Excretion of Sodium (FENa) less than 1%.",
-    isClinical: true,
-    topic: "Acute Kidney Injury (AKI)",
-    explanation: "قراءة تشخصية عميقة للكيسة:\n\n1. طفل عنده إسهال وترجيع (ناشف وجاف) وجاله انقطاع بول (Anuria) مع تسرع القلب (Tachycardia): الكلية بتحاول تحافظ على الماية اللي باقية بأي طريقة، فالتشخيص طبعاً **Prerenal AKI**.\n2. الإشارات التحليلية بالبول اللي بتثبت كفاءة أنابيب الكلية الكادحة لامتصاص الصوديوم والماء:\n- **Low Urine Sodium < 20 mEq/L** (الكلية بتمتص الصوديوم عشان تحبس سائل فالبول ينزل فاضي صوديوم).\n- **Fractional Excretion of Sodium (FENa) < 1%** (مؤشر ذهبي يؤكد أن الفرز الكلوي ممتاز والقصور بسبب قلة التروية فقط)."
-  },
 
   // topic: "Chronic Kidney Disease (CKD)"
   {
@@ -205,17 +161,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "أربع مشاكل تدميرية على المدى الطويل لمريض الـ CKD وعلاجها:\n\n1. **Renal Osteodystrophy**: اعتلال العظام بسب نقص Vit D النشط وحبس الفوسفات.\n2. **Growth Retardation**: قصر القامة وتأخر النمو بسبب الـ Acidosis واليوريميا وضعف هرمون النمو.\n3. **Pediatric Anemia**: أنيميا غريبة (Normochromic normocytic) بسبب غياب هرمون الـ **Erythropoietin** اللي المفروض الكلية بتفرزه لتحفيز نخاع العظام لتصنيع RBCs.\n4. **Hypertension**: الضغط بيولع بسبب زيادة محتوى الماء والملح أو تنشيط مبالغ للـ Renin-Angiotensin system."
   },
 
-  {
-    id: "q-r-c-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Growth Retardation & Pallor Case",
-    content: "A 6-year-old boy with a history of chronic glomerulonephritis presents with short stature, severe pallor, and a bone deformity of the long legs. Lab work demonstrates chronic elevations of serum creatinine, hypocalcemia, hyperphosphatemia, and a hemoglobin level of 7.5 g/dL.\n\nQuestions:\n1. What is the cause of his severe pallor and low hemoglobin?\n2. Enumerate 2 management lines used to treat his specific bone disorder.",
-    answer: "1. Anemia of CKD due to inadequate erythropoietin production by the failing kidneys.\n2. Low phosphorus diet and administration of oral phosphate binders followed by active Vitamin D supplementation.",
-    isClinical: true,
-    topic: "Chronic Kidney Disease (CKD)",
-    explanation: "تحليل كيسة الفشل الكلوي المزمن في الأطفال:\n\n1. طفل عنده فشل كلوية ومورم وعنده قصر قامة ونقص كالسيوم وزيادة فوسفات وأنيميا حادة (Hemoglobin 7.5): الأنيميا سببها الأساسي هو **فشل الكلى في إنتاج هرمون Erythropoietin**.\n2. خطة حماية العظام من التفتت والتشكل الغلط (Renal Osteodystrophy):\n- **منع الفوسفات**: تقليل الفوسفات في الغذاء وإعطاء رابطات فوسفات بالفم (Phosphate binders) مع الأكل لمنع امتصاصه.\n- **حقن فيتامين D النشط (Calcitriol)**: لتعويض عجز الكلى عن تنشيطه ولزيادة امتصاص الكالسيوم بالتالي هدوء الغدة الجار درقية."
-  },
   {
     id: "q-r-ki-4",
     chapterId: 1,
@@ -293,17 +238,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Urinary Tract Infections (UTIs)",
     explanation: "خارطة الأشعة والتحليل الذهبية للـ UTI لشغل عيادة الأطفال:\n\n- **التحليل الذهبي التأكيدي**: **Urine Culture (مزرعة بول)** من عينة نظيفة، مستحيل تشخص وتدي علاج نهائي لـ UTI بدونه.\n\nالـ 3 فحوصات بالأشعة بعد أول دور سخونة في مجرى البول:\n1. **أشعة تليفزيونية (Renal US)**: لكل طفل جاله UTI وسخونة، عشان نطمن على شكل الكلى ونستبعد أي تضخم أو خراج.\n2. **أشعة صبغية أثناء التبول (VCUG)**: دي الأشعة الأهم لاستبعاد الارتجاع (VUR). بنعملها لو السونار طلع مش مريح، أو لو طفل أصغر من 5 سنين جاله UTI حراري، أو لو المريض ولد.\n3. **مسح ذري كلوية (DMSA Scan)**: بنقيس بيه خلايا قشرة الكلى الباقية، ونعرف هل في ندبات أو جروح بالكلية بعد 4 - 6 شهور من الالتهاب الشديد."
   },
-  {
-    id: "q-r-u-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Infant Febrile UTI Case",
-    content: "An uncircumcised 5-month-old male infant presents with high fever, irritability, poor feeding, and severe jaundice. A catheterized urine specimen shows significant leukocyturia. Urine culture confirms Escherichia coli UTI.\n\nQuestions:\n1. What is the specific clinical classification of this UTI?\n2. State the treatment protocol regarding route, broad-spectrum antibiotic choices, and duration of therapy.",
-    answer: "1. Acute Pyelonephritis (parenchymal involvement with systemic symptoms in an infant).\n2. The patient must be treated with parenteral (intravenous) broad-spectrum antibiotics (such as Ceftriaxone, or Ampicillin combined with Gentamicin) for a total of 14 days, followed by daily oral antibiotic prophylaxis at one-third of the therapeutic dose once daily.",
-    isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)",
-    explanation: "طبيب الأطفال الناجح يحل الفخ ده كدا:\n\n1. طفل رضيع 5 شهور، عنده حرارة ورفض أكل وصفراء وصديد بالبول: ده كلاسيكي **Acute Pyelonephritis** (الـ UTI في الرضع دايماً بنعتبره فوق في الكلى ومعاه أعراض عامة).\n2. بروتوكول العلاج الحازم لمنع تليف الكلية:\n- **مستشفى ومضاد بالوريد**: لازم يتحجز ياخد مضاد حيوي واسع المجال بالوريد (زي Ceftriaxone أو Ampicillin+Gentamicin) لمدة **14 يوم كاملين**.\n- **وقاية مستمرة**: بعد الـ 14 يوم بنمشيه على جرعة طفيفة وقائية يومية بالليل (Prophylaxis) لحد ما نعمل أشعة الارتجاع ونطمن مفيش عيوب خلقية."
-  },
 
   // ==================== II. Chest Diseases ====================
   // topic: "Croup"
@@ -351,17 +285,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Croup",
     explanation: "علامات الخطر الكبرى للانهيار التنفسي الحاد في طفل الكروب (تستدعي تعاملاً وتنبيباً فورياً):\n1. زرقان مركزي للشفتين واللسان (**Cyanosis**).\n2. شحوب شديد وفقدان الحيوية واللون (**Pallor**).\n3. غياب أو هبوط مستوى الوعي والتركيز لتراكم CO2 ونقص الأكسجين.\n4. **الصمت الارتدادي**: اختفاء التزييق والكحة رغم الجهد العضلي العنيف للصدر، ده معناه تعب كامل للعضلات وانسداد وشيك لمجرى التنفس."
   },
-  {
-    id: "q-c-cr-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Stridor & Barking Cough Case",
-    content: "A 2-year-old boy is brought to the emergency clinic at midnight with a barking cough and high-pitched noisy sounds heard on inspiration. On examination, he has low-grade fever and mild subcostal retractions, but remains alert.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What classic radiological sign is expected on a postero-anterior neck X-ray?",
-    answer: "1. Acute Viral Croup.\n2. The Steeple Sign (uniform subglottic narrowing of the airway).",
-    isClinical: true,
-    topic: "Croup",
-    explanation: "تحليل حالة طفل بنباح وصوت شهيق حاد في الليل مع نهجان خفيف:\n1. التشخيص الأقرب هو التهاب حنجرة وقصبة هوائية فيروسي (**Viral Croup**).\n2. العلامة الإشعاعية الفارقة هي **Steeple Sign** (علامة قبة المسجد أو برج الكنيسة) وتظهر كضيق متماثل لمنطقة ما تحت الأحبال اللسانية."
-  },
 
   // topic: "Epiglottitis"
   {
@@ -408,17 +331,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Epiglottitis",
     explanation: "روافد علاج حالة لسان المزمار المؤكدة:\n1. تأمين مجرى التنفس بتركيب أنبوب تنفس صناعي (**Intubation**) في غرفة العمليات أو العناية المركزة فوراً.\n2. مضادات بكتيرية وريدية فورية وقوية (**Ceftriaxone + Vancomycin** لمدة 10 أيام).\n3. دعم الأكسجين المستمر بدون استثارة أو هلع الطفل.\n4. المتابعة المستمرة وفحص الحنجرة المباشر للتأكد من هبوط الالتهاب تماماً قبل إزالة أنبوب التنفس."
   },
-  {
-    id: "q-c-e-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Sore Throat & Drooling Case",
-    content: "A 4-year-old unimmunized child presents with a sudden onset of high fever, severe respiratory distress, and is sitting leaning forward while drooling saliva. The clinician suspects an upper airway emergency.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the primary causative organism for this specific presentation?",
-    answer: "1. Acute Epiglottitis.\n2. Hemophilus influenzae type b (Hib).",
-    isClinical: true,
-    topic: "Epiglottitis",
-    explanation: "تحليل حالة طفل 4 سنوات غير مطعم (Unimmunized) مريض بحرارة شديدة وصعوبة بلع وريالة مع الميل للأمام:\n1. التشخيص هو **Epiglottitis** (التهاب لسان المزمار حاد).\n2. الكائن المسبب والمشهور تاريخياً هو بكتيريا **Haemophilus influenzae type b (Hib)**."
-  },
 
   // topic: "Wheezy Chest and Foreign Body Aspiration"
   {
@@ -455,17 +367,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "خصائص سريرية تدل على شرقة الطفل وابتلاعه لجسم غريب واستقراره بالرئتين:\n1. قصة شرقة وكحة مفاجئة عنيفة أثناء الأكل أو اللعب بالخرز والألعاب الصغيرة.\n2. وجود تزييق موضعي مستمر غير متحرك في جانب واحد من الصدر (**Fixed localized wheeze**).\n3. ضعف وخفوت مسموع لصوت الهواء والأنفاس في الرئة المصابة.\n4. تكرار الالتهاب الرئوي أو تشكل خراج ميكروبي في نفس فص الرئة بالضبط."
   },
 
-  {
-    id: "q-c-w-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Unilateral Diminished Air Entry Case",
-    content: "A 3-year-old child is rushed to the ER with sudden violent coughing, choking, and localized respiratory distress. On chest auscultation, a fixed localized wheeze is heard over the right lung alongside diminished breath sounds on that side.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the definitive management choice for this condition?",
-    answer: "1. Foreign Body Aspiration.\n2. Rigid bronchoscopic extraction of the foreign body.",
-    isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration",
-    explanation: "تحليل طفل 3 سنوات يعاني من كحة وشرقة مفاجئة مع نقص صوت الهواء وتزييق ثابت بالجهة اليمنى:\n1. التشخيص: شرقة والتهاب بجسم غريب (**Foreign Body Aspiration**).\n2. العلاج الفوري الحاسم: إخراج الجسم الغريب عبر مناظير الشعب الهوائية الصلبة والحديثة (**Rigid bronchoscopy**)."
-  },
 
   // topic: "Pneumonia"
   {
@@ -512,29 +413,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Pneumonia",
     explanation: "معايير وقواعد حجز طفل الالتهاب الرئوي بالقسم الداخلي للمستشفى:\n1. الرضع وصغار السن الأصغر من عمر 6 أشهر.\n2. نهجان شديد أو هبوط نسبة تشبع الأكسجين لأقل من **90%** في ظروف هواء الغرفة.\n3. مظهر معتل صحياً وملمس مسمم (**Toxic appearance**) أو علامات جفاف وصدمة حادة.\n4. العجز التام عن بلع العلاج أو السوائل بالفم، أو فشل تلطيف الحرارة بعد تجربة العلاج والمضادات الفموية بالمنزل."
   },
-  {
-    id: "q-c-p-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Fast Breathing Infant Case",
-    content: "A 10-month-old infant presents with a high fever, a severe productive cough, and a respiratory rate of 55 breaths/minute. On chest examination, localized bronchial breathing and crackles are heard over the right lung base.\n\nQuestions:\n1. Does this infant meet the WHO criteria for fast breathing (Tachypnea)?\n2. What is the first-line empiric oral antibiotic of choice for outpatient management?",
-    answer: "1. Yes, tachypnea for infants aged 2-12 months is defined as a respiratory rate >50 breaths/minute.\n2. High-dose Amoxicillin (90 mg/kg/24 hr).",
-    isClinical: true,
-    topic: "Pneumonia",
-    explanation: "تحليل كيسة رضيع 10 أشهر يعاني من حرارة ونسم كحة ومعدل تنفس 55 نفس بالدقيقة:\n1. نعم، الطفل يعاني من نهجان معتمد (**Tachypnea**)؛ لأن المعايير لمن هم من عمر شهرين لسنة تشترط أن يكون النفس الطبيعي **أقل من 50 نفس بالدقيقة**.\n2. العلاج الفموي الكلاسيكي والأول للصغار هو شراب **Amoxicillin بجرعة هجومية مكسفة (90 mg/kg/day)**."
-  },
 
-  {
-    id: "q-c-p-6",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Atypical Infantile Pneumonia Case",
-    content: "A 2-month-old infant is brought to the clinic with a history of progressive, loud, dry, repetitive, and disjointed \"staccato\" coughing fits and fast breathing over the past 2 weeks. The infant is completely afebrile, and the chest X-ray shows significant hyperinflation with mild bilateral interstitial infiltrates. The mother recalls the baby having red, swollen eyes with yellowish discharge at 2 weeks of age.\n\nQuestions:\n1. What is the most likely specific causative pathogen for this child's atypical pneumonia?\n2. Mention the drug of choice, route, and duration for treating this condition.",
-    answer: "1. Chlamydia trachomatis (often transmitted perinatally, causing neonatal conjunctivitis followed by staccato cough, hyperinflation, and absence of fever in infants aged 1-3 months).\n2. Oral Erythromycin for 14 days, or oral Azithromycin for 5 days.",
-    isClinical: true,
-    topic: "Pneumonia",
-    explanation: "تحليل رضيع عمره شهران بكحة جافة متقطعة شبيهة بحبات الرشاش (**Staccato Cough**) وبدون أي سخونية، مع خلفية من التهاب صديدي بالعينين بعد الولادة مباشرة:\n1. الكائن المسبب هو **Chlamydia trachomatis** وتنتقل للطفل من رحم وقناة ولادة الأم المصابة.\n2. العلاج السحري والفعال هو شراب مضاد **Erythromycin** لمدة 14 يوماً أو **Azithromycin** لمدة 5 أيام."
-  },
   {
     id: "q-c-p-7",
     chapterId: 2,
@@ -593,17 +472,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Bronchiolitis",
     explanation: "مرتكزات خطة علاج ومداواة رضيع البرونكيوليتس بالمستشفى:\n1. دعم الأكسجين الرطب المريح بخرطوم الأنف.\n2. محاليل تروية وريدية دقيقة لتفادي ودعم الجفاف الحاصل والامتناع عن الفم.\n3. تجربة جلسة تنفسية واحدة بجهاز استنشاق موسع شعب (تستكمل لو أظهرت تحسن فوري).\n4. شراب أو استنشاق **Ribavirin** (يُعطى لمرضى الخطورة الشديدة كعيوب القلب والخلل المناعي).\n5. تجنب المهدئات والمضادات والكورتيزون العشوائي الذي تنفيه الدراسات التفاعلية العلمية لعدم جدواه."
   },
-  {
-    id: "q-c-b-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Hyper-resonant Chest Infant Case",
-    content: "A 5-month-old infant presents during winter with a 2-day history of rhinitis followed by a severe dry cough, tachypnea, and chest indrawing. Chest exam reveals a hyper-resonant percussion note and diffuse fine end-inspiratory crackles with wheezes.\n\nQuestions:\n1. What is the most likely diagnosis?\n2. What is the primary viral etiology responsible for roughly 50% of these cases?",
-    answer: "1. Acute Bronchiolitis.\n2. Respiratory Syncytial Virus (RSV).",
-    isClinical: true,
-    topic: "Bronchiolitis",
-    explanation: "تحليل حالة رضيع 5 أشهر مريض بكحة متسارعة ونهجان وصدر مفرط الرنين وقرقعات ناعمة شتاءً:\n1. التشخيص هو **Acute Bronchiolitis** (التهاب شعيبات حاد).\n2. الفيروس المتصدر بأكثر من 50-60% من هذه الحالات هو الفيروس المخلوي التنفسي (**RSV**)."
-  },
 
 
 
@@ -632,17 +500,6 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
 
-  {
-    id: "q-c-a-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "FEV1 Improvement Case",
-    content: "A 6-year-old boy known to have recurrent wheezing presents to the emergency room with severe breathlessness and a tight cough after playing outdoors in cold weather. Spirometry demonstrates a low FEV1 that increases by 14% after an albuterol nebulizer treatment.\n\nQuestions:\n1. What is the clinical significance of the 14% increase in FEV1?\n2. Enumerate 2 structural thoracic complications this child is at risk of if the acute attack deteriorates suddenly.",
-    answer: "1. It demonstrates a high degree of reversible airflow limitation, which is a hallmark diagnostic feature of bronchial asthma.\n2. Pneumothorax (air-leak) and segmental/subsegmental lung collapse.",
-    isClinical: true,
-    topic: "Bronchial Asthma",
-    explanation: "تحليل كيسة طفل 6 سنوات تعرض لتيار بارد مع تدهور في الـ FEV1 تحسنت بـ 14% بعد جلسة البخاخ البسيطة:\n1. **Reversibility**: تحسن مؤشر FEV1 بأكثر من 9-12% يعتبر المعيار الإكلينيكي الذهبي الحاسم لإثبات إصابة الطفل بـ **Bronchial Asthma**.\n2. المضاعفات الطارئة في حال الهبوط هي: استرواح صدري وتجمع هواء بالبلورة (**Pneumothorax**)، وانخماص فصوص بالرئة (**Atelectasis**)."
-  },
 
   // ==================== III. Neonatology Section ====================
   // topic: "Topic One: Transient Cutaneous Lesions"
@@ -677,16 +534,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Topic One: Transient Cutaneous Lesions"
   },
 
-  {
-    id: "q-n-tc-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Pinpoint Red Ring Papules Case",
-    content: "A 2-day-old full-term healthy infant is noted by his mother to have an eruption of scattered small white bumps surrounded by a red ring across his chest and face. A skin scraping reveals the presence of numerous eosinophils. The infant is active and feeding well.",
-    answer: "1. Erythema Toxicum.\n2. No treatment is required; it is a benign condition that resolves spontaneously within a week.",
-    isClinical: true,
-    topic: "Topic One: Transient Cutaneous Lesions"
-  },
 
   // topic: "Topic Two: Prematurity and its Complications"
   {
@@ -726,16 +573,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Preterm Feeding Modalities",
     content: "Enumerate 4 feeding requirements for a stable preterm infant.",
     answer: "1. Utilization of maternal breast milk or specialized preterm formulas.\n2. Implementation of small-volume trophic feedings (minimal enteral nutrition) within 2-4 hours of life if stable to avoid hypoglycemia.\n3. Utilizing a nasogastric tube (gavage feeding) or dropper if the infant lacks coordinated suckling and swallowing reflexes.\n4. Careful monitoring of gastric residuals before each feed, ensuring increments do not exceed 20 mL/kg/24 hr.",
-    isClinical: true,
-    topic: "Prematurity and its Complications"
-  },
-  {
-    id: "q-n-pr-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Underaged Translucent Creases Case",
-    content: "A male infant is delivered via emergency cesarean section at 31 weeks of gestation due to severe maternal pre-eclampsia. His birth weight is 1300 grams. On admission to the NICU, he is weak, hypoactive, has thin translucent skin, and underdeveloped sole creases.\n\nQuestions:\n1. Classify this newborn based on his birth weight category.\n2. Enumerate 2 immediate respiratory or gastrointestinal complications this preterm infant is at high risk of developing in his first week of life.",
-    answer: "1. Very Low Birth Weight (VLBW) infant (defined as a birth weight less than 1500 grams).\n2. Respiratory Distress Syndrome (RDS / Hyaline Membrane Disease) and Necrotizing Enterocolitis (NEC).",
     isClinical: true,
     topic: "Prematurity and its Complications"
   },
@@ -820,17 +657,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Complications of Indirect Hyperbilirubinemia",
     explanation: "الأعراض العصبية المزمنة للـ Kernicterus التي تتضح عند عمر 3 سنوات:\n1. **حركات لا إرادية ثنائية (Bilateral choreoathetosis)**: حركات عشوائية واهتزازية في الأطراف وتصلب العضلات.\n2. **تأخر عقلي**: ضعف القدرات المعرفية والعقلية (Mental deficiency).\n3. **فقدان السمع عصبي حسي**: فقدان القدرة الإدراكية للأصوات عالية التردد (High-frequency sensorineural hearing loss).\n4. **الحول وصعوبة حركة العين**: مشاكل بالرؤية وحركة العين لأعلى (Defective upward eye movement)."
   },
-  {
-    id: "q-n-comp-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Opisthotonos High Bilirubin Case",
-    content: "A 5-day-old term infant with a total serum bilirubin level of 34 mg/dL exhibits poor sucking, hypotonia, a high-pitched cry, and an episodic backwards arching of his neck and trunk (opisthotonos).\n\nQuestions:\n1. What severe complication has this infant developed?\n2. Enumerate 2 major therapeutic modalities used immediately to reduce indirect bilirubin levels below neurotoxic thresholds.",
-    answer: "1. Bilirubin Encephalopathy / Acute Kernicterus.\n2. Intensive Phototherapy and immediate Exchange Transfusion.",
-    isClinical: true,
-    topic: "Complications of Indirect Hyperbilirubinemia",
-    explanation: "تحليل الكيسة العصبية:\n1. طفل عنده 5 أيام، نسبة الصفراء 34 مجم/ديسيلتر (عالية جداً وفوق المسموح) وعنده مظاهر عصبية صريحة كارتخاء مع تقوس للخلف (Opisthotonos) وصرخة نبرتها عالية: التشخيص هو **Kernicterus / Acute Bilirubin Encephalopathy**.\n2. طرق التدخل العاجل لخفض النسبة المهولة وتجنب تدمير الدماغ:\n- **Phototherapy**: علاج ضوئي مكثف.\n- **Exchange Transfusion**: تغيير دم الطفل الفوري."
-  },
  
   // topic: "Neonatal Sepsis"
   {
@@ -887,17 +713,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Neonatal Sepsis",
     explanation: "أهم العلامات والمؤشرات المعملية لالتهاب الدم (Sepsis workup):\n1. **Neutropenia/Neutrophilia**: نقص كرات الدم البيضاء المتعادلة (مؤشر خطير!) أو زيادتها.\n2. **I/T Ratio > 0.2**: زيادة الخلايا غير الناضجة (Band cells) بالنسبة للمتعادلة، تدل على استهلاك النخاع.\n3. **Thrombocytopenia**: نقص صفائح الدم (يحدث متأخرًا كدليل على انتشار الالتهاب).\n4. **CRP / ESR**: ارتفاع مؤشرات الالتهاب الحادة في الدم مثل البروتين التفاعلي C."
-  },
-  {
-    id: "q-n-sep-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "NICU sudden temperature drop Case",
-    content: "A 4-day-old preterm infant in the NICU exhibits a sudden onset of temperature instability (hypothermia of 35.4°C), poor feeding, new-onset apneic spells, and severe abdominal distention. The maternal history confirms a prolonged rupture of membranes lasting 30 hours.\n\nQuestions:\n1. Calculate the infant's clinical status based on the Clinical Sepsis Score parameters.\n2. Mention the diagnostic category if this infant features a highly suggestive clinical picture alongside a positive blood culture for Klebsiella.",
-    answer: "1. The infant exhibits 4 positive signs (respiratory/apnea, behavioral/poor feeding, GI/distention, metabolic/hypothermia), strongly indicating sepsis as the score is >=3.\n2. Proven Neonatal Sepsis.",
-    isClinical: true,
-    topic: "Neonatal Sepsis",
-    explanation: "تحليل كيسة تسمم الدم بالـ NICU:\n1. طفل مبتسر ظهرت عليه علامات انقطاع نفس وخمول وانتفاخ بطن وهبوط حرارة (4 علامات صريحة من الـ Sepsis Score)، مع تاريخ PROM 30 ساعة بالأم: نعم، الطفل يحتاج فوراً علاج مضاد حيوي تجريبي عاجل لأن نتيجته >= 3.\n2. لو كانت الأعراض مصحوبة بمزرعة دم إيجابية لبكتيريا الـ Klebsiella: يصنف كـ **Proven Neonatal Sepsis** (تسمم دم مؤكد معمليًا)."
   },
 
   // ==================== IV. Emergency Section ====================
@@ -1036,17 +851,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Topic Two: Shock",
     explanation: "الرافعات والمنشطات الوعائية الأربعة ودواعي العمل الدقيق بالقسم الداخلي بمشفى الأطفال:\n1. الـ **Epinephrine**: الرقم الأول لترميم وعلاج صدمة الصدر التسممية الباردة وهبوط قوة انقباض القلب.\n2. الـ **Norepinephrine**: أفضل مقبض للأوعية ورفع الضغط لإنقاذ الصدمة التسممية الدافئة متسعة الأوعية.\n3. الـ **Dobutamine**: مقوي كفاءة الانقباض وضبط حجم القذف الصدري والضغط معتدل البنية.\n4. الـ **Milrinone**: الموسع والداعم المجهد للأوعية لإنقاذ عمليات وتشوهات القلب المعتلة."
   },
-  {
-    id: "q-e-sh-5",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Bounding Peripheral Pulses Case",
-    content: "A 3-year-old child presents with a severe toxic look, high fever, cold hands, bounding peripheral pulses, and a delayed capillary refill of 4 seconds. His systolic blood pressure has dropped significantly below the normal range for his age, and he is passing minimal urine.\n\nQuestions:\n1. Is this shock compensated or uncompensated?\n2. What is the immediate first-line preload fluid expansion protocol, including specific fluid type and initial dose?",
-    answer: "1. Uncompensated shock (due to the drop in blood pressure and organ hypoperfusion).\n2. Intravenous bolus of an isotonic crystalloid (Normal Saline or Ringer's Lactate) at a dose of 20 ml/kg infused rapidly over 10-15 minutes.",
-    isClinical: true,
-    topic: "Topic Two: Shock",
-    explanation: "تحليل طفل التسمم البكتيري وصدمة هبوط الضغط:\n1. الصدمة هنا غير معوضة (**Uncompensated**) بسبب هبوط ضغط اللمس والانقباض والاضطراب البولي بمرور العينات.\n2. علاج التروية الفوري الفارق هو حقن سوائل عضلية هجومية مكثفة من المحلول الفسيولوجي بمقدار **20 ml/kg** تتدفق سريعاً طوال 10-15 دقيقة فقط لدعم وضخ الشرايين."
-  },
 
   // topic: "Topic Three: Coma"
   {
@@ -1093,17 +897,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Topic Three: Coma",
     explanation: "كيف تعالج طبياً غيبوبة الضغط والورم المخي الزائد بالأدوية والوضعية (Increased ICP Control):\n1. رفع الرأس بمقدار 30 درجة بنمط خط منتصف الرقبة لتيسير التفريغ الوريدي وحماية القفص الصدري.\n2. كبس ودعم السوائل المحاطة إلى 70% فقط من المنسوب الطبيعي لمنع تجمع مياه الورم بالرأس.\n3. استخدام وتدفق حقن الوريد المدرة المجهدة بالأسموزية **Mannitol** بجرعة دقيقة لدفع السوائل خارج مخه.\n4. إضافة حقن مدر بول الأشرطة (لازكس) لرفع التفريغ البولي وحس التهوية التناغمية بجهاز النفس الصناعي."
   },
-  {
-    id: "q-e-co-5",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Severe Head injury coma Case",
-    content: "A 5-year-old child is brought to the resuscitation room completely unconscious following a severe head injury. On physical assessment, he does not respond to painful stimuli, breathes spontaneously, features a bulging anterior fontanel, and demonstrates asymmetric sluggish pupillary responses to light.\n\nQuestions:\n1. What does the presence of asymmetric pupillary responses and asymmetric motor signs indicate?\n2. Enumerate 2 gastrointestinal and eye/skin protective measures required in the daily management of this comatose child.",
-    answer: "1. It indicates a lateralizing sign, suggesting a focal brain lesion or localized mass effect/hemorrhage.\n2. Administration of antacids to prevent stress ulcers, and applying protective eye drops/ointments to prevent corneal damage.",
-    isClinical: true,
-    topic: "Topic Three: Coma",
-    explanation: "تحليل وتتبع إصابات الرأس وصعوبة التناغم العصبي للطفل:\n1. غياب وحرارة التفاعل الحدقي وعدم التناسق للعينين والحركة ده معناه **Lateralizing sign** إشارة لوجود نزيف بؤري ضاغط أو ورم وحجم دموي متراكم بجهحة حركية دون الأخرى تستدعي أشعة مقطعية عاجلة.\n2. أهم ركائز اعتناء التمريض هي ترطيب قرنية العين بقطرات ومرهم واقٍ من الجفاف المستمر وحصار حموضة المعدة بأمبولات واقية لمنع النزيف التقرحي."
-  },
 
   // topic: "Topic Four: Glasgow Coma Scale and its Advantages"
   {
@@ -1139,30 +932,10 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Topic Four: Glasgow Coma Scale and its Advantages",
     explanation: "مكونات مقياس غلاكسو ونقاطها:\n1. فتح العين: 4 نقاط.\n2. الاستجابة اللفظية: 5 نقاط.\n3. الاستجابة الحركية: 6 نقاط."
   },
-  {
-    id: "q-e-gcs-5",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "GCS Calculation & Triage Case",
-    content: "A 3-year-old child is evaluated following a fall. She opens her eyes only when spoken to, emits consolable crying when irritable, and withdraws her limb from painful stimulus.\n\nQuestions:\n1. Calculate the total GCS score.\n2. Does this score indicate severe brain injury requiring aggressive management (score ≤ 8)?",
-    answer: "1. Total GCS Score: Eye (3) + Verbal (4) + Motor (4) = 11.\n2. No, severe brain injury is indicated by a score of 8 or less.",
-    isClinical: true,
-    topic: "Topic Four: Glasgow Coma Scale and its Advantages",
-    explanation: "حساب وعي الطفلة:\n1. المجموع: العين (3) + اللفظي (4) + الحركي (4) = **11**.\n2. التقييم: الدرجة **ليست** ضمن نطاق الإصابة الحادة (8 أو أقل)، لذا لا تتطلب تداخلاً جراحياً أو تنبياً إجبارياً حالياً."
-  },
 
   // ==================== V. Family medicine ====================
   // topic: "Principles of Family Medicine"
-  {
-    id: "q-fm-pfm-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define Family Medicine",
-    content: "Define \"Family Medicine\" according to the American Academy of Family Physicians (AAFP).",
-    answer: "It is the medical specialty which provides continuing and comprehensive health care for the individual and the family. It integrates the biological, clinical, and behavioral sciences, and its scope encompasses all ages, sexes, organ systems, and every disease entity.",
-    isClinical: false,
-    topic: "Principles of Family Medicine"
-  },
+
   {
     id: "q-fm-pfm-2",
     chapterId: 5,
@@ -1174,6 +947,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Principles of Family Medicine"
   },
   {
+    id: "q-fm-pfm-case-chronic",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Chronic Disease Management Model Case",
+    content: "A family physician manages a registered patient diagnosed with Type 2 Diabetes Mellitus. Instead of solely writing a pharmaceutical prescription, the physician updates the family health record folder, evaluates how the patient's job environment affects his compliance, and arranges a shared educational session with the patient's spouse to plan structured home dietary routines.\n\nQuestions:\n1. List the core principles of family medicine demonstrated by the physician's holistic approach during this single clinical encounter.\n2. List four distinct operational differences comparing the Family Medicine Model against the traditional Specialist Care Model regarding patient focus, continuity, and coordination.",
+    answer: "1. Principles: Comprehensiveness (biopsychosocial approach) and Family-Oriented Care.\n2. Operational Differences: Family context vs regardless of family, patient-centered (concerns/beliefs) vs problem-centered (disease), continuous vs fragmented, and coordinated vs uncoordinated.",
+    isClinical: true,
+    topic: "Principles of Family Medicine",
+    explanation: "نموذج طب الأسرة في إدارة الأمراض المزمنة:\n- يركز طب الأسرة على المريض ككل (Biopsychosocial) وليس مجرد عضو مريض، ويهتم بسياقه العائلي والاجتماعي.\n- الاختلاف عن التخصصات الدقيقة يكمن في الاستمرارية (Continuity) والتنسيق (Coordination) والشمولية."
+  },
+  {
     id: "q-fm-pfm-3",
     chapterId: 5,
     type: "short-essay",
@@ -1183,37 +967,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Principles of Family Medicine"
   },
-  {
-    id: "q-fm-pfm-4",
-    chapterId: 5,
-    type: "define",
-    title: "Unique Clinical Discipline",
-    content: "Define family medicine as a unique clinical discipline.",
-    answer: "Family medicine is a unique clinical discipline distinguished by its process of care, not merely by its content. At the center of this process lies the patient-physician relationship, with the patient viewed within the context of the family and the community.",
-    isClinical: false,
-    topic: "Principles of Family Medicine"
-  },
-  {
-    id: "q-fm-pfm-6",
-    chapterId: 5,
-    type: "define",
-    title: "Olesen Definition",
-    content: "Provide the Olesen Definition (2006) of the family physician.",
-    answer: "The family physician is the specialist trained to work at the front line of the health care system and to take the initial steps in providing care for any health problem a patient may have.",
-    isClinical: false,
-    topic: "Principles of Family Medicine"
-  },
 
-  {
-    id: "q-fm-pfm-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "A Holistic Care Approach Case",
-    content: "A family physician reviews a patient's medical chart. Instead of focusing only on the patient's acute complaint of elevated blood pressure, the physician schedules a well-person visit to evaluate the patient's lifestyle, family dynamics, stress levels, and occupational environment.\n\nQuestions:\n1. What specific medical care approach is the family physician demonstrating here?\n2. Enumerate 2 non-clinical settings or networks that are evaluated under family-oriented care.",
-    answer: "1. A holistic and patient-centered clinical approach.\n2. Family dynamics and living or working conditions.",
-    isClinical: true,
-    topic: "Principles of Family Medicine"
-  },
+
+
   {
     id: "q-fm-pfm-7",
     chapterId: 5,
@@ -1224,18 +980,20 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Principles of Family Medicine"
   },
+  {
+    id: "q-fm-pfm-case-scope",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Principles of Family Medicine & Scope of Care Case",
+    content: "A new patient presents to the clinic with multiple non-specific somatic complaints. Instead of focusing only on the biological illness, the family physician evaluates the patient's concerns, values, and beliefs, and reviews her physical, psychological, and social environment.\n\nQuestions:\n1. List the core principles of family medicine that guide the physician’s process of care.\n2. Enumerate the comprehensive dimensions of integrated care that a family physician must provide under the holistic approach.",
+    answer: "1. Core principles: Continuity of care, Comprehensiveness, Coordination and collaboration, Community-oriented care, Family-oriented care, and Prevention.\n2. Dimensions: Health promotion, Disease prevention, Curative care, Rehabilitation, and Physical, psychological, and social support.",
+    isClinical: true,
+    topic: "Principles of Family Medicine",
+    explanation: "مبادئ طب الأسرة والنهج الشمولي:\n- طب الأسرة لا يعالج المرض كحالة بيولوجية فقط، بل يهتم بالمريض كشخص (Patient-centered) وفي سياقه الاجتماعي والنفسي.\n- الرعاية المتكاملة تشمل: الوقاية، العلاج، التأهيل، والدعم النفسي والاجتماعي."
+  },
 
   // topic: "The Family Physician & RISE Framework"
-  {
-    id: "q-fm-tfp-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define Family Physician Role",
-    content: "Define the role of a \"Family Physician\".",
-    answer: "A family physician is a medical doctor working at the front line of health care, responsible for providing comprehensive, continuous, and person-centered care (physical, psychological, and social) to individuals within the context of their families, and to families within the context of their communities.",
-    isClinical: false,
-    topic: "The Family Physician & RISE Framework"
-  },
+
   {
     id: "q-fm-tfp-2",
     chapterId: 5,
@@ -1263,16 +1021,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Manager Role Responsibilities",
     content: "Enumerate 4 distinct responsibilities that define the \"Managerial Role\" of the family physician within a Family Health Center (FHC).",
     answer: "1. Responsibility for all technical and administrative activities within the center.\n2. Promoting intersectoral coordination between health, education, and social services.\n3. Ensuring the strict implementation of national health policies and health service programs.\n4. Investigating public complaints and ensuring appropriate responses to community needs.",
-    isClinical: true,
-    topic: "The Family Physician & RISE Framework"
-  },
-  {
-    id: "q-fm-tfp-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Curative Care Role Case",
-    content: "A family physician is organizing her morning practice. She reviews family health records, performs accurate general medical examinations, and selects drugs rationally from the Essential Drug List while arranging home visits for elderly immobile patients.\n\nQuestions:\n1. What specific role category of the family physician do these actions represent?\n2. Enumerate 2 specific chronic diseases prevalent in the primary care area that require continuous follow-up by the family health team.",
-    answer: "1. The Curative Role.\n2. Hypertension and Diabetes Mellitus.",
     isClinical: true,
     topic: "The Family Physician & RISE Framework"
   },
@@ -1327,16 +1075,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "The Family Physician & RISE Framework"
   },
  
-  {
-    id: "q-fm-rise-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Ischemic Heart Risk Case",
-    content: "A 45-year-old heavy smoker with a family history of premature ischemic heart disease visits the Family Health Center. The family physician checks his lipid profile, records his blood pressure, and schedules a counseling session regarding smoking cessation.\n\nQuestions:\n1. Mention the components of the RISE approach being utilized during this clinical encounter.\n2. What is the primary clinical goal of implementing the RISE framework for chronic conditions?",
-    answer: "1. Risk assessment, Screening, and Education.\n2. To achieve early detection, promote healthy lifestyles, and delay or minimize the impact of chronic complications.",
-    isClinical: true,
-    topic: "The Family Physician & RISE Framework"
-  },
 
   // topic: "Comparative Medical Models"
   {
@@ -1370,16 +1108,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Comparative Medical Models"
   },
  
-  {
-    id: "q-fm-fmm-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Multidisciplinary Care Model Case",
-    content: "A patient presents to a medical facility with multiple overlapping symptoms of poorly controlled type 2 diabetes, peripheral neuropathy, and signs of clinical depression. In this facility, a multidisciplinary healthcare team handles his care, utilizing integrated electronic health records to provide continuous tracking and proactive interventions.\n\nQuestions:\n1. Which healthcare model of practice does this system explicitly represent?\n2. What are the three dimensions integrated into the core process of family medicine?",
-    answer: "1. The Family Medicine Model.\n2. Knowledge, Clinical skills, and a Unique care process.",
-    isClinical: true,
-    topic: "Comparative Medical Models"
-  },
 
   // topic: "Family Health Team & PHC Services"
   {
@@ -1423,16 +1151,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Family Health Team & PHC Services"
   },
   {
-    id: "q-fm-fht-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Center Workload Meeting Case",
-    content: "The manager of a Family Health Center holds a staff meeting to upgrade clinical outcomes. He notes that improving team performance requires structured job clarity, ongoing skills capacity-building, and communication channels.\n\nQuestions:\n1. Who is the designated leader responsible for directing this multidisciplinary healthcare team?\n2. Enumerate 2 essential factors that help in upgrading and improving Family Health Team clinical performance.",
-    answer: "1. The Family Physician.\n2. Clearly defined job descriptions for each team member and regular team meetings for monitoring and problem-solving.",
-    isClinical: true,
-    topic: "Family Health Team & PHC Services"
-  },
-  {
     id: "q-fm-fht-6",
     chapterId: 5,
     type: "short-essay",
@@ -1447,10 +1165,21 @@ export const INITIAL_QUESTIONS: Question[] = [
     chapterId: 5,
     type: "short-essay",
     title: "Chronic Conditions Management",
-    content: "Enumerate 4 chronic conditions followed up and managed by the Family Health Team.",
-    answer: "1. Hypertension.\n2. Diabetes Mellitus (DM).\n3. Tuberculosis (TB) cases receiving DOTS.\n4. Priority national programs such as IMCI and Family Planning.",
+    content: "Enumerate 3 chronic conditions followed up and managed by the Family Health Team.",
+    answer: "1. Hypertension.\n2. Diabetes Mellitus (DM).\n3. Tuberculosis (TB) cases receiving DOTS.",
     isClinical: true,
     topic: "Family Health Team & PHC Services"
+  },
+  {
+    id: "q-fm-fht-case-leader",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Family Health Team Coordination Case",
+    content: "A family physician is executing her role as the designated leader of a newly established Family Health Team (FHT) within a Family Health Center (FHC). The team needs to coordinate to implement primary health care services effectively for the registered catchment area.\n\nQuestions:\n1. List the specific clinical staff members who compose the Family Health Team under the physician's leadership.\n2. Enumerate the core managerial and supervisory responsibilities of the Family Physician as the team leader.",
+    answer: "1. Clinical Staff: Nurses, Pharmacists, Laboratory Technicians, Laboratory Assistants, Social Workers, and Sanitarians.\n2. Leadership responsibilities: Directing/coordinating team activities, supporting teamwork, ensuring integration of clinical/preventive/administrative services, and supervising PHC activities.",
+    isClinical: true,
+    topic: "Family Health Team & PHC Services",
+    explanation: "قيادة فريق صحة الأسرة:\n- الطبيب هو قائد الفريق (Team Leader)، والهدف هو التنسيق بين كل التخصصات (تمريض، صيادلة، معامل، أخصائيين اجتماعيين) لتقديم خدمة شاملة.\n- المسؤولية تشمل التنسيق الفني، الإشراف الميداني، وربط الخدمات الإدارية بالفنية."
   },
 
   // topic: "PHC Services at FHU/FHC"
@@ -1466,16 +1195,7 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   // topic: "Family Dynamics & The Human Life Cycle"
-  {
-    id: "q-fm-fdc-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define Family Parameter",
-    content: "Define the clinical parameter of a \"Family\" in family practice.",
-    answer: "The family is the basic structural and functional unit of the community, consisting of two or more related persons living together in the same household for more than 6 months.",
-    isClinical: false,
-    topic: "Family Dynamics & The Human Life Cycle"
-  },
+
   {
     id: "q-fm-fdc-2",
     chapterId: 5,
@@ -1494,7 +1214,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     content: "Enumerate 4 distinct conditions or categories where family history explicitly contributes to patient risk (The Biologic Family risk factor).",
     answer: "1. Cancers (especially breast, colon, prostate, and ovarian).\n2. Cardiovascular diseases (Hypertension, atherosclerosis, coronary artery disease).\n3. Metabolic disorders (Diabetes Mellitus and Hyperlipidemia).\n4. Autoimmune/endocrinal disorders, or infections (such as tuberculosis or hepatitis B).",
     isClinical: true,
-    topic: "Family Dynamics & The Human Life Cycle"
+    topic: "Anticipatory Care & Immunization Guidelines"
   },
   {
     id: "q-fm-fdc-4",
@@ -1507,25 +1227,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Family Dynamics & The Human Life Cycle"
   },
   {
-    id: "q-fm-fdc-5",
+    id: "q-fm-fdc-case-structure",
     chapterId: 5,
     type: "problem-solving",
-    title: "Genetic Risk Genogram Case",
-    content: "A family physician is constructing a clinical file for a newly registered patient. To accurately evaluate hereditary and genetic risks for early disease screening, the physician uses a genogram to map out relatives related by blood.\n\nQuestions:\n1. Which specific family classification type is the physician evaluating to assess genetic risks?\n2. Mention the family function component from the CAPRS framework that deals with the provision of basic needs like food, shelter, and social support.",
-    answer: "1. The Biologic Family.\n2. C - Care.",
+    title: "Family Structure & Clinical Importance Case",
+    content: "A 45-year-old patient with persistent environmental allergies and chronic family conflicts presents for a follow-up visit. The family physician decides to systematically analyze the patient's home setting and structural support system.\n\nQuestions:\n1. List the three structural types of families assessed in family practice to understand hereditary, environmental, or social risks.\n2. Enumerate the core family functions represented by the \"CAPRS\" framework.",
+    answer: "1. Structural family types: Biologic Family (hereditary), Household Family (environment), and Functional Family (social/support).\n2. CAPRS Framework: Care, Affection, Providing status, Reproduction, and Socialization.",
     isClinical: true,
-    topic: "Family Dynamics & The Human Life Cycle"
+    topic: "Family Dynamics & The Human Life Cycle",
+    explanation: "هيكل الأسرة ووظائفها:\n- بنقيم الأسرة من 3 زوايا: بيولوجية (وراثة)، منزلية (بيئة مشتركة)، ووظيفية (دعم اجتماعي).\n- نموذج CAPRS بيلخص وظائف الأسرة: الرعاية، العاطفة، المكانة الاجتماعية، التكاثر، والتنشئة الاجتماعية."
   },
-  {
-    id: "q-fm-fdc-6",
-    chapterId: 5,
-    type: "define",
-    title: "Define Household Family",
-    content: "Define \"Household Family\" and state its clinical importance.",
-    answer: "Definition: Individuals living together in the same home, regardless of biological relationship.\nClinical Importance: It highlights shared environmental factors (e.g., infections, allergens, stressors) and helps tailor management involving household routines.",
-    isClinical: false,
-    topic: "Family Dynamics & The Human Life Cycle"
-  },
+
 
   // topic: "Stressful Life Events in Families"
   {
@@ -1580,28 +1292,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Family Dynamics & The Human Life Cycle"
   },
-  {
-    id: "q-fm-hlc-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Maternal & Childhood Programs Case",
-    content: "A family physician sets up a primary care schedule. He separates clinical programs into maternal care for fetal life, integrated childhood management (IMCI) for toddlers, and psychosocial counseling for individuals undergoing a gradual decline in functional abilities.\n\nQuestions:\n1. What is the clinical term used to describe the developmental stage of gradual physical decline and aging?\n2. Through which integrated public program are the needs of breast-dependent and preschool children managed in family practice?",
-    answer: "1. Senescence.\n2. The IMCI (Integrated Management of Childhood Illness) program within maternal and child health (MCH) services.",
-    isClinical: true,
-    topic: "Family Dynamics & The Human Life Cycle"
-  },
 
   // topic: "Basic Benefit Package & Level of Care"
-  {
-    id: "q-fm-bbp-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define BBP",
-    content: "Define the \"Basic Benefit Package (BBP)\" within the Universal Health Insurance System.",
-    answer: "The BBP is a defined, integrated group of essential medical services delivered through primary health care to meet the priority health needs of the population, with particular emphasis on women, children, and vulnerable groups, financed to ensure equity, accessibility, and financial protection.",
-    isClinical: false,
-    topic: "Basic Benefit Package & Level of Care"
-  },
+
   {
     id: "q-fm-bbp-2",
     chapterId: 5,
@@ -1634,16 +1327,6 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   {
-    id: "q-fm-bbp-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Universal Insurance Roster Case",
-    content: "A Universal Health Insurance administrator reviews center workloads. He notes that simple infections and vaccinations are sorted at the unit, deliveries and complex chemistries are routed to the health center, and emergency surgeries require direct secondary transfer.\n\nQuestions:\n1. What is the designated BBP service level responsible for specialist outpatient care, basic inpatient stays, and emergency surgery?\n2. Enumerate 2 basic laboratory investigations available at the Family Health Unit (FHU) level.",
-    answer: "1. The Hospital Level.\n2. Hemoglobin (Hb) and Urine analysis (or blood glucose).",
-    isClinical: true,
-    topic: "Basic Benefit Package & Level of Care"
-  },
-  {
     id: "q-fm-bbp-6",
     chapterId: 5,
     type: "short-essay",
@@ -1652,6 +1335,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Anti-streptolysin O titer (ASOT).\n2. Complete blood count (CBC).\n3. Culture and sensitivity testing.\n4. Blood chemistry including liver and kidney function tests.",
     isClinical: true,
     topic: "Basic Benefit Package & Level of Care"
+  },
+  {
+    id: "q-fm-bbp-case-tiers",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Basic Benefit Package (BBP) Service Tiers Case",
+    content: "An administrative audit is conducted at a primary care sector to evaluate the execution of the Basic Benefit Package (BBP) delivered through the Family Health Delivery Model. The auditors need to verify whether clinical services are being appropriately distributed across different tiers.\n\nQuestions:\n1. List the specific medical and surgical capabilities that differentiate the Family Health Center (FHC) service tier from the Family Health Unit (FHU) tier.\n2. Enumerate the outpatient specialist and emergency services managed exclusively at the Hospital level under the BBP framework.",
+    answer: "1. Differentiating capabilities at FHC: Diagnostic X-ray services and Safe delivery services.\n2. Hospital-level services: Specialist outpatient services, Basic inpatient care, and Emergency/referral services (including emergency surgery).",
+    isClinical: true,
+    topic: "Basic Benefit Package & Level of Care",
+    explanation: "مستويات تقديم الخدمة في حزمة المنافع الأساسية (BBP):\n- الفرق الجوهري بين المركز (FHC) والوحدة (FHU) هو توفر الأشعة التشخيصية وخدمات الولادة الآمنة في المركز.\n- الحالات المتخصصة والجراحات الطارئة والتنويم مكانها دائماً في المستشفى (Level 3)."
   },
 
   // topic: "Maternal & Women's Health in BBP"
@@ -1686,28 +1380,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Basic Benefit Package & Level of Care"
   },
 
-  {
-    id: "q-fm-mwh-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Antenatal Checkup Urgency Case",
-    content: "A 26-year-old pregnant woman in her second trimester attends the Family Health Unit. The family physician checks her blood pressure to screen for pre-eclampsia, measures her hemoglobin for anemia, and administers a dose of Tetanus Toxoid vaccine.\n\nQuestions:\n1. Which specific component category of Women's Health Services is being delivered here?\n2. Where should this patient be immediately referred if she displays high-risk pregnancy markers or severe pre-eclampsia?",
-    answer: "1. Antenatal Care (ANC).\n2. Referred to a Family Health Centre (FHC) or a secondary care Hospital.",
-    isClinical: true,
-    topic: "Basic Benefit Package & Level of Care"
-  },
 
   // topic: "Patient Education & Verbal Counseling"
-  {
-    id: "q-fm-pep-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define Patient Education",
-    content: "Define \"Patient Education\" in family medicine.",
-    answer: "Patient education is a continuous process of teaching and learning between health care providers and patients that aims to influence patient behaviour and produce positive changes in knowledge, attitudes, and skills required to maintain or improve health.",
-    isClinical: false,
-    topic: "Patient Education & Verbal Counseling"
-  },
+
   {
     id: "q-fm-pep-2",
     chapterId: 5,
@@ -1739,16 +1414,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Patient Education & Verbal Counseling"
   },
   {
-    id: "q-fm-pep-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Clinic Education Outreach Case",
-    content: "A family physician plans a practice reorganization. She integrates educational posters in the waiting room, trains nursing staff to run weight-loss and smoking cessation groups, and ensures family members are included when instructing a diabetic patient on insulin use.\n\nQuestions:\n1. What principle of patient education is highlighted by using posters, videos, and involving the entire healthcare team?\n2. Why is involving the family unit considered essential when educating elderly or pediatric patients?",
-    answer: "1. Use of multiple educational channels.\n2. To ensure effective home care safety, accurate lifestyle modification, and strict treatment adherence.",
-    isClinical: true,
-    topic: "Patient Education & Verbal Counseling"
-  },
-  {
     id: "q-fm-pep-6",
     chapterId: 5,
     type: "short-essay",
@@ -1758,18 +1423,20 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Patient Education & Verbal Counseling"
   },
+  {
+    id: "q-fm-pep-case-timing",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Patient Education Consultation Timing Case",
+    content: "During a busy clinic shift, a family physician notes that several patients with chronic conditions have poor medical compliance due to deeply held health misconceptions and lack of awareness about their management plans.\n\nQuestions:\n1. List the four distinct times during an individual clinical encounter where a family physician should actively integrate patient education.\n2. Enumerate six organizational principles that make patient education highly effective at the practice level.",
+    answer: "1. Timings: During history taking, physical examination, diagnosis discussion, and treatment planning.\n2. Principles: Feedback, Reinforcement, Individualization, Facilitation, Use of multiple educational channels, and Assessment of patient knowledge.",
+    isClinical: true,
+    topic: "Patient Education & Verbal Counseling",
+    explanation: "تثقيف المريض داخل العيادة:\n- التثقيف مش مجرد \"كلمتين في الآخر\"، بل هو عملية مستمرة تبدأ من أخذ التاريخ المرضي وحتى وضع الخطة العلاجية.\n- مبادئ النجاح: التكرار (Reinforcement)، التغذية الراجعة (Feedback)، وتخصيص المعلومة حسب حاجة المريض (Individualization)."
+  },
 
   // topic: "Referral & Consultation Processes"
-  {
-    id: "q-fm-rle-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define Referral vs Consultation",
-    content: "Define a \"Referral\" and differentiate it from a \"Consultation\".",
-    answer: "Referral is the transferring of the responsibility of a patient to another physician for the care of a specific problem. Consultation is the practice of one physician asking another for an opinion or assistance regarding diagnosis and management, while retaining primary responsibility.",
-    isClinical: false,
-    topic: "Referral & Consultation Processes"
-  },
+
   {
     id: "q-fm-rle-2",
     chapterId: 5,
@@ -1781,6 +1448,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Referral & Consultation Processes"
   },
   {
+    id: "q-fm-rle-case-referral",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Secondary Care Transfer Case",
+    content: "A family physician is managing a patient whose chronic condition has failed to show expected prognostic improvement. The physician decides that the patient will significantly benefit from formal secondary specialist care.\n\nQuestions:\n1. State the textual operational difference between a Consultation and a formal Referral.\n2. Enumerate eight mandatory clinical data elements that must be documented inside a structured referral letter.",
+    answer: "1. Difference: Consultation is asking for an opinion/assistance while retaining primary responsibility. Referral is formally transferring responsibility for a specific problem.\n2. Data elements: Socio-demographic data, Refereed hospital/specialty, Type of referral, Chief complaint/History, Past history, Physical exam findings, Investigation findings, and Medication/Diagnosis.",
+    isClinical: true,
+    topic: "Referral & Consultation Processes",
+    explanation: "الإحالة والاستشارة في طب الأسرة:\n- الفرق الجوهري هو \"المسؤولية\": في الاستشارة تظل معك، في الإحالة تنتقل للمتخصص.\n- خطاب الإحالة هو وسيلة التواصل، ويجب أن يحتوي على كل بيانات المريض الطبية والاجتماعية لضمان استمرارية الرعاية."
+  },
+  {
     id: "q-fm-rle-3",
     chapterId: 5,
     type: "short-essay",
@@ -1789,6 +1467,30 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. It must be concise and contain only essential, relevant data.\n2. Written using clear, simple, and legible language.\n3. Explicitly clarify and specify the reasons for referral and expectations from the specialist.\n4. Fully documented within the patient's family file and the center's referral register.",
     isClinical: false,
     topic: "Referral & Consultation Processes"
+  },
+  // topic: "Periodic Health Examination (PHE)"
+  {
+    id: "q-fm-phe-case-1",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Periodic Health Examination Database Case",
+    content: "A healthy 40-year-old asymptomatic patient presents to the clinic wishing to establish a baseline assessment of his health status, occupational exposures, and lifestyle habits.\n\nQuestions:\n1. List the six fundamental components that must be completed during a standard, structured Periodic Health Examination.\n2. Enumerate the key medical history parameters that the clinician must collect to build a comprehensive clinical database.",
+    answer: "1. Components: Building the database, Medical history, Family history, Social history, Occupational and environmental history, and Anticipatory guidance.\n2. Medical history parameters: Previous diagnoses/treatment, current/previous medications, allergies, history of immunizations/childhood illnesses, and prior surgical history.",
+    isClinical: true,
+    topic: "Periodic Health Examination (PHE)",
+    explanation: "الفحص الدوري الشامل (PHE):\n- الهدف هو بناء قاعدة بيانات (Database) للمريض الصحيح لتوقع المخاطر قبل حدوثها.\n- بيشمل 6 محاور: قاعدة البيانات، التاريخ الطبي، العائلي، الاجتماعي، المهني والبيئي، وأخيراً التوجيه الاستباقي (Anticipatory guidance)."
+  },
+  // topic: "Behavioral Health & Substance Abuse"
+  {
+    id: "q-fm-sa-case-1",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Substance Abuse Clinical Red Flags Case",
+    content: "An adult patient presents to the primary care unit with multiple vague somatic symptoms that do not clearly fit a single organic disease. The family physician suspects that an underlying substance dependency may be the root cause.\n\nQuestions:\n1. List six diverse somatic or psychological clinical findings that should alert a clinician to the high prevalence of underlying substance or drug abuse.\n2. State the primary role of the family physician when domestic violence or abuse is suspected or identified within a household.",
+    answer: "1. Red flags: Unexplained excitability/anxiety, GI complaints (dyspepsia/loss of appetite), Cardiac/Hypertension (poor response to treatment), Depression/Sleep disturbances, Sexual dysfunction, and Recurrent trauma or multiple somatic complaints.\n2. Physician role: Act strictly as a counsellor and supporter.",
+    isClinical: true,
+    topic: "Behavioral Health & Substance Abuse",
+    explanation: "علامات إدمان المواد المخدرة والعنف المنزلي:\n- الإدمان غالباً بيجي في صورة \"أعراض جسدية غير مفسرة\": قلق، مشاكل هضم، ضغط مبيتحسنش بالعلاج، أو إصابات متكررة.\n- في حالات العنف المنزلي، دور الطبيب الأول هو الدعم والارشاد (Counsellor and supporter)."
   },
   {
     id: "q-fm-rle-4",
@@ -1800,28 +1502,9 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Referral & Consultation Processes"
   },
-  {
-    id: "q-fm-rle-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Angina Urgency Referral Case",
-    content: "A family physician evaluates a patient with signs of severe, progressive unstable angina. The physician identifies that the patient will suffer direct harm if not shifted immediately, fills out a concise emergency communication form, and coordinates the specialist feedback loop.\n\nQuestions:\n1. What type of referral classification does this emergent scenario represent?\n2. Enumerate 4 core responsibilities of the receiving consultant specialist back to the referring family physician.",
-    answer: "1. An Urgent Referral.\n2. The responsibilities are:\n   - Provide services in a timely manner depending on the urgency of the condition.\n   - Communicate findings in a timely manner to the referring physician.\n   - Notify the referring physician when the patient has been admitted to the hospital.\n   - Avoid lateral referral (specialist to specialist) without involving the family physician.",
-    isClinical: true,
-    topic: "Referral & Consultation Processes"
-  },
 
   // topic: "Anticipatory Care & Immunization Guidelines"
-  {
-    id: "q-fm-aci-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define Anticipatory Care",
-    content: "Define \"Anticipatory Care\" and differentiate between primary and secondary disease prevention lines.",
-    answer: "Anticipatory care refers to all measures aiming to promote good health and prevent or delay diseases or their complications across different age groups. Primary prevention focuses on preventing disease development (vaccines/education), while secondary prevention focuses on early diagnosis and treatment (screening).",
-    isClinical: false,
-    topic: "Anticipatory Care & Immunization Guidelines"
-  },
+
   {
     id: "q-fm-aci-2",
     chapterId: 5,
@@ -1853,16 +1536,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Anticipatory Care & Immunization Guidelines"
   },
   {
-    id: "q-fm-aci-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Scheduled Vaccination Visit Case",
-    content: "An infant is brought to the primary care unit on his scheduled vaccination day. The mother notes he has a mild runny nose and is breastfeeding normally. The provider notes a mild cough but no danger signs. The mother is worried the vaccine will harm him.\n\nQuestions:\n1. What are the two primary components evaluated during a child's periodic health examination?\n2. Should the clinician administer the scheduled vaccines or delay them due to the mild runny nose?",
-    answer: "1. Growth and development monitoring, combined with a full clinical and laboratory examination.\n2. Administer the vaccines; mild recent infections without severe systemic symptoms are not true contraindications to immunization.",
-    isClinical: true,
-    topic: "Anticipatory Care & Immunization Guidelines"
-  },
-  {
     id: "q-fm-aci-6",
     chapterId: 5,
     type: "short-essay",
@@ -1874,16 +1547,7 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   // topic: "Adolescent Psychosocial Health & HEADSSS Interview"
-  {
-    id: "q-fm-aph-1",
-    chapterId: 5,
-    type: "define",
-    title: "Define Adolescence Parameters",
-    content: "Define the parameters of \"Adolescence\" according to WHO age group classifications.",
-    answer: "WHO defines 'Adolescents' as individuals in the 10-19 years age group, 'Youth' as the 15-24 year age group, and 'Young People' as covering the expanded age range of 10-24 years. It is a developmental phase rather than a fixed time period.",
-    isClinical: false,
-    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
-  },
+
   {
     id: "q-fm-aph-2",
     chapterId: 5,
@@ -1893,6 +1557,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Home environment.\n2. Eating and nutrition.\n3. Education and employment.\n4. Activities.\n5. Drugs / Substance use.\n6. Sexuality.\n7. Suicide / Depression.\n8. Safety.",
     isClinical: false,
     topic: "Adolescent Psychosocial Health & HEADSSS Interview"
+  },
+  {
+    id: "q-fm-aph-case-1",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Adolescent Psychosocial Risk Case",
+    content: "A 15-year-old high school student presents to the clinic for his routine annual adolescent health check-up. The patient appears reserved, and his parents report that he has recently developed intense mood swings, an increased desire for independence from them, and an extreme reliance on his peer codes and lifestyle choices.\n\nQuestions:\n1. List the standard psychosocial domains evaluated by the HEEADSSS interview tool to screen this adolescent.\n2. List four mandatory clinical screening tests or physical measurements required during this comprehensive visit.",
+    answer: "1. HEEADSSS domains: Home, Eating, Education, Activities, Drugs, Suicide/depression, Sex, and Safety.\n2. Screening/Measurements: Blood pressure measurement, Obesity screening (height and weight), Haemoglobin percentage, and Depression screening.",
+    isClinical: true,
+    topic: "Adolescent Psychosocial Health & HEADSSS Interview",
+    explanation: "تقييم الصحة النفسية والاجتماعية للمراهقين (HEEADSSS tool):\n- الـ HEEADSSS بيغطي كل جوانب حياة المراهق: البيت (Home)، الأكل (Eating)، التعليم (Education)، الأنشطة (Activities)، المخدرات (Drugs)، الاكتئاب/الانتحار (Suicide)، الجنس (Sex)، والأمان (Safety).\n- فحوصات ضرورية في الفحص السنوي: قياس الضغط، فحص السمنة، نسبة الهيموجلوبين، وفحص الاكتئاب."
   },
   {
     id: "q-fm-aph-3",
@@ -1911,16 +1586,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Adolescedet Physical Exam Guidelines",
     content: "Enumerate 4 key clinical guidelines recommendations for conducting a physical examination on a teenage patient.",
     answer: "1. Strictly respect physical privacy, avoid unnecessary body exposure, and keep doors closed.\n2. Permit parents to remain inside the examination room only if the adolescent explicitly requests it.\n3. Utilize the examination as a good teaching tool to talk and explain their bodies, lowering anxiety.\n4. Do not perform pelvic or genital examinations routinely; reserve them for direct request, if sexually active, or if presenting with localized pain.",
-    isClinical: true,
-    topic: "Adolescent Psychosocial Health & HEADSSS Interview"
-  },
-  {
-    id: "q-fm-aph-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Teenager Checkup Interview Case",
-    content: "A 15-year-old high school student attends the clinic for a check-up. The family physician builds a comfortable rapport and asks tailored questions about who lives at home, school grades, mood changes from day to day, and the regular use of vehicle seatbelts.\n\nQuestions:\n1. What is the name of this specific psychosocial screening interview framework?\n2. According to global epidemiologic data, what are the most frequent causes of preventable mortality among adolescents?",
-    answer: "1. The HEEADSSS interview framework.\n2. Accidents (mostly motor vehicle crashes, many related to drug or alcohol use), followed closely by homicide and suicide.",
     isClinical: true,
     topic: "Adolescent Psychosocial Health & HEADSSS Interview"
   },
@@ -1955,6 +1620,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Is the child unable to drink or breastfeed?\n2. Does the child vomit everything?\n3. Has the child had convulsions during this current illness?\n4. Is the child lethargic or unconscious?",
     isClinical: true,
     topic: "IMCI Case Management Overview"
+  },
+  {
+    id: "q-fm-gds-case-1",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Acute Respiratory Distress Case",
+    content: "A 14-month-old child is brought to the outpatient clinic with a cough that has persisted for 2 days. On clinical examination, the child is perfectly calm. The physician counts the respiratory rate and finds it to be 42 breaths per minute. Further inspection reveals no chest indrawing, no audible stridor, and no wheezing. The child can swallow, does not vomit, and has no general danger signs.\n\nQuestions:\n1. What is the precise IMCI classification for this child's respiratory condition?\n2. Enumerate the standard step-by-step management lines for this specific classification before sending the child home.",
+    answer: "1. Classification: Pneumonia (fast breathing > 40 bpm for 12-59 months).\n2. Management: Give appropriate oral antibiotic for 5 days, soothe throat/relieve cough with safe remedy, advise mother on danger signs (when to return immediately), and schedule follow-up in 2 days.",
+    isClinical: true,
+    topic: "IMCI Case Management Overview",
+    explanation: "تشخيص وعلاج الالتهاب الرئوي حسب الـ IMCI:\n1. تصنيف **Pneumonia**: لأن الطفل عنده تنفس سريع (42) وهو في الفئة العمرية (سنة لـ 5 سنوات) اللي النهجان فيها بيبدأ من 40، وبدون علامات خطر أو سحب ضلعي.\n2. خطوات العلاج: مضاد حيوي فموي لمدة 5 أيام، مهدئ للكحة، توعية الأم بعلامات الخطر، ومتابعة بعد يومين."
   },
   {
     id: "q-fm-gds-2",
@@ -1998,16 +1674,6 @@ export const INITIAL_QUESTIONS: Question[] = [
   },
 
   {
-    id: "q-fm-gds-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Infant Cough Assessment Case",
-    content: "A 14-month-old sick child is brought to a primary care health unit with a cough. On initial assessment, he is alert, able to breastfeed, and does not vomit. The clinician counts his respiratory rate as 46 breaths per minute while calm, and notes the absence of stridor or chest indrawing.\n\nQuestions:\n1. What is the correct IMCI respiratory classification for this child?\n2. Mention the first-line oral antibiotic drug, including the standard treatment duration, indicated by this classification.",
-    answer: "1. PNEUMONIA (due to fast breathing >40/min for his age bracket, without danger signs).\n2. Oral Amoxicillin administered for a duration of 5 days.",
-    isClinical: true,
-    topic: "IMCI Case Management Overview"
-  },
-  {
     id: "q-fm-gds-7",
     chapterId: 5,
     type: "short-essay",
@@ -2016,6 +1682,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Poor access to health facilities due to poor roads or transportation costs.\n2. Lack of access to education, particularly for the mother.\n3. Food insecurity due to poverty.\n4. Lack of basic resources like clean water and sanitary toilets.",
     isClinical: false,
     topic: "IMCI Case Management Overview"
+  },
+  {
+    id: "q-fm-imci-case-ear",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "IMCI: Ear Infection Care Lines Case",
+    content: "A 2-year-old child is brought to the first-level health facility with an acute ear problem. On inspection, the physician notes pus draining from the ear, and the mother states this discharge started 5 days ago. There is no mastoid swelling or severe pain.\n\nQuestions:\n1. What is the standard classification for this child's ear condition under the IMCI guidelines?\n2. Enumerate the general management lines for this condition in the clinic and the corresponding advice for home care.",
+    answer: "1. Classification: Acute Ear Infection.\n2. Management: Give appropriate oral antibiotic for 10 days, teach mother to wick the ear dry if there is pus draining, advise caregiver on home care, and schedule follow-up in 5 days if not improving.",
+    isClinical: true,
+    topic: "IMCI Case Management Overview",
+    explanation: "علاج التهاب الأذن الحاد في الـ IMCI:\n- التصنيف: **Acute Ear Infection** (بسبب وجود صديد لمدة أقل من 14 يوم وبدون وجع شديد خلف الأذن).\n- العلاج: مضاد حيوي لمدة 10 أيام، تعليم الأم تنشيف الأذن بالفتيل (Wicking)، وعمل متابعة بعد 5 أيام."
   },
 
   // topic: "IMCI Young Infant Care (Up to 2 Months)"
@@ -2028,6 +1705,39 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Possible bacterial infection.\n2. Significant jaundice.\n3. Diarrhoea.\n4. Feeding problem or low weight.\n5. Young infant's immunization status.",
     isClinical: true,
     topic: "IMCI Young Infant Care (Up to 2 Months)"
+  },
+  {
+    id: "q-fm-syi-case-umbilical",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Local Umbilical Infection Case",
+    content: "A 3-week-old young infant is evaluated at a primary health care setting for localized skin and cord changes. Physical examination shows umbilical redness and pus draining, but the redness does not extend to the skin. The infant is alert, moves his limbs normally, feeds eagerly, lacks grunting, and has an axillary temperature of 36.6°C.\n\nQuestions:\n1. What is the correct IMCI classification and the mandated follow-up timeline for this young infant?\n2. List the overall medical management guidelines and the localized care instructions that must be taught to the mother for home care.",
+    answer: "1. Classification: LOCAL BACTERIAL INFECTION (Follow-up in 2 days).\n2. Management: Prescribe oral antibiotic, teach local treatment at home twice daily (wash hands, wash off pus/crusts with soap/water, dry, paint with gentian violet, wash hands again).",
+    isClinical: true,
+    topic: "IMCI Young Infant Care (Up to 2 Months)",
+    explanation: "علاج عدوى السرة الموضعية في حديثي الولادة:\n- بما أن الاحمرار لا يمتد للجلد المحيط، والطفل حالته جيدة، التصنيف هو **Local Bacterial Infection**.\n- العلاج: مضاد حيوي فموي وعناية موضعية مرتين يومياً بالماء والصابون ثم صبغة الجنتيان (Gentian violet)."
+  },
+  {
+    id: "q-fm-syi-case-psbi",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Neonatal Emergency Referral Case",
+    content: "A 6-day-old neonate is brought to the family physician with a maternal complaint of refusing to breastfeed over the past 12 hours. On clinical observation, the young infant is lethargic. The respiratory rate is 64 breaths per minute, and severe chest indrawing is clearly visible on the lower thoracic wall.\n\nQuestions:\n1. State the immediate clinical classification and the primary operational disposition of this case.\n2. Enumerate the mandatory clinical stabilization lines (pre-referral treatments) required in the clinic before transport.",
+    answer: "1. Classification: POSSIBLE SERIOUS BACTERIAL INFECTION (PSBI). Disposition: Refer URGENTLY to hospital.\n2. Stabilization: Give first dose of appropriate IM antibiotic, treat to prevent low blood sugar, and advise how to keep the infant warm during transport.",
+    isClinical: true,
+    topic: "IMCI Young Infant Care (Up to 2 Months)",
+    explanation: "الاشتباه في عدوى بكتيرية شديدة (PSBI) في حديثي الولادة:\n- العلامات: النهجان (64)، سحب ضلعي شديد، خمول، ورفض الرضاعة.\n- الإجراء: إحالة فورية للمستشفى مع حقنة مضاد حيوي عضلي أولية، ومنع هبوط السكر، وتدفئة الطفل."
+  },
+  {
+    id: "q-fm-syi-case-diarrhea",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "IMCI: Young Infant Diarrhea Care Lines Case",
+    content: "A 6-week-old young infant is brought to the clinic due to passing loose stools for 2 days. On clinical assessment, the infant has no signs of a serious bacterial infection. He is non-irritable, alert, lacks sunken eyes, and his skin pinch returns immediately.\n\nQuestions:\n1. State the correct IMCI diarrhea classification and the designated clinical management plan letter for this young infant?\n2. Enumerate the core rules of home treatment that the physician must teach the mother before discharging this patient.",
+    answer: "1. Classification: Diarrhoea with NO DEHYDRATION (Plan A).\n2. Home treatment: Give extra fluids, continue frequent/exclusive breastfeeding, advise when to return immediately, and schedule follow-up in 2 days.",
+    isClinical: true,
+    topic: "IMCI Young Infant Care (Up to 2 Months)",
+    explanation: "الإسهال في الرضع أقل من شهرين (No dehydration):\n- لو مفيش علامات جفاف، بنمشي على الخطة (A).\n- القواعد: رضاعة طبيعية مطلقة ومستمرة، سوائل إضافية، وتوعية الأم بعلامات الخطر."
   },
   {
     id: "q-fm-syi-2",
@@ -2059,26 +1769,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "IMCI Young Infant Care (Up to 2 Months)"
   },
-  {
-    id: "q-fm-syi-5",
-    chapterId: 5,
-    type: "problem-solving",
-    title: "Umbilical Redness Infant Case",
-    content: "A 6-week-old young infant is brought to a clinic. On assessment, he has no fever or severe danger signs, but his umbilicus is noted to be red and draining small amounts of pus, without the redness extending to the surrounding skin.\n\nQuestions:\n1. What is the correct IMCI clinical classification for this infant's umbilical finding?\n2. Enumerate 2 home care training steps the mother must perform to treat this local infection at home.",
-    answer: "1. LOCAL BACTERIAL INFECTION.\n2. Washing hands and gently washing off pus with soap and water, followed by painting the area with gentian violet twice daily.",
-    isClinical: true,
-    topic: "IMCI Young Infant Care (Up to 2 Months)"
-  },
-  {
-    id: "q-fm-syi-6",
-    chapterId: 5,
-    type: "define",
-    title: "Local Bacterial Infection in Young Infants",
-    content: "Define \"Local Bacterial Infection\" in a young infant and photocopy/enumerate 4 clinical signs that confirm this classification.",
-    answer: "Definition: A localized bacterial infection in an infant up to 2 months old that does not exhibit systemic danger signs or systemic bacterial spread.\nClinical Signs of confirmation:\n1. Pus draining from the ear.\n2. Pus draining from the eyes associated with redness and swelling.\n3. Umbilical redness extending to the skin.\n4. Skin pustules or a red umbilicus/draining pus.",
-    isClinical: true,
-    topic: "IMCI Young Infant Care (Up to 2 Months)"
-  },
+
 
   // topic: "IMCI Treatment: Antibiotics & Wheezing Management"
   {
@@ -2090,6 +1781,17 @@ export const INITIAL_QUESTIONS: Question[] = [
     answer: "1. Pneumonia or Acute Ear Infection:\n   - First-line: Amoxicillin\n   - Second-line: Cotrimoxazole\n2. Dysentery:\n   - First-line: Cotrimoxazole\n   - Second-line: Ampicillin (given for 5 days).",
     isClinical: true,
     topic: "IMCI Treatment: Antibiotics & Wheezing Management"
+  },
+  {
+    id: "q-fm-im-case-wheeze",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Wheezing Algorithm Case",
+    content: "A 3-year-old child presents to the primary care facility with a severe cough and noticeable respiratory distress. On clinical examination, the child has fast breathing and visible lower chest indrawing. Auscultation reveals diffuse bilateral musical wheezing. There are no general danger signs present, and there is no stridor when the child is calm.\n\nQuestions:\n1. What is the mandatory immediate management line the clinician must execute before finalizing a pneumonia classification or referring the patient?\n2. List the subsequent management pathways based on the child's clinical response to this immediate intervention during reassessment.",
+    answer: "1. Immediate Action: Give a rapid-acting bronchodilator trial and reassess 30 minutes later.\n2. Pathways: If chest indrawing persists -> Severe Pneumonia (refer urgently). If only fast breathing persists -> Pneumonia (give oral salbutamol 5 days + antibiotics). If no fast breathing/indrawing remain -> No Pneumonia: Cough or Cold (give oral salbutamol 5 days).",
+    isClinical: true,
+    topic: "IMCI Treatment: Antibiotics & Wheezing Management",
+    explanation: "خوارزمية التعامل مع تزييق الصدر والنهجان (Wheezing Algorithm):\n- عند وجود تزييق مع نهجان، القاعدة الذهبية هي \"تجربة موسع الشعب\" (Bronchodilator trial) قبل الحكم على الحالة.\n- التقييم بعد 30 دقيقة هو اللي بيحدد هل النهجان بسبب الحساسية فقط أم أن هناك التهاباً رئوياً مصاحباً."
   },
   {
     id: "q-fm-im-2",
@@ -2124,29 +1826,63 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "IMCI Management of Diarrhoea and Dehydration"
   },
   {
-    id: "q-fm-dd-2",
+    id: "q-fm-dd-case-some",
     chapterId: 5,
     type: "problem-solving",
-    title: "IMCI Some Dehydration Case",
-    content: "A 3-year-old child presents with watery diarrhea. On exam, the child is restless and irritable, has sunken eyes, and drinks eagerly/thirsty when offered fluid. The skin pinch goes back slowly.\n\nQuestions:\n1. Classify the dehydration status.\n2. Identify the required IMCI treatment plan.",
-    answer: "1. Classification: Some Dehydration (due to presence of two signs: restless/irritable, sunken eyes, and drinking eagerly).\n2. Treatment: Plan B (Treat Some Dehydration with ORS over a 4-hour period in the clinic, give Zinc Syrup for 14 days, and advise on when to return immediately).",
+    title: "Dehydration Classification Case",
+    content: "A 10-month-old infant is brought to the clinic due to passing frequent loose stools for 3 days. On assessment, the infant is restless and irritable, has noticeably sunken eyes, and when the abdominal skin is pinched, it goes back slowly. When offered a cup of water, the infant drinks eagerly and thirstily. There is no blood in the stool.\n\nQuestions:\n1. State the correct IMCI hydration classification and the corresponding structured treatment plan letter.\n2. List the clinic-based fluid management protocol and the primary health education components delivered to the caregiver for this plan.",
+    answer: "1. Classification: SOME DEHYDRATION (Plan B).\n2. Management: Give recommended ORS in clinic over 4 hours, teach mother how to mix/give ORS, show how much fluid for home, and counsel on 3 Rules of Home Treatment (Extra Fluid, Continue Feeding, Know When to Return).",
     isClinical: true,
-    topic: "IMCI Management of Diarrhoea and Dehydration"
+    topic: "IMCI Management of Diarrhoea and Dehydration",
+    explanation: "تصنيف الجفاف المتوسط (Some Dehydration):\n- العلامات: قلق/هياج، عين غائرة، شرب بنهم، انكماش الجلد يرجع ببطء.\n- الخطة (B): تعويض بالـ ORS في العيادة لمدة 4 ساعات مع تعليم الأم قواعد العلاج المنزلي الثلاثة."
   },
   {
-    id: "q-fm-dd-3",
+    id: "q-fm-dd-case-severe",
     chapterId: 5,
     type: "problem-solving",
-    title: "Severe Dehydration Plan C Case",
-    content: "A 14-month-old child presents with a 3-day history of loose stools. On clinical evaluation, the child is lethargic, has sunken eyes, and is not able to drink fluid when offered. The abdominal skin pinch goes back very slowly (longer than 2 seconds).\n\nQuestions:\n1. Classify the dehydration status.\n2. Mention the immediate clinical management required according to IMCI.",
-    answer: "1. Classification: Severe Dehydration (classified because two or more signs are present: lethargic, sunken eyes, and not able to drink).\n2. Management: Initiate Plan C (Treat Severe Dehydration Quickly). Start intravenous (IV) fluids immediately with Ringer's Lactate or Normal Saline. For a child of this age (over 12 months), give 30 ml/kg in the first 30 minutes, followed by 70 ml/kg over the next 2.5 hours. If IV is unavailable nearby, implement nasogastric tube rehydration or refer urgently.",
+    title: "Shock & Intravenous Resuscitation Case",
+    content: "A 3-year-old child is brought to the Family Health Center with acute, severe watery diarrhea. Upon physical examination, the child is found to be completely lethargic and unconscious, and the abdominal skin pinch returns very slowly, taking longer than 2 seconds. Intravenous (IV) fluid access is successfully established right away in the clinic facility.\n\nQuestions:\n1. State the hydration classification and the designated clinical treatment plan letter.\n2. Enumerate the standard clinical protocol guidelines for managing this patient under this plan, including fluid status evaluation and pre-discharge criteria.",
+    answer: "1. Classification: SEVERE DEHYDRATION (Plan C).\n2. Guidelines: Start IV fluids immediately, reassess every 1-2 hours (speed up if not improving), give ORS as soon as child can drink, reassess after 3 hours to reclassify, and observe for 6 hours after rehydration to ensure ORS tolerance.",
     isClinical: true,
-    topic: "IMCI Management of Diarrhoea and Dehydration"
+    topic: "IMCI Management of Diarrhoea and Dehydration",
+    explanation: "الجفاف الشديد (Severe Dehydration) وكيفية إنقاذه:\n- العلامات: غياب وعي/خمول شديد، انكماش الجلد يرجع ببطء شديد جداً (> 2 ثانية).\n- الخطة (C): سوائل وريدية فورية، مراقبة دقيقة، تحول للـ ORS تدريجياً، وإعادة تصنيف الحالة بعد 3 ساعات."
   },
 
   // topic: "Breastfeeding Management & Composition"
   {
     id: "q-fm-bm-1",
+    chapterId: 5,
+    type: "short-essay",
+    title: "Breastfeeding Advantages",
+    content: "Enumerate 4 primary advantages of Breastfeeding for the infant.",
+    answer: "1. Provides optimal nutrition tailored specifically to infant needs.\n2. Contains essential antibodies (like secretory IgA) that provide immunological protection.\n3. Promotes emotional bonding between the mother and infant.\n4. Reduces the risk of developing obesity, Type 2 diabetes, and allergic diseases later in life.",
+    isClinical: false,
+    topic: "Breastfeeding Management & Composition"
+  },
+  {
+    id: "q-fm-bm-case-tb",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Maternal Tuberculosis Isolation Case",
+    content: "A breastfeeding mother of a 1-month-old infant presents to the primary care unit and is diagnosed with active, untreated airborne Tuberculosis.\n\nQuestions:\n1. State the precise text guidelines regarding the division of direct breastfeeding versus feeding expressed breast milk for this patient.\n2. List the clinical conditions and timeline criteria that must be satisfied before this mother is safely permitted to resume direct breastfeeding.",
+    answer: "1. Guidelines: Temporarily NOT breastfeed directly (airborne precautions), but CAN feed expressed breast milk.\n2. Criteria: Mother must be treated with anti-TB therapy for 2 weeks AND formally documented to be no longer contagious.",
+    isClinical: true,
+    topic: "Breastfeeding Management & Composition",
+    explanation: "الرضاعة الطبيعية ومرض الدرن (Tuberculosis):\n- الأم المصابة بنوع معدي (Airborne) تمنع من الرضاعة المباشرة خوفاً من نقل العدوى بالهواء، لكن يمكنها إعطاء لبنها معصوراً (Expressed milk).\n- تعود للرضاعة المباشرة بعد أسبوعين من بدء العلاج بشرط التأكد أنها لم تعد معدية."
+  },
+  {
+    id: "q-fm-bm-case-human-animal",
+    chapterId: 5,
+    type: "problem-solving",
+    title: "Infant Feeding: Human vs. Animal Milk Case",
+    content: "A primary care center organizes an educational session for pregnant mothers regarding neonatal and infant nutrition. Several mothers ask for a scientific comparison regarding the structural properties of human breast milk versus raw animal milks.\n\nQuestions:\n1. Enumerate the explicit physiological benefits of breastfeeding specifically defined for the mother's long-term health.\n2. List four absolute biochemical parameters comparing human milk versus animal milks regarding their protein, fat, water, and anti-infective properties.",
+    answer: "1. Maternal Benefits: Reduces risk of breast/ovarian cancer, type 2 diabetes, high blood pressure, and osteoporosis; oxytocin contracts uterus; burns calories; lowers postpartum depression.\n2. Biochemical Comparison: Protein (Human: correct amount/easy vs Animal: too much/hard), Fat (Human: essential fatty acids/lipase vs Animal: lacks both), Water (Human: enough for hydration vs Animal: requires extra), Anti-infective (Human: present/active vs Animal: absent).",
+    isClinical: true,
+    topic: "Breastfeeding Management & Composition",
+    explanation: "مقارنة اللبن البشري بالألبان الحيوانية:\n- اللبن البشري هو \"الذهب السائل\"؛ بروتينه سهل الهضم، دهونه تحتوي على إنزيم الليبيز، ومياهه كافية جداً، والأهم هو وجود الأجسام المضادة.\n- الرضاعة مفيدة جداً للأم لتقليل خطر السرطانات، السكر، الاكتئاب، وتساعد في نزول الوزن."
+  },
+  {
+    id: "q-fm-bm-2",
     chapterId: 5,
     type: "short-essay",
     title: "Maternal Benefits of Breastfeeding",
@@ -2155,16 +1891,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: false,
     topic: "Breastfeeding Management & Composition"
   },
-  {
-    id: "q-fm-bm-2",
-    chapterId: 5,
-    type: "short-essay",
-    title: "Fore-milk vs Hind-milk",
-    content: "Differentiate between \"Fore-milk\" and \"Hind-milk\" in mature breast milk.",
-    answer: "Fore-milk: Found at the beginning of the feeding; contains water, vitamins, and protein to keep the infant hydrated.\nHind-milk: Occurs after the initial release of milk; contains higher levels of fat and is necessary for proper weight gain.",
-    isClinical: false,
-    topic: "Breastfeeding Management & Composition"
-  },
+
   {
     id: "q-fm-bm-3",
     chapterId: 5,
@@ -2175,16 +1902,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Breastfeeding Management & Composition"
   },
-  {
-    id: "q-fm-bm-4",
-    chapterId: 5,
-    type: "define",
-    title: "Define Colostrum and Protective Properties",
-    content: "Define \"Colostrum\" and enumerate 4 of its unique protective properties or clinical advantages.",
-    answer: "Definition: The initial breast milk produced during days 1–4 postpartum, which is yellowish or creamy in color and thicker than later milk.\nClinical Advantages:\n1. Antibody-rich (protects against infection and allergy).\n2. Rich in white cells (protects against infection).\n3. Purgative property (clears meconium and helps prevent jaundice).\n4. Contains growth factors (helps the intestine mature and prevents intolerance).",
-    isClinical: true,
-    topic: "Breastfeeding Management & Composition"
-  },
+
 
   // ==================== I. Renal Diseases (Bank 2) ====================
   // topic: "Hematuria"
@@ -2222,17 +1940,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "خطوات فك اللغز عند طفل جاي بهيماتوريا:\n1. **History**: بنسأل عن تاريخ العيلة المرضي (Polycystic kidneys, Deafness, Alport).\n2. **Physical Exam**: بنقيس الضغط (Hypertension) وبنشوف الورم (Edema) ومغص الكلية.\n3. **Urinalysis**: بندور على زلال (Proteinuria)، خلايا مفعصة (Dysmorphic RBCs)، أو RBC Casts.\n4. **Abdominal US**: سونار للبطن والمسالك لاستبعاد الحصوات والأورام (زي Wilms' Tumor) والعيوب الخلقية."
   },
 
-  {
-    id: "q-r2-h-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Glomerular Hematuria Case",
-    content: "A 6-year-old boy is brought to the clinic with persistent microscopic hematuria. On checking his fresh urine sample, the lab reports more than 5 RBCs per high power field, a protein level exceeding 100 mg/dL, and the distinct presence of red blood cell casts. His blood pressure is elevated.\n\nQuestions:\n1. State the precise clinical site/source of this child's hematuria.\n2. Enumerate 2 multisystem diseases that can cause this specific type of hematuria in children.",
-    answer: "1. Renal (Glomerular) source.\n2. Systemic Lupus Erythematosus (SLE) nephritis and Henoch-Schönlein Purpura (HSP) nephritis.",
-    isClinical: true,
-    topic: "Hematuria",
-    explanation: "لما نلاقي **RBC casts** وزلال محترم مع ضغط عالي، يبقى الإدانة كاملة والدم جاي صراحة من الـ **Glomerular origin** (الفلتر نفسه). أشهر مرضين جهازين (Systemic) بيخربوا الفلاتر في الأطفال هما:\n- **SLE Nephritis** (ذئبة حمراء هاجمت الكلى، بالذات في البنات).\n- **HSP Nephritis** (التهاب وعائي مع طفح جلدي مميز ووجع مفاصل وبطن)."
-  },
 
   // topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)"
   {
@@ -2269,17 +1976,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "الـ **APSGN** تحت عين الميكروسكوب:\n1. بالـ **Light Microscope**: الكلى بتظهر متضخمة لكنها باهتة وخالية من الدم لأن الفلاتر مخنوقة بالخلايا الملتهبة (**Hypercellular & bloodless glomeruli**).\n2. بالـ **Immunofluorescence**: ترسيبات مناعية غير منتظمة تدي شكل النجوم أو السماء الليلية المرصعة (**Lumpy-bumpy appearance**).\n3. بالـ **Electron Microscope**: ترسيبات عملاقة زي سنام الجمل (**Subepithelial Humps**) على غشاء الفلتر."
   },
 
-  {
-    id: "q-r2-a-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "APSGN Diagnostic Antibody Case",
-    content: "A 10-year-old boy presents with sudden gross hematuria, mild ankle swelling, and oliguria. His serum C3 level is significantly reduced. The physician suspects APSGN but notes that the baseline Antistreptolysin O (ASOT) titer is normal.\n\nQuestions:\n1. What is the single best alternative antibody titer that should be requested to document a prior cutaneous/skin streptococcal infection?\n2. For how long does the serum C3 complement level typically remain depressed before returning to normal?",
-    answer: "1. Deoxyribonuclease (DNase) B antigen titer.\n2. It returns to normal within 6 to 8 weeks after the onset of the disease.",
-    isClinical: true,
-    topic: "Acute Post-Streptococcal Glomerulonephritis (APSGN)",
-    explanation: "1. في حالات عدوى الجلد (Strep. Pyoderma or Impetigo)، الـ **ASOT** ممكن يطلع طبيعي خالص لأن إنزيمات الجلد بتدمر الـ Streptolysin O قبل ما يحفز الأجسام المضادة. البديل الذهبي والذكي هنا هو الـ **Anti-DNase B** (أو Antistreptodornase B).\n2. مستوى الـ **Serum C3** المتمم المناعي بيوطى جداً نتيجة فناءه في المعركة، ولازم يرجع لطبيعته خلال **6 لـ 8 أسابيع**. لو فضل واطي بعد كدا، فكر فوراً في Membranoproliferative GN (MPGN) أو Lupus!"
-  },
 
   // topic: "Nephrotic Syndrome"
   {
@@ -2326,17 +2022,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Nephrotic Syndrome",
     explanation: "ليه طفل انتكاسة النفروتيك مناعته في الأرض ومعرض للموت من الالتهابات؟\n1. بيفقد الأجسام المضادة المناعية بالبول (**Urinary loss of IgG & properdin factor B**).\n2. كفاءة الخلايا المناعية والـ chemotaxis تعبانة بسبب اليوريميا ونقص الغذاء.\n3. العلاج بـ **Corticosteroids** بجرعات عالية بيقفل جهاز المناعة الباقي.\n4. تراكم مياه الرشح والـ **Ascites** في البطن بتعتبر بيئة غذاء ذهبية (Culture medium) تعشقها بكتيريا الـ Pneumococcus وتعمل Spontaneous Bacterial Peritonitis (SBP)."
   },
-  {
-    id: "q-r2-n-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Nephrotic Peritonitis Case",
-    content: "A 5-year-old child known to have steroid-responsive nephrotic syndrome is brought to the hospital during a relapse. He has developed a high fever, severe abdominal pain, and abdominal tenderness. The physician suspects spontaneous bacterial peritonitis.\n\nQuestions:\n1. What is the single most common bacterial organism responsible for causing peritonitis in nephrotic children?\n2. Mention 2 factors that explain the increased risk of intravascular thrombosis in this patient.",
-    answer: "1. Streptococcus pneumoniae (Gram-negative bacteria like E. coli can also be encountered).\n2. Increased prothrombotic factors (like fibrinogen and thrombocytosis) and decreased fibrinolytic factors due to urinary losses of antithrombin III.",
-    isClinical: true,
-    topic: "Nephrotic Syndrome",
-    explanation: "1. أشهر ميكروب بشع يهاجم بطن طفل النفروتيك ويعمل التهاب بريتوني حاد (**SBP**) هو **Streptococcus pneumoniae** (تليها الـ E. coli).\n2. الجلطات (**Thrombosis**) مرعبة في النفروتيك لسببين:\n- الكلية بتسرب مضاد الجلطات الطبيعي **Antithrombin III** في البول فتسهل التجلط.\n- الكبد بيصنع فايبرينوجين عشوائي بزيادة مع وجود جفاف مية بالدم (**Hemoconcentration**) بسبب هروب المياه للأنسجة."
-  },
 
   // topic: "Acute Kidney Injury (AKI)"
   {
@@ -2371,17 +2056,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Acute Kidney Injury (AKI)",
     explanation: "الفرق بين البداية الهادئة والنهاية العنيفة للـ **AKI**:\n- **Oliguric Phase (البسيطة)**: مجرد قلة بول شوية ورم طفيف على العين وضغط منضبط.\n- **Advanced Phase (المرعبة)**: uremic toxins تطلع للمخ وتعمل غيبوبة وتشنجات (**Uremic Encephalopathy**)، البوتاسيوم يعلى فيلخبط كهربة القلب والـ T wave ومستعد يوقف النبض فجأة، وحجم المياه يتراكم لدرجة فشل القلب الحاد ورشح الرئة الخانق (**Pulmonary Edema**)."
-  },
-  {
-    id: "q-r2-k-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "Intrinsic Renal AKI Case",
-    content: "A critically ill 4-year-old child with a history of protracted systemic hypotension and prolonged exposure to known nephrotoxic medications develops acute renal failure. Urinalysis shows a low urine specific gravity (<1010), high urine sodium (>40 mEq/L), and a FENa greater than 2%.\n\nQuestions:\n1. What is the specific intrinsic renal diagnosis for this presentation?\n2. Enumerate 2 types of urine casts or cells characteristic of this intrinsic parenchymal condition.",
-    answer: "1. Acute Tubular Necrosis (ATN).\n2. Granular casts and renal tubular epithelial cell casts.",
-    isClinical: true,
-    topic: "Acute Kidney Injury (AKI)",
-    explanation: "قراءة تحليلية فذة للكيسة:\n1. طفل ضغطه واطى لفترة طويلة وتعرض لأدوية سامة للكلى واستجابته الكلوية صفر مع **FENa > 2%** و **Urine Sodium > 40 mEq/L**: دي بصمة **ATN** (موت خلايا الأنابيب) لأن الأنابيب تالفة ومش عارفة تمتص صوديوم فبتسربه في البول بكميات مهولة.\n2. النسيج التالف المتساقط من جدران الأنابيب بينزل في البول على شكل اسطوانات طينية وحبيبية مميزة جداً تسمى **Muddy brown granular casts** و **Renal tubular epithelial cell casts**."
   },
 
   // topic: "Chronic Kidney Disease (CKD)"
@@ -2451,17 +2125,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Urinary Tract Infections (UTIs)",
     explanation: "1. علاج الـ **Cystitis** بسيط ومقتضب: بنمشي الطفل على مضاد عن طريق الفم لمدة 3 - 5 أيام (زي الـ Septrin / TMP-SMX أو الـ Nitrofurantoin المتمركز بالبول).\n2. بروتوكول الوقاية الـ **Prophylaxis**: لو الطفل عنده ارتجاع صمامات عالي (VUR) أو أدوار متكررة، بنعطيه جرعة وقائية واحدة بالليل يومياً بجرعة **ثلث الجرعة العلاجية** لتأمين الطريق ومنع مستعمرات البكتيريا من الصعود مجدداً للكلية."
-  },
-  {
-    id: "q-r2-u-5",
-    chapterId: 1,
-    type: "problem-solving",
-    title: "UTI with Suspected Renal Abscess Case",
-    content: "An 8-year-old girl with a history of recurrent febrile UTIs presents with high fever, persistent left-sided flank pain, and significant abdominal tenderness despite being on oral antibiotics for 48 hours. Her CBC reveals a marked leukocytosis of 24,000/mm³ with neutrophilia. An abdominal ultrasound is ordered.\n\nQuestions:\n1. What severe localized complication of pyelonephritis is most likely in this child?\n2. Mention the diagnostic imaging gold-standard for confirming this complication, and its medical/surgical management.",
-    answer: "1. Renal Abscess (marked by high fever, localized flank pain, high WBC >20,000, and non-response to standard therapy).\n2. Confirmation is obtained via Abdominal CT or MRI. Management involves administering high-dose parenteral broad-spectrum antibiotics and undertaking surgical or percutaneous drainage if there is an obstruction or non-resolution.",
-    isClinical: true,
-    topic: "Urinary Tract Infections (UTIs)",
-    explanation: "طفلة جالها دور التهاب كلى ومستجابتش للمضاد في أول 48 ساعة، وحرارتها طارت ووجع الخصر زاد وكرات الدم تجاوزت 24,000:\n1. الشك الفوري هو تكون **Renal Abscess** (خراج بداخل الكلية حبس الصديد والحرارة ومنع المضاد السطحي من العمل).\n2. الفحص الذهبي: **Abdominal CT / MRI** بالصبغة.\n3. الحل: حجز بـ **IV antibiotics** بجرعات قصوى، وفي حال كان الخراج كبير أو سادد الطريق بيتم سحبه بإبرة تحت السونار (Percutaneous drainage)."
   },
   {
     id: "q-r2-a-6",
@@ -2545,17 +2208,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "ليه بنراقب الطفل لمدة **ساعتين على الأقل** في الطوارئ بعد جلسة الـ **L-Epinephrine** المستنشق؟\n- الـ L-Epinephrine بيشتغل كـ Vasoconstrictor مؤقت بيلمس الأوعية الملتهبة ويريح الورم فوراً. لكن بمجرد ما مفعوله يخلص (في حدود ساعتين)، بيحصل حاجة اسمها **Rebound edema**، يعني الورم بيرجع تاني وبقوة! لو روحنا الطفل بدري ممكن يحصله اختناق مفاجئ في البيت يهدد حياته. الملاحظة بتأمن إن التأثير زال بأمان وبدون ارتداد للأعراض."
   },
 
-  {
-    id: "q-c2-c-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Severe Croup Emergency Case",
-    content: "A 2-year-old child presents with progressive inspiratory stridor at rest, severe chest retractions, cyanosis, and a barking cough. The emergency physician establishes the diagnosis of severe croup.\n\nQuestions:\n1. What is the immediate clinical indication suggested by the presence of stridor at rest and cyanosis?\n2. Mention the precise dose and administration routes of the first-line corticosteroid indicated to treat this condition.",
-    answer: "1. Severe airway obstruction indicating hospitalization and urgent medical intervention.\n2. A single dose of Dexamethasone administered at 0.6 mg/kg either intramuscularly (IM) or orally.",
-    isClinical: true,
-    topic: "Croup",
-    explanation: "قراءة عيادية ذكية لحالة الكروب العنيف:\n1. وجود **Stridor at rest** مع زرقان (**Cyanosis**) ده معناه انسداد شديد في مجرى الهواء ومؤشر خطر يستدعي حجز فوري بالمستشفى للإنقاذ.\n2. العلاج السحري والذهبي لتقليل ورم الحنجرة هو: حقنة **Dexamethasone** بجرعة واحدة صريحة بمقدار **0.6 mg/kg** وتؤخذ إما بالفم (لو الطفل مش بيرجع) أو كـ **IM injection**."
-  },
 
   // topic: "Epiglottitis"
   {
@@ -2592,17 +2244,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "شروط فحص لسان المزمار بأمان لتجنب إغلاق المجرى الهوائي التام:\n1. يتم الفحص بواسطة **طبيب خبير جداً**.\n2. في **غرفة العمليات (OR)** أو **العناية المركزة (ICU)** حصراً.\n3. الجاهزية الكاملة للتنبيب الرغامي السريع (**Intubation**) أو شق حنجري طارئ.\n4. الفحص بيظهر لسان مزمار منتفخ وبلون أحمر كرزي مميز جداً (**Cherry-red epiglottis**)."
   },
 
-  {
-    id: "q-c2-e-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Thumb Sign Epiglottitis Case",
-    content: "A 3.5-year-old child presents with a sudden onset of high fever, severe sore throat, and a complete inability to swallow, causing continuous drooling of saliva. A lateral view radiograph of the neck is performed carefully.\n\nQuestions:\n1. What specific radiological sign is expected on the lateral neck film?\n2. When should the artificial endotracheal tube safely be removed from this patient?",
-    answer: "1. The Thumb Sign (representing the edematous epiglottis).\n2. After a few days, when a repeat direct laryngoscopy shows that the inflammatory edema has completely subsided.",
-    isClinical: true,
-    topic: "Epiglottitis",
-    explanation: "قراءة حالة طفل 3.5 سنوات يعاني من ريالة وسخونية شديدة وصعوبة بلع:\n1. **Thumb Sign**: أهم علامة في الأشعة الجانبية للرقبة (**Lateral Neck X-ray**)، تظهر لسان المزمار المتورم كأنه بصمة إبهام تسد المجرى الهوائي.\n2. **Extubation**: بيتم شيل الأنبوب الحنجري بعد أيام لما الفحص المباشر (**Direct laryngoscopy**) يأكد زوال التورم والالتهاب تماماً."
-  },
 
   // topic: "Wheezy Chest and Foreign Body Aspiration"
   {
@@ -2639,17 +2280,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "مخاطر ترك جسم غريب يستقر في الرئة دون تدفق أو إزالة:\n1. **Recurrent pneumonia**: التهاب رئوي متكرر في نفس الفص والمنطقة بالضبط.\n2. **Lung Abscess**: خراج صديدي متجمع حول الجسم الغريب.\n3. **Bronchiectasis**: تمدد وتلف دائم في جدران الشعب الهوائية.\n4. **Lung collapse**: انخماص كامل في فص الرئة المسدود تماماً (**Atelectasis**)."
   },
 
-  {
-    id: "q-c2-w-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Unilateral Diminished Sounds Case",
-    content: "A 2-year-old boy is brought to the clinic due to recurrent chest issues. Physical exam reveals a fixed localized wheeze and unilaterally diminished breath sounds over the right lung field. Chest X-ray films are requested.\n\nQuestions:\n1. In what percentage of foreign body aspiration cases are radiographic findings completely positive/diagnostic?\n2. What specific view of chest radiography is most helpful to reveal obstructive emphysema or collapse?",
-    answer: "1. Positive in only about 50% of cases.\n2. An expiratory chest radiograph film.",
-    isClinical: true,
-    topic: "Wheezy Chest and Foreign Body Aspiration",
-    explanation: "تحليل كيسة طفل سنتين يعاني من تزييق في جانب واحد (**Fixed localized wheeze**) ونقص أصوات التنفس في الرئة اليمين:\n1. نسبة وضوح الشرقة في الأشعة العادية هي **50% فقط**؛ لأن معظم الأجسام الغريبة المبتلعة بتكون غير ظليلة للأشعة (**Radiolucent** مثل البلاستيك أو الأكل).\n2. الأشعة الأفضل هي **Expiratory Chest X-ray** (أشعة أثناء الزفير)؛ لأنها بتظهر احتباس الهواء وتضخم الرئة المسدودة (**Obstructive emphysema**) لعدم قدرة الهواء على الخروج منها."
-  },
 
   // topic: "Pneumonia"
   {
@@ -2696,29 +2326,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Pneumonia",
     explanation: "حالات خطيرة تسبب تنفس سريع جداً تخدع الطبيب وتظنها التهاباً رئوياً:\n1. **DKA (حموضة الدم لمرض السكري)**: تسبب تنفس سريع وعميق جداً (**Kussmaul breathing**) لطرد ثنائي أكسيد الكربون.\n2. **Heart Failure (هبوط القلب الحاد)**: الطفل بيتنفس سريع وعنده رشح مياه في الرئة وكبد متضخم.\n3. **AKI (الفشل الكلوي الحاد)**: تسبب احتباس شديد للسوائل ورشح الرئة.\n4. **CNS Insult (أمراض المخ الحادة)**: مثل نزيف المخ الذي يستثير مركز التنفس مسبباً زيادة تهوية مركزية (**Central hyperventilation**)."
   },
-  {
-    id: "q-c2-p-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Pneumonia Tachypnea Case",
-    content: "A 3-year-old child presents with a high fever, cough, and tachypnea. On examination, his respiratory rate is 45 breaths/minute, and he displays subcostal and intercostal retractions. Chest X-ray confirms a right lower lobe pneumonia.\n\nQuestions:\n1. Does this child's respiratory rate meet the WHO definition of fast breathing for his age?\n2. Mention the specific inpatient intravenous antibiotic protocol if this child requires hospitalization.",
-    answer: "1. Yes, fast breathing for children aged 1-5 years is defined as a respiratory rate >40 breaths/minute.\n2. Intravenous Ceftriaxone (or Cefotaxime), with Vancomycin added if Staphylococcal complications are suspected.",
-    isClinical: true,
-    topic: "Pneumonia",
-    explanation: "تحليل كيسة طفل 3 سنوات بنهجان 45 نفس في الدقيقة:\n1. **Tachypnea Definition**: نعم، الطفل عنده نهجان معتمد؛ لأن المعدل الطبيعي حسب منظمة الصحة العالمية لمن هم بين سن سنة لـ 5 سنوات هو **أقل من 40**. لو وصل 40 فأكثر فهو نهجان (**Fast Breathing**).\n2. **Inpatient Treatment**: المضاد الوريدي الأول هو الجيل الثالث من السيفالوسبورينات (**IV Ceftriaxone / Cefotaxime**)، وبنضيف **Vancomycin** لو شاكين في عدوى عنقودية عنيفة أو صديد."
-  },
 
-  {
-    id: "q-c2-p-6",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Clinical vs Radiological Recovery in CAP",
-    content: "A 3-year-old child is treated for acute uncomplicated Community-Acquired Pneumonia (CAP) with oral amoxicillin. After 72 hours, his fever resolves, his respiratory rate normalizes, and his appetite returns. However, a chest X-ray repeated by an anxious primary care doctor still reveals persistent infiltration in the left lower lobe.\n\nQuestions:\n1. What is the standard clinical guideline regarding this clinical vs. radiological recovery discrepancy in childhood CAP?\n2. How long can uncomplicated CAP radiographic abnormalities normally persist on a chest X-ray?",
-    answer: "1. Clinical recovery typically occurs within 48 to 72 hours, but radiological abnormalities on X-ray can persist and clear much more slowly. A repeat X-ray is NOT indicated if the child has clinically recovered, and treating asymptomatic, resolving radiographic anomalies with prolonged or repeated courses of antibiotics must be strictly avoided.\n2. Uncomplicated CAP radiographic abnormalities can normally persist on a chest X-ray for up to 3 to 6 months.",
-    isClinical: true,
-    topic: "Pneumonia",
-    explanation: "الفجوة الزمنية بين الشفاء السريري والشفاء الإشعاعي للالتهاب الرئوي:\n1. **Clinical vs X-Ray**: الطفل بيتحسن سريرياً ويفوق وتنزل حرارته في غضون 48-72 ساعة من العلاج، لكن تظل الأشعة مليانة بقع والتهاب وتتحسن ببطء شديد. **ممنوع تماماً** تعيد الأشعة طالما الطفل اتحسن وصحته كويسة، وممنوع تزود كورس المضاد لمجرد تنظيف فلوح الأشعة.\n2. **Duration**: البقع الالتهابية في الأشعة ممكن تاخد من **3 إلى 6 أشهر** لحد ما تصفى تماماً في الحالات البسيطة ولا تدل على فشل العلاج."
-  },
   {
     id: "q-c2-p-7",
     chapterId: 2,
@@ -2777,17 +2385,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "مؤشرات الخطر الحتمية لحجز طفل البرونكيوليتس بالعناية أو الجناح:\n1. النهجان الشديد بمعدل يتجاوز **60 إلى 80 نفس/الدقيقة** بالدقيقة مع سحب ضلعي شديد.\n2. وجود زرقان مركزي (**Central cyanosis**) في اللسان والشفتين.\n3. علامات جفاف واضحة (**Severe dehydration**) بسبب عجزه عن الرضاعة لشدة ضيق تنفسه.\n4. نوبات توقف تنفس مفاجئة (**Apneic spells**)، خاصة في الرضع الأصغر من عمر 4 أشهر."
   },
 
-  {
-    id: "q-c2-b-5",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Bronchiolitis Supportive Fluids Case",
-    content: "A 6-month-old infant is admitted to the hospital with respiratory distress, tachypnea, and a repetitive dry cough due to bronchiolitis. The mother asks about the utility of administering oral sedatives or systemic steroids to calm the infant's breathing.\n\nQuestions:\n1. State the clinical guidelines regarding the use of sedatives, steroids, or tracheostomy in this disease.\n2. What specific supportive fluid administration route is indicated if the infant is too distressed to feed orally?",
-    answer: "1. They must be strictly avoided during the management of bronchiolitis.\n2. Parenteral fluid therapy with careful electrolyte and pH adjustment.",
-    isClinical: true,
-    topic: "Bronchiolitis",
-    explanation: "تحليل كيسة رضيع 6 أشهر يعاني من Bronchiolitis:\n1. **الممنوعات الثلاث الصارمة**: يمنع منعاً باتاً إعطاء المهدئات السلوكية (بتموت التنفس)، والكورتيزون (ملوش أي قيمة ومثبت علمياً عدم جدواه في البرونكيوليتس)، وشق الحنجرة (الانسداد تحت الحنجرة بكثير).\n2. **الإنقاذ بالسوائل**: لو الطفل مش عارف يرضع من ضيق النفس وسرعته، بنمنع الرضاعة بالفم منعاً للشرقة والالتهاب الرئوي الكيميائي، ونحوله فوراً محاليل وريدية دقيقة (**IV fluids**)."
-  },
 
   // topic: "Bronchial Asthma"
 
@@ -2835,17 +2432,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Bronchial Asthma",
     explanation: "الفحوصات المخبرية ودور الأشعة السينية في تشخيص الربو:\n1. **صورة الدم والبلغم (CBC & Sputum)**: يظهر في تحليل الدم زيادة خلايا الإيوزينوفيل (**Eosinophilia > 250-400 cell/mm3**) مع ارتفاع مستوى الأجسام المضادة الـ **IgE**. بينما نجد البلغم بلون أبيض ولزج (**white & tenacious**) ويتميز إجهرائياً بوجود خلايا الإيوزينوفيل وحبيبات دقيقة ناتجة عن الخلايا الممزقة.\n2. **اختبار المجهود الرياضي (Exercise Challenge Test)**: انخفاض أو تدهور كفاءة زفير الرئة الـ **FEV1 بمقدار يعادل أو يزيد عن 15%** بعد بذل مجهود بدني رياضي يعتبر محدداً ممتازاً للربو.\n3. **دور الأشعة السينية للصدر (CXR)**: الأشعة السينية **ليست لتشخيص الربو** بل تُطلب فقط لاستبعاد التشخيصات البديلة الأخرى أو كشف حدوث مضاعفات طارئة (**only to exclude other diagnoses or complications**)."
   },
-  {
-    id: "q-c2-a-6",
-    chapterId: 2,
-    type: "problem-solving",
-    title: "Arterial Blood Gas Evolution in Asthma",
-    content: "A 7-year-old child with severe acute asthma exacerbation is managed in the pediatric hospital. Serial Arterial Blood Gas (ABG) monitoring is requested.\n1. Describe the characteristic evolution of PCO2 from the early stages of an asthma attack to the late, worsening stage of airway obstruction.\n2. What are the typical expected changes in PO2 and arterial pH as severe obstruction progresses to a critical stage?",
-    answer: "1. PCO2 is usually low in the early stages (due to hyperventilation), but becomes high (hypercapnia) as the airway obstruction worsens and the child fatigues.\n2. PO2 is typically low (hypoxemia). The arterial pH remains normal in early/moderate stages but progresses to clinical acidosis in late, severe obstruction.",
-    isClinical: true,
-    topic: "Bronchial Asthma",
-    explanation: "دراسة وتحليل غازات الدم الشرياني (ABG) وتطوراتها الخطيرة لدى مرضى الربو:\n1. **غاز ثاني أكسيد الكربون (PCO2)**: في بداية النوبة والانسداد الخفيف، يكون الـ PCO2 **منخفضاً (Hypocapnia)** نتيجة سرعة غسيل وتدفق الأنفاس المتسارعة بالخوف والمجهود، ولكن يرتفع الـ PCO2 ويتراكم بشدة (**Hypercapnia**) عندما يسوء الانسداد وتتعب عضلات تنفس الطفل وهو مؤشر فتاك لفشل التنفس الوشيك.\n2. **غاز الأكسجين والحموضة (PO2 & pH)**: يكون ضغط الأكسجين الـ **PO2 منخفضاً** طوال مراحل الاعتدال والشدة. أما درجة حموضة الدم الـ **pH فتظل طبيعية** في المراحل الأولى والمتوسطة، لتنحدر فجأة لحموضة بالدم (**late acidosis**) في المراحل المتأخرة والحرجة جداً."
-  },
 
 
 
@@ -2882,16 +2468,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Transient Cutaneous Lesions"
   },
 
-  {
-    id: "q-n2-t-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Benign Bumps & Spots Case",
-    content: "A 3-day-old full-term healthy infant is found to have tiny white pinpoint bumps across his nose and chin, along with a blue spot over his lower buttocks. The mother is anxious about skin diseases.\n\nQuestions:\n1. Name the two distinct transient cutaneous lesions demonstrated by this infant.\n2. What management instruction should the family physician give to the anxious mother?",
-    answer: "1. Milia (on the face) and a Mongolian Spot (on the buttocks).\n2. Reassurance only; both are benign, normal, and will disappear spontaneously without treatment.",
-    isClinical: true,
-    topic: "Transient Cutaneous Lesions"
-  },
 
   // topic: "Prematurity and its Complications"
   {
@@ -2931,16 +2507,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     title: "Preterm Immunization guidelines",
     content: "Enumerate 4 core parameters regarding the \"Immunization of Preterm Infants\" chronological age guidelines and precautions.",
     answer: "1. Obligatory vaccines must be given in full standard doses at their chronological postnatal age (not postconceptual age).\n2. Oral Polio Vaccine (OPV) is strictly contraindicated in the hospital ward; Inactivated Polio Vaccine (IPV) must be used.\n3. If the preterm infant remains hospitalized at the time of vaccination, acellular DPT should be administered.\n4. In infants with documented brain instability, the pertussis component is strictly contraindicated.",
-    isClinical: true,
-    topic: "Prematurity and its Complications"
-  },
-  {
-    id: "q-n2-p-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Preterm Bloody Stools Case",
-    content: "A premature infant born at 29 weeks of gestation is being managed in the NICU. On day 5 of life, the nurse reports that the infant has developed an increased respiratory effort, abdominal distention, and passes stools contaminated with gross blood. Plain abdominal radiographs confirm pneumatosis intestinalis.\n\nQuestions:\n1. What major gastrointestinal emergency has this preterm infant developed?\n2. Enumerate 2 initial medical management steps required immediately for this condition.",
-    answer: "1. Neonatal Necrotizing Enterocolitis (NEC).\n2. Complete cessation of oral feeding (keeping the baby NPO) with nasogastric decompression, and starting broad-spectrum intravenous antibiotics.",
     isClinical: true,
     topic: "Prematurity and its Complications"
   },
@@ -3011,16 +2577,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Complications of Indirect Hyperbilirubinemia"
   },
-  {
-    id: "q-n2-ci-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Rh incompatibility Hypertonia Case",
-    content: "A 3-day-old infant with severe Rh incompatibility demonstrates poor sucking, loss of the Moro reflex, hypotonia, and intermittent seizures. His total serum bilirubin is 28 mg/dL and is entirely unconjugated.\n\nQuestions:\n1. What specific phase of Acute Kernicterus do these neurological signs represent?\n2. Mention the specific calculation parameter used to execute an emergency Exchange Transfusion for this infant.",
-    answer: "1. Phase 1 (early manifestations of acute bilirubin encephalopathy).\n2. Infusion of a volume equal to two blood volumes of the infant (2 x 85 mL/kg) using fresh, compatible blood.",
-    isClinical: true,
-    topic: "Complications of Indirect Hyperbilirubinemia"
-  },
 
   // topic: "Neonatal Sepsis"
   {
@@ -3054,16 +2610,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Neonatal Sepsis"
   },
 
-  {
-    id: "q-n2-s-5",
-    chapterId: 3,
-    type: "problem-solving",
-    title: "Sepsis Score threshold Case",
-    content: "A 10-day-old term infant is brought to the clinic. The nurse scores the infant using the Clinical Sepsis Score criteria. The infant demonstrates: 1) poor feeding and lethargy, 2) cold clammy skin with poor peripheral circulation, and 3) marked abdominal distension with vomiting.\n\nQuestions:\n1. Based on the Clinical Sepsis Score, does this infant require immediate empiric antibiotic therapy for suspected sepsis?\n2. Mention the standard empiric intravenous antibiotic combination initially used to treat neonatal sepsis.",
-    answer: "1. Yes, the infant demonstrates 3 positive clinical score parameters (behavioral, circulatory, and gastrointestinal signs), which meets the threshold (score >=3) for high clinical suspicion.\n2. Ampicillin plus an Aminoglycoside (such as Gentamicin), or Ceftriaxone.",
-    isClinical: true,
-    topic: "Neonatal Sepsis"
-  },
 
   // ==================== IV. Emergency Section (Bank 2) ====================
 
@@ -3103,17 +2649,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "المعايير المراقبة والمقاسة بدقة بالغة بمرضى الصدمة الصعبة بالعناية المركزة (PICU Monitor):\n1. الغازات الشريانية وتنامي حمض اللاكتيك المتنفس عن تدهور خلايا الأعضاء.\n2. مراقبة وظائف وفحوصات كلى الطفولة الكرياتينين والأملاح بالتروية والتحليل.\n3. عمل ومتابعة اختبارات تخثر الدم والسيولة لشكوى الـ DIC السامة.\n4. وخذ ومتابعة ضغط الدم والضغط الوريدي المركزي المسمى **CVP** لقياس حجم تروية الدم."
   },
 
-  {
-    id: "q-e2-s-5",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Anaphylactic Distributive Shock Case",
-    content: "A 12-year-old girl is rushed to the emergency department after an insect sting. She has an explosive generalized skin rash, severe wheezing, cold extremities, and a drop in blood pressure. The diagnosis of anaphylactic distributive shock is made.\n\nQuestions:\n1. What is the immediate first-line medication of choice for this condition, including its proper route?\n2. Enumerate 2 adjuvant intravenous drugs that should be administered next to manage this allergic shock.",
-    answer: "1. Epinephrine (Adrenaline) administered subcutaneously (SC) or intravenously (IV).\n2. Hydrocortisone IV and an Antihistaminic IV agent.",
-    isClinical: true,
-    topic: "Shock",
-    explanation: "تحليل طفلة الحساسية المنهارة صدمة الحشرات والحقن:\n1. مضاد الإنقاذ الأول والقاتل لتهيج شرايين الحساسية هو هرمون الـ **Epinephrine** بحقن خارجي دقيق بالعضل أو الوريد.\n2. الأدوية المساعدة اللاحقة لترويض التفاعل والالتهاب الوعائي هي حقن الكورتيزون الوريدية ومضادات الهيستامين الحادة."
-  },
 
   // topic: "Coma"
   {
@@ -3150,17 +2685,6 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "شؤون وأولويات تمريض ومعالجة مريض الغيبوبة الطويلة لحمايته من البلاء والتقرح:\n1. تنشيط ودعم المعدة وحمايتها من أشرار قرح التوتر المدمية بأمبولات واقية حاسمة.\n2. استخدام الملينات والمساندات لمنع تيبس الفضلات وعرقلة الأمعاء.\n3. تروية وترطيب القرنية لحماية عينه المغمضة الضعيفة بقطرات ومراهم جيل دموع صناعية متلاحقة.\n4. تقليب مستمر دوري للبدن والجلد مع العناية بمظهر الجسم تفادياً لالتقاط تقرحات الفراش الخبيثة."
   },
 
-  {
-    id: "q-e2-co-5",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Increased Intracranial Pressure Coma Case",
-    content: "A 4-year-old child presents in a deep coma. Physical examination reveals a bulged anterior fontanel, hypertonia, hyperreflexia, and a sluggish pupillary response to light. The physician diagnoses acute increased intracranial pressure.\n\nQuestions:\n1. What is the initial physical positioning technique indicated to enhance cerebral venous return?\n2. Mention the primary osmotic diuretic drug, including its standard effective dose, used to reduce this pressure.",
-    answer: "1. Head elevation to 30 degrees in a neutral midline position.\n2. Intravenous Mannitol administered at a dose ranging from 0.25 to 0.5 g/kg.",
-    isClinical: true,
-    topic: "Coma",
-    explanation: "تتبع علاج حالات الرأس وارتفاع الضغط للمخ الـ ICP بالفحص والدواء:\n1. طريقة التموضع المثالية بالوسادة هي توجيه رفع الرأس بزاوية 30 درجة لراحة وتسهيل الجريان الدموي الهابط.\n2. العلاج الأسموزي المقبول لسحب المياه والورم خارج كبسولة الرأس هو حقن الوريد المدر الكيميائي **Mannitol** بتركيز فاعل وبجرعة 0.25 إلى 0.5 g/kg."
-  },
 
   // topic: "Glasgow Coma Scale and its Advantages"
   {
@@ -3186,30 +2710,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: "تقييم النطق للرضع وصغار الأطفال:\n1. كلمات مناسبة، ابتسام، تثبيت النظر والمتابعة: 5 نقاط.\n2. بكاء يمكن تهدئته: 4 نقاط.\n3. بكاء مستمر غير هادئ: 3 نقاط.\n4. قلق وتوتر: 2 نقطة.\n5. لا يوجد: 1 نقطة."
   },
 
-  {
-    id: "q-e2-g-5",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Infant GCS Scoring Case",
-    content: "An 18-month-old infant following head trauma opens his eyes to voice, emits persistent irritable crying, and localizes the painful stimulus.\n\nQuestions:\n1. Calculate the Eye, Verbal, and Motor scores.\n2. What is the total composite GCS score?",
-    answer: "1. Eye (3) + Verbal (3) + Motor (5).\n2. Total GCS Score = 11.",
-    isClinical: true,
-    topic: "Glasgow Coma Scale and its Advantages",
-    explanation: "حساب وعي الرضيع:\n1. النقاط: العين للصوت (3) + اللفظي بكاء مستمر (3) + الحركي تحديد الألم (5).\n2. المجموع النهائي: **11**."
-  },
 
   // topic: "Shock"
-  {
-    id: "q-e3-sh-1",
-    chapterId: 4,
-    type: "problem-solving",
-    title: "Cardiogenic Shock in Myocarditis Case",
-    content: "An 8-year-old boy diagnosed with severe acute viral myocarditis presents to the emergency room in severe shock. On examination, he is tachycardic, has a raised jugular venous pressure (JVP), an audible gallop rhythm on cardiac auscultation, wet lung crepitations on breathing, and a tender, enlarged liver.\n\nQuestions:\n1. What is the specific type of shock this patient is presenting with?\n2. What is the physiological goal of contractility augmentation, and which vasoactive drug is indicated if his baseline blood pressure is still within normal limits?",
-    answer: "1. Cardiogenic shock (as defined by myocardial dysfunction and signs of pump failure under cardiorespiratory assessment).\n2. Goal & Drug: The goal is to support and improve myocardial contractility and stroke volume. The indicated drug for low cardiac output with a normal baseline blood pressure is Dobutamine (administered at 5 - 20 mcg/kg/min IV).",
-    isClinical: true,
-    topic: "Shock",
-    explanation: "تحليل ومواجهة حالة صدمة عضلة القلب المعتلة بفيروسات الصدر للرضع:\n1. التشخيص الدقيق هو صدمة القلب المباشرة (**Cardiogenic shock**) بالاستناد لأمارات هبوط المضخة والضخ مع ارتفاع وريد الرقبة الـ JVP وتورم الكبد بفعل الاحتقان الرئوي والكبدي العنيف.\n2. الواسم السحري لحث انقباض وتأمين مخرجات الضربات للدم بدون هدم ضغط شرايينه هو منبع أمبولات الـ **Dobutamine** بجرعة وريدية تتراوح بين 5 - 20 mcg/kg/min."
-  },
   {
     id: "q-e3-sh-2",
     chapterId: 4,

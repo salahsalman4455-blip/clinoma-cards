@@ -2650,5 +2650,217 @@ export const INITIAL_QUESTIONS: Question[] = [
     isClinical: true,
     topic: "Coma",
     explanation: "فن وملاحظات التفريق الإكلينيكي العصبي بين عيوب قشرة مخ وجذع الدماغ بغيبوبة الأطفال:\n1. المسار الفعلي: يتم عبر فحص ورصد ردود الأفعال العصبية والانعكاسات الحيوية بجذع الدماغ. فإذا كانت انعكاسات الحدقة وجريان الدموع وحركة بؤبؤ العين سليمة فالعيب معزول بقشرة الدماغ العليا، بينما لو غابت وخمد تفاعلها فالوهن مقيم بجذع المخ العصبي المهلك.\n2. الانعكاسات الثلاثة المستخدمة بالعيادة بالتفصيل للحكم:\n   - انعكاس وقدرة فحص انكماش قزحية حدقة العين للضوء الحاد.\n   - رد الفعل اللمسي لقرنيات وجفن الرمش للرعش.\n   - انعكاس Doll's eyes حركية حنجرة المخ الحركي عند تدوير الرأس."
+  },
+
+  // ==================== VI. عصافير ====================
+  {
+    id: "q-as-r-1",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Nephritic syndrome (Clinical picture / Complications)",
+    content: "Nephritic syndrome (Clinical picture / Complications)",
+    answer: ":Clinical picture of nephritic syndrome ·\nSudden onset of gross hematuria (cola-colored urine) ·\nEdema (mild to moderate, usually periorbital) ·\nHypertension ·\nOliguria may be present ·\nProteinuria (mild to moderate) ·\n\n:Complications of nephritic syndrome (APSGN) ·\nHyperkalemia ·\nHypertensive encephalopathy ·\nCongestive heart failure ·\nRapidly progressive glomerulonephritis (RPGN) ·\nAcute kidney injury ·",
+    isClinical: true,
+    topic: "Renal"
+  },
+  {
+    id: "q-as-r-2",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Nephrotic syndrome (Clinical picture / Investigation / Complication)",
+    content: "Nephrotic syndrome (Clinical picture / Investigation / Complication)",
+    answer: ":Clinical picture of nephrotic syndrome ·\nGeneralized edema (initially periorbital in the morning, then lower extremities, ascites, ·\npleural effusion, genital edema)\nFrothy urine (due to proteinuria) ·\nAnorexia, irritability, abdominal pain ·\nHypertension and gross hematuria are uncommon (In MCNS) ·\n\n:Investigations of nephrotic syndrome ·\nUrine analysis: Heavy proteinuria (3+ or 4+ dipstick, >40 mg/m²/hr), waxy and hyaline ·\ncasts\nSerum albumin: Low (<2.5 g/dL) ·\nSerum cholesterol: Elevated (>250 mg/dL) ·\nSerum creatinine: Usually normal ·\nC3 and C4: Normal (In MCNS) ·\n\n:Complications of nephrotic syndrome ·\nInfection (spontaneous bacterial peritonitis, sepsis, pneumonia, cellulitis) ·\nThromboembolic events (renal vein thrombosis, pulmonary embolus) ·\nHypovolemic shock ·\nRelapse ·\nComplications of therapy (steroids, cyclophosphamide) ·",
+    isClinical: true,
+    topic: "Renal"
+  },
+  {
+    id: "q-as-r-3",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Hematuria (Causes of gross and microscopic Hematuria)",
+    content: "Hematuria (Causes of gross and microscopic Hematuria)",
+    answer: ":Glomerular causes of hematuria ·\nIgA nephropathy (Berger disease) ·\nPost-streptococcal glomerulonephritis ·\nAlport syndrome (hereditary nephritis) ·\nThin glomerular basement membrane nephropathy ·\nHenoch-Schönlein purpura nephritis ·\nSystemic lupus erythematosus nephritis ·\n\n:Extra-glomerular causes of hematuria ·\nUrinary tract Infection (cystitis, pyelonephritis) ·\nUrolithiasis (renal calculi) ·\nTrauma ·\nCoagulopathy ·\nTumor (Wilms tumor) ·\nPolycystic kidney disease. Renal vein thrombosis ·",
+    isClinical: true,
+    topic: "Renal"
+  },
+  {
+    id: "q-as-r-4",
+    chapterId: 6,
+    type: "short-essay",
+    title: "AKI (CP / Investigation)",
+    content: "AKI (CP / Investigation)",
+    answer: ":Clinical picture of acute kidney injury (AKI) ·\nOliguria or anuria ·\nEdema (fluid overload) ·\nHypertension ·\nAcidotic breathing (rapid and deep) ·\nUremic encephalopathy (confusion, convulsions, coma) – in advanced cases ·\nHyperkalemia (arrhythmias) ·\nMetabolic acidosis ·\n\n:Investigations of AKI ·\nUrine output: Oliguria (UOP <1 ml/kg/hr or <40 ml/m²/day) or anuria (<30 ml/m²/day) ·\nRenal function tests: Increased serum creatinine, blood urea, BUN ·\nArterial blood gas: Metabolic acidosis (↓ pH, ↓ PaCO₂, ↓ HCO₃) ·\nElectrolytes: Hyperkalemia, dilutional hyponatremia, hypocalcemia, hyperphosphatemia ·\nUrine analysis: To differentiate prerenal vs intrinsic vs postrenal ·",
+    isClinical: true,
+    topic: "Renal"
+  },
+  {
+    id: "q-as-n-1",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Complication of Prematurity",
+    content: "Complication of Prematurity",
+    answer: ":Complications of prematurity ·\nRespiratory: Respiratory distress syndrome (Hyaline membrane disease), ·\nBronchopulmonary dysplasia, Apnea, Pneumothorax\nCNS: Intraventricular hemorrhage, Periventricular leukomalacia, Retinopathy of ·\nprematurity (ROP), Kernicterus\nGastrointestinal: Necrotizing enterocolitis (NEC), Difficult feeding ·\nMetabolic: Hypoglycemia, Hypocalcemia, Hypothermia ·\nHematologic: Anemia, Hyperbilirubinemia (indirect), Vitamin K deficiency, DIC ·\nCardiovascular: Patent ductus arteriosus (PDA), Hypotension ·\nRenal: Electrolyte disturbances, Acidosis ·\nImmunologic: Infection and sepsis ·\nNutritional: Rickets of prematurity ·",
+    isClinical: true,
+    topic: "Neonate"
+  },
+  {
+    id: "q-as-n-2",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Clinical picture of neonatal sepsis & clInical sepsis score",
+    content: "Clinical picture of neonatal sepsis & clInical sepsis score",
+    answer: ":Clinical picture of neonatal sepsis ·\nTemperature instability (hypothermia or fever) ·\nRespiratory distress (tachypnea, grunting, retractions, apnea, cyanosis) ·\nCardiovascular signs (tachycardia or bradycardia, poor perfusion, prolonged capillary ·\nrefill, hypotension)\nGastrointestinal signs (poor feeding, vomiting, abdominal distension, ileus, diarrhea) ·\nNeurological signs (lethargy, hypotonia, seizures, irritability, high-pitched cry) ·\nHematologic signs (petechiae, purpura, bleeding, jaundice) ·\nMiscellaneous (sclerema, bulging fontanel) ·\n\n:Clinical sepsis score components ·\nTemperature instability ·\nRespiratory signs (tachypnea, grunting, retractions, apnea) ·\nCardiovascular signs (tachycardia, poor perfusion) ·\nGI signs (poor feeding, vomiting, distensIon) ·\nNeurological signs (lethargy, seizures, hypotonia) ·\nHematologic signs (petechiae, jaundice) ·\n\n:Significance of clinical sepsis score ·\nHelps identify neonates with possible sepsis early before culture results ·\nGuides decision to start empirical antibiotics promptly ·\nHigh score indicates high probability of sepsis and need for full workup ·",
+    isClinical: true,
+    topic: "Neonate"
+  },
+  {
+    id: "q-as-n-3",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Transient cutaneous lesions (benign neonatal skin findings)",
+    content: "Transient cutaneous lesions (benign neonatal skin findings)",
+    answer: ":Benign transient cutaneous lesions In newborns ·\nAcrocyanosis (harmless cyanosis of hands and feet) ·\nErythema toxicum (small white papules on erythematous base, contains eosinophils) ·\nMongolian spots (blue-black pigmentation over buttocks and back) ·\nMilia (tiny white papules on nose and chin, due to distended sebaceous glands) ·\nSalmon patch (transitory macular capillary hemangioma on eyelids or neck) ·\nVernix caseosa (whitish, cheesy, greasy material covering the body) ·\nLanugo hair (fine, soft hair on premature Infants) ·\nPustular melanosis (vesiculopustular eruption In black neonates) ·",
+    isClinical: true,
+    topic: "Neonate"
+  },
+  {
+    id: "q-as-n-4",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Compare between physiological and pathological jaundice",
+    content: "Compare between physiological and pathological jaundice",
+    answer: "Criteria | Physiological Jaundice | Pathological Jaundice\n---------------------------------------------------------\nTime of appearance:\n- Physiological: FT: 2nd - 3rd day, PT: 4th - 6th day\n- Pathological: Within 1st 24 hrs of life\n\nTime of disappearance:\n- Physiological: FT: within 7 days, PT: within 10-14 days\n- Pathological: FT: Persistence after one week, PT: Persistence after two weeks\n\nType of bilirubin:\n- Physiological: Usually unconjugated\n- Pathological: Unconjugated or conjugated\n\nLevel of bilirubin:\n- Physiological: FT: < 12 mg/dl (Peak bilirubin at day 3-5 in term infants.), PT: < 14 mg/dl\n- Pathological: FT: > 12 mg/dl, PT: > 14 mg/dl\n\nRate of bilirubin:\n- Physiological: Rate is slower than 5mg/dl /24hrs\n- Pathological: Rate is faster than 5mg/dl /24hrs\n\nColor of urine and stool:\n- Physiological: Normal color\n- Pathological: Pale stool and dark urine may occur\n\nClinical picture:\n- Physiological: Asymptomatic (Baby feels well and is active. No hepatosplenomegaly or anemia.)\n- Pathological: Baby may be sick (The infant is ill, lethargic, or feeding poorly.)\n\nTreatment:\n- Physiological: Nothing and observation only (observation and adequate feeding)\n- Pathological: Requires investigation and treatment\n\nSeverity:\n- Physiological: Mild\n- Pathological: Often Severe",
+    isClinical: true,
+    topic: "Neonate"
+  },
+  {
+    id: "q-as-n-5",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Complication of Indirect hyperbilirubinemia (Kernicterus)",
+    content: "Complication of Indirect hyperbilirubinemia (Kernicterus)",
+    answer: "Definition: Kernicterus Is bilirubin-induced neurologic dysfunction caused by deposition of unconjugated bilirubin in the basal ganglia and brainstem nuclei.\n\n:Clinical features (acute bilirubin encephalopathy) ·\nLethargy, poor feeding, hypotonia ·\nHypertonia (opisthotonos, retrocollis) ·\nHigh-pitched cry ·\nSeizures ·\nApnea ·\n\n:Long-term sequelae (chronic kernicterus) ·\nChoreoathetoid cerebral palsy (involuntary movements) ·\nSensorineural hearing loss ·\nDental enamel dysplasia ·\nIntellectual disability ·\nGaze palsy (upward gaze paralysis) ·\n\nBilirubin threshold for exchange transfusion (term infant): Varies by weight and risk factors, typically >20-25 mg/dL",
+    isClinical: true,
+    topic: "Neonate"
+  },
+  {
+    id: "q-as-c-1",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Triggers of Bronchial Asthma",
+    content: "Triggers of Bronchial Asthma",
+    answer: ":Common triggers of bronchial asthma ·\nViral respiratory infections ·\nIndoor allergens (animal dander, dust mites, cockroaches) ·\nSeasonal allergens (pollens) ·\nAir pollutants (tobacco smoke, dust, strong odors) ·\nExercise ·\nCold dry air ·\nCrying, laughter, hyperventilation ·\nDrugs (aspirin, NSAIDs, beta-blockers) ·",
+    isClinical: true,
+    topic: "Chest"
+  },
+  {
+    id: "q-as-c-2",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Investigation of Bronchial Asthma",
+    content: "Investigation of Bronchial Asthma",
+    answer: "Complete blood count (CBC): Eosinophilia (>250-400 cells/mm³) ·\nSerum IgE: Usually elevated ·\n\n:Pulmonary function tests (spirometry) for children >5 years ·\nLow FEV1 ·\nLow FEV1/FVC ratio ·\nReversible airflow obstruction (increase In FEV1 >9-12% after bronchodilator) ·\nPeak expiratory flow rate (PEFR) varIabilIty: Day-to-day variation ≥20% ·\n\nChest X-ray: To exclude other diagnoses or complications (normal in asthma) ·\nAllergy testing (skin prick test or specific IgE) ·",
+    isClinical: true,
+    topic: "Chest"
+  },
+  {
+    id: "q-as-c-3",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Pneumonia (CP / Complication / Investigation)",
+    content: "Pneumonia (CP / Complication / Investigation)",
+    answer: ":Clinical picture of pneumonia ·\nTachypnea (most sensitive and specific sign) ·\nCough (productive or dry) ·\nFever (low to high grade) ·\nRespiratory distress (nasal flaring, retractions, grunting, cyanosis) ·\nDecreased breath sounds, crackles, rhonchi, bronchial breathing ·\nDullness on percussion (if consolidation or effusion) ·\nNon-respiratory manifestations: vomiting, diarrhea, abdominal pain (can mimic gastroenteritis or surgical abdomen)\n\n:Complications of pneumonia ·\nPleural effusion ·\nEmpyema ·\nLung abscess ·\nPneumatocele (especially with S. aureus) ·\nBronchopleural fistula ·\nBacteremia / sepsis ·\nMeningitis Pericarditis ·\n\n:Investigations of pneumonia ·\nChest X-ray: Lobar consolidation, patchy Infiltrate, or interstitial pattern ·\nCBC: Leukocytosis with PMN predominance (bacterial) or lymphocytosis (viral) ·\nAcute phase reactants: Elevated CRP, ESR, procalcitonin (in bacterial) ·\nBlood culture: To identify organism ·\nPulse oximetry: To assess oxygenation ·\nSputum culture: Limited value In young children ·\nPCR (nasopharyngeal): For Mycoplasma, Pertussis, viral pathogens ·\nCT scan (for complicated or unresolved pneumonia) ·",
+    isClinical: true,
+    topic: "Chest"
+  },
+  {
+    id: "q-as-c-4",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Causes of wheeze",
+    content: "Causes of wheeze",
+    answer: ":Acute causes of wheezing ·\nAcute bronchiolitis (RSV) ·\nBronchial asthma exacerbation ·\nForeign body aspiration ·\nSevere bacterial bronchopneumonia ·\n\n:Recurrent causes of wheezing ·\nBronchial asthma ·\nRecurrent aspiration (GERD) ·\nChronic chest Infection (cystic fibrosis, Immunodeficiency) ·\n\n:Non-wheeze causes of noisy breathing (differential diagnosis) ·\nStridor (croup, epiglottitis, foreign body in larynx/trachea) ·\nSnoring (adenoid enlargement, nasal obstruction) ·\nGrunting (severe respiratory distress) ·\nRattling (secretions In trachea/bronchi) ·",
+    isClinical: true,
+    topic: "Chest"
+  },
+  {
+    id: "q-as-e-1",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Definition, causes, and grading of coma",
+    content: "Definition, causes, and grading of coma",
+    answer: ":Definition of coma ·\nComa is a state of prolonged unconsciousness In which the child cannot be aroused even with painful stimuli.\n\n:Causes of coma ·\nIntracranial infection (meningitis, encephalitis, brain abscess) ·\nIntracranial hemorrhage (traumatic or non-traumatic) ·\nHypoxic-ischemic encephalopathy (shock, severe anemia, hypoxia) ·\nMetabolic disorders (DKA, hypoglycemia, hepatic failure, renal failure, electrolyte imbalance) ·\nPoisoning (exogenous toxins) ·\nStatus epilepticus ·\nBrain tumor ·\n\n:Grading of coma (clinical grades) ·\nGrade I (Stupor): Patient can be aroused for only a short period (less than a minute) ·\nGrade II (Light coma): Cannot be aroused by painful stimuli, but withdraws to pain ·\nGrade III (Deep coma): No response to paInful stimuli, but breathes spontaneously ·\nGrade IV (Deep coma with apnea): No response to painful stimuli and apnea ·",
+    isClinical: true,
+    topic: "Emergency"
+  },
+  {
+    id: "q-as-e-2",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Definition, causes, and grading of shock",
+    content: "Definition, causes, and grading of shock",
+    answer: ":Definition of shock ·\nShock is the clinical state of circulatory Inadequacy where there Is disruption of tissue perfusion, leading to Inadequate supply of oxygen and nutrIents to, and removal of metabolites from, cells of end organs.\n\n:Causes of shock (types) ·\nHypovolemic shock (dehydration, hemorrhage, burns) ·\nCardiogenic shock (heart failure, myocarditis) ·\nObstructive shock (tension pneumothorax, cardiac tamponade, pulmonary embolism) ·\nDistributive (kinetic) shock (septic, anaphylactic, neurogenic) ·\nMetabolic shock (acute adrenal failure) ·\n\n:Grading of shock ·\nGrade I (Compensated shock): Tachycardia, normal blood pressure, prolonged capillary refill, cool extremities\nGrade II (Early shock): Tachycardia + poor peripheral perfusion ·\nGrade III (Established shock): Tachycardia + poor perfusion + hypotension ·\nGrade IV (Advanced shock): Multiple organ system failure (MOSF) ·\nGrade V (Irreversible shock): Refractory metabolic acidosis, Irreversible cellular damage ·",
+    isClinical: true,
+    topic: "Emergency"
+  },
+  {
+    id: "q-as-e-3",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Steps of CPR (Cardiopulmonary Resuscitation)",
+    content: "Steps of CPR (Cardiopulmonary Resuscitation)",
+    answer: ":Basic Life Support (A, B, C) ·\nA – Airway control: Open airway (head tilt, jaw thrust, mouth opening), clear airway (suction), maintain patent airway (oropharyngeal airway or ETT)\nB – Breathing support: Mouth-to-mouth, bag and mask with O2 (20 breaths/minute) ·\nC – Circulation support: Cardiac compression at midstream point (rate 100/minute, ratio 1:5 with ventilation)\n\n:Compression depth by age ·\nNewborns: 2 cm (hand encircling technique) ·\nInfants: 2 cm (two-finger technique) ·\nYoung children: 3 cm (one-hand technique) ·\nOlder children: 4 cm (two-hands technique) ·\n\n:Advanced Life Support (D, E, F) ·\nD – Drugs: IV fluids (20 ml/kg), sodium bicarbonate, Adrenaline ·\nE – ECG monitoring: Detect arrhythmias (asystole, VF) ·\nF – Fibrillation control: Defibrillation (2, 4, 8 joules/kg) ·\n\n:Post-resuscitation (G, H, I) ·\nG – Recognition and treatment of causative disease ·\nH – Brain recovery (control convulsions, increased ICP) ·\nI – Intensive care for multiple system support ·",
+    isClinical: true,
+    topic: "Emergency"
+  },
+  {
+    id: "q-as-e-4",
+    chapterId: 6,
+    type: "short-essay",
+    title: "Score and advantages of GCS (Glasgow Coma Scale)",
+    content: "Score and advantages of GCS (Glasgow Coma Scale)",
+    answer: ":Glasgow Coma Scale (GCS) Items ·\nEye opening (1-4): Spontaneous (4), To voice (3), To pain (2), None (1) ·\nVerbal response (1-5): Oriented (5), Confused (4), Inappropriate words (3), Incomprehensible (2), None (1)\nMotor response (1-6): Obeys commands (6), Localizes pain (5), Withdraws (4), Flexion (3), Extension (2), None (1)\nTotal score: 3 to 15 (Score ≤8 = severe brain injury) ·\n\n:Advantages of GCS ·\nObjective and standardized assessment of consciousness ·\nSimple and quick – can be performed at bedside in emergencies ·\nAllows serial monitoring to detect Improvement or deterioration ·\n\n:Disadvantages of GCS ·\nLimited in young children/infants (verbal component hard to assess) ·\nAffected by sedation, Intubation, or neuromuscular blockade ·\nDoes not assess brainstem function directly (pupillary reaction, reflexes) ·",
+    isClinical: true,
+    topic: "Emergency"
+  },
+  {
+    id: "q-as-m-r1",
+    chapterId: 6,
+    type: "matching",
+    title: "Matching Renal 1 (Urinary Tract Disease)",
+    content: "Matching Renal 1 (Urinary Tract Disease)\n\nFor each case, select the most likely diagnosis:\n\n1. An 8-year-old female child with cola-colored urine, BP 80th percentile, hx of URI 2 weeks ago, low C3.\n2. A 12-year-old boy, shorter than colleagues, generalized bony aches, hyperkalemia, serum creatinine 2.6 mg/dL.\n3. A 5 year old girl with puffiness around eyes, proteinuria with minimal trace of blood.",
+    answer: "1. Answer: C) Acute post streptococcal glomerulonephritis (APSGN)\n2. Answer: K) Chronic renal failure (CKD)\n3. Answer: A) Nephrotic syndrome",
+    isClinical: true,
+    topic: "Renal"
+  },
+  {
+    id: "q-as-m-r2",
+    chapterId: 6,
+    type: "matching",
+    title: "Matching Renal 2 (Diseases with renal manifestations)",
+    content: "Matching Renal 2 (Diseases with renal manifestations)\n\nFor each case, select the most likely diagnosis:\n\n1. A 2 year old boy with bloody diarrhea, abdominal pain, puffiness around eyes, jaundice, microangiopathic hemolytic anemia, thrombocytopenia.\n2. A 12-year-old boy, shorter, bony aches, hyperkalemia, creatinine 2.6 mg/dL.\n3. A 5 year old girl with puffiness around eyes, proteinuria with minimal trace of blood.",
+    answer: "1. Answer: A) Haemolytic uraemic syndrome (HUS)\n2. Answer: K) Chronic renal failure (CKD)\n3. Answer: C) Nephrotic syndrome",
+    isClinical: true,
+    topic: "Renal"
+  },
+  {
+    id: "q-as-m-ch",
+    chapterId: 6,
+    type: "matching",
+    title: "Matching Chest (Childhood respiratory diseases)",
+    content: "Matching Chest (Childhood respiratory diseases)\n\nFor each case, select the most likely diagnosis:\n\n1. Six month old: high fever, breathlessness, cough, dull percussion note, bronchial breath sounds.\n2. Nine month old: wheezy, coughing, cyanosed, breathless, Intercostal recession.\n3. Four year old non-immunized: bouts of coughing ending In vomiting, absolute lymphocytosis.\n4. 9 month old: upset, stridor, hoarse voice, barking cough, low grade fever.\n5. 2 year old: very unwell, fever 39°C, unable to swallow secretions, continuous stridor, drooling.",
+    answer: "1. Answer: G) Pneumonia\n2. Answer: B) Bronchiolitis\n3. Answer: J) Whooping cough (Pertussis)\n4. Answer: C) Croup\n5. Answer: F) Epiglottitis",
+    isClinical: true,
+    topic: "Chest"
+  },
+  {
+    id: "q-as-m-j",
+    chapterId: 6,
+    type: "matching",
+    title: "Matching Jaundice (Diagnosis of Neonatal Jaundice)",
+    content: "Matching Jaundice (Diagnosis of Neonatal Jaundice)\n\nFor each case, select the most likely diagnosis:\n\n1. Mother blood group A Rhesus positive, baby blood group B Rhesus negative.\n2. A 4 day old baby is well but has a tinge of jaundice.\n3. A breast fed 3 week old baby has mild jaundice but Is gaining weight satisfactorily.\n4. A 12 day old baby Is jaundiced with pale stools.",
+    answer: "1. Answer: A) ABO Incompatibility\n2. Answer: H) Physiological jaundice\n3. Answer: B) Breast milk jaundice\n4. Answer: D) Extrahepatic biliary atresia",
+    isClinical: true,
+    topic: "Neonate"
   }
 ];

@@ -67,5 +67,15 @@ export const CHAPTERS: Chapter[] = [
       'IMCI Young Infant Care (Up to 2 Months)',
       'Breastfeeding Management & Composition'
     ]
+  },
+  {
+    id: 6,
+    title: 'عصافير',
+    topics: [
+      'Renal',
+      'Neonate',
+      'Chest',
+      'Emergency'
+    ]
   }
 ];

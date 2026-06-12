@@ -1,6 +1,7 @@
 import { Question } from '../types';
+import { FAM_QUESTIONS } from './family_questions';
 
-export const INITIAL_QUESTIONS: Question[] = [
+const QUESTIONS_ARRAY: Question[] = [
   // ==================== I. Renal Diseases ====================
   // topic: "Hematuria"
 
@@ -2864,3 +2865,5 @@ export const INITIAL_QUESTIONS: Question[] = [
     topic: "Neonate"
   }
 ];
+
+export const INITIAL_QUESTIONS: Question[] = QUESTIONS_ARRAY.concat(FAM_QUESTIONS);

@@ -77,5 +77,20 @@ export const CHAPTERS: Chapter[] = [
       'Chest',
       'Emergency'
     ]
+  },
+  {
+    id: 7,
+    title: 'الاسرة',
+    topics: [
+      'Principles of Family Medicine',
+      'The Family Physician & RISE Framework',
+      'Basic Benefit Package & Level of Care',
+      'Family Dynamics & The Human Life Cycle',
+      'Patient Education & Verbal Counseling',
+      'Referral & Consultation Processes',
+      'Anticipatory Care & Immunization Guidelines',
+      'Breastfeeding Management & Composition',
+      'IMCI Case Management & Care'
+    ]
   }
 ];
